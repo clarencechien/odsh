@@ -4,11 +4,13 @@
 
 ## 直接查看成品
 
-展示網站預定網址：**https://clarencechien.github.io/odsh/**（需先啟用下方 Pages 設定）。
+[開啟 ATLED Engergy 展示網站](https://clarencechien.github.io/odsh/)
+
+GitHub Pages 已啟用，可直接使用上方連結。
 
 網站成品已準備在 `gh-pages` 分支，包含三家客戶的 dashboard、週報、十二案場頁面與嵌入範例。工作區檔案連結與 GitHub 上的 HTML 原始檔不會直接呈現網頁，請使用 GitHub Pages。
 
-首次啟用：進入 [Settings → Pages](https://github.com/clarencechien/odsh/settings/pages)，選擇 **Deploy from a branch → gh-pages → / (root) → Save**。GitHub 完成部署後，上面的網址才能開啟。
+部署設定：[Settings → Pages](https://github.com/clarencechien/odsh/settings/pages) 使用 `Deploy from a branch`、`gh-pages`、`/ (root)`。設定相同時，Save 灰色表示沒有新變更，不需要重新儲存。
 
 以下是實際瀏覽器截圖，GitHub README 現在即可查看：
 
