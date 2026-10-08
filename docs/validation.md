@@ -76,3 +76,13 @@ GitHub Pages 發布沿用已啟用的 gh-pages 分支。環境網路代理不允
 `npm run test:themes` 在三家客戶的 dashboard、report、report-native 與靜態客戶頁共驗證 48 種頁面／主題組合，涵蓋系統深淺色及相反的手動選擇，並檢查週報列印。KPI、正文、標題及接口說明的實際文字對比皆至少 4.5:1。舊版深色模式可重現 1:1 白字白底。這不是全站 WCAG 認證；圖表色彩與所有 SVG 標籤未納入文字對比斷言。
 
 新版 E2E 15 項、Pages 6 項、四份資料快照守恆／成本橋接檢查通過；資料 hash 與 v2 相同。深色截圖見 `docs/screenshots/dark-dashboard.png` 及 `dark-report.png`。
+
+## v4 個人化控制
+
+Dashboard 使用 React 組合原生 open-dashboard 元件，新增個人版面工具列、Pointer Events 拖曳、前後移動、欄寬／高度設定及顯示／隱藏清單。沒有改動 renderer 或增加查詢引擎。`atled:layout:v1:<dashboard-id>` 儲存經驗證的偏好；未知／損壞設定回到預設。每個客戶與案場分開儲存，同一客戶的單檔與靜態頁共用設定。週報不載入版面編輯元件。
+
+頂端主題選單使用既有 `odd:theme` 偏好，提供淺色、深色與跟隨系統。新 release 為 `*-2026-q3-v4`；舊快照不覆寫。
+
+`npm run test:personalization` 共 12 組驗證通過：三家各自實際拖曳、尺寸更新、隱藏／恢復、重新整理持久化、移動按鈕、篩選及週報隔離；另驗證案場隔離、單檔／靜態路徑共用、還原、手機寬度、全部隱藏後恢復、損壞設定與禁止儲存的環境。原有 15 項 E2E、48 個主題／頁面組合及列印、6 項 Pages、4 份資料快照與 9 項服務檢查均通過。
+
+個人設定只存在目前瀏覽器，不提供登入、跨裝置同步或公司共用版面發布。編輯截圖：`docs/screenshots/layout-editor.png`。

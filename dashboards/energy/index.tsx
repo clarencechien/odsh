@@ -1,8 +1,9 @@
-import {Dashboard,Filters,Select,Row,Stat,Section,Sankey,Heatmap,BulletChart,Table,Text} from '@open-dashboard/core'
+import {Filters,Select,Row,Stat,Section,Sankey,Heatmap,BulletChart,Table,Text} from '@open-dashboard/core'
+import Dashboard from '../../charts/personal-dashboard'
 import Prose from '../../charts/prose'
 import IntegrationMap from '../../charts/integration-map'
 export const meta={title:'ATLED Engergy / 全域能源控制台',description:'ENERGY LOOP · 跨產業方案組合 / 合成資料',theme:'atled',locale:'zh-TW'}
-export default function Energy(){return <Dashboard>
+export default function Energy(){return <Dashboard id="portfolio">
 <Filters><Select name="site" query="sites" label="客戶 / 案場" allLabel="所有示範案場"/><Select name="window" query="windows" label="觀測週期" default="current" allowAll={false}/></Filters>
 <Row><Prose title="PORTFOLIO / 全域快照" query="kpis" text="{{period_start:text}} — {{period_end:text}} · {{site_count:integer}} 座案場。從電網到負載，觀察同一套資料模型如何支援不同產業的能源决策。" height={90} span={12}/></Row>
 <Row><Stat title="用電量 · kWh" query="weekly_stats" column="load_current" compare="load_previous" compareLabel="前週" format="integer" span={3}/><Stat title="模型電費 · TWD" query="weekly_stats" column="cost_current" compare="cost_previous" compareLabel="前週" format="integer" invert span={3}/><Stat title="光儲模型差額 · TWD" query="kpis" column="savings_twd" format="integer" span={3}/><Stat title="記錄事件" query="event_summary" column="event_count" format="integer" span={3}/></Row>

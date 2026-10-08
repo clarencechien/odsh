@@ -1,7 +1,8 @@
 import fs from 'node:fs';import path from 'node:path';
 import {CUSTOMERS} from './customers.mjs';import {sqlString,writeJSON} from './common.mjs';
 import {reportSource} from './report-layout.mjs';
-const imports=`import { Dashboard, Filters, Select, Row, Stat, LineChart, BarChart, Table, Text, Section, Sankey, Gauge, Heatmap, BulletChart, ScatterChart, StateTimeline, Treemap } from '@open-dashboard/core'
+const imports=`import { Filters, Select, Row, Stat, LineChart, BarChart, Table, Text, Section, Sankey, Gauge, Heatmap, BulletChart, ScatterChart, StateTimeline, Treemap } from '@open-dashboard/core'
+import Dashboard from '../../charts/personal-dashboard'
 import Prose from '../../charts/prose'
 import IntegrationMap from '../../charts/integration-map'
 `;
@@ -36,7 +37,7 @@ export function layoutSource(customer,site){
  <Section title="INFRASTRUCTURE / 算力與能源整合"><Row height={260}>${flow(12)}</Row><Row height={200}>${state()}</Row></Section>`;
  const plan=site?`${site.archetype||'SITE / 案場'} · ${site.goal||site.solution}`:customer.headline;
  return {slug,title,source:imports+`export const meta={title:${JSON.stringify(title)},description:${JSON.stringify(plan+' · 合成資料 / 可切換快照')},theme:'atled',locale:'zh-TW'}
- export default function ClientDashboard(){return <Dashboard>
+ export default function ClientDashboard(){return <Dashboard id=${JSON.stringify(slug)}>
  <Filters>${filter}<Select name="window" query="windows" label="觀測週期" default="current" allowAll={false}/></Filters>
  <Row><Prose title="OPERATIONS / 資料範圍" query="kpis" text="{{period_start:text}} — {{period_end:text}} · {{site_count:integer}} 座案場。切換快照以探索能源、設備與服務狀態。" height={85} span={12}/></Row>
  ${content}

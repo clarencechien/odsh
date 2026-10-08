@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';
 import {ROOT,RUNS,readJSON,writeJSON} from '../src/common.mjs';
 import {createPreview} from '../src/server.mjs';
-const suffix=process.env.ATLED_RUN_SUFFIX||'-v3';
+const suffix=process.env.ATLED_RUN_SUFFIX||'-v4';
 const server=await createPreview({port:0}),port=server.address().port;
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
 const results=[],errors=[];fs.mkdirSync(path.join(ROOT,'test-results'),{recursive:true});
@@ -26,7 +26,7 @@ try{
   if(name==='dashboard.html'){
    await page.locator('.odd-filters select').first().selectOption('ATL-1');
    await page.waitForFunction(()=>document.body.innerText.includes('1 座'));
-   await page.locator('select').nth(1).selectOption('previous');
+   await page.locator('.odd-filters select').nth(1).selectOption('previous');
    await page.waitForFunction(()=>document.body.innerText.includes('2026-09-17'));
    record('dashboard offline site and week filtering');
   }else{
@@ -41,7 +41,7 @@ try{
  assert.deepEqual(requests,[]);record('single-file reports make zero network requests');
  await context.setOffline(false);
  for(const framework of ['react','vue']){
-  await page.goto(base+`/demos/${framework}/`);const frame=page.frameLocator('iframe');await frame.getByRole('heading',{name:'本週結論 / What changed',exact:true}).waitFor();assert.equal(await frame.locator('select').count(),0);record(framework+' iframe renders fixed report');
+  await page.goto(base+`/demos/${framework}/`);const frame=page.frameLocator('iframe');await frame.getByRole('heading',{name:'本週結論 / What changed',exact:true}).waitFor();assert.equal(await frame.locator('.odd-filters select').count(),0);record(framework+' iframe renders fixed report');
  }
  // Customer releases contain only one customer's data, in every precomputed filter combination.
  for(const [slug,others]of [['atlas',['Meridian Logistics','Helios Cloud']],['meridian',['Atlas Semiconductor','Helios Cloud']],['helios',['Atlas Semiconductor','Meridian Logistics']]]){

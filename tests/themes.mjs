@@ -1,6 +1,6 @@
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
 import {chromium} from 'playwright';import {ROOT,writeJSON} from '../src/common.mjs';import {createPreview} from '../src/server.mjs';
-const suffix=process.env.ATLED_RUN_SUFFIX||'-v3';
+const suffix=process.env.ATLED_RUN_SUFFIX||'-v4';
 const server=await createPreview({port:0}),browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
 const checks=[];
 // Check actual rendered foregrounds against their painted background, including old gradients.
