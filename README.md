@@ -2,6 +2,22 @@
 
 以 DuckDB 與 open-dashboard 0.7.0 建立企業能源營運 dashboard、離線週報與可稽核快照。虛構企業整合智慧樓宇、電網、資料中心、儲能、太陽能及充電樁。**所有資料與效益都是合成／模型估算。**
 
+## 直接查看成品
+
+展示網站預定網址：**https://clarencechien.github.io/odsh/**（需先啟用下方 Pages 設定）。
+
+網站成品已準備在 `gh-pages` 分支，包含三家客戶的 dashboard、週報、十二案場頁面與嵌入範例。工作區檔案連結與 GitHub 上的 HTML 原始檔不會直接呈現網頁，請使用 GitHub Pages。
+
+首次啟用：進入 [Settings → Pages](https://github.com/clarencechien/odsh/settings/pages)，選擇 **Deploy from a branch → gh-pages → / (root) → Save**。GitHub 完成部署後，上面的網址才能開啟。
+
+以下是實際瀏覽器截圖，GitHub README 現在即可查看：
+
+![Atlas Semiconductor 客製化能源 dashboard](docs/screenshots/atlas.png)
+
+[物流客戶畫面](docs/screenshots/meridian.png) · [雲端客戶畫面](docs/screenshots/helios.png)
+
+更新展示站：`npm run demo && npm run pages:publish`。發布器只接受明確標示的合成資料，保留既有網站分支歷史，不會上傳原始 Parquet、憑證或服務日誌。正式客戶資料仍走私有 Silo，不能使用這個公開 demo 發布流程。
+
 ## 已實作
 
 - 三家客戶、十二個案場，每個案場有不同整合設備組合。

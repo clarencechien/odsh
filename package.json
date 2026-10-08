@@ -19,7 +19,10 @@
     "demo": "node scripts/demo.mjs",
     "typecheck": "tsc --noEmit",
     "silo:start": "node scripts/silo-dev.mjs",
-    "test:services": "ATLED_RUN_SUFFIX=-v1 node tests/services.mjs"
+    "test:services": "ATLED_RUN_SUFFIX=-v1 node tests/services.mjs",
+    "pages:build": "node scripts/build-pages.mjs",
+    "pages:publish": "node scripts/publish-pages.mjs",
+    "test:pages": "node tests/pages.mjs"
   },
   "dependencies": {
     "@babel/parser": "8.0.4",
