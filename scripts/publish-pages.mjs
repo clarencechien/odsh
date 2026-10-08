@@ -21,6 +21,6 @@ try{
   const source=git(['rev-parse','--short','HEAD'],ROOT);
   git(['commit','-m',`Publish ATLED Engergy synthetic demo (${source})`],temp);
   console.log(git(['push','origin','HEAD:gh-pages'],temp));
-  console.log('Static website pushed to gh-pages. GitHub Pages still needs to be enabled in repository settings.');
+  console.log('Static website pushed to gh-pages. Check the Pages deployment workflow for completion: https://github.com/clarencechien/odsh/actions');
  }
 }finally{fs.rmSync(temp,{recursive:true,force:true});}

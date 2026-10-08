@@ -7,22 +7,23 @@
     "node": ">=22.18"
   },
   "scripts": {
-    "generate": "node src/cli.mjs generate demo-2026-q3-v1",
-    "build": "node src/cli.mjs build demo-2026-q3-v1",
-    "check": "node src/cli.mjs check demo-2026-q3-v1",
-    "dev": "node src/cli.mjs dev demo-2026-q3-v1",
+    "generate": "node src/cli.mjs generate demo-2026-q3-v2",
+    "build": "node src/cli.mjs build demo-2026-q3-v2",
+    "check": "node src/cli.mjs check demo-2026-q3-v2",
+    "dev": "node src/cli.mjs dev demo-2026-q3-v2",
     "serve": "node src/cli.mjs serve",
     "test": "node --test tests/*.test.mjs",
-    "test:e2e": "ATLED_RUN_SUFFIX=-v1 node tests/e2e.mjs",
-    "export:rill": "node src/cli.mjs export-rill demo-2026-q3-v1",
+    "test:e2e": "ATLED_RUN_SUFFIX=-v2 node tests/e2e.mjs",
+    "export:rill": "node src/cli.mjs export-rill demo-2026-q3-v2",
     "snapreport": "node src/cli.mjs",
     "demo": "node scripts/demo.mjs",
     "typecheck": "tsc --noEmit",
     "silo:start": "node scripts/silo-dev.mjs",
-    "test:services": "ATLED_RUN_SUFFIX=-v1 node tests/services.mjs",
+    "test:services": "ATLED_RUN_SUFFIX=-v2 node tests/services.mjs",
     "pages:build": "node scripts/build-pages.mjs",
     "pages:publish": "node scripts/publish-pages.mjs",
-    "test:pages": "node tests/pages.mjs"
+    "test:pages": "node tests/pages.mjs",
+    "test:snapshots": "node tests/snapshots.mjs"
   },
   "dependencies": {
     "@babel/parser": "8.0.4",

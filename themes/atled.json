@@ -1,1 +1,41 @@
-{"name":"ATLED Engergy · Control room","font":"Inter, Noto Sans TC, system-ui, sans-serif","radius":12,"light":{"accent":"#007d78","good":"#138467","bad":"#cb4a37","page":"#f1f4f3","surface":"#ffffff","grid":"#e1e7e4","series":["#007d78","#e8a53a","#4768ac","#c55b45","#6b9b77","#8f74b7","#4a9cb5","#b8a268"]},"dark":{"accent":"#60c6b5","good":"#8dd9aa","bad":"#ff9782","page":"#10201f","surface":"#172c2a","grid":"#2b4240"}}
+{
+  "name": "ATLED · Energy Loop",
+  "font": "Inter, Noto Sans TC, system-ui, sans-serif",
+  "radius": 12,
+  "light": {
+    "accent": "#0087dc",
+    "good": "#087e76",
+    "bad": "#cd4c45",
+    "page": "#f2f7fc",
+    "surface": "#ffffff",
+    "grid": "#dce7f1",
+    "series": [
+      "#0087dc",
+      "#54c9c9",
+      "#a1cc45",
+      "#5375bd",
+      "#f3ad4d",
+      "#8f72ba",
+      "#209aaa",
+      "#d66e81"
+    ]
+  },
+  "dark": {
+    "accent": "#56b6f2",
+    "good": "#61d3c9",
+    "bad": "#ff958b",
+    "page": "#102539",
+    "surface": "#173249",
+    "grid": "#304d65",
+    "series": [
+      "#56b6f2",
+      "#61d3c9",
+      "#b7e75b",
+      "#97ade3",
+      "#ffc774",
+      "#ba9beb",
+      "#71c1d0",
+      "#eca2b1"
+    ]
+  }
+}

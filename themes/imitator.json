@@ -1,1 +1,41 @@
-{"name":"ATLED Engergy · Editorial","font":"Georgia, Noto Serif TC, serif","radius":0,"light":{"accent":"#276058","good":"#28764e","bad":"#b24531","page":"#f6f3ea","surface":"#fffcf6","grid":"#ded9cc","series":["#276058","#bc8431","#668ca1","#a8543a","#87996a","#897da1","#487a89","#a59a7b"]},"dark":{"accent":"#a0c2ad","page":"#252720","surface":"#30332a","grid":"#505447"}}
+{
+  "name": "ATLED · Energy Loop / Decision Brief",
+  "font": "Inter, Noto Sans TC, system-ui, sans-serif",
+  "radius": 0,
+  "light": {
+    "accent": "#0087dc",
+    "good": "#087e76",
+    "bad": "#cd4c45",
+    "page": "#eaf1f8",
+    "surface": "#ffffff",
+    "grid": "#dce7f1",
+    "series": [
+      "#0087dc",
+      "#54c9c9",
+      "#a1cc45",
+      "#5375bd",
+      "#f3ad4d",
+      "#8f72ba",
+      "#209aaa",
+      "#d66e81"
+    ]
+  },
+  "dark": {
+    "accent": "#56b6f2",
+    "good": "#61d3c9",
+    "bad": "#ff958b",
+    "page": "#102539",
+    "surface": "#173249",
+    "grid": "#304d65",
+    "series": [
+      "#56b6f2",
+      "#61d3c9",
+      "#b7e75b",
+      "#97ade3",
+      "#ffc774",
+      "#ba9beb",
+      "#71c1d0",
+      "#eca2b1"
+    ]
+  }
+}

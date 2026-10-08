@@ -16,7 +16,7 @@ export async function validateData(dir) {
     await check('end use balance','SELECT max(abs(load_kw-building_kw-datacenter_kw-ev_kw)) FROM meters',0,.00001);
     await check('battery SOC transition','SELECT max(abs(soc_kwh-soc_start_kwh-battery_charge_kw*.25*sqrt(.9)+battery_discharge_kw*.25/sqrt(.9))) FROM meters',0,.00001);
     await check('SOC continuity',`SELECT coalesce(max(abs(soc_start_kwh-previous_soc)),0) FROM (SELECT soc_start_kwh,lag(soc_kwh) OVER(PARTITION BY site_id ORDER BY ts) previous_soc FROM meters)`,0,.00001);
-    await check('SOC bounds',`SELECT count(*) FROM meters m JOIN sites s USING(site_id) WHERE soc_kwh < battery_capacity_kwh*.15-.00001 OR soc_kwh > battery_capacity_kwh*.9+.00001`);
+    await check('SOC bounds',`SELECT count(*) FROM meters m JOIN sites s USING(site_id) WHERE soc_kwh < s.battery_capacity_kwh*.15-.00001 OR soc_kwh > s.battery_capacity_kwh*.9+.00001`);
     await check('no simultaneous charge/discharge','SELECT count(*) FROM meters WHERE battery_charge_kw>0 AND battery_discharge_kw>0');
     await check('no simultaneous import/export','SELECT count(*) FROM meters WHERE grid_import_kw>0 AND grid_export_kw>0');
     await check('tariff ledger','SELECT max(abs(energy_cost_twd-(grid_import_kw*tariff_twd_kwh-grid_export_kw*2)*.25)) FROM meters',0,.00001);

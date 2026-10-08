@@ -1,10 +1,19 @@
-/* Original editorial stylesheet: no third-party report.css was supplied. */
-.odd-standalone,.odd-dashboard-page{max-width:1180px;margin-inline:auto}
-.odd-dashboard-page{padding:36px 28px 64px}
-.odd-panel{border-radius:0!important;box-shadow:none!important;border:1px solid var(--odd-grid);border-top:3px solid var(--odd-accent)}
-.odd-section{margin-top:32px}
-.odd-text{font-size:15px;line-height:1.9;letter-spacing:.025em}
-.odd-text strong{color:var(--odd-accent);font-variant-numeric:tabular-nums}
-.odd-panel h2,.odd-panel-title{letter-spacing:.025em}
-@media(max-width:700px){.odd-dashboard-page{padding:12px}.odd-text{font-size:14px}}
-@media print{.odd-filters{display:none!important}.odd-panel{break-inside:avoid}.odd-dashboard-page{padding:0;max-width:none}}
+/* A fixed weekly decision brief, intentionally different from the operational dashboard. */
+body{background:#eaf1f8!important}
+.odd-standalone,.odd-dashboard-page{max-width:1060px;margin-inline:auto}
+.odd-dashboard-page{background:white!important;margin-block:28px;padding:52px 60px 64px!important;box-shadow:0 16px 55px #27496710;border:1px solid #dfe8f0}
+.odd-dashboard-page:before{height:9px!important;margin-bottom:30px!important}
+.odd-dashboard-page h1{font-size:30px!important;letter-spacing:-.025em;color:#163b57}
+.odd-panel{border:0!important;border-radius:0!important;box-shadow:none!important;background:white!important}
+.odd-panel-prose .odd-text{font-size:16px;line-height:2.05;max-width:82ch}
+.odd-panel-prose{border-left:3px solid #60d4d2!important;padding-left:16px!important}
+.odd-panel-stat{background:#f3f9fd!important;border-top:3px solid #0087dc!important;padding:14px 18px!important}
+.odd-section{margin-top:34px!important;border-top:1px solid #d9e6f0;padding-top:20px}
+.odd-section h2{font-size:19px!important;color:#006faf!important;letter-spacing:.025em}
+.odd-panel-table{border-top:2px solid #b9e95b!important}
+.odd-panel-waterfall,.odd-panel-dumbbell{border:1px solid #e1ecf3!important;padding:14px!important}
+.odd-panel-text{color:#60788b}.odd-panel-text .odd-text{font-size:12px;line-height:1.85}
+@media(max-width:700px){.odd-dashboard-page{padding:24px 15px!important;margin-block:0}.odd-dashboard-page h1{font-size:23px!important}.odd-panel-prose .odd-text{font-size:14px;line-height:1.9}}
+@media print{body{background:white!important}.odd-dashboard-page{margin:0;border:0;box-shadow:none;max-width:none;padding:0!important}.odd-panel{break-inside:avoid}.odd-section{break-inside:avoid-page}}
+
+.odd-panel-waterfall{--odd-series-8:#54c9c9;--odd-ink-2:#0087dc}

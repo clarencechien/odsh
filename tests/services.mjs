@@ -2,7 +2,7 @@ import fs from 'node:fs';import path from 'node:path';import assert from 'node:a
 import {chromium} from 'playwright';import {DuckDBInstance} from '@duckdb/node-api';import {parse} from 'yaml';
 import {ROOT,RUNS,readJSON,writeJSON,sqlString} from '../src/common.mjs';
 import {siloClient,serveSilo,publishSilo} from '../src/silo.mjs';
-const suffix=process.env.ATLED_RUN_SUFFIX||'';
+const suffix=process.env.ATLED_RUN_SUFFIX||'-v2';
 const checks=[];const record=name=>{checks.push({name,pass:true});console.log('PASS',name);};
 // Re-execute exported semantic expressions directly over the Rill source Parquet.
 const rill=path.join(RUNS,'demo-2026-q3'+suffix,'rill'),view=parse(fs.readFileSync(path.join(rill,'metrics/energy.yaml'),'utf8'));
@@ -26,10 +26,10 @@ const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'
 try{
  const page=await browser.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(`http://127.0.0.1:${port}/atlas-2026-q3${suffix}/build/site/d/site-atl-1/`);
- await page.getByRole('heading',{name:'整合方案',exact:true}).waitFor();await page.locator('.odd-filters select').selectOption('previous');
+ await page.getByRole('heading',{name:'整合方案 / 已安裝子系統',exact:true}).waitFor();await page.locator('.odd-filters select').selectOption('previous');
  await page.waitForFunction(()=>document.body.innerText.includes('Sep 17')||document.body.innerText.includes('2026-09-17'));
  assert.deepEqual(errors,[]);record('Silo serves static site assets/data and working week filter');
- await page.goto(`http://127.0.0.1:${port}/atlas-2026-q3${suffix}/build/report.html`);await page.locator('.odd-filters select').first().selectOption('ATL-1');await page.getByText('Chiller efficiency degradation',{exact:true}).waitFor();record('Silo report HTML renders and filters');
+ await page.goto(`http://127.0.0.1:${port}/atlas-2026-q3${suffix}/build/report.html`);await page.getByRole('heading',{name:'本週結論 / What changed',exact:true}).waitFor();assert.equal(await page.locator('select').count(),0);record('Silo fixed weekly report renders');
  const denied=await fetch(`http://127.0.0.1:${port}/meridian-2026-q3${suffix}/build/report.html`);assert.equal(denied.status,404);record('customer gateway cannot read another tenant bucket');
 }finally{await browser.close();await new Promise(r=>gateway.close(r));}
 // Start an isolated, actual DuckDB-backed developer API for this check.

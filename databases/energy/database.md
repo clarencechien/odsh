@@ -1,12 +1,12 @@
-# ATLED Engergy — energy data contract v1
+# ATLED Engergy — energy data contract v2
 
 All companies, sites, observations and incidents in the demo are **synthetic**. Read this before writing SQL. Source of truth is the immutable Parquet in each run's `input/`; DuckDB views are the analytical adapter. `generation.json` records seed, scope, window and assumptions.
 
 ## Tables and grain
 
-- `sites`: one row per `site_id`; tenant, local site name, comma-separated installed `domains`, human-readable `solution`, preferred `layout`, equipment capacities and `contract_kw`.
+- `sites`: one row per `site_id`; tenant, local site name, comma-separated installed `domains`, human-readable `solution`, preferred `layout`, equipment capacities, `contract_kw`, `archetype` and `goal`.
 - `assets`: one virtual subsystem per installed domain per site; `asset_id` unique. These are subsystem meters, not individual physical inverter/rack/connector counts.
-- `meters`: one row per site per **15-minute** interval; primary key `(site_id, ts)`. Power fields are interval-average kW, not instantaneous readings. Unsupported domains carry zero power and zero capacity. Missing/estimated is not the same as uninstalled.
+- `meters`: one row per site per **15-minute** interval; primary key `(site_id, ts)`. Power fields are interval-average kW, not instantaneous readings. Unsupported domains carry zero power and zero capacity. `battery_capacity_kwh` and `contract_kw` repeat the site configuration for bounded analytical queries. Missing/estimated is not the same as uninstalled.
 - `telemetry`: one row per installed `(asset_id, ts)`; domain power, operating state and quality. Only installed domains are emitted.
 - `events`: resolved, deliberately injected operational incidents; start inclusive, end exclusive, site, domain, severity, title and suggested action. These are known simulation causes, not inferred causal diagnoses.
 
@@ -35,7 +35,7 @@ All companies, sites, observations and incidents in the demo are **synthetic**. 
 
 ## Customer and solution boundaries
 
-Atlas Semiconductor favors resilience/demand; Meridian Logistics favors charging/solar; Helios Cloud favors PUE/carbon. `src/customers.mjs` maps each of twelve sites to its installed domains. Pages are compiled into ordinary open-dashboard TSX/SQL; no renderer fork or alternate dashboard DSL.
+Atlas Semiconductor favors resilience/demand; Meridian Logistics favors charging/solar; Helios Cloud favors PUE/carbon. `src/customers.mjs` maps each of six sites to its installed domains. Pages are compiled into ordinary open-dashboard TSX/SQL; no renderer fork or alternate dashboard DSL.
 
 A site filter is not authorization. For delivery, generate `--tenant` runs; input Parquet and every precomputed combination contain only that tenant. The internal portfolio artifact intentionally contains every tenant and must remain internal. Per-customer Silo buckets separate delivery packages but production authentication remains the host's responsibility.
 

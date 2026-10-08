@@ -13,10 +13,10 @@ test('generated tenant snapshot: physical invariants, installed assets, incident
    const rows=async sql=>(await db.runAndReadAll(sql)).getRowObjectsJS();
    await db.run(`CREATE VIEW m AS SELECT * FROM '${dir}/input/meters.parquet'`);
    const unsupported=await rows("SELECT count(*) n FROM m WHERE site_id='ATL-2' AND (it_kw<>0 OR battery_charge_kw<>0 OR ev_kw<>0)");assert.equal(Number(unsupported[0].n),0);
-   const pue=await rows("SELECT max(datacenter_kw/it_kw) pue FROM m WHERE site_id='ATL-1'");assert.ok(pue[0].pue>1.6);
+   const pue=await rows("SELECT max(datacenter_kw/it_kw) pue FROM m WHERE site_id='ATL-1'");assert.ok(pue[0].pue>1 && pue[0].pue<1.6);
    const tenants=await rows('SELECT DISTINCT tenant FROM m');assert.deepEqual(tenants.map(t=>t.tenant),['Atlas Semiconductor']);
   }finally{db.closeSync();inst.closeSync();}
-  const original=readJSON(path.join(dir,'generation.json'));assert.equal(original.site_profiles.length,4);
+  const original=readJSON(path.join(dir,'generation.json'));assert.equal(original.site_profiles.length,2);
   await assert.rejects(generate(id,{tenant:'Atlas Semiconductor',days:21}),/Run exists/);
   const second=`${id}-repeat`;try{await generate(second,{tenant:'Atlas Semiconductor',days:21});
     // Parquet writer metadata is stable too: input bytes are deterministic for the pinned generator.

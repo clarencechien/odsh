@@ -24,16 +24,16 @@ try{
  for(const href of hrefs.filter(h=>h.startsWith(base))){const response=await fetch(href);assert.equal(response.status,200,href);}
  passed('every landing-page link resolves beneath /odsh/');
  for(const slug of ['atlas','meridian','helios']){
-  await page.goto(base+slug+'/dashboard.html');const select=page.locator('.odd-filters select').first();await select.locator('option').nth(4).waitFor({state:'attached'});
+  await page.goto(base+slug+'/dashboard.html');const select=page.locator('.odd-filters select').first();await select.locator('option').nth(2).waitFor({state:'attached'});
   const value=await select.locator('option').nth(1).getAttribute('value');await select.selectOption(value);
-  await page.waitForFunction(()=>[...document.querySelectorAll('.odd-text')].some(n=>n.textContent.includes('1 座站點')));
+  await page.waitForFunction(()=>[...document.querySelectorAll('.odd-text')].some(n=>n.textContent.includes('1 座案場')));
  }
  passed('all customer dashboards render and filter at project URL');
- await page.goto(base+'atlas/site/d/site-atl-2/');await page.getByRole('heading',{name:'整合方案',exact:true}).waitFor();
+ await page.goto(base+'atlas/site/d/site-atl-2/');await page.getByRole('heading',{name:'整合方案 / 已安裝子系統',exact:true}).waitFor();
  await page.locator('.odd-filters select').selectOption('previous');await page.waitForFunction(()=>document.body.innerText.includes('Sep 17')||document.body.innerText.includes('2026-09-17'));
  passed('nested site assets, JSON and week filters work under project path');
  for(const framework of ['react','vue']){
-  await page.goto(base+'atlas/demos/'+framework+'/');const frame=page.frameLocator('iframe');await frame.locator('.odd-filters select').first().selectOption('ATL-1');await frame.getByText('Chiller efficiency degradation',{exact:true}).waitFor();
+  await page.goto(base+'atlas/demos/'+framework+'/');const frame=page.frameLocator('iframe');await frame.getByRole('heading',{name:'本週結論 / What changed',exact:true}).waitFor();
  }
  passed('React and Vue iframe paths work under project path');
  assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);passed('zero browser errors or missing resources');
