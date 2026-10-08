@@ -1,0 +1,130 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 844.311265,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 797.317845,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 844.311265,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

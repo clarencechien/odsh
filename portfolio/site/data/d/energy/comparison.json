@@ -29,8 +29,8 @@
         ],
         "rows": [
           {
-            "cost_change": 0.0023657987047522575,
-            "load_change": 0.0025632338465515457
+            "cost_change": 0.053945239704983904,
+            "load_change": 0.03526577471105987
           }
         ],
         "truncated": false
@@ -61,8 +61,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.016721978829411295,
-            "load_change": -0.01119792632640822
+            "cost_change": -0.01736885541423616,
+            "load_change": -0.011301628948909275
           }
         ],
         "truncated": false
@@ -93,8 +93,8 @@
         ],
         "rows": [
           {
-            "cost_change": 0.0023657987047522575,
-            "load_change": 0.0025632338465515457
+            "cost_change": 0.053945239704983904,
+            "load_change": 0.03526577471105987
           }
         ],
         "truncated": false
@@ -125,8 +125,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.03734493085697165,
-            "load_change": -0.010911244438437714
+            "cost_change": 0.09861048178590763,
+            "load_change": 0.03096799536961648
           }
         ],
         "truncated": false
@@ -189,200 +189,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.03734493085697165,
-            "load_change": -0.010911244438437714
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.004602605809451396,
-            "load_change": -0.003536066124411681
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.009211325694758899,
-            "load_change": -0.007614381405599087
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",null]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.004602605809451396,
-            "load_change": -0.003536066124411681
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.009543613241081748,
-            "load_change": -0.0074835097246232106
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.028596219506664477,
-            "load_change": -0.02053275472497131
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",null]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.009543613241081748,
-            "load_change": -0.0074835097246232106
+            "cost_change": 0.09861048178590763,
+            "load_change": 0.03096799536961648
           }
         ],
         "truncated": false
@@ -413,8 +221,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004664639777467732,
-            "load_change": -0.0033516184029730267
+            "cost_change": 0.3120075025406494,
+            "load_change": 0.30550844890063245
           }
         ],
         "truncated": false
@@ -445,8 +253,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.008418669332873475,
-            "load_change": -0.00679706757147438
+            "cost_change": -0.00804054443071272,
+            "load_change": -0.0071179722935298196
           }
         ],
         "truncated": false
@@ -477,8 +285,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004664639777467732,
-            "load_change": -0.0033516184029730267
+            "cost_change": 0.3120075025406494,
+            "load_change": 0.30550844890063245
           }
         ],
         "truncated": false
@@ -509,8 +317,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004103313948548279,
-            "load_change": -0.0035037979599421764
+            "cost_change": -0.007133290863385013,
+            "load_change": -0.0035494669462414184
           }
         ],
         "truncated": false
@@ -541,8 +349,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.007713532551866912,
-            "load_change": -0.0066548327824980155
+            "cost_change": -0.019192948202408345,
+            "load_change": -0.011581886229290853
           }
         ],
         "truncated": false
@@ -573,200 +381,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004103313948548279,
-            "load_change": -0.0035037979599421764
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-3\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "HEL-3",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.0056801559519920755,
-            "load_change": -0.0036825184943422794
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-3\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "HEL-3",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.012759002647617174,
-            "load_change": -0.010038998505523991
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-3\"],[\"window\",null]]": {
-      "params": {
-        "site": "HEL-3",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.0056801559519920755,
-            "load_change": -0.0036825184943422794
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-4\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "HEL-4",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.003986987655915545,
-            "load_change": -0.0029744140026724524
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-4\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "HEL-4",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.008904785264803915,
-            "load_change": -0.006392774275060548
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-4\"],[\"window\",null]]": {
-      "params": {
-        "site": "HEL-4",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.003986987655915545,
-            "load_change": -0.0029744140026724524
+            "cost_change": -0.007133290863385013,
+            "load_change": -0.0035494669462414184
           }
         ],
         "truncated": false
@@ -797,8 +413,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.022493256714812254,
-            "load_change": -0.005762821974010524
+            "cost_change": 0.24472992954852613,
+            "load_change": 0.05559036644258493
           }
         ],
         "truncated": false
@@ -829,8 +445,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.042959554743943834,
-            "load_change": -0.020220853625130535
+            "cost_change": -0.06153623147838317,
+            "load_change": -0.019479009920580652
           }
         ],
         "truncated": false
@@ -861,8 +477,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.022493256714812254,
-            "load_change": -0.005762821974010524
+            "cost_change": 0.24472992954852613,
+            "load_change": 0.05559036644258493
           }
         ],
         "truncated": false
@@ -893,8 +509,8 @@
         ],
         "rows": [
           {
-            "cost_change": 0.05771250810585826,
-            "load_change": -0.0118630971412493
+            "cost_change": 0.01870270698340929,
+            "load_change": 0.02017288917315906
           }
         ],
         "truncated": false
@@ -925,8 +541,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.0832635345159343,
-            "load_change": -0.021899870894395934
+            "cost_change": -0.029255869638689817,
+            "load_change": -0.02150124162573066
           }
         ],
         "truncated": false
@@ -957,200 +573,8 @@
         ],
         "rows": [
           {
-            "cost_change": 0.05771250810585826,
-            "load_change": -0.0118630971412493
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-3\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "MER-3",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.012592581080752684,
-            "load_change": -0.012203121048318133
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-3\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "MER-3",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.02391530271600855,
-            "load_change": -0.021257736693771363
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-3\"],[\"window\",null]]": {
-      "params": {
-        "site": "MER-3",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.012592581080752684,
-            "load_change": -0.012203121048318133
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-4\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "MER-4",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.12893871106540286,
-            "load_change": -0.00960250990950519
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-4\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "MER-4",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.2345416124200644,
-            "load_change": -0.02704887744096107
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-4\"],[\"window\",null]]": {
-      "params": {
-        "site": "MER-4",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.12893871106540286,
-            "load_change": -0.00960250990950519
+            "cost_change": 0.01870270698340929,
+            "load_change": 0.02017288917315906
           }
         ],
         "truncated": false
@@ -1181,8 +605,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004832991101559436,
-            "load_change": -0.004048351091784418
+            "cost_change": 0.15903200428936307,
+            "load_change": 0.12139851563778462
           }
         ],
         "truncated": false
@@ -1213,8 +637,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.01455714755062782,
-            "load_change": -0.010864213547614712
+            "cost_change": -0.018314541538380386,
+            "load_change": -0.012714076905718486
           }
         ],
         "truncated": false
@@ -1245,8 +669,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004832991101559436,
-            "load_change": -0.004048351091784418
+            "cost_change": 0.15903200428936307,
+            "load_change": 0.12139851563778462
           }
         ],
         "truncated": false

@@ -23,20 +23,12 @@
         ],
         "rows": [
           {
-            "label": "Atlas Semiconductor / 新竹・晶圓園區 A",
+            "label": "Atlas Semiconductor / 新竹・製程微電網",
             "site_id": "ATL-1"
           },
           {
-            "label": "Atlas Semiconductor / 台中・晶圓園區 B",
+            "label": "Atlas Semiconductor / 台中・智慧研發樓",
             "site_id": "ATL-2"
-          },
-          {
-            "label": "Atlas Semiconductor / 高雄・晶圓園區 C",
-            "site_id": "ATL-3"
-          },
-          {
-            "label": "Atlas Semiconductor / 桃園・晶圓園區 D",
-            "site_id": "ATL-4"
           }
         ],
         "truncated": false

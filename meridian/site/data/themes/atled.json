@@ -1,36 +1,46 @@
 {
   "file": "",
-  "hash": "41d5d795a2394006",
+  "hash": "b7296145eaac910a",
   "id": "atled",
   "theme": {
     "dark": {
-      "accent": "#60c6b5",
-      "bad": "#ff9782",
-      "good": "#8dd9aa",
-      "grid": "#2b4240",
-      "page": "#10201f",
-      "surface": "#172c2a"
+      "accent": "#56b6f2",
+      "bad": "#ff958b",
+      "good": "#61d3c9",
+      "grid": "#304d65",
+      "page": "#102539",
+      "series": [
+        "#56b6f2",
+        "#61d3c9",
+        "#b7e75b",
+        "#97ade3",
+        "#ffc774",
+        "#ba9beb",
+        "#71c1d0",
+        "#eca2b1"
+      ],
+      "surface": "#173249"
     },
     "font": "Inter, Noto Sans TC, system-ui, sans-serif",
     "light": {
-      "accent": "#007d78",
-      "bad": "#cb4a37",
-      "good": "#138467",
-      "grid": "#e1e7e4",
-      "page": "#f1f4f3",
+      "accent": "#0087dc",
+      "bad": "#cd4c45",
+      "good": "#087e76",
+      "grid": "#dce7f1",
+      "page": "#f2f7fc",
       "series": [
-        "#007d78",
-        "#e8a53a",
-        "#4768ac",
-        "#c55b45",
-        "#6b9b77",
-        "#8f74b7",
-        "#4a9cb5",
-        "#b8a268"
+        "#0087dc",
+        "#54c9c9",
+        "#a1cc45",
+        "#5375bd",
+        "#f3ad4d",
+        "#8f72ba",
+        "#209aaa",
+        "#d66e81"
       ],
       "surface": "#ffffff"
     },
-    "name": "ATLED Engergy · Control room",
+    "name": "ATLED · Energy Loop",
     "radius": 12
   }
 }

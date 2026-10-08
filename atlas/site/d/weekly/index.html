@@ -3,25 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ATLED Engergy | 客戶能源週報 · open-dashboard</title>
+<title>Atlas Semiconductor / 能源決策週報 · open-dashboard</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='2' y='10' width='4' height='8' rx='1' fill='%232a78d6'/%3E%3Crect x='8' y='5' width='4' height='13' rx='1' fill='%231baf7a'/%3E%3Crect x='14' y='2' width='4' height='16' rx='1' fill='%23eb6834'/%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('odd:theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="../../assets/main-DFZNOANX.css">
-<style data-snapreport-theme="imitator">/* Original editorial stylesheet: no third-party report.css was supplied. */
-.odd-standalone,.odd-dashboard-page{max-width:1180px;margin-inline:auto}
-.odd-dashboard-page{padding:36px 28px 64px}
-.odd-panel{border-radius:0!important;box-shadow:none!important;border:1px solid var(--odd-grid);border-top:3px solid var(--odd-accent)}
-.odd-section{margin-top:32px}
-.odd-text{font-size:15px;line-height:1.9;letter-spacing:.025em}
-.odd-text strong{color:var(--odd-accent);font-variant-numeric:tabular-nums}
-.odd-panel h2,.odd-panel-title{letter-spacing:.025em}
-@media(max-width:700px){.odd-dashboard-page{padding:12px}.odd-text{font-size:14px}}
-@media print{.odd-filters{display:none!important}.odd-panel{break-inside:avoid}.odd-dashboard-page{padding:0;max-width:none}}
+<style data-energy-loop="base">/* Energy Loop: blue → cyan → lime. Charts remain open-dashboard components. */
+:root{--loop-blue:#0087dc;--loop-cyan:#60d4d2;--loop-lime:#b9e95b;--loop-ink:#163850;--loop-muted:#5f768b;--loop-line:linear-gradient(90deg,#0087dc 0 48%,#60d4d2 48% 82%,#b9e95b 82%)}
+body{color:var(--loop-ink)}
+.odd-dashboard-page{max-width:1440px;margin-inline:auto;padding:24px 28px 60px}
+.odd-dashboard-page:before{content:"";display:block;height:6px;background:var(--loop-line);margin-bottom:24px}
+.odd-panel{border:1px solid #dce7f1!important;box-shadow:0 3px 12px #143a5e04!important}
+.odd-panel-stat{border-top:3px solid #0087dc!important;background:linear-gradient(150deg,#fff,#f5fbff)!important}
+.odd-section{margin-top:28px}.odd-section h2{letter-spacing:.035em;color:#244763}
+.odd-text{font-size:14px;line-height:1.85}.odd-text strong{color:#006daf;font-variant-numeric:tabular-nums}
+.odd-filters select{border-color:#cadce9!important;border-radius:7px!important}
+.loop-integrations{display:flex;gap:12px;align-items:stretch;height:100%;padding:5px;overflow-x:auto}
+.loop-integration{position:relative;flex:1;min-width:120px;border:1px solid #d6e7f3;border-top:3px solid #60d4d2;border-radius:8px;padding:10px 12px;background:#f5faff;display:flex;flex-direction:column;gap:4px}
+.loop-integration strong{font-size:13px;color:#184663}.loop-integration small{font-size:11px;color:#5d788d}.loop-integration-count{font-size:10px;color:#56768d;margin-top:auto}
+.loop-node{position:absolute;right:10px;top:10px;width:6px;height:6px;background:#a1cc45;border-radius:50%}
+.odd-panel-prose{background:#fff!important}
+@media(max-width:700px){.odd-dashboard-page{padding:15px 12px 40px}.loop-integrations{flex-wrap:wrap;overflow:auto}.loop-integration{min-width:100px}.odd-text{font-size:13px}}
+@media print{.odd-sidebar,.odd-topbar,.odd-filters{display:none!important}.odd-panel{break-inside:avoid}.odd-dashboard-page{padding:0}}
+.loop-masthead{font-family:Inter,system-ui,sans-serif;display:flex;gap:28px;align-items:center;justify-content:space-between;padding:15px 30px;background:#fff;border-bottom:1px solid #dce7f1;min-height:66px;box-sizing:border-box}
+.loop-wordmark{display:flex;gap:10px;align-items:center;font-size:16px;color:#12324c;line-height:1.2}.loop-wordmark strong{font-weight:700}.loop-wordmark small{display:block;font-size:9px;letter-spacing:.2em;color:#0087dc;margin-top:5px}
+.loop-brand-mark{width:27px;height:27px;display:block;border:4px solid #0087dc;border-right-color:#60d4d2;border-top-color:#b9e95b;box-sizing:border-box}
+.loop-masthead nav{display:flex;gap:5px;background:#eef5fb;border-radius:8px;padding:4px}.loop-masthead nav a{font-size:13px;padding:7px 14px;text-decoration:none;color:#466579;border-radius:5px}.loop-masthead nav a[aria-current]{background:#0087dc;color:white;box-shadow:0 2px 6px #0087dc20}.loop-snapshot-label{font-size:11px;color:#5d788c;letter-spacing:.05em}
+@media(max-width:700px){.loop-masthead{padding:12px;gap:10px;flex-wrap:wrap}.loop-masthead nav{margin-left:auto}.loop-snapshot-label{display:none}.loop-masthead nav a{font-size:11px;padding:7px 10px}}
+@media print{.loop-masthead nav,.loop-snapshot-label{display:none}.loop-masthead{padding:0 0 18px;border:0}}
+
+.odd-sidebar{background:#edf5fb!important;border-color:#dce7f1!important}.odd-topbar{background:#f7fbfe!important;border-color:#dce7f1!important}
+</style><style data-snapreport-theme="imitator">/* A fixed weekly decision brief, intentionally different from the operational dashboard. */
+body{background:#eaf1f8!important}
+.odd-standalone,.odd-dashboard-page{max-width:1060px;margin-inline:auto}
+.odd-dashboard-page{background:white!important;margin-block:28px;padding:52px 60px 64px!important;box-shadow:0 16px 55px #27496710;border:1px solid #dfe8f0}
+.odd-dashboard-page:before{height:9px!important;margin-bottom:30px!important}
+.odd-dashboard-page h1{font-size:30px!important;letter-spacing:-.025em;color:#163b57}
+.odd-panel{border:0!important;border-radius:0!important;box-shadow:none!important;background:white!important}
+.odd-panel-prose .odd-text{font-size:16px;line-height:2.05;max-width:82ch}
+.odd-panel-prose{border-left:3px solid #60d4d2!important;padding-left:16px!important}
+.odd-panel-stat{background:#f3f9fd!important;border-top:3px solid #0087dc!important;padding:14px 18px!important}
+.odd-section{margin-top:34px!important;border-top:1px solid #d9e6f0;padding-top:20px}
+.odd-section h2{font-size:19px!important;color:#006faf!important;letter-spacing:.025em}
+.odd-panel-table{border-top:2px solid #b9e95b!important}
+.odd-panel-waterfall,.odd-panel-dumbbell{border:1px solid #e1ecf3!important;padding:14px!important}
+.odd-panel-text{color:#60788b}.odd-panel-text .odd-text{font-size:12px;line-height:1.85}
+@media(max-width:700px){.odd-dashboard-page{padding:24px 15px!important;margin-block:0}.odd-dashboard-page h1{font-size:23px!important}.odd-panel-prose .odd-text{font-size:14px;line-height:1.9}}
+@media print{body{background:white!important}.odd-dashboard-page{margin:0;border:0;box-shadow:none;max-width:none;padding:0!important}.odd-panel{break-inside:avoid}.odd-section{break-inside:avoid-page}}
+
+.odd-panel-waterfall{--odd-series-8:#54c9c9;--odd-ink-2:#0087dc}
 </style></head>
-<body>
+<body data-energy-view="report"><header class="loop-masthead"><div class="loop-wordmark"><span class="loop-brand-mark" aria-hidden="true"></span><span>ATLED <strong>Engergy</strong><small>ENERGY LOOP</small></span></div><nav aria-label="呈現模式"><a  href="../../../dashboard.html">營運 Dashboard</a><a aria-current="page" href="../../../report.html">決策週報 Report</a></nav><span class="loop-snapshot-label">固定週期 · 決策文件</span></header>
 <div id="root"></div>
-<script type="module" src="../../assets/main-CYE5o86A.js"></script>
-<script>(function(){var s=document.currentScript.previousElementSibling;window.__ODD_SNAPSHOT__={builtAt:"2026-10-08T01:14:43",base:new URL('../',s.src).pathname}})()</script>
+<script type="module" src="../../assets/main-Dz3nj6zm.js"></script>
+<script>(function(){var s=document.currentScript.previousElementSibling;window.__ODD_SNAPSHOT__={builtAt:"2026-10-08T01:52:49",base:new URL('../',s.src).pathname}})()</script>
 
 </body>
 </html>

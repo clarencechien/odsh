@@ -18,34 +18,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "樓控團隊：校正空調關機時序與加班區域",
+            "domain": "building",
+            "event_id": "EVT-5",
+            "severity": "medium",
+            "site_id": "ATL-2",
+            "start_ts": "2026-09-25 20:00:00",
+            "title": "樓宇非營業時段負載偏高"
+          }
+        ],
         "truncated": false
       }
     },
@@ -110,34 +120,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "樓控團隊：校正空調關機時序與加班區域",
+            "domain": "building",
+            "event_id": "EVT-5",
+            "severity": "medium",
+            "site_id": "ATL-2",
+            "start_ts": "2026-09-25 20:00:00",
+            "title": "樓宇非營業時段負載偏高"
+          }
+        ],
         "truncated": false
       }
     }

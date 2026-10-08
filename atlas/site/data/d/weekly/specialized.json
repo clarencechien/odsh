@@ -1,0 +1,69 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "specialized",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "ev_kwh",
+            "type": "number"
+          },
+          {
+            "name": "avg_it_kw",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_self_use",
+            "type": "number"
+          },
+          {
+            "name": "min_headroom_kw",
+            "type": "number"
+          },
+          {
+            "name": "max_site_peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "storage_kwh",
+            "type": "number"
+          },
+          {
+            "name": "availability",
+            "type": "unknown"
+          },
+          {
+            "name": "contract_utilization",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "availability": null,
+            "avg_it_kw": 236.8047214895834,
+            "contract_utilization": 0.8691317341666667,
+            "cooling_kwh": 20892.14038174998,
+            "ev_kwh": 0,
+            "max_site_peak_kw": 1042.958081,
+            "min_headroom_kw": 157.041919,
+            "solar_self_use": 0.7671742183354,
+            "storage_kwh": 7115.124734999999
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

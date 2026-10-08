@@ -1,0 +1,62 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "能源經理：確認儲能放電與製程排程一致",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 2,
+            "priority": "成效覆核",
+            "site_id": "ATL-1",
+            "title": "尖峰需量反應"
+          },
+          {
+            "action": "樓控團隊：校正空調關機時序與加班區域",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 8,
+            "priority": "排程追蹤",
+            "site_id": "ATL-2",
+            "title": "樓宇非營業時段負載偏高"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

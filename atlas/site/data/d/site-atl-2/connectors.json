@@ -1,0 +1,56 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "connectors",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "domain",
+            "type": "string"
+          },
+          {
+            "name": "label",
+            "type": "string"
+          },
+          {
+            "name": "protocol",
+            "type": "string"
+          },
+          {
+            "name": "subsystem_count",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "domain": "building",
+            "label": "樓宇控制",
+            "protocol": "BACnet / BEMS",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "grid",
+            "label": "智慧電表",
+            "protocol": "Modbus / MQTT",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "solar",
+            "label": "太陽能",
+            "protocol": "SunSpec / Inverter",
+            "subsystem_count": 1
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

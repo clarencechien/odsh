@@ -29,8 +29,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004664639777468071,
-            "load_change": -0.003351618402973298
+            "cost_change": 0.3120075025406507,
+            "load_change": 0.3055084489006315
           }
         ],
         "truncated": false
@@ -61,8 +61,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.008418669332873475,
-            "load_change": -0.00679706757147438
+            "cost_change": -0.00804054443071272,
+            "load_change": -0.0071179722935298196
           }
         ],
         "truncated": false
@@ -93,8 +93,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004664639777468071,
-            "load_change": -0.003351618402973298
+            "cost_change": 0.3120075025406507,
+            "load_change": 0.3055084489006315
           }
         ],
         "truncated": false
@@ -125,8 +125,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004103313948548907,
-            "load_change": -0.0035037979599422974
+            "cost_change": -0.007133290863383965,
+            "load_change": -0.0035494669462416205
           }
         ],
         "truncated": false
@@ -157,8 +157,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.0077135325518662866,
-            "load_change": -0.006654832782497895
+            "cost_change": -0.019192948202409382,
+            "load_change": -0.011581886229290654
           }
         ],
         "truncated": false
@@ -189,200 +189,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004103313948548907,
-            "load_change": -0.0035037979599422974
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-3\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "HEL-3",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.0056801559519920755,
-            "load_change": -0.0036825184943422794
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-3\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "HEL-3",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.012759002647617174,
-            "load_change": -0.010038998505523991
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-3\"],[\"window\",null]]": {
-      "params": {
-        "site": "HEL-3",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.0056801559519920755,
-            "load_change": -0.0036825184943422794
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-4\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "HEL-4",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.003986987655915545,
-            "load_change": -0.0029744140026724524
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-4\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "HEL-4",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.008904785264803915,
-            "load_change": -0.006392774275060548
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-4\"],[\"window\",null]]": {
-      "params": {
-        "site": "HEL-4",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "comparison",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_change",
-            "type": "number"
-          },
-          {
-            "name": "cost_change",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "cost_change": -0.003986987655915545,
-            "load_change": -0.0029744140026724524
+            "cost_change": -0.007133290863383965,
+            "load_change": -0.0035494669462416205
           }
         ],
         "truncated": false
@@ -413,8 +221,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004645941671032087,
-            "load_change": -0.0033769955293654723
+            "cost_change": 0.21839064326111202,
+            "load_change": 0.18978009417499925
           }
         ],
         "truncated": false
@@ -445,8 +253,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.009664968282310398,
-            "load_change": -0.007622829394580588
+            "cost_change": -0.011338193286669702,
+            "load_change": -0.008794222518873202
           }
         ],
         "truncated": false
@@ -477,8 +285,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.004645941671032087,
-            "load_change": -0.0033769955293654723
+            "cost_change": 0.21839064326111202,
+            "load_change": 0.18978009417499925
           }
         ],
         "truncated": false

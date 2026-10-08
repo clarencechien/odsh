@@ -1,0 +1,310 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "weekly_stats",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 1,
+            "availability_previous": 1,
+            "carbon_current": 14.766016231000005,
+            "carbon_previous": 13.622409701999999,
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cost_current": 74031.42539700003,
+            "cost_previous": 59475.89403899996,
+            "ev_current": 18631.578536749996,
+            "ev_previous": 15526.367020250009,
+            "load_current": 52539.29192700003,
+            "load_previous": 49772.424604499945,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 29924.195286000006,
+            "solar_previous": 32691.370423999997
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "weekly_stats",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 1,
+            "availability_previous": 1,
+            "carbon_current": 13.622409701999999,
+            "carbon_previous": 13.896469582000007,
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cost_current": 59475.89403899996,
+            "cost_previous": 63375.802064999996,
+            "ev_current": 15526.367020250009,
+            "ev_previous": 15534.967010500004,
+            "load_current": 49772.424604499945,
+            "load_previous": 50761.20257300002,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 32691.370423999997,
+            "solar_previous": 32805.625200500006
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "weekly_stats",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 1,
+            "availability_previous": 1,
+            "carbon_current": 14.766016231000005,
+            "carbon_previous": 13.622409701999999,
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cost_current": 74031.42539700003,
+            "cost_previous": 59475.89403899996,
+            "ev_current": 18631.578536749996,
+            "ev_previous": 15526.367020250009,
+            "load_current": 52539.29192700003,
+            "load_previous": 49772.424604499945,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 29924.195286000006,
+            "solar_previous": 32691.370423999997
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

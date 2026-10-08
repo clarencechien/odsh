@@ -36,7 +36,7 @@
         "rows": [
           {
             "charge_kwh": 9486.83298,
-            "discharge_kwh": 8538.149682,
+            "discharge_kwh": 8538.149682500001,
             "max_soc_kwh": 2160,
             "min_soc_kwh": 360
           }
@@ -77,7 +77,7 @@
         "rows": [
           {
             "charge_kwh": 9486.83298,
-            "discharge_kwh": 8538.149683749998,
+            "discharge_kwh": 8538.149682500001,
             "max_soc_kwh": 2160,
             "min_soc_kwh": 360
           }
@@ -118,7 +118,7 @@
         "rows": [
           {
             "charge_kwh": 9486.83298,
-            "discharge_kwh": 8538.149682,
+            "discharge_kwh": 8538.149682500001,
             "max_soc_kwh": 2160,
             "min_soc_kwh": 360
           }

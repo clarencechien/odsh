@@ -47,13 +47,13 @@
         ],
         "rows": [
           {
-            "action": "冷卻效率劣化；檢查冷凍機與濾網",
-            "domain": "datacenter",
-            "event_id": "EVT-1",
-            "severity": "high",
+            "action": "能源經理：確認儲能放電與製程排程一致",
+            "domain": "grid",
+            "event_id": "EVT-4",
+            "severity": "info",
             "site_id": "ATL-1",
-            "start_ts": "2026-09-26 10:00:00",
-            "title": "Chiller efficiency degradation"
+            "start_ts": "2026-09-29 16:00:00",
+            "title": "尖峰需量反應"
           }
         ],
         "truncated": false
@@ -149,13 +149,13 @@
         ],
         "rows": [
           {
-            "action": "冷卻效率劣化；檢查冷凍機與濾網",
-            "domain": "datacenter",
-            "event_id": "EVT-1",
-            "severity": "high",
+            "action": "能源經理：確認儲能放電與製程排程一致",
+            "domain": "grid",
+            "event_id": "EVT-4",
+            "severity": "info",
             "site_id": "ATL-1",
-            "start_ts": "2026-09-26 10:00:00",
-            "title": "Chiller efficiency degradation"
+            "start_ts": "2026-09-29 16:00:00",
+            "title": "尖峰需量反應"
           }
         ],
         "truncated": false

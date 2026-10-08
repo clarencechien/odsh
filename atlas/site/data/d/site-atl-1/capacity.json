@@ -1,0 +1,130 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1042.958081,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1028.910776,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1042.958081,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

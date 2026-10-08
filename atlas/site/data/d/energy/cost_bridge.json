@@ -1,0 +1,476 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"ATL-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 576415.4707679996
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -140655.25186199974
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": -31780.890484999924
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 403979.328421
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 555560.8039150004
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -140477.90379800048
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": -31780.890485000215
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 383302.0096319997
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 576415.4707679996
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -140655.25186199974
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": -31780.890484999924
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 403979.328421
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 178406.7971050001
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -132054.3595600001
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": 0
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 46352.437544999986
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 174715.48730399975
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -132523.61100799975
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": 0
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 42191.87629600001
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 178406.7971050001
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -132054.3595600001
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": 0
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 46352.437544999986
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 754822.2678729999
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -272709.6114219995
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": -31780.890484999924
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 450331.76596600044
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 730276.2912189997
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -273001.5148059999
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": -31780.890485000215
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 425493.88592799957
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 754822.2678729999
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -272709.6114219995
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": -31780.890484999924
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 450331.76596600044
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

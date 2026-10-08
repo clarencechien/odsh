@@ -75,20 +75,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 11.998954959000011,
-            "charger_availability": 1,
-            "cost_twd": 58774.536504,
-            "estimated_ratio": 0,
-            "import_kwh": 25314.25097700001,
-            "load_kwh": 52335.027642000015,
-            "onsite_solar_ratio": 0.5344309771044028,
+            "carbon_tonnes": 37.58543685099997,
+            "charger_availability": 0.9285714285714286,
+            "cost_twd": 292697.6978379999,
+            "estimated_ratio": 0.002976190476190476,
+            "import_kwh": 79294.17056324989,
+            "load_kwh": 78345.48726524989,
+            "onsite_solar_ratio": 0,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
             "pue": null,
-            "savings_twd": 175662.69985100007,
+            "savings_twd": 38137.06858,
             "site_count": 1,
-            "solar_kwh": 35891.24802675,
-            "storage_savings_twd": 38137.06858100001
+            "solar_kwh": 0,
+            "storage_savings_twd": 38137.06858
           }
         ],
         "truncated": false
@@ -166,20 +166,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 12.326519153000001,
+            "carbon_tonnes": 36.85111465000004,
             "charger_availability": 1,
-            "cost_twd": 55567.59143299997,
-            "estimated_ratio": 0,
-            "import_kwh": 26005.314655500017,
-            "load_kwh": 52963.336852,
-            "onsite_solar_ratio": 0.5269061043157478,
+            "cost_twd": 287323.96196800016,
+            "estimated_ratio": 0.002976190476190476,
+            "import_kwh": 77744.96763049997,
+            "load_kwh": 76796.28433249996,
+            "onsite_solar_ratio": 0,
             "period_end": "2026-09-23",
             "period_start": "2026-09-17",
             "pue": null,
-            "savings_twd": 182093.63675600005,
+            "savings_twd": 38137.068583,
             "site_count": 1,
-            "solar_kwh": 39227.735029999996,
-            "storage_savings_twd": 38137.06858500001
+            "solar_kwh": 0,
+            "storage_savings_twd": 38137.068583
           }
         ],
         "truncated": false
@@ -257,20 +257,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 11.998954959000011,
-            "charger_availability": 1,
-            "cost_twd": 58774.536504,
-            "estimated_ratio": 0,
-            "import_kwh": 25314.25097700001,
-            "load_kwh": 52335.027642000015,
-            "onsite_solar_ratio": 0.5344309771044028,
+            "carbon_tonnes": 37.58543685099997,
+            "charger_availability": 0.9285714285714286,
+            "cost_twd": 292697.6978379999,
+            "estimated_ratio": 0.002976190476190476,
+            "import_kwh": 79294.17056324989,
+            "load_kwh": 78345.48726524989,
+            "onsite_solar_ratio": 0,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
             "pue": null,
-            "savings_twd": 175662.69985100007,
+            "savings_twd": 38137.06858,
             "site_count": 1,
-            "solar_kwh": 35891.24802675,
-            "storage_savings_twd": 38137.06858100001
+            "solar_kwh": 0,
+            "storage_savings_twd": 38137.06858
           }
         ],
         "truncated": false

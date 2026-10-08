@@ -1,0 +1,37 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "pue_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "actual",
+            "type": "unknown"
+          },
+          {
+            "name": "target",
+            "type": "unknown"
+          },
+          {
+            "name": "scale",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    }
+  }
+}

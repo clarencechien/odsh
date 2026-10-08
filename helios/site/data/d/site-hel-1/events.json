@@ -18,34 +18,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
+            "domain": "datacenter",
+            "event_id": "EVT-1",
+            "severity": "high",
+            "site_id": "HEL-1",
+            "start_ts": "2026-09-26 08:00:00",
+            "title": "冷卻系統效率劣化"
+          }
+        ],
         "truncated": false
       }
     },
@@ -110,34 +120,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
+            "domain": "datacenter",
+            "event_id": "EVT-1",
+            "severity": "high",
+            "site_id": "HEL-1",
+            "start_ts": "2026-09-26 08:00:00",
+            "title": "冷卻系統效率劣化"
+          }
+        ],
         "truncated": false
       }
     }

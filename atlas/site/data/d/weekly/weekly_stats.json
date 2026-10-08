@@ -1,0 +1,104 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "weekly_stats",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "number"
+          },
+          {
+            "name": "availability_current",
+            "type": "unknown"
+          },
+          {
+            "name": "pue_previous",
+            "type": "number"
+          },
+          {
+            "name": "availability_previous",
+            "type": "unknown"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": null,
+            "availability_previous": null,
+            "carbon_current": 59.7716936310001,
+            "carbon_previous": 56.843830195999885,
+            "cooling_current": 20892.140381749978,
+            "cooling_previous": 21193.623568249994,
+            "cost_current": 450331.7659660004,
+            "cost_previous": 425493.88592799957,
+            "ev_current": 0,
+            "ev_previous": 0,
+            "load_current": 180426.86363949993,
+            "load_previous": 174444.24825824978,
+            "pue_current": 1.2625749556016925,
+            "pue_previous": 1.266389460204798,
+            "solar_current": 71843.93357624992,
+            "solar_previous": 71888.39982699996
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -1,88 +1,64 @@
 {
   "dashboards": [
     {
-      "description": "客戶客製化方案 · 合成資料",
+      "description": "工廠韌性與樓宇節能 · 合成資料 / 可切換快照",
       "file": "",
       "id": "atlas",
-      "panels": 14,
-      "queries": 12,
+      "panels": 15,
+      "queries": 28,
       "sources": [
         "energy"
       ],
       "theme": "atled",
-      "title": "ATLED Engergy | Atlas Semiconductor · 供電韌性與需量管理"
+      "title": "Atlas Semiconductor / 營運控制台"
     },
     {
-      "description": "Integrated energy operations · 合成資料示範",
+      "description": "ENERGY LOOP · 跨產業方案組合 / 合成資料",
       "file": "",
       "id": "energy",
-      "panels": 17,
-      "queries": 10,
+      "panels": 12,
+      "queries": 28,
       "sources": [
         "energy"
       ],
       "theme": "atled",
-      "title": "ATLED Engergy | 能源營運總覽"
+      "title": "ATLED Engergy / 全域能源控制台"
     },
     {
-      "description": "客戶客製化方案 · 合成資料",
+      "description": "MICROGRID / 工廠微電網 · 光儲協同，壓低尖峰並保留儲能備援 · 合成資料 / 可切換快照",
       "file": "",
       "id": "site-atl-1",
-      "panels": 14,
-      "queries": 12,
+      "panels": 15,
+      "queries": 28,
       "sources": [
         "energy"
       ],
       "theme": "atled",
-      "title": "ATLED Engergy | ATL-1 新竹・晶圓園區 A · 供電韌性與需量管理"
+      "title": "新竹・製程微電網 / 營運控制台"
     },
     {
-      "description": "客戶客製化方案 · 合成資料",
+      "description": "SMART BUILDING / 智慧樓宇 · 串接樓控與屋頂光電，辨識非營業用電 · 合成資料 / 可切換快照",
       "file": "",
       "id": "site-atl-2",
-      "panels": 13,
-      "queries": 12,
+      "panels": 14,
+      "queries": 28,
       "sources": [
         "energy"
       ],
       "theme": "atled",
-      "title": "ATLED Engergy | ATL-2 台中・晶圓園區 B · 供電韌性與需量管理"
+      "title": "台中・智慧研發樓 / 營運控制台"
     },
     {
-      "description": "客戶客製化方案 · 合成資料",
-      "file": "",
-      "id": "site-atl-3",
-      "panels": 12,
-      "queries": 12,
-      "sources": [
-        "energy"
-      ],
-      "theme": "atled",
-      "title": "ATLED Engergy | ATL-3 高雄・晶圓園區 C · 供電韌性與需量管理"
-    },
-    {
-      "description": "客戶客製化方案 · 合成資料",
-      "file": "",
-      "id": "site-atl-4",
-      "panels": 12,
-      "queries": 12,
-      "sources": [
-        "energy"
-      ],
-      "theme": "atled",
-      "title": "ATLED Engergy | ATL-4 桃園・晶圓園區 D · 供電韌性與需量管理"
-    },
-    {
-      "description": "Weekly energy review · 合成資料",
+      "description": "WEEKLY DECISION BRIEF · 需量管理與樓宇排程 · 固定週期 / 可列印",
       "file": "",
       "id": "weekly",
-      "panels": 11,
-      "queries": 10,
+      "panels": 13,
+      "queries": 28,
       "sources": [
         "energy"
       ],
       "theme": "imitator",
-      "title": "ATLED Engergy | 客戶能源週報"
+      "title": "Atlas Semiconductor / 能源決策週報"
     }
   ]
 }

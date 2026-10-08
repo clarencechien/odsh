@@ -1,0 +1,7856 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"HEL-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "charging_heat",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "power_kw",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "09/24",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "23",
+            "power_kw": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "charging_heat",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "power_kw",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "09/17",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "23",
+            "power_kw": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "charging_heat",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "power_kw",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "09/24",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "23",
+            "power_kw": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "charging_heat",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "power_kw",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "09/24",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "23",
+            "power_kw": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "charging_heat",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "power_kw",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "09/17",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "23",
+            "power_kw": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "charging_heat",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "power_kw",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "09/24",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "23",
+            "power_kw": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "charging_heat",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "power_kw",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "09/24",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "23",
+            "power_kw": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "charging_heat",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "power_kw",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "09/17",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/17",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/18",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/19",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/20",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/21",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/22",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/23",
+            "hour": "23",
+            "power_kw": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "charging_heat",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "string"
+          },
+          {
+            "name": "day",
+            "type": "string"
+          },
+          {
+            "name": "power_kw",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "09/24",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/24",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/25",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/26",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/27",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/28",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/29",
+            "hour": "23",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "00",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "01",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "02",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "03",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "04",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "05",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "06",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "07",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "08",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "09",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "10",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "11",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "12",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "13",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "14",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "15",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "16",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "17",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "18",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "19",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "20",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "21",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "22",
+            "power_kw": 0
+          },
+          {
+            "day": "09/30",
+            "hour": "23",
+            "power_kw": 0
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

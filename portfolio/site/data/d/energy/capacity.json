@@ -1,0 +1,980 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"ATL-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1042.958081,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1028.910776,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1042.958081,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 397.547682,
+            "scale": 690,
+            "site_id": "ATL-2",
+            "target": 600
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 411.419062,
+            "scale": 690,
+            "site_id": "ATL-2",
+            "target": 600
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 397.547682,
+            "scale": 690,
+            "site_id": "ATL-2",
+            "target": 600
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 2385.545455,
+            "scale": 2760,
+            "site_id": "HEL-1",
+            "target": 2400
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1739.836761,
+            "scale": 2760,
+            "site_id": "HEL-1",
+            "target": 2400
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 2385.545455,
+            "scale": 2760,
+            "site_id": "HEL-1",
+            "target": 2400
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1135.208693,
+            "scale": 1495,
+            "site_id": "HEL-2",
+            "target": 1300
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1130.181158,
+            "scale": 1495,
+            "site_id": "HEL-2",
+            "target": 1300
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1135.208693,
+            "scale": 1495,
+            "site_id": "HEL-2",
+            "target": 1300
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 656.214433,
+            "scale": 977.5,
+            "site_id": "MER-1",
+            "target": 850
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 620.152902,
+            "scale": 977.5,
+            "site_id": "MER-1",
+            "target": 850
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 656.214433,
+            "scale": 977.5,
+            "site_id": "MER-1",
+            "target": 850
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 844.311265,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 797.317845,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 844.311265,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1042.958081,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          },
+          {
+            "actual": 397.547682,
+            "scale": 690,
+            "site_id": "ATL-2",
+            "target": 600
+          },
+          {
+            "actual": 2385.545455,
+            "scale": 2760,
+            "site_id": "HEL-1",
+            "target": 2400
+          },
+          {
+            "actual": 1135.208693,
+            "scale": 1495,
+            "site_id": "HEL-2",
+            "target": 1300
+          },
+          {
+            "actual": 656.214433,
+            "scale": 977.5,
+            "site_id": "MER-1",
+            "target": 850
+          },
+          {
+            "actual": 844.311265,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1028.910776,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          },
+          {
+            "actual": 411.419062,
+            "scale": 690,
+            "site_id": "ATL-2",
+            "target": 600
+          },
+          {
+            "actual": 1739.836761,
+            "scale": 2760,
+            "site_id": "HEL-1",
+            "target": 2400
+          },
+          {
+            "actual": 1130.181158,
+            "scale": 1495,
+            "site_id": "HEL-2",
+            "target": 1300
+          },
+          {
+            "actual": 620.152902,
+            "scale": 977.5,
+            "site_id": "MER-1",
+            "target": 850
+          },
+          {
+            "actual": 797.317845,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1042.958081,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          },
+          {
+            "actual": 397.547682,
+            "scale": 690,
+            "site_id": "ATL-2",
+            "target": 600
+          },
+          {
+            "actual": 2385.545455,
+            "scale": 2760,
+            "site_id": "HEL-1",
+            "target": 2400
+          },
+          {
+            "actual": 1135.208693,
+            "scale": 1495,
+            "site_id": "HEL-2",
+            "target": 1300
+          },
+          {
+            "actual": 656.214433,
+            "scale": 977.5,
+            "site_id": "MER-1",
+            "target": 850
+          },
+          {
+            "actual": 844.311265,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "week_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "previous",
+            "type": "number"
+          },
+          {
+            "name": "current",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "current": 1219125.0788419978,
+            "previous": 929205.8745710001,
+            "site_id": "HEL-1"
+          },
+          {
+            "current": 382969.6200709999,
+            "previous": 385721.08073200006,
+            "site_id": "HEL-2"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

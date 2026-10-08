@@ -1,0 +1,1151 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"MER-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "report_story",
+        "source": "combined",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          },
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_verdict",
+            "type": "string"
+          },
+          {
+            "name": "cooling_verdict",
+            "type": "string"
+          },
+          {
+            "name": "charging_verdict",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 1,
+            "availability_previous": 1,
+            "carbon_current": 14.766016231000005,
+            "carbon_previous": 13.622409701999999,
+            "charging_verdict": "充電服務達示範目標，持續調整補能排程",
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cooling_verdict": "機房能效維持穩定，持續對照 IT 負載",
+            "cost_change": 0.24472992954852613,
+            "cost_current": 74031.42539700003,
+            "cost_previous": 59475.89403899996,
+            "cost_verdict": "成本上升，先覆核負載與尖峰排程",
+            "ev_current": 18631.578536749996,
+            "ev_previous": 15526.367020250009,
+            "load_change": 0.05559036644258493,
+            "load_current": 52539.29192700003,
+            "load_previous": 49772.424604499945,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 29924.195286000006,
+            "solar_previous": 32691.370423999997
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "report_story",
+        "source": "combined",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          },
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_verdict",
+            "type": "string"
+          },
+          {
+            "name": "cooling_verdict",
+            "type": "string"
+          },
+          {
+            "name": "charging_verdict",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 1,
+            "availability_previous": 1,
+            "carbon_current": 13.622409701999999,
+            "carbon_previous": 13.896469582000007,
+            "charging_verdict": "充電服務達示範目標，持續調整補能排程",
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cooling_verdict": "機房能效維持穩定，持續對照 IT 負載",
+            "cost_change": -0.06153623147838317,
+            "cost_current": 59475.89403899996,
+            "cost_previous": 63375.802064999996,
+            "cost_verdict": "成本下降，持續追蹤調度與天候因素",
+            "ev_current": 15526.367020250009,
+            "ev_previous": 15534.967010500004,
+            "load_change": -0.019479009920580652,
+            "load_current": 49772.424604499945,
+            "load_previous": 50761.20257300002,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 32691.370423999997,
+            "solar_previous": 32805.625200500006
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "report_story",
+        "source": "combined",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          },
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_verdict",
+            "type": "string"
+          },
+          {
+            "name": "cooling_verdict",
+            "type": "string"
+          },
+          {
+            "name": "charging_verdict",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 1,
+            "availability_previous": 1,
+            "carbon_current": 14.766016231000005,
+            "carbon_previous": 13.622409701999999,
+            "charging_verdict": "充電服務達示範目標，持續調整補能排程",
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cooling_verdict": "機房能效維持穩定，持續對照 IT 負載",
+            "cost_change": 0.24472992954852613,
+            "cost_current": 74031.42539700003,
+            "cost_previous": 59475.89403899996,
+            "cost_verdict": "成本上升，先覆核負載與尖峰排程",
+            "ev_current": 18631.578536749996,
+            "ev_previous": 15526.367020250009,
+            "load_change": 0.05559036644258493,
+            "load_current": 52539.29192700003,
+            "load_previous": 49772.424604499945,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 29924.195286000006,
+            "solar_previous": 32691.370423999997
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "report_story",
+        "source": "combined",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          },
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_verdict",
+            "type": "string"
+          },
+          {
+            "name": "cooling_verdict",
+            "type": "string"
+          },
+          {
+            "name": "charging_verdict",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 0.9285714285714286,
+            "availability_previous": 1,
+            "carbon_current": 37.58543685100003,
+            "carbon_previous": 36.85111464999997,
+            "charging_verdict": "充電服務未達示範目標，優先覆核中斷紀錄",
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cooling_verdict": "機房能效維持穩定，持續對照 IT 負載",
+            "cost_change": 0.01870270698340929,
+            "cost_current": 292697.6978379999,
+            "cost_previous": 287323.96196800016,
+            "cost_verdict": "成本上升，先覆核負載與尖峰排程",
+            "ev_current": 20756.808977500023,
+            "ev_previous": 18633.955171749996,
+            "load_change": 0.02017288917315906,
+            "load_current": 78345.48726524989,
+            "load_previous": 76796.28433249996,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 0,
+            "solar_previous": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "report_story",
+        "source": "combined",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          },
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_verdict",
+            "type": "string"
+          },
+          {
+            "name": "cooling_verdict",
+            "type": "string"
+          },
+          {
+            "name": "charging_verdict",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 1,
+            "availability_previous": 1,
+            "carbon_current": 36.85111464999997,
+            "carbon_previous": 37.65098908899998,
+            "charging_verdict": "充電服務達示範目標，持續調整補能排程",
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cooling_verdict": "機房能效維持穩定，持續對照 IT 負載",
+            "cost_change": -0.029255869638689817,
+            "cost_current": 287323.96196800016,
+            "cost_previous": 295983.2081200001,
+            "cost_verdict": "成本下降，持續追蹤調度與天候因素",
+            "ev_current": 18633.955171749996,
+            "ev_previous": 18513.966228250007,
+            "load_change": -0.02150124162573066,
+            "load_current": 76796.28433249996,
+            "load_previous": 78483.78311700001,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 0,
+            "solar_previous": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "report_story",
+        "source": "combined",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          },
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_verdict",
+            "type": "string"
+          },
+          {
+            "name": "cooling_verdict",
+            "type": "string"
+          },
+          {
+            "name": "charging_verdict",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 0.9285714285714286,
+            "availability_previous": 1,
+            "carbon_current": 37.58543685100003,
+            "carbon_previous": 36.85111464999997,
+            "charging_verdict": "充電服務未達示範目標，優先覆核中斷紀錄",
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cooling_verdict": "機房能效維持穩定，持續對照 IT 負載",
+            "cost_change": 0.01870270698340929,
+            "cost_current": 292697.6978379999,
+            "cost_previous": 287323.96196800016,
+            "cost_verdict": "成本上升，先覆核負載與尖峰排程",
+            "ev_current": 20756.808977500023,
+            "ev_previous": 18633.955171749996,
+            "load_change": 0.02017288917315906,
+            "load_current": 78345.48726524989,
+            "load_previous": 76796.28433249996,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 0,
+            "solar_previous": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "report_story",
+        "source": "combined",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          },
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_verdict",
+            "type": "string"
+          },
+          {
+            "name": "cooling_verdict",
+            "type": "string"
+          },
+          {
+            "name": "charging_verdict",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 0.961038961038961,
+            "availability_previous": 1,
+            "carbon_current": 52.35145308199994,
+            "carbon_previous": 50.473524351999984,
+            "charging_verdict": "充電服務未達示範目標，優先覆核中斷紀錄",
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cooling_verdict": "機房能效維持穩定，持續對照 IT 負載",
+            "cost_change": 0.057466192337743124,
+            "cost_current": 366729.1232349996,
+            "cost_previous": 346799.85600699973,
+            "cost_verdict": "成本上升，先覆核負載與尖峰排程",
+            "ev_current": 39388.387514250055,
+            "ev_previous": 34160.32219200008,
+            "load_change": 0.03410061058139018,
+            "load_current": 130884.77919224997,
+            "load_previous": 126568.70893700002,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 29924.195286000006,
+            "solar_previous": 32691.370423999997
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "report_story",
+        "source": "combined",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          },
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_verdict",
+            "type": "string"
+          },
+          {
+            "name": "cooling_verdict",
+            "type": "string"
+          },
+          {
+            "name": "charging_verdict",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 1,
+            "availability_previous": 1,
+            "carbon_current": 50.473524351999984,
+            "carbon_previous": 51.547458671000044,
+            "charging_verdict": "充電服務達示範目標，持續調整補能排程",
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cooling_verdict": "機房能效維持穩定，持續對照 IT 負載",
+            "cost_change": -0.034948766615131036,
+            "cost_current": 346799.85600699973,
+            "cost_previous": 359359.0101849998,
+            "cost_verdict": "成本下降，持續追蹤調度與天候因素",
+            "ev_current": 34160.32219200008,
+            "ev_previous": 34048.933238750025,
+            "load_change": -0.020707006455315456,
+            "load_current": 126568.70893700002,
+            "load_previous": 129244.98569,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 32691.370423999997,
+            "solar_previous": 32805.625200500006
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "report_story",
+        "source": "combined",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_current",
+            "type": "number"
+          },
+          {
+            "name": "load_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_current",
+            "type": "number"
+          },
+          {
+            "name": "cost_previous",
+            "type": "number"
+          },
+          {
+            "name": "carbon_current",
+            "type": "number"
+          },
+          {
+            "name": "carbon_previous",
+            "type": "number"
+          },
+          {
+            "name": "solar_current",
+            "type": "number"
+          },
+          {
+            "name": "solar_previous",
+            "type": "number"
+          },
+          {
+            "name": "ev_current",
+            "type": "number"
+          },
+          {
+            "name": "ev_previous",
+            "type": "number"
+          },
+          {
+            "name": "cooling_current",
+            "type": "number"
+          },
+          {
+            "name": "cooling_previous",
+            "type": "number"
+          },
+          {
+            "name": "pue_current",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_current",
+            "type": "number"
+          },
+          {
+            "name": "pue_previous",
+            "type": "unknown"
+          },
+          {
+            "name": "availability_previous",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          },
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_verdict",
+            "type": "string"
+          },
+          {
+            "name": "cooling_verdict",
+            "type": "string"
+          },
+          {
+            "name": "charging_verdict",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "availability_current": 0.961038961038961,
+            "availability_previous": 1,
+            "carbon_current": 52.35145308199994,
+            "carbon_previous": 50.473524351999984,
+            "charging_verdict": "充電服務未達示範目標，優先覆核中斷紀錄",
+            "cooling_current": 0,
+            "cooling_previous": 0,
+            "cooling_verdict": "機房能效維持穩定，持續對照 IT 負載",
+            "cost_change": 0.057466192337743124,
+            "cost_current": 366729.1232349996,
+            "cost_previous": 346799.85600699973,
+            "cost_verdict": "成本上升，先覆核負載與尖峰排程",
+            "ev_current": 39388.387514250055,
+            "ev_previous": 34160.32219200008,
+            "load_change": 0.03410061058139018,
+            "load_current": 130884.77919224997,
+            "load_previous": 126568.70893700002,
+            "pue_current": null,
+            "pue_previous": null,
+            "solar_current": 29924.195286000006,
+            "solar_previous": 32691.370423999997
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -256,258 +256,6 @@
         "truncated": false
       }
     },
-    "[[\"site\",\"ATL-3\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "storage",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "charge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "discharge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "min_soc_kwh",
-            "type": "number"
-          },
-          {
-            "name": "max_soc_kwh",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "charge_kwh": 11067.97181,
-            "discharge_kwh": 9961.17463,
-            "max_soc_kwh": 2520,
-            "min_soc_kwh": 420
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "storage",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "charge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "discharge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "min_soc_kwh",
-            "type": "number"
-          },
-          {
-            "name": "max_soc_kwh",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "charge_kwh": 11067.97181,
-            "discharge_kwh": 9961.17463,
-            "max_soc_kwh": 2520,
-            "min_soc_kwh": 420
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",null]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "storage",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "charge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "discharge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "min_soc_kwh",
-            "type": "number"
-          },
-          {
-            "name": "max_soc_kwh",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "charge_kwh": 11067.97181,
-            "discharge_kwh": 9961.17463,
-            "max_soc_kwh": 2520,
-            "min_soc_kwh": 420
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "storage",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "charge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "discharge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "min_soc_kwh",
-            "type": "number"
-          },
-          {
-            "name": "max_soc_kwh",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "charge_kwh": 12649.11064125,
-            "discharge_kwh": 11384.199576750001,
-            "max_soc_kwh": 2880,
-            "min_soc_kwh": 480
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "storage",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "charge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "discharge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "min_soc_kwh",
-            "type": "number"
-          },
-          {
-            "name": "max_soc_kwh",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "charge_kwh": 12649.11064125,
-            "discharge_kwh": 11384.1995765,
-            "max_soc_kwh": 2880,
-            "min_soc_kwh": 480
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",null]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "storage",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "charge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "discharge_kwh",
-            "type": "number"
-          },
-          {
-            "name": "min_soc_kwh",
-            "type": "number"
-          },
-          {
-            "name": "max_soc_kwh",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "charge_kwh": 12649.11064125,
-            "discharge_kwh": 11384.199576750001,
-            "max_soc_kwh": 2880,
-            "min_soc_kwh": 480
-          }
-        ],
-        "truncated": false
-      }
-    },
     "[[\"site\",null],[\"window\",\"current\"]]": {
       "params": {
         "site": null,
@@ -541,9 +289,9 @@
         ],
         "rows": [
           {
-            "charge_kwh": 31622.776601250007,
-            "discharge_kwh": 28460.49894175001,
-            "max_soc_kwh": 2880,
+            "charge_kwh": 7905.694149999999,
+            "discharge_kwh": 7115.124734999999,
+            "max_soc_kwh": 1800,
             "min_soc_kwh": 0
           }
         ],
@@ -583,9 +331,9 @@
         ],
         "rows": [
           {
-            "charge_kwh": 31622.776601250007,
-            "discharge_kwh": 28460.498941499995,
-            "max_soc_kwh": 2880,
+            "charge_kwh": 7905.694149999999,
+            "discharge_kwh": 7115.124734999999,
+            "max_soc_kwh": 1800,
             "min_soc_kwh": 0
           }
         ],
@@ -625,9 +373,9 @@
         ],
         "rows": [
           {
-            "charge_kwh": 31622.776601250007,
-            "discharge_kwh": 28460.49894175001,
-            "max_soc_kwh": 2880,
+            "charge_kwh": 7905.694149999999,
+            "discharge_kwh": 7115.124734999999,
+            "max_soc_kwh": 1800,
             "min_soc_kwh": 0
           }
         ],

@@ -1,0 +1,395 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"MER-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    }
+  }
+}

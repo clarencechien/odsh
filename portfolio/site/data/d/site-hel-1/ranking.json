@@ -52,12 +52,12 @@
         "rows": [
           {
             "discharge_kwh": 7115.124734999999,
-            "load_kwh": 213632.6178945,
-            "peak_kw": 1586.402032,
-            "pue": 1.2625681263810542,
-            "savings_twd": 172312.52172,
+            "load_kwh": 313419.74206275,
+            "peak_kw": 2385.545455,
+            "pue": 1.333792519000864,
+            "savings_twd": 31780.890485000007,
             "site_id": "HEL-1",
-            "site_name": "新竹・算力中心 A",
+            "site_name": "新竹・AI 算力中心",
             "tenant": "Helios Cloud"
           }
         ],
@@ -113,12 +113,12 @@
         "rows": [
           {
             "discharge_kwh": 7115.124734999999,
-            "load_kwh": 214351.0407874998,
-            "peak_kw": 1585.731301,
-            "pue": 1.2663470277432405,
-            "savings_twd": 172318.27093100006,
+            "load_kwh": 240074.8477167501,
+            "peak_kw": 1739.836761,
+            "pue": 1.2662801837506825,
+            "savings_twd": 31780.890487000004,
             "site_id": "HEL-1",
-            "site_name": "新竹・算力中心 A",
+            "site_name": "新竹・AI 算力中心",
             "tenant": "Helios Cloud"
           }
         ],
@@ -174,12 +174,12 @@
         "rows": [
           {
             "discharge_kwh": 7115.124734999999,
-            "load_kwh": 213632.6178945,
-            "peak_kw": 1586.402032,
-            "pue": 1.2625681263810542,
-            "savings_twd": 172312.52172,
+            "load_kwh": 313419.74206275,
+            "peak_kw": 2385.545455,
+            "pue": 1.333792519000864,
+            "savings_twd": 31780.890485000007,
             "site_id": "HEL-1",
-            "site_name": "新竹・算力中心 A",
+            "site_name": "新竹・AI 算力中心",
             "tenant": "Helios Cloud"
           }
         ],

@@ -35,10 +35,10 @@
         ],
         "rows": [
           {
-            "charge_kwh": 0,
-            "discharge_kwh": 0,
-            "max_soc_kwh": 0,
-            "min_soc_kwh": 0
+            "charge_kwh": 7905.694149999999,
+            "discharge_kwh": 7115.124736499998,
+            "max_soc_kwh": 1800,
+            "min_soc_kwh": 300
           }
         ],
         "truncated": false
@@ -76,10 +76,10 @@
         ],
         "rows": [
           {
-            "charge_kwh": 0,
-            "discharge_kwh": 0,
-            "max_soc_kwh": 0,
-            "min_soc_kwh": 0
+            "charge_kwh": 7905.694149999999,
+            "discharge_kwh": 7115.124736000004,
+            "max_soc_kwh": 1800,
+            "min_soc_kwh": 300
           }
         ],
         "truncated": false
@@ -117,10 +117,10 @@
         ],
         "rows": [
           {
-            "charge_kwh": 0,
-            "discharge_kwh": 0,
-            "max_soc_kwh": 0,
-            "min_soc_kwh": 0
+            "charge_kwh": 7905.694149999999,
+            "discharge_kwh": 7115.124736499998,
+            "max_soc_kwh": 1800,
+            "min_soc_kwh": 300
           }
         ],
         "truncated": false

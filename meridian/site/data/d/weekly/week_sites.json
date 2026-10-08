@@ -1,0 +1,44 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "week_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "previous",
+            "type": "number"
+          },
+          {
+            "name": "current",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "current": 74031.42539700003,
+            "previous": 59475.89403899996,
+            "site_id": "MER-1"
+          },
+          {
+            "current": 292697.6978379999,
+            "previous": 287323.96196799993,
+            "site_id": "MER-2"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

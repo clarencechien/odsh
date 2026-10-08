@@ -1,0 +1,341 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"ATL-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 1,
+            "event_count": 1,
+            "recorded_hours": 2
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 0,
+            "event_count": 0,
+            "recorded_hours": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 1,
+            "event_count": 1,
+            "recorded_hours": 2
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 1,
+            "event_count": 1,
+            "recorded_hours": 8
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 0,
+            "event_count": 0,
+            "recorded_hours": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 1,
+            "event_count": 1,
+            "recorded_hours": 8
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 2,
+            "event_count": 2,
+            "recorded_hours": 10
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 0,
+            "event_count": 0,
+            "recorded_hours": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 2,
+            "event_count": 2,
+            "recorded_hours": 10
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

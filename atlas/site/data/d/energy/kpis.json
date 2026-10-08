@@ -52,7 +52,7 @@
           },
           {
             "name": "charger_availability",
-            "type": "number"
+            "type": "unknown"
           },
           {
             "name": "onsite_solar_ratio",
@@ -77,20 +77,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 54.39700698799997,
-            "charger_availability": 1,
-            "cost_twd": 436171.40754399996,
+            "carbon_tonnes": 51.16934455199995,
+            "charger_availability": null,
+            "cost_twd": 403979.328421,
             "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 114761.6181432498,
-            "load_kwh": 146626.7799899999,
-            "onsite_solar_ratio": 0.2227132810440709,
+            "import_kwh": 107952.20369700012,
+            "load_kwh": 139815.43926450005,
+            "onsite_solar_ratio": 0.233549350147062,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
-            "pue": 1.2747439343791505,
-            "savings_twd": 172440.38016399994,
+            "pue": 1.2625749556016934,
+            "savings_twd": 172436.14234699993,
             "site_count": 1,
             "solar_kwh": 32656.3100345,
-            "storage_savings_twd": 31780.890486
+            "storage_savings_twd": 31780.890485
           }
         ],
         "truncated": false
@@ -144,7 +144,7 @@
           },
           {
             "name": "charger_availability",
-            "type": "number"
+            "type": "unknown"
           },
           {
             "name": "onsite_solar_ratio",
@@ -169,20 +169,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 54.224797659999986,
-            "charger_availability": 1,
-            "cost_twd": 435141.9492840005,
+            "carbon_tonnes": 48.923665486999994,
+            "charger_availability": null,
+            "cost_twd": 383302.0096319997,
             "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 114398.30730175004,
-            "load_kwh": 146251.90216424994,
-            "onsite_solar_ratio": 0.22320505781414432,
+            "import_kwh": 103214.48415374995,
+            "load_kwh": 135052.70113225002,
+            "onsite_solar_ratio": 0.24160039834966598,
             "period_end": "2026-09-23",
             "period_start": "2026-09-17",
             "pue": 1.266389460204798,
-            "savings_twd": 172292.62564300004,
+            "savings_twd": 172258.79428300008,
             "site_count": 1,
             "solar_kwh": 32644.16427799999,
-            "storage_savings_twd": 31780.890485
+            "storage_savings_twd": 31780.890485000007
           }
         ],
         "truncated": false
@@ -236,7 +236,7 @@
           },
           {
             "name": "charger_availability",
-            "type": "number"
+            "type": "unknown"
           },
           {
             "name": "onsite_solar_ratio",
@@ -261,20 +261,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 54.39700698799997,
-            "charger_availability": 1,
-            "cost_twd": 436171.40754399996,
+            "carbon_tonnes": 51.16934455199995,
+            "charger_availability": null,
+            "cost_twd": 403979.328421,
             "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 114761.6181432498,
-            "load_kwh": 146626.7799899999,
-            "onsite_solar_ratio": 0.2227132810440709,
+            "import_kwh": 107952.20369700012,
+            "load_kwh": 139815.43926450005,
+            "onsite_solar_ratio": 0.233549350147062,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
-            "pue": 1.2747439343791505,
-            "savings_twd": 172440.38016399994,
+            "pue": 1.2625749556016934,
+            "savings_twd": 172436.14234699993,
             "site_count": 1,
             "solar_kwh": 32656.3100345,
-            "storage_savings_twd": 31780.890486
+            "storage_savings_twd": 31780.890485
           }
         ],
         "truncated": false
@@ -353,13 +353,13 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 7.820396940000002,
+            "carbon_tonnes": 8.602349079,
             "charger_availability": null,
-            "cost_twd": 40616.22359299999,
+            "cost_twd": 46352.437544999986,
             "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 16498.727718500013,
-            "load_kwh": 38961.73632649997,
-            "onsite_solar_ratio": 0.5765402346165898,
+            "import_kwh": 18148.415767000017,
+            "load_kwh": 40611.424374999995,
+            "onsite_solar_ratio": 0.5531204322047374,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
             "pue": null,
@@ -537,13 +537,13 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 7.820396940000002,
+            "carbon_tonnes": 8.602349079,
             "charger_availability": null,
-            "cost_twd": 40616.22359299999,
+            "cost_twd": 46352.437544999986,
             "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 16498.727718500013,
-            "load_kwh": 38961.73632649997,
-            "onsite_solar_ratio": 0.5765402346165898,
+            "import_kwh": 18148.415767000017,
+            "load_kwh": 40611.424374999995,
+            "onsite_solar_ratio": 0.5531204322047374,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
             "pue": null,
@@ -551,558 +551,6 @@
             "site_count": 1,
             "solar_kwh": 39187.62354175,
             "storage_savings_twd": 0
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "kpis",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_kwh",
-            "type": "number"
-          },
-          {
-            "name": "import_kwh",
-            "type": "number"
-          },
-          {
-            "name": "solar_kwh",
-            "type": "number"
-          },
-          {
-            "name": "cost_twd",
-            "type": "number"
-          },
-          {
-            "name": "savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "storage_savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "carbon_tonnes",
-            "type": "number"
-          },
-          {
-            "name": "pue",
-            "type": "number"
-          },
-          {
-            "name": "charger_availability",
-            "type": "unknown"
-          },
-          {
-            "name": "onsite_solar_ratio",
-            "type": "number"
-          },
-          {
-            "name": "estimated_ratio",
-            "type": "number"
-          },
-          {
-            "name": "site_count",
-            "type": "number"
-          },
-          {
-            "name": "period_start",
-            "type": "date"
-          },
-          {
-            "name": "period_end",
-            "type": "date"
-          }
-        ],
-        "rows": [
-          {
-            "carbon_tonnes": 59.52001509899995,
-            "charger_availability": null,
-            "cost_twd": 453391.1932899998,
-            "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 125569.65211624993,
-            "load_kwh": 124462.85493549993,
-            "onsite_solar_ratio": 0,
-            "period_end": "2026-09-30",
-            "period_start": "2026-09-24",
-            "pue": 1.2625385932441522,
-            "savings_twd": 44493.246676,
-            "site_count": 1,
-            "solar_kwh": 0,
-            "storage_savings_twd": 44493.246676
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "kpis",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_kwh",
-            "type": "number"
-          },
-          {
-            "name": "import_kwh",
-            "type": "number"
-          },
-          {
-            "name": "solar_kwh",
-            "type": "number"
-          },
-          {
-            "name": "cost_twd",
-            "type": "number"
-          },
-          {
-            "name": "savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "storage_savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "carbon_tonnes",
-            "type": "number"
-          },
-          {
-            "name": "pue",
-            "type": "number"
-          },
-          {
-            "name": "charger_availability",
-            "type": "unknown"
-          },
-          {
-            "name": "onsite_solar_ratio",
-            "type": "number"
-          },
-          {
-            "name": "estimated_ratio",
-            "type": "number"
-          },
-          {
-            "name": "site_count",
-            "type": "number"
-          },
-          {
-            "name": "period_start",
-            "type": "date"
-          },
-          {
-            "name": "period_end",
-            "type": "date"
-          }
-        ],
-        "rows": [
-          {
-            "carbon_tonnes": 59.729366986,
-            "charger_availability": null,
-            "cost_twd": 455487.6232710001,
-            "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 126011.3227787501,
-            "load_kwh": 124904.52559725007,
-            "onsite_solar_ratio": 0,
-            "period_end": "2026-09-23",
-            "period_start": "2026-09-17",
-            "pue": 1.2663751572397473,
-            "savings_twd": 44493.246680000004,
-            "site_count": 1,
-            "solar_kwh": 0,
-            "storage_savings_twd": 44493.246680000004
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",null]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "kpis",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_kwh",
-            "type": "number"
-          },
-          {
-            "name": "import_kwh",
-            "type": "number"
-          },
-          {
-            "name": "solar_kwh",
-            "type": "number"
-          },
-          {
-            "name": "cost_twd",
-            "type": "number"
-          },
-          {
-            "name": "savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "storage_savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "carbon_tonnes",
-            "type": "number"
-          },
-          {
-            "name": "pue",
-            "type": "number"
-          },
-          {
-            "name": "charger_availability",
-            "type": "unknown"
-          },
-          {
-            "name": "onsite_solar_ratio",
-            "type": "number"
-          },
-          {
-            "name": "estimated_ratio",
-            "type": "number"
-          },
-          {
-            "name": "site_count",
-            "type": "number"
-          },
-          {
-            "name": "period_start",
-            "type": "date"
-          },
-          {
-            "name": "period_end",
-            "type": "date"
-          }
-        ],
-        "rows": [
-          {
-            "carbon_tonnes": 59.52001509899995,
-            "charger_availability": null,
-            "cost_twd": 453391.1932899998,
-            "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 125569.65211624993,
-            "load_kwh": 124462.85493549993,
-            "onsite_solar_ratio": 0,
-            "period_end": "2026-09-30",
-            "period_start": "2026-09-24",
-            "pue": 1.2625385932441522,
-            "savings_twd": 44493.246676,
-            "site_count": 1,
-            "solar_kwh": 0,
-            "storage_savings_twd": 44493.246676
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "kpis",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_kwh",
-            "type": "number"
-          },
-          {
-            "name": "import_kwh",
-            "type": "number"
-          },
-          {
-            "name": "solar_kwh",
-            "type": "number"
-          },
-          {
-            "name": "cost_twd",
-            "type": "number"
-          },
-          {
-            "name": "savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "storage_savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "carbon_tonnes",
-            "type": "number"
-          },
-          {
-            "name": "pue",
-            "type": "unknown"
-          },
-          {
-            "name": "charger_availability",
-            "type": "number"
-          },
-          {
-            "name": "onsite_solar_ratio",
-            "type": "number"
-          },
-          {
-            "name": "estimated_ratio",
-            "type": "number"
-          },
-          {
-            "name": "site_count",
-            "type": "number"
-          },
-          {
-            "name": "period_start",
-            "type": "date"
-          },
-          {
-            "name": "period_end",
-            "type": "date"
-          }
-        ],
-        "rows": [
-          {
-            "carbon_tonnes": 32.420283719000025,
-            "charger_availability": 1,
-            "cost_twd": 250096.27732199995,
-            "estimated_ratio": 0.002976190476190476,
-            "import_kwh": 68397.22303499997,
-            "load_kwh": 67132.31197099999,
-            "onsite_solar_ratio": 0,
-            "period_end": "2026-09-30",
-            "period_start": "2026-09-24",
-            "pue": null,
-            "savings_twd": 50849.424775,
-            "site_count": 1,
-            "solar_kwh": 0,
-            "storage_savings_twd": 50849.424775
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "kpis",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_kwh",
-            "type": "number"
-          },
-          {
-            "name": "import_kwh",
-            "type": "number"
-          },
-          {
-            "name": "solar_kwh",
-            "type": "number"
-          },
-          {
-            "name": "cost_twd",
-            "type": "number"
-          },
-          {
-            "name": "savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "storage_savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "carbon_tonnes",
-            "type": "number"
-          },
-          {
-            "name": "pue",
-            "type": "unknown"
-          },
-          {
-            "name": "charger_availability",
-            "type": "number"
-          },
-          {
-            "name": "onsite_solar_ratio",
-            "type": "number"
-          },
-          {
-            "name": "estimated_ratio",
-            "type": "number"
-          },
-          {
-            "name": "site_count",
-            "type": "number"
-          },
-          {
-            "name": "period_start",
-            "type": "date"
-          },
-          {
-            "name": "period_end",
-            "type": "date"
-          }
-        ],
-        "rows": [
-          {
-            "carbon_tonnes": 32.660209849999994,
-            "charger_availability": 1,
-            "cost_twd": 252506.09786100007,
-            "estimated_ratio": 0.002976190476190476,
-            "import_kwh": 68903.39629674994,
-            "load_kwh": 67638.48523299993,
-            "onsite_solar_ratio": 0,
-            "period_end": "2026-09-23",
-            "period_start": "2026-09-17",
-            "pue": null,
-            "savings_twd": 50849.424777,
-            "site_count": 1,
-            "solar_kwh": 0,
-            "storage_savings_twd": 50849.424777
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",null]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "kpis",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "load_kwh",
-            "type": "number"
-          },
-          {
-            "name": "import_kwh",
-            "type": "number"
-          },
-          {
-            "name": "solar_kwh",
-            "type": "number"
-          },
-          {
-            "name": "cost_twd",
-            "type": "number"
-          },
-          {
-            "name": "savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "storage_savings_twd",
-            "type": "number"
-          },
-          {
-            "name": "carbon_tonnes",
-            "type": "number"
-          },
-          {
-            "name": "pue",
-            "type": "unknown"
-          },
-          {
-            "name": "charger_availability",
-            "type": "number"
-          },
-          {
-            "name": "onsite_solar_ratio",
-            "type": "number"
-          },
-          {
-            "name": "estimated_ratio",
-            "type": "number"
-          },
-          {
-            "name": "site_count",
-            "type": "number"
-          },
-          {
-            "name": "period_start",
-            "type": "date"
-          },
-          {
-            "name": "period_end",
-            "type": "date"
-          }
-        ],
-        "rows": [
-          {
-            "carbon_tonnes": 32.420283719000025,
-            "charger_availability": 1,
-            "cost_twd": 250096.27732199995,
-            "estimated_ratio": 0.002976190476190476,
-            "import_kwh": 68397.22303499997,
-            "load_kwh": 67132.31197099999,
-            "onsite_solar_ratio": 0,
-            "period_end": "2026-09-30",
-            "period_start": "2026-09-24",
-            "pue": null,
-            "savings_twd": 50849.424775,
-            "site_count": 1,
-            "solar_kwh": 0,
-            "storage_savings_twd": 50849.424775
           }
         ],
         "truncated": false
@@ -1156,7 +604,7 @@
           },
           {
             "name": "charger_availability",
-            "type": "number"
+            "type": "unknown"
           },
           {
             "name": "onsite_solar_ratio",
@@ -1181,20 +629,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 154.15770274599984,
-            "charger_availability": 1,
-            "cost_twd": 1180275.1017490039,
-            "estimated_ratio": 0.0018601190476190475,
-            "import_kwh": 325227.2210130009,
-            "load_kwh": 377183.6832230006,
-            "onsite_solar_ratio": 0.1461323549106508,
+            "carbon_tonnes": 59.77169363099994,
+            "charger_availability": null,
+            "cost_twd": 450331.76596600044,
+            "estimated_ratio": 0.001488095238095238,
+            "import_kwh": 126100.61946400024,
+            "load_kwh": 180426.86363949993,
+            "onsite_solar_ratio": 0.30548008468198834,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
-            "pue": 1.267989880441015,
-            "savings_twd": 399837.4111749999,
-            "site_count": 4,
+            "pue": 1.2625749556016934,
+            "savings_twd": 304490.50190699997,
+            "site_count": 2,
             "solar_kwh": 71843.93357624995,
-            "storage_savings_twd": 127123.56193700003
+            "storage_savings_twd": 31780.890485
           }
         ],
         "truncated": false
@@ -1248,7 +696,7 @@
           },
           {
             "name": "charger_availability",
-            "type": "number"
+            "type": "unknown"
           },
           {
             "name": "onsite_solar_ratio",
@@ -1273,20 +721,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 154.53453920499985,
-            "charger_availability": 1,
-            "cost_twd": 1185327.546711996,
-            "estimated_ratio": 0.0018601190476190475,
-            "import_kwh": 326022.23460825026,
-            "load_kwh": 378186.46012050024,
-            "onsite_solar_ratio": 0.14629424637088145,
+            "carbon_tonnes": 56.84383019600002,
+            "charger_availability": null,
+            "cost_twd": 425493.88592799957,
+            "estimated_ratio": 0.001488095238095238,
+            "import_kwh": 119923.69238474983,
+            "load_kwh": 174444.24825824978,
+            "onsite_solar_ratio": 0.3170705015327683,
             "period_end": "2026-09-23",
             "period_start": "2026-09-17",
-            "pue": 1.2663815432576533,
-            "savings_twd": 400158.9081079998,
-            "site_count": 4,
+            "pue": 1.266389460204798,
+            "savings_twd": 304782.40529100003,
+            "site_count": 2,
             "solar_kwh": 71888.39982699996,
-            "storage_savings_twd": 127123.56194200001
+            "storage_savings_twd": 31780.890485000007
           }
         ],
         "truncated": false
@@ -1340,7 +788,7 @@
           },
           {
             "name": "charger_availability",
-            "type": "number"
+            "type": "unknown"
           },
           {
             "name": "onsite_solar_ratio",
@@ -1365,20 +813,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 154.15770274599984,
-            "charger_availability": 1,
-            "cost_twd": 1180275.1017490039,
-            "estimated_ratio": 0.0018601190476190475,
-            "import_kwh": 325227.2210130009,
-            "load_kwh": 377183.6832230006,
-            "onsite_solar_ratio": 0.1461323549106508,
+            "carbon_tonnes": 59.77169363099994,
+            "charger_availability": null,
+            "cost_twd": 450331.76596600044,
+            "estimated_ratio": 0.001488095238095238,
+            "import_kwh": 126100.61946400024,
+            "load_kwh": 180426.86363949993,
+            "onsite_solar_ratio": 0.30548008468198834,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
-            "pue": 1.267989880441015,
-            "savings_twd": 399837.4111749999,
-            "site_count": 4,
+            "pue": 1.2625749556016934,
+            "savings_twd": 304490.50190699997,
+            "site_count": 2,
             "solar_kwh": 71843.93357624995,
-            "storage_savings_twd": 127123.56193700003
+            "storage_savings_twd": 31780.890485
           }
         ],
         "truncated": false

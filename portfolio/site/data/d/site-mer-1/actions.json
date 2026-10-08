@@ -1,0 +1,151 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "維運團隊：覆核散熱風扇與直流串列",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 7,
+            "priority": "排程追蹤",
+            "site_id": "MER-1",
+            "title": "逆變器高溫降額"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          },
+          {
+            "name": "priority",
+            "type": "unknown"
+          },
+          {
+            "name": "event_hours",
+            "type": "unknown"
+          },
+          {
+            "name": "checkpoint",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "維運團隊：覆核散熱風扇與直流串列",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 7,
+            "priority": "排程追蹤",
+            "site_id": "MER-1",
+            "title": "逆變器高溫降額"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

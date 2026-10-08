@@ -51,13 +51,13 @@
         ],
         "rows": [
           {
-            "discharge_kwh": 8538.149682,
-            "load_kwh": 52335.027642000015,
-            "peak_kw": 550.349527,
+            "discharge_kwh": 8538.149682500001,
+            "load_kwh": 78345.48726524989,
+            "peak_kw": 844.311265,
             "pue": null,
-            "savings_twd": 175662.69985100007,
+            "savings_twd": 38137.06858,
             "site_id": "MER-2",
-            "site_name": "台中・物流中心 B",
+            "site_name": "高雄・冷鏈補能站",
             "tenant": "Meridian Logistics"
           }
         ],
@@ -112,13 +112,13 @@
         ],
         "rows": [
           {
-            "discharge_kwh": 8538.149683749998,
-            "load_kwh": 52963.336852,
-            "peak_kw": 552.586867,
+            "discharge_kwh": 8538.149682500001,
+            "load_kwh": 76796.28433249996,
+            "peak_kw": 797.317845,
             "pue": null,
-            "savings_twd": 182093.63675600005,
+            "savings_twd": 38137.068583,
             "site_id": "MER-2",
-            "site_name": "台中・物流中心 B",
+            "site_name": "高雄・冷鏈補能站",
             "tenant": "Meridian Logistics"
           }
         ],
@@ -173,13 +173,13 @@
         ],
         "rows": [
           {
-            "discharge_kwh": 8538.149682,
-            "load_kwh": 52335.027642000015,
-            "peak_kw": 550.349527,
+            "discharge_kwh": 8538.149682500001,
+            "load_kwh": 78345.48726524989,
+            "peak_kw": 844.311265,
             "pue": null,
-            "savings_twd": 175662.69985100007,
+            "savings_twd": 38137.06858,
             "site_id": "MER-2",
-            "site_name": "台中・物流中心 B",
+            "site_name": "高雄・冷鏈補能站",
             "tenant": "Meridian Logistics"
           }
         ],

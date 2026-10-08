@@ -1,206 +1,253 @@
 {
   "schema_version": 1,
-  "run_id": "helios-2026-q3-v1",
+  "run_id": "helios-2026-q3-v2",
   "company": "ATLED Engergy",
   "synthetic": true,
   "scope": "customer",
   "tenant": "Helios Cloud",
   "template": {
-    "commit": "dd5db64ffc27d8ecb19ffafe3f83dc3d44f9854b",
-    "sha256": "a19ea8acb0a29133ed9b057ca25559c259ac95e955be0077ee55e3deaad13d2c",
+    "commit": "6da9e1e2654325d63aebc8c8898cdfd3e73ef671",
+    "sha256": "d509b9777c5896ae44f71b698e4f6bb63ddba03febf81cbf29296a50a64f71a5",
     "files": {
       "open-dashboard.config.ts": "9687b0411ea9a5b28027ce060999cced94bb10ddd2d28eb1ba4d1f9fb901315e",
-      "dashboards/energy/index.tsx": "7e93888fb2b7970b655763af958a960619d82d5bbc49f961a4d50847534b0b47",
-      "dashboards/energy/queries.sql": "4958b106da52010950b9a4c765de026451b7b0cb04fcc06c0470af843b7b2cdc",
-      "dashboards/helios/index.tsx": "53a19e02d942dbf4a1e08e9bed8b501b78616a1398dfa187a4ebb51ed09bab35",
-      "dashboards/helios/queries.sql": "90292915f579203637dc546b3cb0070f5afe5da714bf9274a8c6a0523a78cc5a",
-      "dashboards/site-hel-1/index.tsx": "cef37196e070e9000775edfbbc155de7d119d276eeeafd6d9bddd8a1e48d95ac",
-      "dashboards/site-hel-1/queries.sql": "fcbaa884ce2b6fa3789a4ee0fee02b9a130519cc8c6c75e461b51eb8980347be",
-      "dashboards/site-hel-2/index.tsx": "230afb5a4e9e5449849e49b5910c5d596de4172fa23ed0ec3145ac64ac503e7d",
-      "dashboards/site-hel-2/queries.sql": "13931b50508af37a72d4d0fc54e72ddda6965d8b77c4a1338c6744b188a23f0b",
-      "dashboards/site-hel-3/index.tsx": "13c71887a34d54734f59dd4059de980e6927b0fd961551568c5f1c3ff2828d21",
-      "dashboards/site-hel-3/queries.sql": "0178e11b9cd91b65473b726511f4f734fabcb882815e7631c50a7d90d4c2620d",
-      "dashboards/site-hel-4/index.tsx": "2f73d141359eb488a2562dc177da35fcd8e231fb68563af9382c4e377da0cd68",
-      "dashboards/site-hel-4/queries.sql": "6e70a7f1a1f2d1e550b0305624f5a20b28b16881158a417935a1928c04ec84c9",
-      "dashboards/weekly/index.tsx": "99ce712fea3c1ef4ee4da3deeda5eced3cf802492770a66979ee3c2e40a86d2c",
-      "dashboards/weekly/queries.sql": "4958b106da52010950b9a4c765de026451b7b0cb04fcc06c0470af843b7b2cdc",
+      "dashboards/energy/index.tsx": "9c0e9d13f5022aec47c29bd72b337999669aecec38f8440312cf1dbb8e48f646",
+      "dashboards/energy/queries.sql": "9e2cd3d568691c24bb65379b83db951e952db0067e4c2f8ee65afa16add2f394",
+      "dashboards/helios/index.tsx": "7ca2beafdc24c8d94d4e2e67ff746d608362ac95eb27137ed883226d4096dc67",
+      "dashboards/helios/queries.sql": "b7159c3f2fd3ce23b5d7b3421d18fd5199d3dfdd3511905c3b58abfbb6feba0e",
+      "dashboards/site-hel-1/index.tsx": "c2eb3c6d6b5dcb7c7ee18f43d72e6a7fa38b682ed6ed05f89584e77888d6233f",
+      "dashboards/site-hel-1/queries.sql": "2cd5e0f2279776f2c1d85ebd77d713808030f113922f91fa2000250c396ad507",
+      "dashboards/site-hel-2/index.tsx": "66ebf0dbc336a18beb3801f71445cff12198f8cab3b337a7acfd14fddbe50b17",
+      "dashboards/site-hel-2/queries.sql": "b79b250a9574e4c982e417f5e022227d51c8060bf25e54b3b8f610efc7cb490e",
+      "dashboards/weekly/index.tsx": "a6bd3cf7924f6a261449338fce9e7779ac2242362f944b832792cc18285b3198",
+      "dashboards/weekly/queries.sql": "30978f8a4ce2692015479ebb5afb4cde9e0072aecdcfcf2a9e2fb08a57b39172",
+      "charts/integration-map/index.tsx": "9e522f5933939fb591c277e7b05a8ccf75d12d9b16edba5f3e3cd47ee9a53151",
       "charts/prose/index.tsx": "b9abb5619a140cb38b3db5b82020609f0620e72ce81bafd4833c8d391ae8c086",
       "charts/prose/sample.sql": "ad6089134f5caad2461fe4014ba9cad3b00d38abf4ee6bf0bf0a37782c3192a8",
-      "themes/atled.json": "41d5d795a23940068d8c5a1303923b2722c96364c474035882f1d8e2d4d0b2d9",
-      "themes/imitator.json": "8a8951d40f1ea30cb4abd3a5ee5bc3342ab92eae576b851f947d56d23a8b5556",
-      "theme-overrides/imitator.css": "5aedcff3cd9543088a5abe9b541ecc962ef381e14fc553e5e143470555267a19",
-      "databases/energy/database.md": "0b4fd38f34ce5f9a051ccc44566166b4eecd2998dcf2f8e2a5f14f9c2c517d37",
+      "themes/atled.json": "b7296145eaac910a1bdfcd7ee94728052cf2ad5837c3eeb4452c2e0a888fa6e2",
+      "themes/imitator.json": "323541893b943d0e3d60be4f8f1136db9e0ced272f739db45fb073cb6c0dcd83",
+      "theme-overrides/energy-loop.css": "a3457ac5b0613423f92ac6e486815c69360367e19afd444eee80146764a76fd2",
+      "theme-overrides/imitator.css": "c6e802d582f7358703821cd87e9833fd347047d02aa884688299da11c9cb5da7",
+      "databases/energy/database.md": "6874f208371fd5172b71a0d54f00ce16bf6d5070958e3f43461323e8ec0ce43b",
       "snapreport.yaml": "c82d013adec8d7bc6c712e9c6f8ebba159f4245be8a690ec329e9090637f90c7"
     }
   },
   "open_dashboard": "0.7.0",
-  "built_at": "2026-10-08T01:15:00.254Z",
+  "built_at": "2026-10-08T01:53:06.479Z",
   "inputs": {
     "assets.parquet": {
-      "sha256": "9549011a01d2b7b510389b978d14c83723e4c076b959f5e8535c8f86f2d50131",
-      "rows": 18
+      "sha256": "66528880817e2bf71b7610dd900a2fdc48ed3054c7eea767f897421bfc45fd7d",
+      "rows": 8
     },
     "events.parquet": {
-      "sha256": "2978512e70797609f8904bdd9b11e787be9421ba56fcb8b449e41ba84a3bc18a",
+      "sha256": "1eecd78c4ad5fb68d0e8a5b3602f82d2edae40e46bad2f3ccdb76174cc996993",
       "rows": 1
     },
     "meters.parquet": {
-      "sha256": "ab3b37551fdf373dd970c58b9c81f384c210e6a3cad443202211680a8aa6ceaa",
-      "rows": 35328
+      "sha256": "9571e262c66cc3b3782e800a724f5328da46fb59202f2eb8c200059be8268b85",
+      "rows": 17664
     },
     "sites.parquet": {
-      "sha256": "6fbb2964d637aeeadbbd51db24acb1c9b8211c3f78032516c6b7abceb3b4ae1c",
-      "rows": 4
+      "sha256": "1d50d5c11f536c8d5555b9fb810bb02804313e1b2f14ec3fc841cceb9ff1d1ca",
+      "rows": 2
     },
     "telemetry.parquet": {
-      "sha256": "28a5c49797cb72e4a734f1f36d7a50df0f6f0f901f66d1813a8540956397a068",
-      "rows": 158976
+      "sha256": "85208401ac930a814c9aad21b4819162f55b96f189bc52720555154319aa8ca3",
+      "rows": 70656
     }
   },
   "catalog": [
     {
       "id": "helios",
-      "title": "ATLED Engergy | Helios Cloud · 算力能效與碳管理",
+      "title": "Helios Cloud / 營運控制台",
       "tenant": "Helios Cloud",
       "site": null,
       "layout": "compute",
       "domains": [
         "grid",
         "datacenter",
-        "solar",
         "storage",
         "building",
-        "charging"
+        "solar"
       ],
       "kpis": [
         "能源加權 PUE",
-        "IT 負載",
-        "電網排放",
-        "冷卻耗能"
+        "冷卻耗能",
+        "IT 負载",
+        "電網排放"
       ]
     },
     {
       "id": "site-hel-1",
-      "title": "ATLED Engergy | HEL-1 新竹・算力中心 A · 算力能效與碳管理",
+      "title": "新竹・AI 算力中心 / 營運控制台",
       "tenant": "Helios Cloud",
       "site": "HEL-1",
       "layout": "compute",
       "domains": [
         "grid",
         "datacenter",
-        "solar",
         "storage"
       ],
       "kpis": [
         "能源加權 PUE",
-        "IT 負載",
-        "電網排放",
-        "冷卻耗能"
+        "冷卻耗能",
+        "IT 負载",
+        "電網排放"
       ]
     },
     {
       "id": "site-hel-2",
-      "title": "ATLED Engergy | HEL-2 台中・算力中心 B · 算力能效與碳管理",
+      "title": "台中・綠能邊緣機房 / 營運控制台",
       "tenant": "Helios Cloud",
       "site": "HEL-2",
-      "layout": "compute",
-      "domains": [
-        "grid",
-        "datacenter",
-        "storage"
-      ],
-      "kpis": [
-        "能源加權 PUE",
-        "IT 負載",
-        "電網排放",
-        "冷卻耗能"
-      ]
-    },
-    {
-      "id": "site-hel-3",
-      "title": "ATLED Engergy | HEL-3 高雄・算力中心 C · 算力能效與碳管理",
-      "tenant": "Helios Cloud",
-      "site": "HEL-3",
       "layout": "compute",
       "domains": [
         "building",
         "grid",
         "datacenter",
-        "storage",
         "solar",
-        "charging"
+        "storage"
       ],
       "kpis": [
         "能源加權 PUE",
-        "IT 負載",
-        "電網排放",
-        "冷卻耗能"
-      ]
-    },
-    {
-      "id": "site-hel-4",
-      "title": "ATLED Engergy | HEL-4 桃園・算力中心 D · 算力能效與碳管理",
-      "tenant": "Helios Cloud",
-      "site": "HEL-4",
-      "layout": "compute",
-      "domains": [
-        "grid",
-        "datacenter",
-        "solar",
-        "storage",
-        "charging"
-      ],
-      "kpis": [
-        "能源加權 PUE",
-        "IT 負載",
-        "電網排放",
-        "冷卻耗能"
+        "冷卻耗能",
+        "IT 負载",
+        "電網排放"
       ]
     }
   ],
   "queries": {
-    "d/energy/comparison.json": {
-      "runs": 15,
+    "d/energy/actions.json": {
+      "runs": 9,
       "rows_max": 1,
       "trimmed": false
     },
-    "d/energy/daily.json": {
-      "runs": 15,
+    "d/energy/asset_states.json": {
+      "runs": 9,
+      "rows_max": 840,
+      "trimmed": false
+    },
+    "d/energy/building_heat.json": {
+      "runs": 9,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/energy/capacity.json": {
+      "runs": 9,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/energy/charging_heat.json": {
+      "runs": 9,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/energy/comparison.json": {
+      "runs": 9,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/connectors.json": {
+      "runs": 3,
+      "rows_max": 5,
+      "trimmed": false
+    },
+    "d/energy/cooling_daily.json": {
+      "runs": 9,
       "rows_max": 7,
       "trimmed": false
     },
-    "d/energy/events.json": {
-      "runs": 15,
+    "d/energy/cost_bridge.json": {
+      "runs": 9,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/energy/daily.json": {
+      "runs": 9,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/energy/event_summary.json": {
+      "runs": 9,
       "rows_max": 1,
       "trimmed": false
     },
+    "d/energy/events.json": {
+      "runs": 9,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/flow.json": {
+      "runs": 9,
+      "rows_max": 7,
+      "trimmed": false
+    },
     "d/energy/kpis.json": {
-      "runs": 15,
+      "runs": 9,
       "rows_max": 1,
       "trimmed": false
     },
     "d/energy/profile.json": {
-      "runs": 15,
+      "runs": 9,
       "rows_max": 168,
       "trimmed": false
     },
+    "d/energy/pue_sites.json": {
+      "runs": 9,
+      "rows_max": 2,
+      "trimmed": false
+    },
     "d/energy/ranking.json": {
-      "runs": 15,
-      "rows_max": 4,
+      "runs": 9,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/energy/report_story.json": {
+      "runs": 9,
+      "rows_max": 1,
       "trimmed": false
     },
     "d/energy/sectors.json": {
-      "runs": 15,
+      "runs": 9,
       "rows_max": 3,
       "trimmed": false
     },
     "d/energy/sites.json": {
       "runs": 1,
-      "rows_max": 4,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/energy/soc_profile.json": {
+      "runs": 9,
+      "rows_max": 336,
+      "trimmed": false
+    },
+    "d/energy/solution.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/specialized.json": {
+      "runs": 9,
+      "rows_max": 1,
       "trimmed": false
     },
     "d/energy/storage.json": {
-      "runs": 15,
+      "runs": 9,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/thermal.json": {
+      "runs": 9,
+      "rows_max": 336,
+      "trimmed": false
+    },
+    "d/energy/week_sites.json": {
+      "runs": 9,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/energy/weekly_stats.json": {
+      "runs": 9,
       "rows_max": 1,
       "trimmed": false
     },
@@ -209,58 +256,138 @@
       "rows_max": 2,
       "trimmed": false
     },
-    "d/helios/comparison.json": {
-      "runs": 15,
+    "d/helios/actions.json": {
+      "runs": 9,
       "rows_max": 1,
       "trimmed": false
     },
-    "d/helios/daily.json": {
-      "runs": 15,
+    "d/helios/asset_states.json": {
+      "runs": 9,
+      "rows_max": 840,
+      "trimmed": false
+    },
+    "d/helios/building_heat.json": {
+      "runs": 9,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/helios/capacity.json": {
+      "runs": 9,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/helios/charging_heat.json": {
+      "runs": 9,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/helios/comparison.json": {
+      "runs": 9,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/connectors.json": {
+      "runs": 3,
+      "rows_max": 5,
+      "trimmed": false
+    },
+    "d/helios/cooling_daily.json": {
+      "runs": 9,
       "rows_max": 7,
       "trimmed": false
     },
-    "d/helios/events.json": {
-      "runs": 15,
+    "d/helios/cost_bridge.json": {
+      "runs": 9,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/helios/daily.json": {
+      "runs": 9,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/helios/event_summary.json": {
+      "runs": 9,
       "rows_max": 1,
       "trimmed": false
     },
+    "d/helios/events.json": {
+      "runs": 9,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/flow.json": {
+      "runs": 9,
+      "rows_max": 7,
+      "trimmed": false
+    },
     "d/helios/kpis.json": {
-      "runs": 15,
+      "runs": 9,
       "rows_max": 1,
       "trimmed": false
     },
     "d/helios/profile.json": {
-      "runs": 15,
+      "runs": 9,
       "rows_max": 168,
       "trimmed": false
     },
+    "d/helios/pue_sites.json": {
+      "runs": 9,
+      "rows_max": 2,
+      "trimmed": false
+    },
     "d/helios/ranking.json": {
-      "runs": 15,
-      "rows_max": 4,
+      "runs": 9,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/helios/report_story.json": {
+      "runs": 9,
+      "rows_max": 1,
       "trimmed": false
     },
     "d/helios/sectors.json": {
-      "runs": 15,
+      "runs": 9,
       "rows_max": 3,
       "trimmed": false
     },
     "d/helios/sites.json": {
       "runs": 1,
-      "rows_max": 4,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/helios/soc_profile.json": {
+      "runs": 9,
+      "rows_max": 336,
       "trimmed": false
     },
     "d/helios/solution.json": {
-      "runs": 5,
+      "runs": 3,
       "rows_max": 1,
       "trimmed": false
     },
     "d/helios/specialized.json": {
-      "runs": 15,
+      "runs": 9,
       "rows_max": 1,
       "trimmed": false
     },
     "d/helios/storage.json": {
-      "runs": 15,
+      "runs": 9,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/thermal.json": {
+      "runs": 9,
+      "rows_max": 336,
+      "trimmed": false
+    },
+    "d/helios/week_sites.json": {
+      "runs": 9,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/helios/weekly_stats.json": {
+      "runs": 9,
       "rows_max": 1,
       "trimmed": false
     },
@@ -269,9 +396,49 @@
       "rows_max": 2,
       "trimmed": false
     },
+    "d/site-hel-1/actions.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/asset_states.json": {
+      "runs": 3,
+      "rows_max": 336,
+      "trimmed": false
+    },
+    "d/site-hel-1/building_heat.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-hel-1/capacity.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/charging_heat.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
     "d/site-hel-1/comparison.json": {
       "runs": 3,
       "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/connectors.json": {
+      "runs": 1,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-hel-1/cooling_daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-hel-1/cost_bridge.json": {
+      "runs": 3,
+      "rows_max": 4,
       "trimmed": false
     },
     "d/site-hel-1/daily.json": {
@@ -279,9 +446,19 @@
       "rows_max": 7,
       "trimmed": false
     },
+    "d/site-hel-1/event_summary.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/site-hel-1/events.json": {
       "runs": 3,
-      "rows_max": 0,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/flow.json": {
+      "runs": 3,
+      "rows_max": 4,
       "trimmed": false
     },
     "d/site-hel-1/kpis.json": {
@@ -294,7 +471,17 @@
       "rows_max": 168,
       "trimmed": false
     },
+    "d/site-hel-1/pue_sites.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/site-hel-1/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/report_story.json": {
       "runs": 3,
       "rows_max": 1,
       "trimmed": false
@@ -306,7 +493,12 @@
     },
     "d/site-hel-1/sites.json": {
       "runs": 1,
-      "rows_max": 4,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/soc_profile.json": {
+      "runs": 3,
+      "rows_max": 168,
       "trimmed": false
     },
     "d/site-hel-1/solution.json": {
@@ -324,9 +516,49 @@
       "rows_max": 1,
       "trimmed": false
     },
+    "d/site-hel-1/thermal.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-hel-1/week_sites.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/weekly_stats.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/site-hel-1/windows.json": {
       "runs": 1,
       "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-hel-2/actions.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-hel-2/asset_states.json": {
+      "runs": 3,
+      "rows_max": 504,
+      "trimmed": false
+    },
+    "d/site-hel-2/building_heat.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-hel-2/capacity.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/charging_heat.json": {
+      "runs": 3,
+      "rows_max": 168,
       "trimmed": false
     },
     "d/site-hel-2/comparison.json": {
@@ -334,14 +566,39 @@
       "rows_max": 1,
       "trimmed": false
     },
+    "d/site-hel-2/connectors.json": {
+      "runs": 1,
+      "rows_max": 5,
+      "trimmed": false
+    },
+    "d/site-hel-2/cooling_daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-hel-2/cost_bridge.json": {
+      "runs": 3,
+      "rows_max": 4,
+      "trimmed": false
+    },
     "d/site-hel-2/daily.json": {
       "runs": 3,
       "rows_max": 7,
       "trimmed": false
     },
+    "d/site-hel-2/event_summary.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/site-hel-2/events.json": {
       "runs": 3,
       "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-hel-2/flow.json": {
+      "runs": 3,
+      "rows_max": 7,
       "trimmed": false
     },
     "d/site-hel-2/kpis.json": {
@@ -354,7 +611,17 @@
       "rows_max": 168,
       "trimmed": false
     },
+    "d/site-hel-2/pue_sites.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/site-hel-2/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/report_story.json": {
       "runs": 3,
       "rows_max": 1,
       "trimmed": false
@@ -366,7 +633,12 @@
     },
     "d/site-hel-2/sites.json": {
       "runs": 1,
-      "rows_max": 4,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/soc_profile.json": {
+      "runs": 3,
+      "rows_max": 168,
       "trimmed": false
     },
     "d/site-hel-2/solution.json": {
@@ -384,173 +656,158 @@
       "rows_max": 1,
       "trimmed": false
     },
+    "d/site-hel-2/thermal.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-hel-2/week_sites.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/weekly_stats.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/site-hel-2/windows.json": {
       "runs": 1,
       "rows_max": 2,
       "trimmed": false
     },
-    "d/site-hel-3/comparison.json": {
-      "runs": 3,
+    "d/weekly/actions.json": {
+      "runs": 1,
       "rows_max": 1,
       "trimmed": false
     },
-    "d/site-hel-3/daily.json": {
-      "runs": 3,
-      "rows_max": 7,
+    "d/weekly/asset_states.json": {
+      "runs": 1,
+      "rows_max": 840,
       "trimmed": false
     },
-    "d/site-hel-3/events.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-3/kpis.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-3/profile.json": {
-      "runs": 3,
+    "d/weekly/building_heat.json": {
+      "runs": 1,
       "rows_max": 168,
       "trimmed": false
     },
-    "d/site-hel-3/ranking.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-3/sectors.json": {
-      "runs": 3,
-      "rows_max": 3,
-      "trimmed": false
-    },
-    "d/site-hel-3/sites.json": {
-      "runs": 1,
-      "rows_max": 4,
-      "trimmed": false
-    },
-    "d/site-hel-3/solution.json": {
-      "runs": 1,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-3/specialized.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-3/storage.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-3/windows.json": {
+    "d/weekly/capacity.json": {
       "runs": 1,
       "rows_max": 2,
       "trimmed": false
     },
-    "d/site-hel-4/comparison.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-4/daily.json": {
-      "runs": 3,
-      "rows_max": 7,
-      "trimmed": false
-    },
-    "d/site-hel-4/events.json": {
-      "runs": 3,
-      "rows_max": 0,
-      "trimmed": false
-    },
-    "d/site-hel-4/kpis.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-4/profile.json": {
-      "runs": 3,
+    "d/weekly/charging_heat.json": {
+      "runs": 1,
       "rows_max": 168,
-      "trimmed": false
-    },
-    "d/site-hel-4/ranking.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-4/sectors.json": {
-      "runs": 3,
-      "rows_max": 3,
-      "trimmed": false
-    },
-    "d/site-hel-4/sites.json": {
-      "runs": 1,
-      "rows_max": 4,
-      "trimmed": false
-    },
-    "d/site-hel-4/solution.json": {
-      "runs": 1,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-4/specialized.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-4/storage.json": {
-      "runs": 3,
-      "rows_max": 1,
-      "trimmed": false
-    },
-    "d/site-hel-4/windows.json": {
-      "runs": 1,
-      "rows_max": 2,
       "trimmed": false
     },
     "d/weekly/comparison.json": {
-      "runs": 15,
+      "runs": 1,
       "rows_max": 1,
       "trimmed": false
     },
-    "d/weekly/daily.json": {
-      "runs": 15,
+    "d/weekly/connectors.json": {
+      "runs": 1,
+      "rows_max": 5,
+      "trimmed": false
+    },
+    "d/weekly/cooling_daily.json": {
+      "runs": 1,
       "rows_max": 7,
       "trimmed": false
     },
-    "d/weekly/events.json": {
-      "runs": 15,
+    "d/weekly/cost_bridge.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/weekly/daily.json": {
+      "runs": 1,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/weekly/event_summary.json": {
+      "runs": 1,
       "rows_max": 1,
       "trimmed": false
     },
+    "d/weekly/events.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/flow.json": {
+      "runs": 1,
+      "rows_max": 7,
+      "trimmed": false
+    },
     "d/weekly/kpis.json": {
-      "runs": 15,
+      "runs": 1,
       "rows_max": 1,
       "trimmed": false
     },
     "d/weekly/profile.json": {
-      "runs": 15,
+      "runs": 1,
       "rows_max": 168,
       "trimmed": false
     },
+    "d/weekly/pue_sites.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
     "d/weekly/ranking.json": {
-      "runs": 15,
-      "rows_max": 4,
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/weekly/report_story.json": {
+      "runs": 1,
+      "rows_max": 1,
       "trimmed": false
     },
     "d/weekly/sectors.json": {
-      "runs": 15,
+      "runs": 1,
       "rows_max": 3,
       "trimmed": false
     },
     "d/weekly/sites.json": {
       "runs": 1,
-      "rows_max": 4,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/weekly/soc_profile.json": {
+      "runs": 1,
+      "rows_max": 336,
+      "trimmed": false
+    },
+    "d/weekly/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/specialized.json": {
+      "runs": 1,
+      "rows_max": 1,
       "trimmed": false
     },
     "d/weekly/storage.json": {
-      "runs": 15,
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/thermal.json": {
+      "runs": 1,
+      "rows_max": 336,
+      "trimmed": false
+    },
+    "d/weekly/week_sites.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/weekly/weekly_stats.json": {
+      "runs": 1,
       "rows_max": 1,
       "trimmed": false
     },
@@ -561,44 +818,44 @@
     }
   },
   "warnings": [],
-  "data_hash": "2087e463e2ff1490ffc2970d31e113631586a110cdd14f6945e7f5512c7f734e",
+  "data_hash": "92985d6a29e52ea834b95af54bee725d0b683a63546845f7c4bfb6bbc73db297",
   "check": "ok",
   "quality": "ok",
   "artifacts": {
     "build.log": {
-      "sha256": "333a340f9a1b3505789272dff9744177ead12e3c36c5b8e603d80a68b196d083",
-      "bytes": 396
+      "sha256": "563e1128cc3d7d7243eaa9e40dd71f5d488e56eea91555d1f2cd6ac8d0c16eef",
+      "bytes": 327
     },
     "check.json": {
-      "sha256": "3748272ef8207c8363188557f559dcf0d86cd9e72a86bf7442c62a791b55f44a",
-      "bytes": 27382
+      "sha256": "823f4772f74e40c68c60e5218ac052b4e0e164894c205d0ec83255f78f047113",
+      "bytes": 54472
     },
     "dashboard.html": {
-      "sha256": "c4b5af5dbf753b2796b6bad0e26b800b4447db64e23a7a083c8b548ea7997d5e",
-      "bytes": 852447
+      "sha256": "0b78f571cc7ded6b48c7942497a9c3096b129fce6316230a0f8dd2771c47bddf",
+      "bytes": 1976657
     },
-    "demos/react/assets/index-CDr86rvp.css": {
-      "sha256": "e3c14760eeb346fed6fe94f29b481469b7da8d490a463c8082be0eef50860bac",
+    "demos/react/assets/index-BnyFbHiB.css": {
+      "sha256": "7e0d75ed108b003d2b65d5d5ec7e10fd627dec8a22fb4c233aaaf72c52986e5b",
       "bytes": 364
     },
-    "demos/react/assets/index-DAbvWjJb.js": {
-      "sha256": "ae81b2fd1a8bc2eddc5da367f71aabd31ed871925f34bf16754e148654a8c482",
-      "bytes": 190639
+    "demos/react/assets/index-D_QIknrH.js": {
+      "sha256": "ad8803cc61278ad3be21cd1d86000e775c3c996fab6898cfde96d3031e975ef0",
+      "bytes": 190658
     },
     "demos/react/index.html": {
-      "sha256": "272ca7e50183106e3be102ac60da3dcb84a380838f13541670d821909bf7d71e",
+      "sha256": "37cf6ad1057d5d703a9cd3e035ff05d5c192b50fe39af007fa305d1193c611c8",
       "bytes": 345
     },
-    "demos/vue/assets/index-CDr86rvp.css": {
-      "sha256": "e3c14760eeb346fed6fe94f29b481469b7da8d490a463c8082be0eef50860bac",
+    "demos/vue/assets/index-BnyFbHiB.css": {
+      "sha256": "7e0d75ed108b003d2b65d5d5ec7e10fd627dec8a22fb4c233aaaf72c52986e5b",
       "bytes": 364
     },
-    "demos/vue/assets/index-DMU5jSmz.js": {
+    "demos/vue/assets/index-D5D5EpvR.js": {
       "sha256": "e5240ec6adce2bc9426ec2dad17226df875a46a2dd24dd5de49d07c2ac6175dc",
       "bytes": 58473
     },
     "demos/vue/index.html": {
-      "sha256": "63ca260523395cb72d7ece2b43252e4c0649be9ae6889e810e74a8c7b52d21c1",
+      "sha256": "1ea5a8cca4dc13e0f3c2d67ebafa9945cb57f89f87e9927850641c3c6e15d526",
       "bytes": 342
     },
     "lint.json": {
@@ -606,432 +863,672 @@
       "bytes": 35
     },
     "report-native.html": {
-      "sha256": "b6976f50d16b7c4c7d808fb48c8343259756066de66fcea8d69fa05822a15630",
-      "bytes": 840182
+      "sha256": "8ce8d927a65ca96f4290bdbc5352cf75d943db37906151f06df8b963a7ddad05",
+      "bytes": 727375
     },
     "report.html": {
-      "sha256": "b4df9d656c69194b3cc0684237a71d570a66c2c4afbd7f4bc5617e8d7b057b21",
-      "bytes": 840994
+      "sha256": "7268bacc4a731bcd97e3aa2096dafb9b1ac98ba1561ac2ade40be792a5be58a9",
+      "bytes": 729213
     },
-    "site/assets/energy-D8-vDou4.js": {
-      "sha256": "a895e4a3e8f3eb02fc8edebdde6e8a34f2be94489e59ca237d8ee4d1fe22af5b",
-      "bytes": 3706
+    "site/assets/define-chart-ChmCMZN3.js": {
+      "sha256": "14ffdf0736d5efba9c24e6c0bf90a66548bf3a860adf9afdfe3296ce4cdb34c4",
+      "bytes": 5122
     },
-    "site/assets/helios-C8l4E1P6.js": {
-      "sha256": "535522c2cf72fc59e31e314cc3729050fdf86a0e05e1a256013539315adc8482",
-      "bytes": 3383
+    "site/assets/energy-D5JPi7oH.js": {
+      "sha256": "2f1c3136f738915ced27448677c39e0e9f535d7fafd935a2336f7df0faece89b",
+      "bytes": 5864
     },
-    "site/assets/main-D8XJw516.js": {
-      "sha256": "1e57ec7fa07527a9bf59ea130e547bb6d5ec311f3b70b790cc83a676596a22af",
-      "bytes": 286706
+    "site/assets/helios-DZZ32SuY.js": {
+      "sha256": "4bee2d82eac489cdf72f7022894f6f002be873fa17b9d9d1cd0efdf61c976621",
+      "bytes": 3673
+    },
+    "site/assets/integration-map-DTz1u8e6.js": {
+      "sha256": "3b9199e8e23d33b9525a65e7896ffb79b12ac65541893154f610c1c67ee14c2a",
+      "bytes": 627
     },
     "site/assets/main-DFZNOANX.css": {
       "sha256": "c1353e6edab25c1da2e46a702b7a0b3603c1ebaaac2c7d240c0da96a25bd1f3b",
       "bytes": 69765
     },
-    "site/assets/panel--XCxS9Y-.js": {
-      "sha256": "044c6887daae69070a10df1f603a8863e6c7b243622a8f01a49a342a22031bb8",
-      "bytes": 120997
+    "site/assets/main-r9AEhxSd.js": {
+      "sha256": "05dc6d5f7247f5328e2fe8e31b50b7264150c4473a6610e2587d6f644644aa42",
+      "bytes": 286617
     },
-    "site/assets/prose-Di7-TFD6.js": {
-      "sha256": "33685e5709f625760a82cee9069bb16278cd9207e57ecad1bbd5313ab6e214ab",
-      "bytes": 5371
+    "site/assets/panel-Qps1XZLY.js": {
+      "sha256": "73a37ed2c4a68d88b038f83ec2de63e44ae0879456ab5b736db14c7a48a5e503",
+      "bytes": 121020
     },
-    "site/assets/rolldown-runtime-BpQH8Ho1.js": {
-      "sha256": "f42a7e25f42fd00b0935f3a7b06f4429238b50b6798b53c273e30d7095f9e94e",
-      "bytes": 227
+    "site/assets/prose-B1rYSCbW.js": {
+      "sha256": "f4196a94c9631339e8b38d9da8555bd73e7c4927405ecf6136fac71c08436e20",
+      "bytes": 540
     },
-    "site/assets/site-hel-1-CD8jO9vx.js": {
-      "sha256": "cd3443a2e8de3aff29505d7005338dedde0fc2dbcbdc2870d5844f524990255a",
-      "bytes": 3330
+    "site/assets/sankey-CXKmDuf-.js": {
+      "sha256": "d53fe2a75fbf7a6d982526539d9768c848179b2b6586b936f3e4590c74af4fd4",
+      "bytes": 10597
     },
-    "site/assets/site-hel-2-DvhgianD.js": {
-      "sha256": "7350954caf93f3fab2a0b7fc48e8933f2e4b488acbf1dfc3fe1569e90d583623",
-      "bytes": 3032
+    "site/assets/site-hel-1-C5IkxpAj.js": {
+      "sha256": "bc197a09f8de36d6418e85375d2902b4c794d93e3ee0dafa13ad3dbffc53ff3e",
+      "bytes": 3661
     },
-    "site/assets/site-hel-3-kQo2R4tx.js": {
-      "sha256": "5493a5a094a87dc03422f2d1d304a512618211e99618982ee34c2c3042516835",
-      "bytes": 3357
+    "site/assets/site-hel-2-Dy73TrXY.js": {
+      "sha256": "dcc4fd1b9ee4d80e45d66f2ed22221f838c2b138dac4c4b44b37b8b4a7aa8f44",
+      "bytes": 3652
     },
-    "site/assets/site-hel-4-C9ItftXm.js": {
-      "sha256": "3fdb235e88dc9a3d2dc3df022c6bc59207ee9c6be2ce6accd1bfce219e4bb07f",
-      "bytes": 3342
+    "site/assets/text-ClQT7lsY.js": {
+      "sha256": "9a6699bf29780ff7310968db86066360b6c97e44efdcc00577db3338e565714b",
+      "bytes": 8901
     },
-    "site/assets/weekly-BG082yeU.js": {
-      "sha256": "e6d634f96be84cd46c11028c395e4dbb981e5067da02053e748f2aa4adc3d7a3",
-      "bytes": 3107
+    "site/assets/timeseries-BIgUP13Q.js": {
+      "sha256": "c1db65d718981cbb6a5784354e8cd08507665922d863b5b82f8756b8b0044241",
+      "bytes": 1394
     },
-    "site/assets/xy-chart-BxOWP0CJ.js": {
-      "sha256": "7c8dec6d3119468076820d6a8868a9767bcc404bb786ccc6a4abf97dbcf9f849",
-      "bytes": 17058
+    "site/assets/weekly-CtixnE2e.js": {
+      "sha256": "5df578c9b342ee2db2d52cf789a1462c60e8af3c3210ec876734e9cd1aa66689",
+      "bytes": 10330
+    },
+    "site/assets/xy-chart-BKVYLbgJ.js": {
+      "sha256": "bfe7407d1f171d3187b022165883e162e2e96b5bf04ab3ef0ef8bd1562b1f74f",
+      "bytes": 15526
     },
     "site/d/energy/index.html": {
-      "sha256": "555e983797242b9d94d68c14441950a922bb452bbd759e71d52b94edcf2dbfdf",
-      "bytes": 1005
+      "sha256": "0e9db40b2ec91cab4254efe9316edbe6f1fe7057167faec404a1af9885532f1d",
+      "bytes": 4866
     },
     "site/d/helios/index.html": {
-      "sha256": "d14c7b8ebdd9d7510949d41775184eacb5f9ec7589f636c5bdabb5d353200a34",
-      "bytes": 1027
+      "sha256": "60759eb4062ca2b5c02a0365a8151b6bef8c0ae4d721a6bd89acc1d373d512ae",
+      "bytes": 4859
     },
     "site/d/site-hel-1/index.html": {
-      "sha256": "a96977fa93c9fc9e154cbbff89f374ba71505e453cac2620de660299d931e5e8",
-      "bytes": 1044
+      "sha256": "846c9f61d11ec96d37e96de716c106ce8fca1c7069739845d46d9269e9f4431d",
+      "bytes": 4871
     },
     "site/d/site-hel-2/index.html": {
-      "sha256": "6d11cb38f3c109ed967fd294eef6f4a4069ae511154f13a06caff6cac91c282d",
-      "bytes": 1044
-    },
-    "site/d/site-hel-3/index.html": {
-      "sha256": "eb77eac1b23f621ea112ea4e153ad51b7911a853e5c013ce15f1b2d11284b5be",
-      "bytes": 1044
-    },
-    "site/d/site-hel-4/index.html": {
-      "sha256": "8315b13848a4730cf9f12dded42a7c001d3ba41e87439ca5acfafdced74fe603",
-      "bytes": 1044
+      "sha256": "1956e05e751d59ee3e212373caf0ca2ca68915a6d4e4acf4419342998021369a",
+      "bytes": 4874
     },
     "site/d/weekly/index.html": {
-      "sha256": "f56eea3dcd32c94744749db6e2302dac7f35347d96190552ffa5f82436baff10",
-      "bytes": 1817
+      "sha256": "07c1255b58eb15b94d16e70ea3d631e45d1557b0f25f89bf77592d2d908b785a",
+      "bytes": 6697
+    },
+    "site/data/d/energy/actions.json": {
+      "sha256": "e31bd39531d93de4147e1fed823eb52be539e7c366af2199484ef2334aeef9eb",
+      "bytes": 9434
+    },
+    "site/data/d/energy/asset_states.json": {
+      "sha256": "d6afe6bf391584d311a3d7d9fc9296158967cc5fd1eb00badeb447f1e0c9407d",
+      "bytes": 958142
+    },
+    "site/data/d/energy/building_heat.json": {
+      "sha256": "4abff906f20417dd86112013a2fe92a6c69254a2fef076447e295dfe1b0a6317",
+      "bytes": 176852
+    },
+    "site/data/d/energy/capacity.json": {
+      "sha256": "59e60c1c5f495bf5b427accaa6fec9eb634d3559d912e84701073512cc05ddfc",
+      "bytes": 8342
+    },
+    "site/data/d/energy/charging_heat.json": {
+      "sha256": "5447ab12887f9ad5f4467c093a7a276e6e615e9f95f3d00167319dbe830d798d",
+      "bytes": 164612
     },
     "site/data/d/energy/comparison.json": {
-      "sha256": "26a287fa0f28015d915cd045012c0cc2dac853dea7c27c92b76498321d0eac14",
-      "bytes": 10486
+      "sha256": "713f2368a763ae4dbee2504e6a8ba5908950fa0d2c867384a4f49315a82e960f",
+      "bytes": 6284
+    },
+    "site/data/d/energy/connectors.json": {
+      "sha256": "8f23aaea908c18bd6524d8cc0573e3b9ed63fa65ebe64fff145bf11da4faa62f",
+      "bytes": 4300
+    },
+    "site/data/d/energy/cooling_daily.json": {
+      "sha256": "3c1b4847d0ed405ba696d0a8504e90af3b1daf55ef6b31ba7de0d1c4412ab7d0",
+      "bytes": 15466
+    },
+    "site/data/d/energy/cost_bridge.json": {
+      "sha256": "e57aa8894b2906fb341dad58b70140a3d23552b062e5e8db8b8cc50c8e5dc358",
+      "bytes": 10537
     },
     "site/data/d/energy/daily.json": {
-      "sha256": "dabb624eb90d2a677fbdc04e6bc259d2e2f0e93535cdbd4037c1ae0aead28cc5",
-      "bytes": 36918
+      "sha256": "759d67caf01f3c3dd3e0c272d6a928ff9864018a2b6c65b7e0f7dc81eea4db86",
+      "bytes": 22066
+    },
+    "site/data/d/energy/event_summary.json": {
+      "sha256": "d2c652fa2713b037fcbe1eee43fec31defe5a5c3212f480e9f9791ff9712e5f9",
+      "bytes": 7152
     },
     "site/data/d/energy/events.json": {
-      "sha256": "2040531552b40608060f181b04e96843806c66b06c53b848d317540821121c11",
-      "bytes": 16057
+      "sha256": "ce55cd1085d66cac1d46c9db7dd11c755432fac0d449af5109771e49036cbeea",
+      "bytes": 10225
+    },
+    "site/data/d/energy/flow.json": {
+      "sha256": "26ceb7f0f2df85f9d6c7b17280ede71ccb28e54984e35b4de1bdb0476aa0a642",
+      "bytes": 13796
     },
     "site/data/d/energy/kpis.json": {
-      "sha256": "279ab3b7d30e200a188903a140704566afcd8c8492e81b3bc2c83562677130d1",
-      "bytes": 34230
+      "sha256": "e6048cd13aebdb4de9f9fe424f4a0e0a6db6fe930ff73c6dd7b96a0d53f712c4",
+      "bytes": 20462
     },
     "site/data/d/energy/profile.json": {
-      "sha256": "57afa39bff1350c3a882d37ad571ec9d872ea1daaacf2a49ec1e78c23bbd8bdd",
-      "bytes": 457281
+      "sha256": "94ef5c55c31d943b7690db382b16d779899559f5c6fe940296ef596416c1af78",
+      "bytes": 271639
+    },
+    "site/data/d/energy/pue_sites.json": {
+      "sha256": "aacbf4c044bf6d1a77e5895a85797842c1373cbb10d30dad8c218ec9fadf25be",
+      "bytes": 8423
     },
     "site/data/d/energy/ranking.json": {
-      "sha256": "21a9176939b421a13baf1820fe30c8effc923d36b6fa992a6f2ba618019ec33e",
-      "bytes": 24749
+      "sha256": "153ad0ccc90a4cbc37c1d798a76654560319eb2247a9dea243d4341507e286f7",
+      "bytes": 14045
+    },
+    "site/data/d/energy/report_story.json": {
+      "sha256": "f0bd16b4ac77baaf073ffff5a96f7b7c4271e521f6392fc41147fa2378bceaf3",
+      "bytes": 30799
     },
     "site/data/d/energy/sectors.json": {
-      "sha256": "f1140fb24176f11a17bccae557babd08fcd542c8e22e2f864c8d5f516634e270",
-      "bytes": 13027
+      "sha256": "215ff0d6eeb7613a4af03bc066848f4655405f7eddbed68f6d8abcf6f2260c6f",
+      "bytes": 7786
     },
     "site/data/d/energy/sites.json": {
-      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
-      "bytes": 968
+      "sha256": "188ca779ff0c306596f3d6fd35693cbcdc06de946aad4fb1d8f1fb0e21c24f7a",
+      "bytes": 735
+    },
+    "site/data/d/energy/soc_profile.json": {
+      "sha256": "52dcfa1522e2e93edac782ffc47cda50143af732133695b6661421a3525046b5",
+      "bytes": 270875
+    },
+    "site/data/d/energy/solution.json": {
+      "sha256": "a18f1727514ce6955472e53ad93a5a20da5c2d2b2c0458a9e4008317fc4e1505",
+      "bytes": 2002
+    },
+    "site/data/d/energy/specialized.json": {
+      "sha256": "600b74bf4951c098e9c06b2c67c56fa68fcb417043f9c630f3dc52844510b92f",
+      "bytes": 14689
     },
     "site/data/d/energy/storage.json": {
-      "sha256": "0a8f61d66afec4873f476ce62b6f43ba4ad244c68d5542459c3108a4888ccc43",
-      "bytes": 13923
+      "sha256": "b814b02032bab53c510fcfc52d7b7b2712345d21d7c8fe697aacf81e296179b7",
+      "bytes": 8372
+    },
+    "site/data/d/energy/thermal.json": {
+      "sha256": "da745a2a242fc68105d5a01c6c1f029cfe78062f3e5dfeeeab20eb9a269ad887",
+      "bytes": 542786
+    },
+    "site/data/d/energy/week_sites.json": {
+      "sha256": "7a5fb85b34bcf2da80e6a51713664c5b79eb501d5a1829a5278c25d0738f48f1",
+      "bytes": 7590
+    },
+    "site/data/d/energy/weekly_stats.json": {
+      "sha256": "e799b47b4bbbf57936ba8533cef7c3b3545cefb36308b129a950d58dad5da460",
+      "bytes": 23520
     },
     "site/data/d/energy/windows.json": {
       "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
       "bytes": 697
     },
+    "site/data/d/helios/actions.json": {
+      "sha256": "e31bd39531d93de4147e1fed823eb52be539e7c366af2199484ef2334aeef9eb",
+      "bytes": 9434
+    },
+    "site/data/d/helios/asset_states.json": {
+      "sha256": "d6afe6bf391584d311a3d7d9fc9296158967cc5fd1eb00badeb447f1e0c9407d",
+      "bytes": 958142
+    },
+    "site/data/d/helios/building_heat.json": {
+      "sha256": "4abff906f20417dd86112013a2fe92a6c69254a2fef076447e295dfe1b0a6317",
+      "bytes": 176852
+    },
+    "site/data/d/helios/capacity.json": {
+      "sha256": "59e60c1c5f495bf5b427accaa6fec9eb634d3559d912e84701073512cc05ddfc",
+      "bytes": 8342
+    },
+    "site/data/d/helios/charging_heat.json": {
+      "sha256": "5447ab12887f9ad5f4467c093a7a276e6e615e9f95f3d00167319dbe830d798d",
+      "bytes": 164612
+    },
     "site/data/d/helios/comparison.json": {
-      "sha256": "26a287fa0f28015d915cd045012c0cc2dac853dea7c27c92b76498321d0eac14",
-      "bytes": 10486
+      "sha256": "713f2368a763ae4dbee2504e6a8ba5908950fa0d2c867384a4f49315a82e960f",
+      "bytes": 6284
+    },
+    "site/data/d/helios/connectors.json": {
+      "sha256": "8f23aaea908c18bd6524d8cc0573e3b9ed63fa65ebe64fff145bf11da4faa62f",
+      "bytes": 4300
+    },
+    "site/data/d/helios/cooling_daily.json": {
+      "sha256": "3c1b4847d0ed405ba696d0a8504e90af3b1daf55ef6b31ba7de0d1c4412ab7d0",
+      "bytes": 15466
+    },
+    "site/data/d/helios/cost_bridge.json": {
+      "sha256": "e57aa8894b2906fb341dad58b70140a3d23552b062e5e8db8b8cc50c8e5dc358",
+      "bytes": 10537
     },
     "site/data/d/helios/daily.json": {
-      "sha256": "dabb624eb90d2a677fbdc04e6bc259d2e2f0e93535cdbd4037c1ae0aead28cc5",
-      "bytes": 36918
+      "sha256": "759d67caf01f3c3dd3e0c272d6a928ff9864018a2b6c65b7e0f7dc81eea4db86",
+      "bytes": 22066
+    },
+    "site/data/d/helios/event_summary.json": {
+      "sha256": "d2c652fa2713b037fcbe1eee43fec31defe5a5c3212f480e9f9791ff9712e5f9",
+      "bytes": 7152
     },
     "site/data/d/helios/events.json": {
-      "sha256": "2040531552b40608060f181b04e96843806c66b06c53b848d317540821121c11",
-      "bytes": 16057
+      "sha256": "ce55cd1085d66cac1d46c9db7dd11c755432fac0d449af5109771e49036cbeea",
+      "bytes": 10225
+    },
+    "site/data/d/helios/flow.json": {
+      "sha256": "26ceb7f0f2df85f9d6c7b17280ede71ccb28e54984e35b4de1bdb0476aa0a642",
+      "bytes": 13796
     },
     "site/data/d/helios/kpis.json": {
-      "sha256": "279ab3b7d30e200a188903a140704566afcd8c8492e81b3bc2c83562677130d1",
-      "bytes": 34230
+      "sha256": "e6048cd13aebdb4de9f9fe424f4a0e0a6db6fe930ff73c6dd7b96a0d53f712c4",
+      "bytes": 20462
     },
     "site/data/d/helios/profile.json": {
-      "sha256": "57afa39bff1350c3a882d37ad571ec9d872ea1daaacf2a49ec1e78c23bbd8bdd",
-      "bytes": 457281
+      "sha256": "94ef5c55c31d943b7690db382b16d779899559f5c6fe940296ef596416c1af78",
+      "bytes": 271639
+    },
+    "site/data/d/helios/pue_sites.json": {
+      "sha256": "aacbf4c044bf6d1a77e5895a85797842c1373cbb10d30dad8c218ec9fadf25be",
+      "bytes": 8423
     },
     "site/data/d/helios/ranking.json": {
-      "sha256": "21a9176939b421a13baf1820fe30c8effc923d36b6fa992a6f2ba618019ec33e",
-      "bytes": 24749
+      "sha256": "153ad0ccc90a4cbc37c1d798a76654560319eb2247a9dea243d4341507e286f7",
+      "bytes": 14045
+    },
+    "site/data/d/helios/report_story.json": {
+      "sha256": "f0bd16b4ac77baaf073ffff5a96f7b7c4271e521f6392fc41147fa2378bceaf3",
+      "bytes": 30799
     },
     "site/data/d/helios/sectors.json": {
-      "sha256": "f1140fb24176f11a17bccae557babd08fcd542c8e22e2f864c8d5f516634e270",
-      "bytes": 13027
+      "sha256": "215ff0d6eeb7613a4af03bc066848f4655405f7eddbed68f6d8abcf6f2260c6f",
+      "bytes": 7786
     },
     "site/data/d/helios/sites.json": {
-      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
-      "bytes": 968
+      "sha256": "188ca779ff0c306596f3d6fd35693cbcdc06de946aad4fb1d8f1fb0e21c24f7a",
+      "bytes": 735
+    },
+    "site/data/d/helios/soc_profile.json": {
+      "sha256": "52dcfa1522e2e93edac782ffc47cda50143af732133695b6661421a3525046b5",
+      "bytes": 270875
     },
     "site/data/d/helios/solution.json": {
-      "sha256": "eaac37791a55b48355f898d09d97dfdb329117d9a37de384da17c3a33b7f921b",
-      "bytes": 3420
+      "sha256": "a18f1727514ce6955472e53ad93a5a20da5c2d2b2c0458a9e4008317fc4e1505",
+      "bytes": 2002
     },
     "site/data/d/helios/specialized.json": {
-      "sha256": "6ab4bc27a41a4b8a62e729981728ac4a02c81e13a49335966a2c0f30926f65c1",
-      "bytes": 20203
+      "sha256": "600b74bf4951c098e9c06b2c67c56fa68fcb417043f9c630f3dc52844510b92f",
+      "bytes": 14689
     },
     "site/data/d/helios/storage.json": {
-      "sha256": "0a8f61d66afec4873f476ce62b6f43ba4ad244c68d5542459c3108a4888ccc43",
-      "bytes": 13923
+      "sha256": "b814b02032bab53c510fcfc52d7b7b2712345d21d7c8fe697aacf81e296179b7",
+      "bytes": 8372
+    },
+    "site/data/d/helios/thermal.json": {
+      "sha256": "da745a2a242fc68105d5a01c6c1f029cfe78062f3e5dfeeeab20eb9a269ad887",
+      "bytes": 542786
+    },
+    "site/data/d/helios/week_sites.json": {
+      "sha256": "7a5fb85b34bcf2da80e6a51713664c5b79eb501d5a1829a5278c25d0738f48f1",
+      "bytes": 7590
+    },
+    "site/data/d/helios/weekly_stats.json": {
+      "sha256": "e799b47b4bbbf57936ba8533cef7c3b3545cefb36308b129a950d58dad5da460",
+      "bytes": 23520
     },
     "site/data/d/helios/windows.json": {
       "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
       "bytes": 697
     },
+    "site/data/d/site-hel-1/actions.json": {
+      "sha256": "c512d992a438be6030f4ad5c51f6005d122ec6317a5226c60391fff60b37402d",
+      "bytes": 3256
+    },
+    "site/data/d/site-hel-1/asset_states.json": {
+      "sha256": "08ec717af4ab301ed6d64f7c2b5fc1f54619d407f0169ee1d64b281774757bae",
+      "bytes": 193114
+    },
+    "site/data/d/site-hel-1/building_heat.json": {
+      "sha256": "f4d00eec77a69271a7cb58e9f157049b87cb456d2916a8de978391dfec8f86c6",
+      "bytes": 54772
+    },
+    "site/data/d/site-hel-1/capacity.json": {
+      "sha256": "e8df02ca5f5ff209b8d4bab786f872ba97e50bb171aea9700071bbe0e0cc9e1b",
+      "bytes": 2536
+    },
+    "site/data/d/site-hel-1/charging_heat.json": {
+      "sha256": "c038a148c468a9e2c6503db786121ca5d70db47a25606b18d656525d6db64d3e",
+      "bytes": 54772
+    },
     "site/data/d/site-hel-1/comparison.json": {
-      "sha256": "2588ea4f3497c07e5107aa844a4aa08589cc6e635ccc77b1297fd1c4a205038b",
-      "bytes": 2001
+      "sha256": "b5110c38665a9e11d6fda3e208dc7b1c20008a2f3b5bd159009001f1bec8cd01",
+      "bytes": 1990
+    },
+    "site/data/d/site-hel-1/connectors.json": {
+      "sha256": "db3a946e152ccffdb2ea4478c996c94d5d18a145f4b8238bc859c98fe76db0fa",
+      "bytes": 1179
+    },
+    "site/data/d/site-hel-1/cooling_daily.json": {
+      "sha256": "1bbc3b0bc9eb701f189caf31ee5c69b2b8023c1cd9232e3275551d17fb97859e",
+      "bytes": 5047
+    },
+    "site/data/d/site-hel-1/cost_bridge.json": {
+      "sha256": "e2be21deaf30b9353f0431a22d02623be3262e98920a549908cb982610e386e3",
+      "bytes": 3379
     },
     "site/data/d/site-hel-1/daily.json": {
-      "sha256": "2a1b5f65f7134fd6a6513720d6ccd156dedfe2e6d3d1de6a07c3e6dca689526c",
-      "bytes": 7407
+      "sha256": "1a53abd0f6f98848a8b66ffc678f3d1c382fff44dc102f7bee424caa938d8c64",
+      "bytes": 7110
+    },
+    "site/data/d/site-hel-1/event_summary.json": {
+      "sha256": "3ffb033b7879064c1bc36458fd7a53a0eb30c3bfc3596ad3381a67121a473bd9",
+      "bytes": 2286
     },
     "site/data/d/site-hel-1/events.json": {
-      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
-      "bytes": 2863
+      "sha256": "98b24e026d000d69ffadf16417da0e4bb9591c777be5e31333ffc806c347c211",
+      "bytes": 3533
+    },
+    "site/data/d/site-hel-1/flow.json": {
+      "sha256": "7e22736d2270fbc81a844818e61a52bb1aae4bea347444473c546b9f10163997",
+      "bytes": 3625
     },
     "site/data/d/site-hel-1/kpis.json": {
-      "sha256": "625805c471c217a2695962dc961d7d116a9b3e2c17f48dc041df7e064bc5a9a8",
-      "bytes": 6768
+      "sha256": "3997ccae140274fe5150f5eea251e4fc7f8570f255fe3eabac57f585e3545f72",
+      "bytes": 6669
     },
     "site/data/d/site-hel-1/profile.json": {
-      "sha256": "0fb6998e7996586376adab07c66c1e81a1856e66a6fc2f3c8de7f0f6c9535e4f",
-      "bytes": 91537
+      "sha256": "2ea53994de5641a2f3652330c80ded321eac0bae07c1eb3ffb254d743a65c387",
+      "bytes": 88761
+    },
+    "site/data/d/site-hel-1/pue_sites.json": {
+      "sha256": "cdcaabbe558559b9cdc0f8eb150f803cdb879c3f2f9bae2d1546811d5d225f19",
+      "bytes": 2557
     },
     "site/data/d/site-hel-1/ranking.json": {
-      "sha256": "59098ca3a86abf0650bd0b66c037a962f162ef9f68635ca2adc21cc6a41a5846",
-      "bytes": 4230
+      "sha256": "1d4efcb528ee99829d30349814a3a89adc0cc0fe1d23641aa9d12650802945e6",
+      "bytes": 4221
+    },
+    "site/data/d/site-hel-1/report_story.json": {
+      "sha256": "b0367b7d1da6e58e024c289222435c0326f6ced2cdcc3b8e31206e46ee09126b",
+      "bytes": 10097
     },
     "site/data/d/site-hel-1/sectors.json": {
-      "sha256": "fff57421cdccae19883b548b0256b3e19abf034fd8fd13caa45f4bb1fc64c7f9",
+      "sha256": "6b111e2ffce8fd879f01f312a218b48da00c8f935e7f0253b1ed61ea4b59cbd7",
       "bytes": 2463
     },
     "site/data/d/site-hel-1/sites.json": {
-      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
-      "bytes": 968
+      "sha256": "808d7b750a0090919262ca56b136487570c08f13246a0fe947474b155fa52c3d",
+      "bytes": 612
+    },
+    "site/data/d/site-hel-1/soc_profile.json": {
+      "sha256": "320f430d31fc992576717256ec8fb617696a2fbd19857748b11b8bd4a75c7170",
+      "bytes": 67966
     },
     "site/data/d/site-hel-1/solution.json": {
-      "sha256": "58a9ada4c0eeb66297b893787ba5572e2b81f323bf82263e8c37d627fbda1dd9",
-      "bytes": 620
+      "sha256": "3489f17bff7f238aa58257514ce5f4383dcffd49284b4e6e51869cd308e2e9f9",
+      "bytes": 608
     },
     "site/data/d/site-hel-1/specialized.json": {
-      "sha256": "f3e0abbe78edc7a84a181840923907156e72472b858ccb4803b38ccb4ea87b93",
-      "bytes": 3904
+      "sha256": "7e2e8507c59491f3398c146ae4ff6a5f40007babe5f75a355b1c1ca57bc3e9aa",
+      "bytes": 4764
     },
     "site/data/d/site-hel-1/storage.json": {
       "sha256": "cf64d25e52e9049679294dfb24d6591d07994a1cd3f56b6d7b2a4f338cd22384",
       "bytes": 2704
     },
+    "site/data/d/site-hel-1/thermal.json": {
+      "sha256": "d0928fcbff88610f565d4bb99ae03d2238a1a218271c46997961cdb17aa973bf",
+      "bytes": 136770
+    },
+    "site/data/d/site-hel-1/week_sites.json": {
+      "sha256": "8863a8707fa16739afbd4ca3904ecee9d9fe20386877ea4442601e992242b48d",
+      "bytes": 2289
+    },
+    "site/data/d/site-hel-1/weekly_stats.json": {
+      "sha256": "7497eb61ab68a2b82bb22ef0f0dab5f020d3eb6ee984285cbe7555dcdcebccca",
+      "bytes": 7676
+    },
     "site/data/d/site-hel-1/windows.json": {
       "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
       "bytes": 697
     },
+    "site/data/d/site-hel-2/actions.json": {
+      "sha256": "631bd322b2b65f34e5203a896beab75afee590549c80db76d1d1efae567c4c78",
+      "bytes": 2626
+    },
+    "site/data/d/site-hel-2/asset_states.json": {
+      "sha256": "dea0af382894b4b607dd348f7448d6374dcda1ea288a262f308c1a2f6fff5b87",
+      "bytes": 286858
+    },
+    "site/data/d/site-hel-2/building_heat.json": {
+      "sha256": "276d66ea319db764a53ebc1fc59244f60888824f468438e6f15c192bdf88d04a",
+      "bytes": 60892
+    },
+    "site/data/d/site-hel-2/capacity.json": {
+      "sha256": "5be82bc899b3c1b10054491f5390580101f81bfc95e1ed29307bdd3acb56ef9e",
+      "bytes": 2536
+    },
+    "site/data/d/site-hel-2/charging_heat.json": {
+      "sha256": "c038a148c468a9e2c6503db786121ca5d70db47a25606b18d656525d6db64d3e",
+      "bytes": 54772
+    },
     "site/data/d/site-hel-2/comparison.json": {
-      "sha256": "9df8a45104c4c122f0ba5e05aa27a9bb883ccd172cf7df2ae15292a5f5ed7cdf",
-      "bytes": 2005
+      "sha256": "6babb5af8d65ad2f3440fada0192e7335f1e634405e1c165b3644c7e733711dc",
+      "bytes": 2004
+    },
+    "site/data/d/site-hel-2/connectors.json": {
+      "sha256": "ad4efa518777d920cd7ff6e95c3c08e0ba2834c5a2ba2896c88aaf1c4d8520f3",
+      "bytes": 1518
+    },
+    "site/data/d/site-hel-2/cooling_daily.json": {
+      "sha256": "f1dd35101cb75e5d68b72ca0549e78f457c2ff9a679c8773a5d26cd9ef04549f",
+      "bytes": 5065
+    },
+    "site/data/d/site-hel-2/cost_bridge.json": {
+      "sha256": "0023572ff5e2a49404c5515321160ef3cde096360980df1541e1344fd3e251f5",
+      "bytes": 3430
     },
     "site/data/d/site-hel-2/daily.json": {
-      "sha256": "29c41a1bb8323e19977eb2e12ba3cb98b87d42eca4a5688e7e8c502ac168b071",
-      "bytes": 6977
+      "sha256": "2238537214008fb9bf049d33cac5ccd18491c7c009733a3ad838f2de5bae39a0",
+      "bytes": 7325
+    },
+    "site/data/d/site-hel-2/event_summary.json": {
+      "sha256": "56ff7a47f2e53904ed129305d7184e3260c4e70e4115e1a78abe5e2318367969",
+      "bytes": 2284
     },
     "site/data/d/site-hel-2/events.json": {
       "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
       "bytes": 2863
     },
+    "site/data/d/site-hel-2/flow.json": {
+      "sha256": "7d367f66e290e20019c393a433dc626bf687b6e998d280b4629b0d5ba0877944",
+      "bytes": 4937
+    },
     "site/data/d/site-hel-2/kpis.json": {
-      "sha256": "cd35c03f8c25bb27320137523d205cdac1408380696e6817e216f6bfa5d7109a",
-      "bytes": 6634
+      "sha256": "a66e4fe98d64b9a3d7caa8fc9a775334c102a97abb92d904a61320baf6324598",
+      "bytes": 6713
     },
     "site/data/d/site-hel-2/profile.json": {
-      "sha256": "9873fa96c50772b9ebb23f67b147b658735186250c9c5b756830e98dd89f9220",
-      "bytes": 88588
+      "sha256": "9682b50ddcd57ad503c5dd62af63fdf2b71db42135e732556d5f7e7251815ea2",
+      "bytes": 90534
+    },
+    "site/data/d/site-hel-2/pue_sites.json": {
+      "sha256": "e9e60dec4860eb736cdfc25186f05d5e3ef513359112ba1a9dc7a45d1f9572f3",
+      "bytes": 2557
     },
     "site/data/d/site-hel-2/ranking.json": {
-      "sha256": "952631c9d0738161087fb2dca1ad9e5e26f3f3b45ed81483bf696b11b1b22c09",
-      "bytes": 4208
+      "sha256": "494372fcf3acec64d122aa48b5f376959fbc26c3d996fea4d03728c7b7334de4",
+      "bytes": 4229
+    },
+    "site/data/d/site-hel-2/report_story.json": {
+      "sha256": "595534cd5c14797699b15da65e90367ac12154d3d54cd85319122679d8f50cfc",
+      "bytes": 10203
     },
     "site/data/d/site-hel-2/sectors.json": {
-      "sha256": "a2a9cd6e61d7dac55f33b1a3f70bc1b98684c91cbc22a1d5ecb9ceda27fb863d",
-      "bytes": 2461
+      "sha256": "576b0d7d87da56450474439b39684da867d8063330df892ad370f8e260ca9333",
+      "bytes": 2515
     },
     "site/data/d/site-hel-2/sites.json": {
-      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
-      "bytes": 968
+      "sha256": "2d5a707de15acb57a38c4c34c138fa4813030a37248b4189f48bb81ce7aafe2c",
+      "bytes": 615
+    },
+    "site/data/d/site-hel-2/soc_profile.json": {
+      "sha256": "d819f3f6e53fefed2303c9f63452df6d92acbc645333d6f90162bf99c1213dff",
+      "bytes": 68251
     },
     "site/data/d/site-hel-2/solution.json": {
-      "sha256": "3489f17bff7f238aa58257514ce5f4383dcffd49284b4e6e51869cd308e2e9f9",
-      "bytes": 608
+      "sha256": "e2d3adfc4e5af838e6847327e1be9b2a1cd6995327519e028551781b8bffd915",
+      "bytes": 635
     },
     "site/data/d/site-hel-2/specialized.json": {
-      "sha256": "478de046b412aef6e724ce53bfa5ad9b93173b980a777e170e8ed20ceb4a900f",
-      "bytes": 3937
+      "sha256": "78a657c4a8ab15b284120941bd40542b182ff98282fd81cf1468cdf53c5d0fa5",
+      "bytes": 4815
     },
     "site/data/d/site-hel-2/storage.json": {
       "sha256": "53c56ea212af6a47090b03352bafbfb69c65e2ceed88ca429f966d66dc04c881",
       "bytes": 2683
     },
+    "site/data/d/site-hel-2/thermal.json": {
+      "sha256": "c9a15c158b89c978cd1500e1a96c69e6ce8c5c7843956bd8faf3674819988eff",
+      "bytes": 135788
+    },
+    "site/data/d/site-hel-2/week_sites.json": {
+      "sha256": "86feed4c82544f8b68141b4dfdae7b40311039e3c357a186aa152d7234935dd7",
+      "bytes": 2290
+    },
+    "site/data/d/site-hel-2/weekly_stats.json": {
+      "sha256": "c68388f616ce803094d46fd3e11da016d558a582ed3986d9a7d9ff704434e74e",
+      "bytes": 7768
+    },
     "site/data/d/site-hel-2/windows.json": {
       "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
       "bytes": 697
     },
-    "site/data/d/site-hel-3/comparison.json": {
-      "sha256": "46aa01d7bdb176f8c3843a02eca848c73d704170cadea991f47db435115fac79",
-      "bytes": 2006
+    "site/data/d/weekly/actions.json": {
+      "sha256": "3925f3ecb09611f110967b6f54cc0b67efa58f06f2a419de444c952619609780",
+      "bytes": 1154
     },
-    "site/data/d/site-hel-3/daily.json": {
-      "sha256": "180e69c940017970cfd9f257959507d430ff8c5b1d7ef75d648a46f5bb9db302",
-      "bytes": 7278
+    "site/data/d/weekly/asset_states.json": {
+      "sha256": "2aba016e1ee2ef6b7eb0bf53131724e46eb5a83d2710abfc87432430e576788b",
+      "bytes": 159255
     },
-    "site/data/d/site-hel-3/events.json": {
-      "sha256": "4601311ec15c950ce4593d434edd1003d958ae29a8554f83aa797af194a9ec75",
-      "bytes": 3501
+    "site/data/d/weekly/building_heat.json": {
+      "sha256": "620f4a045a8442c9239e52819d12640cd458207648bcbb1a36cdc9fed2341415",
+      "bytes": 20237
     },
-    "site/data/d/site-hel-3/kpis.json": {
-      "sha256": "c0a2eee8432f5ae2120842a072fe7506e3360fa778d907c96f2ac41eb84eeaea",
-      "bytes": 6800
+    "site/data/d/weekly/capacity.json": {
+      "sha256": "656d98ba00454bd9b5cf0552674fecb13485527f66596db1c5f7dc567b576ac3",
+      "bytes": 955
     },
-    "site/data/d/site-hel-3/profile.json": {
-      "sha256": "08bb82652105f97adfb01bc365b754cd14103565384677b7ab66b253aaa2c6cc",
-      "bytes": 92051
-    },
-    "site/data/d/site-hel-3/ranking.json": {
-      "sha256": "8be16e62837757d3af31ec1c01e1d9d925634c9b35c78fa0e6453fff80057a72",
-      "bytes": 4209
-    },
-    "site/data/d/site-hel-3/sectors.json": {
-      "sha256": "4a7cbd0a938a36f4e0975b6b07bfae2517b181188d187e1012eeec8b3ae0a1b5",
-      "bytes": 2561
-    },
-    "site/data/d/site-hel-3/sites.json": {
-      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
-      "bytes": 968
-    },
-    "site/data/d/site-hel-3/solution.json": {
-      "sha256": "e7bf0477497f3134b90e86eb5aeccf41795bc4334c36c9832b65f89348264064",
-      "bytes": 647
-    },
-    "site/data/d/site-hel-3/specialized.json": {
-      "sha256": "f943578cb79b6b4304768e60b9b6487228bfc1e5025bda07112c34c43ef415c4",
-      "bytes": 3956
-    },
-    "site/data/d/site-hel-3/storage.json": {
-      "sha256": "2a3a820c2892ffc78e2eb06989b555da853128fd3c924933037c330739e09f4a",
-      "bytes": 2665
-    },
-    "site/data/d/site-hel-3/windows.json": {
-      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
-      "bytes": 697
-    },
-    "site/data/d/site-hel-4/comparison.json": {
-      "sha256": "884da63e410dcd800d0a9eb2e01d4df8a6f21e256fcc521ed419278483d7edb9",
-      "bytes": 2004
-    },
-    "site/data/d/site-hel-4/daily.json": {
-      "sha256": "ccf8e59e4023de4719b759b31da4a3763f1902a7c2912d6bf92f92eae6bf90c2",
-      "bytes": 7323
-    },
-    "site/data/d/site-hel-4/events.json": {
-      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
-      "bytes": 2863
-    },
-    "site/data/d/site-hel-4/kpis.json": {
-      "sha256": "5eca7021110e3b951c61b025041b4b7d78221853c3ce9c08e41c8ca9f6435e86",
-      "bytes": 6764
-    },
-    "site/data/d/site-hel-4/profile.json": {
-      "sha256": "a629fda935a9f4afca399f233c807e5e2d47268f9e2f4acad51fa8c97b60dbce",
-      "bytes": 91771
-    },
-    "site/data/d/site-hel-4/ranking.json": {
-      "sha256": "bce4c9f561498f2bc449e88449536fa544a2075f0b3749d4810b0ad37debda13",
-      "bytes": 4221
-    },
-    "site/data/d/site-hel-4/sectors.json": {
-      "sha256": "cb96ec8f88e0eac956a7a481f1495bbcef5d9349f410507fad92b10c9335719f",
-      "bytes": 2512
-    },
-    "site/data/d/site-hel-4/sites.json": {
-      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
-      "bytes": 968
-    },
-    "site/data/d/site-hel-4/solution.json": {
-      "sha256": "4997c7f91329e6102483d48d299963cc4e82e5e93b6d5f8f62e073ab26c23546",
-      "bytes": 632
-    },
-    "site/data/d/site-hel-4/specialized.json": {
-      "sha256": "2e0df78e28d128175198760e1b5e63bf6a9c84b68e51502fa3bbeef591735721",
-      "bytes": 3966
-    },
-    "site/data/d/site-hel-4/storage.json": {
-      "sha256": "71c1b6519b1167edd5a892fafdab0f998d1ea83a3f20ef0e628d6757054b6461",
-      "bytes": 2698
-    },
-    "site/data/d/site-hel-4/windows.json": {
-      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
-      "bytes": 697
+    "site/data/d/weekly/charging_heat.json": {
+      "sha256": "b433a5c4a3ae93bda18e39dc5952a7884451e7d6ff8f81eaa74a342e8bd473e1",
+      "bytes": 18221
     },
     "site/data/d/weekly/comparison.json": {
-      "sha256": "26a287fa0f28015d915cd045012c0cc2dac853dea7c27c92b76498321d0eac14",
-      "bytes": 10486
+      "sha256": "c1ef0b0a4af526ef63920d6e04c5ececf8507efa57ea6833e6257b56a105dfea",
+      "bytes": 627
+    },
+    "site/data/d/weekly/connectors.json": {
+      "sha256": "c171316fb3acab39e10cc3dfe9cdba1d3dde766a3b9a53c56a6ec3277e9d0862",
+      "bytes": 1518
+    },
+    "site/data/d/weekly/cooling_daily.json": {
+      "sha256": "3a80937c5cea29ef417b0c9ba3452b47c99d21f4a16938b923b992e82c803c67",
+      "bytes": 1650
+    },
+    "site/data/d/weekly/cost_bridge.json": {
+      "sha256": "0af3adf18367b5e1269afa1ec251d958ba45b541be8105edb8af4d3f15013636",
+      "bytes": 1108
     },
     "site/data/d/weekly/daily.json": {
-      "sha256": "dabb624eb90d2a677fbdc04e6bc259d2e2f0e93535cdbd4037c1ae0aead28cc5",
-      "bytes": 36918
+      "sha256": "25e71f71d3b4eb49817f5f2e12bd572ff907fb445ee87c24b1aab308d65b7e63",
+      "bytes": 2411
+    },
+    "site/data/d/weekly/event_summary.json": {
+      "sha256": "1271ddd7fe95f6ebee0c210f0f62482b8dcc6ff6dfd213bb3f13cb8434b86320",
+      "bytes": 726
     },
     "site/data/d/weekly/events.json": {
-      "sha256": "2040531552b40608060f181b04e96843806c66b06c53b848d317540821121c11",
-      "bytes": 16057
+      "sha256": "a4fc6bf39c8343fc2291c2be9ed481a75fc4cfea06ee7405dcc8c2c819f602d5",
+      "bytes": 1253
+    },
+    "site/data/d/weekly/flow.json": {
+      "sha256": "7e3f0ad4d1a8e8e188cc35f71ae27825081cc6167e72c5d4a43f392a9216bb50",
+      "bytes": 1609
     },
     "site/data/d/weekly/kpis.json": {
-      "sha256": "279ab3b7d30e200a188903a140704566afcd8c8492e81b3bc2c83562677130d1",
-      "bytes": 34230
+      "sha256": "51076e0f8a88c7c4d5d82b82d69c65b9d44343230013be3ce14dd0acf36b8060",
+      "bytes": 2227
     },
     "site/data/d/weekly/profile.json": {
-      "sha256": "57afa39bff1350c3a882d37ad571ec9d872ea1daaacf2a49ec1e78c23bbd8bdd",
-      "bytes": 457281
+      "sha256": "16614f56b7a361b0c766b84441ebc149ab4f3a00c652625cc8c200262ecc106c",
+      "bytes": 30677
     },
-    "site/data/d/weekly/ranking.json": {
-      "sha256": "21a9176939b421a13baf1820fe30c8effc923d36b6fa992a6f2ba618019ec33e",
-      "bytes": 24749
-    },
-    "site/data/d/weekly/sectors.json": {
-      "sha256": "f1140fb24176f11a17bccae557babd08fcd542c8e22e2f864c8d5f516634e270",
-      "bytes": 13027
-    },
-    "site/data/d/weekly/sites.json": {
-      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
+    "site/data/d/weekly/pue_sites.json": {
+      "sha256": "9b79e95c0195ba5c834994875c0ecb10045cb2df8911e10b4cd9a6fa19f8b793",
       "bytes": 968
     },
+    "site/data/d/weekly/ranking.json": {
+      "sha256": "aa0cff582ca45eb58c6503e7e3b1e6f4cc37ff44bb758bebdf627384084c167c",
+      "bytes": 1729
+    },
+    "site/data/d/weekly/report_story.json": {
+      "sha256": "f1ad7bbf9d70e76e0176b79800c7168e38ec3659972114bfb777f5cceb2de877",
+      "bytes": 3364
+    },
+    "site/data/d/weekly/sectors.json": {
+      "sha256": "d5fa15445024e5b1775282de261940042593fe4a202c4763252354707a891665",
+      "bytes": 801
+    },
+    "site/data/d/weekly/sites.json": {
+      "sha256": "188ca779ff0c306596f3d6fd35693cbcdc06de946aad4fb1d8f1fb0e21c24f7a",
+      "bytes": 735
+    },
+    "site/data/d/weekly/soc_profile.json": {
+      "sha256": "c7e9be045c440491d0eeadb96621bfc88c24ed38f4bfe01a32755126f7422295",
+      "bytes": 44751
+    },
+    "site/data/d/weekly/solution.json": {
+      "sha256": "2ff99300c96210a77ff5c25816a2c91e76a7839ba18651843abd60ca8b8039cd",
+      "bytes": 674
+    },
+    "site/data/d/weekly/specialized.json": {
+      "sha256": "447e80ee0a496d9b46eec274e6dfe7058b06f6815b4f80abc29324ced5846739",
+      "bytes": 1568
+    },
     "site/data/d/weekly/storage.json": {
-      "sha256": "0a8f61d66afec4873f476ce62b6f43ba4ad244c68d5542459c3108a4888ccc43",
-      "bytes": 13923
+      "sha256": "cf9d8752a7f71a3d85ad8f9ebd1ad640bc1e8d0a2cfbc07bcb158f071b1130f7",
+      "bytes": 860
+    },
+    "site/data/d/weekly/thermal.json": {
+      "sha256": "68d765ed3d01a855c2fb84e632c14ac950fa377f24f16f4d5951b1087bfe2d4a",
+      "bytes": 89956
+    },
+    "site/data/d/weekly/week_sites.json": {
+      "sha256": "e372b32d939443888edd5b3039c32298423019f15cb7d233421036d4aff2235e",
+      "bytes": 869
+    },
+    "site/data/d/weekly/weekly_stats.json": {
+      "sha256": "9294c04ef24e821315d733a9c5e769a06ad3bb4613b62f145a4a4baa2e0546cc",
+      "bytes": 2558
     },
     "site/data/d/weekly/windows.json": {
       "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
       "bytes": 697
     },
     "site/data/dashboards.json": {
-      "sha256": "2496134b6972db9bf7f4a0f926f231c3bfdfe85f482a0ab99ab3565e4c434ba1",
-      "bytes": 2173
+      "sha256": "5e6887b2dc8fa2e80238cdc0038ffb6fc34940c3764ef262a9ccfb17d6a87a84",
+      "bytes": 1673
     },
     "site/data/themes/atled.json": {
-      "sha256": "7618a78434c35b52a08517b0e66345a8fa101fd124bd4aa05739e284bc93906a",
-      "bytes": 729
+      "sha256": "5f7a50feb20e51b1310ca3d077ab0d50d104c8a1daec99b46ee805ea47b7e70f",
+      "bytes": 898
     },
     "site/data/themes/imitator.json": {
-      "sha256": "69112925fb474338707da1052cbb80f1567a32dae393b622d4aa356029d14c9e",
-      "bytes": 666
+      "sha256": "c98b04089321541d02d3ec44c56157127302ef8020043b324a71f3d7161edf1e",
+      "bytes": 917
     },
     "site/data/themes.json": {
-      "sha256": "db3ca35577f216581ef07c1244b8123705722c52acd72d268d2c11bd7227d77e",
-      "bytes": 276
+      "sha256": "448332abee2870b524b610c1910ffcc8955ac2565a98ffa78f74d20a52db48f9",
+      "bytes": 278
     },
     "site/index.html": {
-      "sha256": "2a88d6da92e96425df9dd4a1f6733fbaa35e7d295ea27878af0a1152aaabdd61",
-      "bytes": 959
+      "sha256": "ca52b6cc09568cb7e55e380a85ab1e5b37bcfe5aa0b77c603203f5ff777aa8be",
+      "bytes": 4805
     }
   }
 }

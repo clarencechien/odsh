@@ -1,0 +1,54 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cost_bridge",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "step",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "step": "無光儲情境",
+            "type": "total",
+            "value": 1840185.3880800004
+          },
+          {
+            "step": "光電差額",
+            "type": "change",
+            "value": -168172.7301020003
+          },
+          {
+            "step": "儲能差額",
+            "type": "change",
+            "value": -69917.95906499983
+          },
+          {
+            "step": "本週模型帳單",
+            "type": "total",
+            "value": 1602094.6989130003
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

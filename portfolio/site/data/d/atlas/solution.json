@@ -28,7 +28,7 @@
         "rows": [
           {
             "sites": 1,
-            "solution": "智慧樓宇 + 智慧電網 + 資料中心 + 儲能 + 太陽能 + 充電樁"
+            "solution": "智慧樓宇 + 智慧電網 + 資料中心 + 儲能 + 太陽能"
           }
         ],
         "truncated": false
@@ -65,68 +65,6 @@
         "truncated": false
       }
     },
-    "[[\"site\",\"ATL-3\"]]": {
-      "params": {
-        "site": "ATL-3"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "solution",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "solution",
-            "type": "string"
-          },
-          {
-            "name": "sites",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "sites": 1,
-            "solution": "智慧電網 + 資料中心 + 儲能"
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"]]": {
-      "params": {
-        "site": "ATL-4"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "solution",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "solution",
-            "type": "string"
-          },
-          {
-            "name": "sites",
-            "type": "number"
-          }
-        ],
-        "rows": [
-          {
-            "sites": 1,
-            "solution": "智慧樓宇 + 智慧電網 + 儲能 + 充電樁"
-          }
-        ],
-        "truncated": false
-      }
-    },
     "[[\"site\",null]]": {
       "params": {
         "site": null
@@ -151,8 +89,8 @@
         ],
         "rows": [
           {
-            "sites": 4,
-            "solution": "智慧樓宇 + 智慧電網 + 儲能 + 充電樁 / 智慧樓宇 + 智慧電網 + 太陽能 / 智慧樓宇 + 智慧電網 + 資料中心 + 儲能 + 太陽能 + 充電樁 / 智慧電網 + 資料中心 + 儲能"
+            "sites": 2,
+            "solution": "智慧樓宇 + 智慧電網 + 太陽能 / 智慧樓宇 + 智慧電網 + 資料中心 + 儲能 + 太陽能"
           }
         ],
         "truncated": false

@@ -1,0 +1,54 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 36,
+            "priority": "優先覆核",
+            "site_id": "HEL-1",
+            "title": "冷卻系統效率劣化"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

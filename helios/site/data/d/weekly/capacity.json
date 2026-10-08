@@ -1,0 +1,50 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 2385.545455,
+            "scale": 2760,
+            "site_id": "HEL-1",
+            "target": 2400
+          },
+          {
+            "actual": 1135.208693,
+            "scale": 1495,
+            "site_id": "HEL-2",
+            "target": 1300
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

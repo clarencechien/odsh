@@ -1,0 +1,39 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "event_summary",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_count",
+            "type": "number"
+          },
+          {
+            "name": "affected_sites",
+            "type": "number"
+          },
+          {
+            "name": "recorded_hours",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "affected_sites": 1,
+            "event_count": 1,
+            "recorded_hours": 36
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

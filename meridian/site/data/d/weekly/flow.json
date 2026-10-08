@@ -1,0 +1,69 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "flow",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "source",
+            "type": "string"
+          },
+          {
+            "name": "target",
+            "type": "string"
+          },
+          {
+            "name": "energy_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "energy_kwh": 110446.10354224994,
+            "source": "電網購電",
+            "target": "站內匯流排"
+          },
+          {
+            "energy_kwh": 29924.195286000002,
+            "source": "太陽能",
+            "target": "站內匯流排"
+          },
+          {
+            "energy_kwh": 15653.274418999996,
+            "source": "儲能放電",
+            "target": "站內匯流排"
+          },
+          {
+            "energy_kwh": 91496.39167350013,
+            "source": "站內匯流排",
+            "target": "樓宇負載"
+          },
+          {
+            "energy_kwh": 39388.387514250055,
+            "source": "站內匯流排",
+            "target": "車隊補能"
+          },
+          {
+            "energy_kwh": 17392.52713,
+            "source": "站內匯流排",
+            "target": "儲能充電"
+          },
+          {
+            "energy_kwh": 7746.266925750004,
+            "source": "站內匯流排",
+            "target": "餘電外送"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

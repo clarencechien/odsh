@@ -43,16 +43,26 @@
           {
             "name": "storage_kwh",
             "type": "number"
+          },
+          {
+            "name": "availability",
+            "type": "unknown"
+          },
+          {
+            "name": "contract_utilization",
+            "type": "number"
           }
         ],
         "rows": [
           {
+            "availability": null,
             "avg_it_kw": 473.6094429791668,
-            "cooling_kwh": 21860.382049499975,
-            "ev_kwh": 11271.638706999986,
-            "max_site_peak_kw": 1079.596134,
-            "min_headroom_kw": 1020.4038660000001,
-            "solar_self_use": 0.9999822768096154,
+            "contract_utilization": 0.8691317341666667,
+            "cooling_kwh": 20892.14038174998,
+            "ev_kwh": 0,
+            "max_site_peak_kw": 1042.958081,
+            "min_headroom_kw": 157.041919,
+            "solar_self_use": 0.9999232903611169,
             "storage_kwh": 7115.124734999999
           }
         ],
@@ -99,16 +109,26 @@
           {
             "name": "storage_kwh",
             "type": "number"
+          },
+          {
+            "name": "availability",
+            "type": "unknown"
+          },
+          {
+            "name": "contract_utilization",
+            "type": "number"
           }
         ],
         "rows": [
           {
+            "availability": null,
             "avg_it_kw": 473.56423614732205,
+            "contract_utilization": 0.8574256466666667,
             "cooling_kwh": 21193.623568249994,
-            "ev_kwh": 11199.20103275001,
-            "max_site_peak_kw": 1081.002508,
-            "min_headroom_kw": 1018.997492,
-            "solar_self_use": 1,
+            "ev_kwh": 0,
+            "max_site_peak_kw": 1028.910776,
+            "min_headroom_kw": 171.08922400000006,
+            "solar_self_use": 0.9995289238799608,
             "storage_kwh": 7115.124734999999
           }
         ],
@@ -155,16 +175,26 @@
           {
             "name": "storage_kwh",
             "type": "number"
+          },
+          {
+            "name": "availability",
+            "type": "unknown"
+          },
+          {
+            "name": "contract_utilization",
+            "type": "number"
           }
         ],
         "rows": [
           {
+            "availability": null,
             "avg_it_kw": 473.6094429791668,
-            "cooling_kwh": 21860.382049499975,
-            "ev_kwh": 11271.638706999986,
-            "max_site_peak_kw": 1079.596134,
-            "min_headroom_kw": 1020.4038660000001,
-            "solar_self_use": 0.9999822768096154,
+            "contract_utilization": 0.8691317341666667,
+            "cooling_kwh": 20892.14038174998,
+            "ev_kwh": 0,
+            "max_site_peak_kw": 1042.958081,
+            "min_headroom_kw": 157.041919,
+            "solar_self_use": 0.9999232903611169,
             "storage_kwh": 7115.124734999999
           }
         ],

@@ -1,0 +1,56 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "pue_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1.2625749556016934,
+            "scale": 1.9,
+            "site_id": "ATL-1",
+            "target": 1.32
+          },
+          {
+            "actual": 1.333792519000864,
+            "scale": 1.9,
+            "site_id": "HEL-1",
+            "target": 1.32
+          },
+          {
+            "actual": 1.1440715216689916,
+            "scale": 1.9,
+            "site_id": "HEL-2",
+            "target": 1.22
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

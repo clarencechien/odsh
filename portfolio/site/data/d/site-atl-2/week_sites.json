@@ -1,0 +1,115 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "week_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "previous",
+            "type": "number"
+          },
+          {
+            "name": "current",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "current": 46352.437544999986,
+            "previous": 42191.87629600001,
+            "site_id": "ATL-2"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "week_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "previous",
+            "type": "number"
+          },
+          {
+            "name": "current",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "current": 42191.87629599999,
+            "previous": 46717.30508300002,
+            "site_id": "ATL-2"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "week_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "previous",
+            "type": "number"
+          },
+          {
+            "name": "current",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "current": 46352.437544999986,
+            "previous": 42191.87629600001,
+            "site_id": "ATL-2"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

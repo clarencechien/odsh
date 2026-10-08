@@ -27,8 +27,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.03734493085697165,
-            "load_change": -0.010911244438437714
+            "cost_change": 0.09861048178590763,
+            "load_change": 0.03096799536961648
           }
         ],
         "truncated": false
@@ -89,8 +89,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.03734493085697165,
-            "load_change": -0.010911244438437714
+            "cost_change": 0.09861048178590763,
+            "load_change": 0.03096799536961648
           }
         ],
         "truncated": false

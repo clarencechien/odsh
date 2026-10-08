@@ -1,0 +1,190 @@
+{
+  "reads": [
+    "site"
+  ],
+  "results": {
+    "[[\"site\",\"HEL-1\"]]": {
+      "params": {
+        "site": "HEL-1"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "connectors",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "domain",
+            "type": "string"
+          },
+          {
+            "name": "label",
+            "type": "string"
+          },
+          {
+            "name": "protocol",
+            "type": "string"
+          },
+          {
+            "name": "subsystem_count",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "domain": "datacenter",
+            "label": "機房 DCIM",
+            "protocol": "Redfish / DCIM",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "grid",
+            "label": "智慧電表",
+            "protocol": "Modbus / MQTT",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "storage",
+            "label": "儲能 EMS",
+            "protocol": "EMS / Modbus",
+            "subsystem_count": 1
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"]]": {
+      "params": {
+        "site": "HEL-2"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "connectors",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "domain",
+            "type": "string"
+          },
+          {
+            "name": "label",
+            "type": "string"
+          },
+          {
+            "name": "protocol",
+            "type": "string"
+          },
+          {
+            "name": "subsystem_count",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "domain": "building",
+            "label": "樓宇控制",
+            "protocol": "BACnet / BEMS",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "datacenter",
+            "label": "機房 DCIM",
+            "protocol": "Redfish / DCIM",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "grid",
+            "label": "智慧電表",
+            "protocol": "Modbus / MQTT",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "solar",
+            "label": "太陽能",
+            "protocol": "SunSpec / Inverter",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "storage",
+            "label": "儲能 EMS",
+            "protocol": "EMS / Modbus",
+            "subsystem_count": 1
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null]]": {
+      "params": {
+        "site": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "connectors",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "domain",
+            "type": "string"
+          },
+          {
+            "name": "label",
+            "type": "string"
+          },
+          {
+            "name": "protocol",
+            "type": "string"
+          },
+          {
+            "name": "subsystem_count",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "domain": "building",
+            "label": "樓宇控制",
+            "protocol": "BACnet / BEMS",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "datacenter",
+            "label": "機房 DCIM",
+            "protocol": "Redfish / DCIM",
+            "subsystem_count": 2
+          },
+          {
+            "domain": "grid",
+            "label": "智慧電表",
+            "protocol": "Modbus / MQTT",
+            "subsystem_count": 2
+          },
+          {
+            "domain": "solar",
+            "label": "太陽能",
+            "protocol": "SunSpec / Inverter",
+            "subsystem_count": 1
+          },
+          {
+            "domain": "storage",
+            "label": "儲能 EMS",
+            "protocol": "EMS / Modbus",
+            "subsystem_count": 2
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

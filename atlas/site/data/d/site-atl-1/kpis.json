@@ -50,7 +50,7 @@
           },
           {
             "name": "charger_availability",
-            "type": "number"
+            "type": "unknown"
           },
           {
             "name": "onsite_solar_ratio",
@@ -75,20 +75,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 54.39700698799997,
-            "charger_availability": 1,
-            "cost_twd": 436171.40754399996,
+            "carbon_tonnes": 51.16934455199995,
+            "charger_availability": null,
+            "cost_twd": 403979.328421,
             "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 114761.6181432498,
-            "load_kwh": 146626.7799899999,
-            "onsite_solar_ratio": 0.2227132810440709,
+            "import_kwh": 107952.20369700012,
+            "load_kwh": 139815.43926450005,
+            "onsite_solar_ratio": 0.233549350147062,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
-            "pue": 1.2747439343791505,
-            "savings_twd": 172440.38016399994,
+            "pue": 1.2625749556016934,
+            "savings_twd": 172436.14234699993,
             "site_count": 1,
             "solar_kwh": 32656.3100345,
-            "storage_savings_twd": 31780.890486
+            "storage_savings_twd": 31780.890485
           }
         ],
         "truncated": false
@@ -141,7 +141,7 @@
           },
           {
             "name": "charger_availability",
-            "type": "number"
+            "type": "unknown"
           },
           {
             "name": "onsite_solar_ratio",
@@ -166,20 +166,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 54.224797659999986,
-            "charger_availability": 1,
-            "cost_twd": 435141.9492840005,
+            "carbon_tonnes": 48.923665486999994,
+            "charger_availability": null,
+            "cost_twd": 383302.0096319997,
             "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 114398.30730175004,
-            "load_kwh": 146251.90216424994,
-            "onsite_solar_ratio": 0.22320505781414432,
+            "import_kwh": 103214.48415374995,
+            "load_kwh": 135052.70113225002,
+            "onsite_solar_ratio": 0.24160039834966598,
             "period_end": "2026-09-23",
             "period_start": "2026-09-17",
             "pue": 1.266389460204798,
-            "savings_twd": 172292.62564300004,
+            "savings_twd": 172258.79428300008,
             "site_count": 1,
             "solar_kwh": 32644.16427799999,
-            "storage_savings_twd": 31780.890485
+            "storage_savings_twd": 31780.890485000007
           }
         ],
         "truncated": false
@@ -232,7 +232,7 @@
           },
           {
             "name": "charger_availability",
-            "type": "number"
+            "type": "unknown"
           },
           {
             "name": "onsite_solar_ratio",
@@ -257,20 +257,20 @@
         ],
         "rows": [
           {
-            "carbon_tonnes": 54.39700698799997,
-            "charger_availability": 1,
-            "cost_twd": 436171.40754399996,
+            "carbon_tonnes": 51.16934455199995,
+            "charger_availability": null,
+            "cost_twd": 403979.328421,
             "estimated_ratio": 0.001488095238095238,
-            "import_kwh": 114761.6181432498,
-            "load_kwh": 146626.7799899999,
-            "onsite_solar_ratio": 0.2227132810440709,
+            "import_kwh": 107952.20369700012,
+            "load_kwh": 139815.43926450005,
+            "onsite_solar_ratio": 0.233549350147062,
             "period_end": "2026-09-30",
             "period_start": "2026-09-24",
-            "pue": 1.2747439343791505,
-            "savings_twd": 172440.38016399994,
+            "pue": 1.2625749556016934,
+            "savings_twd": 172436.14234699993,
             "site_count": 1,
             "solar_kwh": 32656.3100345,
-            "storage_savings_twd": 31780.890486
+            "storage_savings_twd": 31780.890485
           }
         ],
         "truncated": false

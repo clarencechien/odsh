@@ -18,34 +18,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "維運團隊：覆核散熱風扇與直流串列",
+            "domain": "solar",
+            "event_id": "EVT-2",
+            "severity": "medium",
+            "site_id": "MER-1",
+            "start_ts": "2026-09-27 09:00:00",
+            "title": "逆變器高溫降額"
+          }
+        ],
         "truncated": false
       }
     },
@@ -110,34 +120,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "維運團隊：覆核散熱風扇與直流串列",
+            "domain": "solar",
+            "event_id": "EVT-2",
+            "severity": "medium",
+            "site_id": "MER-1",
+            "start_ts": "2026-09-27 09:00:00",
+            "title": "逆變器高溫降額"
+          }
+        ],
         "truncated": false
       }
     }

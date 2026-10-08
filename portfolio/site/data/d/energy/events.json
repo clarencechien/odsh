@@ -49,13 +49,13 @@
         ],
         "rows": [
           {
-            "action": "冷卻效率劣化；檢查冷凍機與濾網",
-            "domain": "datacenter",
-            "event_id": "EVT-1",
-            "severity": "high",
+            "action": "能源經理：確認儲能放電與製程排程一致",
+            "domain": "grid",
+            "event_id": "EVT-4",
+            "severity": "info",
             "site_id": "ATL-1",
-            "start_ts": "2026-09-26 10:00:00",
-            "title": "Chiller efficiency degradation"
+            "start_ts": "2026-09-29 16:00:00",
+            "title": "尖峰需量反應"
           }
         ],
         "truncated": false
@@ -153,13 +153,13 @@
         ],
         "rows": [
           {
-            "action": "冷卻效率劣化；檢查冷凍機與濾網",
-            "domain": "datacenter",
-            "event_id": "EVT-1",
-            "severity": "high",
+            "action": "能源經理：確認儲能放電與製程排程一致",
+            "domain": "grid",
+            "event_id": "EVT-4",
+            "severity": "info",
             "site_id": "ATL-1",
-            "start_ts": "2026-09-26 10:00:00",
-            "title": "Chiller efficiency degradation"
+            "start_ts": "2026-09-29 16:00:00",
+            "title": "尖峰需量反應"
           }
         ],
         "truncated": false
@@ -181,34 +181,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "樓控團隊：校正空調關機時序與加班區域",
+            "domain": "building",
+            "event_id": "EVT-5",
+            "severity": "medium",
+            "site_id": "ATL-2",
+            "start_ts": "2026-09-25 20:00:00",
+            "title": "樓宇非營業時段負載偏高"
+          }
+        ],
         "truncated": false
       }
     },
@@ -275,194 +285,6 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-3\"],[\"window\",null]]": {
-      "params": {
-        "site": "ATL-3",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
             "type": "string"
           },
           {
@@ -492,117 +314,13 @@
         ],
         "rows": [
           {
-            "action": "需量反應事件；儲能放電抑制尖峰",
-            "domain": "grid",
-            "event_id": "EVT-4",
-            "severity": "info",
-            "site_id": "ATL-4",
-            "start_ts": "2026-09-29 16:00:00",
-            "title": "Demand response activation"
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"ATL-4\"],[\"window\",null]]": {
-      "params": {
-        "site": "ATL-4",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "string"
-          },
-          {
-            "name": "site_id",
-            "type": "string"
-          },
-          {
-            "name": "domain",
-            "type": "string"
-          },
-          {
-            "name": "severity",
-            "type": "string"
-          },
-          {
-            "name": "start_ts",
-            "type": "date"
-          },
-          {
-            "name": "title",
-            "type": "string"
-          },
-          {
-            "name": "action",
-            "type": "string"
-          }
-        ],
-        "rows": [
-          {
-            "action": "需量反應事件；儲能放電抑制尖峰",
-            "domain": "grid",
-            "event_id": "EVT-4",
-            "severity": "info",
-            "site_id": "ATL-4",
-            "start_ts": "2026-09-29 16:00:00",
-            "title": "Demand response activation"
+            "action": "樓控團隊：校正空調關機時序與加班區域",
+            "domain": "building",
+            "event_id": "EVT-5",
+            "severity": "medium",
+            "site_id": "ATL-2",
+            "start_ts": "2026-09-25 20:00:00",
+            "title": "樓宇非營業時段負載偏高"
           }
         ],
         "truncated": false
@@ -624,34 +342,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
+            "domain": "datacenter",
+            "event_id": "EVT-1",
+            "severity": "high",
+            "site_id": "HEL-1",
+            "start_ts": "2026-09-26 08:00:00",
+            "title": "冷卻系統效率劣化"
+          }
+        ],
         "truncated": false
       }
     },
@@ -718,34 +446,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
+            "domain": "datacenter",
+            "event_id": "EVT-1",
+            "severity": "high",
+            "site_id": "HEL-1",
+            "start_ts": "2026-09-26 08:00:00",
+            "title": "冷卻系統效率劣化"
+          }
+        ],
         "truncated": false
       }
     },
@@ -890,308 +628,6 @@
         "truncated": false
       }
     },
-    "[[\"site\",\"HEL-3\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "HEL-3",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "string"
-          },
-          {
-            "name": "site_id",
-            "type": "string"
-          },
-          {
-            "name": "domain",
-            "type": "string"
-          },
-          {
-            "name": "severity",
-            "type": "string"
-          },
-          {
-            "name": "start_ts",
-            "type": "date"
-          },
-          {
-            "name": "title",
-            "type": "string"
-          },
-          {
-            "name": "action",
-            "type": "string"
-          }
-        ],
-        "rows": [
-          {
-            "action": "充電通訊中斷；檢查網路閘道",
-            "domain": "charging",
-            "event_id": "EVT-3",
-            "severity": "medium",
-            "site_id": "HEL-3",
-            "start_ts": "2026-09-28 14:00:00",
-            "title": "Charger communication loss"
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-3\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "HEL-3",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-3\"],[\"window\",null]]": {
-      "params": {
-        "site": "HEL-3",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "string"
-          },
-          {
-            "name": "site_id",
-            "type": "string"
-          },
-          {
-            "name": "domain",
-            "type": "string"
-          },
-          {
-            "name": "severity",
-            "type": "string"
-          },
-          {
-            "name": "start_ts",
-            "type": "date"
-          },
-          {
-            "name": "title",
-            "type": "string"
-          },
-          {
-            "name": "action",
-            "type": "string"
-          }
-        ],
-        "rows": [
-          {
-            "action": "充電通訊中斷；檢查網路閘道",
-            "domain": "charging",
-            "event_id": "EVT-3",
-            "severity": "medium",
-            "site_id": "HEL-3",
-            "start_ts": "2026-09-28 14:00:00",
-            "title": "Charger communication loss"
-          }
-        ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-4\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "HEL-4",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-4\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "HEL-4",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"HEL-4\"],[\"window\",null]]": {
-      "params": {
-        "site": "HEL-4",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
     "[[\"site\",\"MER-1\"],[\"window\",\"current\"]]": {
       "params": {
         "site": "MER-1",
@@ -1208,34 +644,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "維運團隊：覆核散熱風扇與直流串列",
+            "domain": "solar",
+            "event_id": "EVT-2",
+            "severity": "medium",
+            "site_id": "MER-1",
+            "start_ts": "2026-09-27 09:00:00",
+            "title": "逆變器高溫降額"
+          }
+        ],
         "truncated": false
       }
     },
@@ -1302,34 +748,44 @@
         "columns": [
           {
             "name": "event_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "site_id",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "domain",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "severity",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "start_ts",
-            "type": "unknown"
+            "type": "date"
           },
           {
             "name": "title",
-            "type": "unknown"
+            "type": "string"
           },
           {
             "name": "action",
-            "type": "unknown"
+            "type": "string"
           }
         ],
-        "rows": [],
+        "rows": [
+          {
+            "action": "維運團隊：覆核散熱風扇與直流串列",
+            "domain": "solar",
+            "event_id": "EVT-2",
+            "severity": "medium",
+            "site_id": "MER-1",
+            "start_ts": "2026-09-27 09:00:00",
+            "title": "逆變器高溫降額"
+          }
+        ],
         "truncated": false
       }
     },
@@ -1378,13 +834,13 @@
         ],
         "rows": [
           {
-            "action": "逆變器降額；檢查散熱與直流串列",
-            "domain": "solar",
-            "event_id": "EVT-2",
-            "severity": "medium",
+            "action": "充電維運：切換備援網路，覆核補能排程",
+            "domain": "charging",
+            "event_id": "EVT-3",
+            "severity": "high",
             "site_id": "MER-2",
-            "start_ts": "2026-09-27 09:00:00",
-            "title": "Inverter derating"
+            "start_ts": "2026-09-28 00:00:00",
+            "title": "充電閘道間歇中斷"
           }
         ],
         "truncated": false
@@ -1482,297 +938,15 @@
         ],
         "rows": [
           {
-            "action": "逆變器降額；檢查散熱與直流串列",
-            "domain": "solar",
-            "event_id": "EVT-2",
-            "severity": "medium",
+            "action": "充電維運：切換備援網路，覆核補能排程",
+            "domain": "charging",
+            "event_id": "EVT-3",
+            "severity": "high",
             "site_id": "MER-2",
-            "start_ts": "2026-09-27 09:00:00",
-            "title": "Inverter derating"
+            "start_ts": "2026-09-28 00:00:00",
+            "title": "充電閘道間歇中斷"
           }
         ],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-3\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "MER-3",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-3\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "MER-3",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-3\"],[\"window\",null]]": {
-      "params": {
-        "site": "MER-3",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-4\"],[\"window\",\"current\"]]": {
-      "params": {
-        "site": "MER-4",
-        "window": "current"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-4\"],[\"window\",\"previous\"]]": {
-      "params": {
-        "site": "MER-4",
-        "window": "previous"
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
-        "truncated": false
-      }
-    },
-    "[[\"site\",\"MER-4\"],[\"window\",null]]": {
-      "params": {
-        "site": "MER-4",
-        "window": null
-      },
-      "query": {
-        "file": "",
-        "line": 0,
-        "name": "events",
-        "source": "energy",
-        "sql": ""
-      },
-      "result": {
-        "columns": [
-          {
-            "name": "event_id",
-            "type": "unknown"
-          },
-          {
-            "name": "site_id",
-            "type": "unknown"
-          },
-          {
-            "name": "domain",
-            "type": "unknown"
-          },
-          {
-            "name": "severity",
-            "type": "unknown"
-          },
-          {
-            "name": "start_ts",
-            "type": "unknown"
-          },
-          {
-            "name": "title",
-            "type": "unknown"
-          },
-          {
-            "name": "action",
-            "type": "unknown"
-          }
-        ],
-        "rows": [],
         "truncated": false
       }
     },
@@ -1821,40 +995,49 @@
         ],
         "rows": [
           {
-            "action": "冷卻效率劣化；檢查冷凍機與濾網",
+            "action": "樓控團隊：校正空調關機時序與加班區域",
+            "domain": "building",
+            "event_id": "EVT-5",
+            "severity": "medium",
+            "site_id": "ATL-2",
+            "start_ts": "2026-09-25 20:00:00",
+            "title": "樓宇非營業時段負載偏高"
+          },
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
             "domain": "datacenter",
             "event_id": "EVT-1",
             "severity": "high",
-            "site_id": "ATL-1",
-            "start_ts": "2026-09-26 10:00:00",
-            "title": "Chiller efficiency degradation"
+            "site_id": "HEL-1",
+            "start_ts": "2026-09-26 08:00:00",
+            "title": "冷卻系統效率劣化"
           },
           {
-            "action": "逆變器降額；檢查散熱與直流串列",
+            "action": "維運團隊：覆核散熱風扇與直流串列",
             "domain": "solar",
             "event_id": "EVT-2",
             "severity": "medium",
-            "site_id": "MER-2",
+            "site_id": "MER-1",
             "start_ts": "2026-09-27 09:00:00",
-            "title": "Inverter derating"
+            "title": "逆變器高溫降額"
           },
           {
-            "action": "充電通訊中斷；檢查網路閘道",
+            "action": "充電維運：切換備援網路，覆核補能排程",
             "domain": "charging",
             "event_id": "EVT-3",
-            "severity": "medium",
-            "site_id": "HEL-3",
-            "start_ts": "2026-09-28 14:00:00",
-            "title": "Charger communication loss"
+            "severity": "high",
+            "site_id": "MER-2",
+            "start_ts": "2026-09-28 00:00:00",
+            "title": "充電閘道間歇中斷"
           },
           {
-            "action": "需量反應事件；儲能放電抑制尖峰",
+            "action": "能源經理：確認儲能放電與製程排程一致",
             "domain": "grid",
             "event_id": "EVT-4",
             "severity": "info",
-            "site_id": "ATL-4",
+            "site_id": "ATL-1",
             "start_ts": "2026-09-29 16:00:00",
-            "title": "Demand response activation"
+            "title": "尖峰需量反應"
           }
         ],
         "truncated": false
@@ -1952,40 +1135,49 @@
         ],
         "rows": [
           {
-            "action": "冷卻效率劣化；檢查冷凍機與濾網",
+            "action": "樓控團隊：校正空調關機時序與加班區域",
+            "domain": "building",
+            "event_id": "EVT-5",
+            "severity": "medium",
+            "site_id": "ATL-2",
+            "start_ts": "2026-09-25 20:00:00",
+            "title": "樓宇非營業時段負載偏高"
+          },
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
             "domain": "datacenter",
             "event_id": "EVT-1",
             "severity": "high",
-            "site_id": "ATL-1",
-            "start_ts": "2026-09-26 10:00:00",
-            "title": "Chiller efficiency degradation"
+            "site_id": "HEL-1",
+            "start_ts": "2026-09-26 08:00:00",
+            "title": "冷卻系統效率劣化"
           },
           {
-            "action": "逆變器降額；檢查散熱與直流串列",
+            "action": "維運團隊：覆核散熱風扇與直流串列",
             "domain": "solar",
             "event_id": "EVT-2",
             "severity": "medium",
-            "site_id": "MER-2",
+            "site_id": "MER-1",
             "start_ts": "2026-09-27 09:00:00",
-            "title": "Inverter derating"
+            "title": "逆變器高溫降額"
           },
           {
-            "action": "充電通訊中斷；檢查網路閘道",
+            "action": "充電維運：切換備援網路，覆核補能排程",
             "domain": "charging",
             "event_id": "EVT-3",
-            "severity": "medium",
-            "site_id": "HEL-3",
-            "start_ts": "2026-09-28 14:00:00",
-            "title": "Charger communication loss"
+            "severity": "high",
+            "site_id": "MER-2",
+            "start_ts": "2026-09-28 00:00:00",
+            "title": "充電閘道間歇中斷"
           },
           {
-            "action": "需量反應事件；儲能放電抑制尖峰",
+            "action": "能源經理：確認儲能放電與製程排程一致",
             "domain": "grid",
             "event_id": "EVT-4",
             "severity": "info",
-            "site_id": "ATL-4",
+            "site_id": "ATL-1",
             "start_ts": "2026-09-29 16:00:00",
-            "title": "Demand response activation"
+            "title": "尖峰需量反應"
           }
         ],
         "truncated": false

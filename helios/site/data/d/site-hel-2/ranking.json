@@ -52,12 +52,12 @@
         "rows": [
           {
             "discharge_kwh": 8538.149682500001,
-            "load_kwh": 239402.2077280003,
-            "peak_kw": 1803.353745,
-            "pue": 1.262569852146697,
-            "savings_twd": 38137.068581,
+            "load_kwh": 143200.2973495,
+            "peak_kw": 1135.208693,
+            "pue": 1.1440715216689916,
+            "savings_twd": 206309.79868199985,
             "site_id": "HEL-2",
-            "site_name": "台中・算力中心 B",
+            "site_name": "台中・綠能邊緣機房",
             "tenant": "Helios Cloud"
           }
         ],
@@ -113,12 +113,12 @@
         "rows": [
           {
             "discharge_kwh": 8538.149682500001,
-            "load_kwh": 240243.9740742501,
-            "peak_kw": 1806.422776,
-            "pue": 1.2663287936891143,
-            "savings_twd": 38137.068582,
+            "load_kwh": 143710.392638,
+            "peak_kw": 1130.181158,
+            "pue": 1.1464545512446356,
+            "savings_twd": 206216.1338530001,
             "site_id": "HEL-2",
-            "site_name": "台中・算力中心 B",
+            "site_name": "台中・綠能邊緣機房",
             "tenant": "Helios Cloud"
           }
         ],
@@ -174,12 +174,12 @@
         "rows": [
           {
             "discharge_kwh": 8538.149682500001,
-            "load_kwh": 239402.2077280003,
-            "peak_kw": 1803.353745,
-            "pue": 1.262569852146697,
-            "savings_twd": 38137.068581,
+            "load_kwh": 143200.2973495,
+            "peak_kw": 1135.208693,
+            "pue": 1.1440715216689916,
+            "savings_twd": 206309.79868199985,
             "site_id": "HEL-2",
-            "site_name": "台中・算力中心 B",
+            "site_name": "台中・綠能邊緣機房",
             "tenant": "Helios Cloud"
           }
         ],

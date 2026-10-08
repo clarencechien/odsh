@@ -4,12 +4,12 @@
     {
       "file": "themes/atled.json",
       "id": "atled",
-      "name": "ATLED Engergy · Control room"
+      "name": "ATLED · Energy Loop"
     },
     {
       "file": "themes/imitator.json",
       "id": "imitator",
-      "name": "ATLED Engergy · Editorial"
+      "name": "ATLED · Energy Loop / Decision Brief"
     }
   ]
 }

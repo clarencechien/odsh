@@ -1,0 +1,62 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "充電維運：切換備援網路，覆核補能排程",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 36,
+            "priority": "優先覆核",
+            "site_id": "MER-2",
+            "title": "充電閘道間歇中斷"
+          },
+          {
+            "action": "維運團隊：覆核散熱風扇與直流串列",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 7,
+            "priority": "排程追蹤",
+            "site_id": "MER-1",
+            "title": "逆變器高溫降額"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

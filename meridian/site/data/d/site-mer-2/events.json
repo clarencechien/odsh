@@ -47,13 +47,13 @@
         ],
         "rows": [
           {
-            "action": "逆變器降額；檢查散熱與直流串列",
-            "domain": "solar",
-            "event_id": "EVT-2",
-            "severity": "medium",
+            "action": "充電維運：切換備援網路，覆核補能排程",
+            "domain": "charging",
+            "event_id": "EVT-3",
+            "severity": "high",
             "site_id": "MER-2",
-            "start_ts": "2026-09-27 09:00:00",
-            "title": "Inverter derating"
+            "start_ts": "2026-09-28 00:00:00",
+            "title": "充電閘道間歇中斷"
           }
         ],
         "truncated": false
@@ -149,13 +149,13 @@
         ],
         "rows": [
           {
-            "action": "逆變器降額；檢查散熱與直流串列",
-            "domain": "solar",
-            "event_id": "EVT-2",
-            "severity": "medium",
+            "action": "充電維運：切換備援網路，覆核補能排程",
+            "domain": "charging",
+            "event_id": "EVT-3",
+            "severity": "high",
             "site_id": "MER-2",
-            "start_ts": "2026-09-27 09:00:00",
-            "title": "Inverter derating"
+            "start_ts": "2026-09-28 00:00:00",
+            "title": "充電閘道間歇中斷"
           }
         ],
         "truncated": false

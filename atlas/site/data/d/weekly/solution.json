@@ -1,0 +1,34 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "solution",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "solution",
+            "type": "string"
+          },
+          {
+            "name": "sites",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "sites": 2,
+            "solution": "智慧樓宇 + 智慧電網 + 太陽能 / 智慧樓宇 + 智慧電網 + 資料中心 + 儲能 + 太陽能"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

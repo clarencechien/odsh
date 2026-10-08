@@ -1,0 +1,115 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "week_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "previous",
+            "type": "number"
+          },
+          {
+            "name": "current",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "current": 292697.6978379999,
+            "previous": 287323.96196800016,
+            "site_id": "MER-2"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "week_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "previous",
+            "type": "number"
+          },
+          {
+            "name": "current",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "current": 287323.96196800016,
+            "previous": 295983.2081200001,
+            "site_id": "MER-2"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "week_sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "previous",
+            "type": "number"
+          },
+          {
+            "name": "current",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "current": 292697.6978379999,
+            "previous": 287323.96196800016,
+            "site_id": "MER-2"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

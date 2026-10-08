@@ -52,12 +52,12 @@
         "rows": [
           {
             "discharge_kwh": 0,
-            "load_kwh": 38961.73632649997,
+            "load_kwh": 40611.424374999995,
             "peak_kw": 397.547682,
             "pue": null,
             "savings_twd": 132054.35955999995,
             "site_id": "ATL-2",
-            "site_name": "台中・晶圓園區 B",
+            "site_name": "台中・智慧研發樓",
             "tenant": "Atlas Semiconductor"
           }
         ],
@@ -118,7 +118,7 @@
             "pue": null,
             "savings_twd": 132523.61100799995,
             "site_id": "ATL-2",
-            "site_name": "台中・晶圓園區 B",
+            "site_name": "台中・智慧研發樓",
             "tenant": "Atlas Semiconductor"
           }
         ],
@@ -174,12 +174,12 @@
         "rows": [
           {
             "discharge_kwh": 0,
-            "load_kwh": 38961.73632649997,
+            "load_kwh": 40611.424374999995,
             "peak_kw": 397.547682,
             "pue": null,
             "savings_twd": 132054.35955999995,
             "site_id": "ATL-2",
-            "site_name": "台中・晶圓園區 B",
+            "site_name": "台中・智慧研發樓",
             "tenant": "Atlas Semiconductor"
           }
         ],

@@ -1,0 +1,45 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "thermal",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "hour",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "temperature_c",
+            "type": "unknown"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "it_kw",
+            "type": "unknown"
+          },
+          {
+            "name": "operating_state",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "能源經理：確認儲能放電與製程排程一致",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 2,
+            "priority": "成效覆核",
+            "site_id": "ATL-1",
+            "title": "尖峰需量反應"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          },
+          {
+            "name": "priority",
+            "type": "unknown"
+          },
+          {
+            "name": "event_hours",
+            "type": "unknown"
+          },
+          {
+            "name": "checkpoint",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "能源經理：確認儲能放電與製程排程一致",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 2,
+            "priority": "成效覆核",
+            "site_id": "ATL-1",
+            "title": "尖峰需量反應"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

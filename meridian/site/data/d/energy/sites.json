@@ -23,20 +23,12 @@
         ],
         "rows": [
           {
-            "label": "Meridian Logistics / 新竹・物流中心 A",
+            "label": "Meridian Logistics / 桃園・電動車隊基地",
             "site_id": "MER-1"
           },
           {
-            "label": "Meridian Logistics / 台中・物流中心 B",
+            "label": "Meridian Logistics / 高雄・冷鏈補能站",
             "site_id": "MER-2"
-          },
-          {
-            "label": "Meridian Logistics / 高雄・物流中心 C",
-            "site_id": "MER-3"
-          },
-          {
-            "label": "Meridian Logistics / 桃園・物流中心 D",
-            "site_id": "MER-4"
           }
         ],
         "truncated": false

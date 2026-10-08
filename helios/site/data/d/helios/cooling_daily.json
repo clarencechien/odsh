@@ -1,0 +1,611 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"HEL-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 8826.563912250002,
+            "day": "2026-09-24 00:00:00",
+            "it_kwh": 33578.11440474999
+          },
+          {
+            "cooling_kwh": 8820.923203249999,
+            "day": "2026-09-25 00:00:00",
+            "it_kwh": 33578.040519250004
+          },
+          {
+            "cooling_kwh": 16222.498427,
+            "day": "2026-09-26 00:00:00",
+            "it_kwh": 33531.56084500001
+          },
+          {
+            "cooling_kwh": 18107.601638000007,
+            "day": "2026-09-27 00:00:00",
+            "it_kwh": 33575.38538200001
+          },
+          {
+            "cooling_kwh": 8802.378570749996,
+            "day": "2026-09-28 00:00:00",
+            "it_kwh": 33554.57612975
+          },
+          {
+            "cooling_kwh": 8827.466297749997,
+            "day": "2026-09-29 00:00:00",
+            "it_kwh": 33605.84308725
+          },
+          {
+            "cooling_kwh": 8828.42938925,
+            "day": "2026-09-30 00:00:00",
+            "it_kwh": 33560.360256500004
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 7317.028765999999,
+            "day": "2026-09-17 00:00:00",
+            "it_kwh": 27108.26895599999
+          },
+          {
+            "cooling_kwh": 7270.398753750002,
+            "day": "2026-09-18 00:00:00",
+            "it_kwh": 27108.377535750013
+          },
+          {
+            "cooling_kwh": 7235.786162750001,
+            "day": "2026-09-19 00:00:00",
+            "it_kwh": 27060.9120915
+          },
+          {
+            "cooling_kwh": 7199.549565249999,
+            "day": "2026-09-20 00:00:00",
+            "it_kwh": 27087.322624499997
+          },
+          {
+            "cooling_kwh": 7177.2817177499965,
+            "day": "2026-09-21 00:00:00",
+            "it_kwh": 27096.259133500003
+          },
+          {
+            "cooling_kwh": 7155.37060125,
+            "day": "2026-09-22 00:00:00",
+            "it_kwh": 27074.771619500003
+          },
+          {
+            "cooling_kwh": 7128.810108000002,
+            "day": "2026-09-23 00:00:00",
+            "it_kwh": 27054.71008124999
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 8826.563912250002,
+            "day": "2026-09-24 00:00:00",
+            "it_kwh": 33578.11440474999
+          },
+          {
+            "cooling_kwh": 8820.923203249999,
+            "day": "2026-09-25 00:00:00",
+            "it_kwh": 33578.040519250004
+          },
+          {
+            "cooling_kwh": 16222.498427,
+            "day": "2026-09-26 00:00:00",
+            "it_kwh": 33531.56084500001
+          },
+          {
+            "cooling_kwh": 18107.601638000007,
+            "day": "2026-09-27 00:00:00",
+            "it_kwh": 33575.38538200001
+          },
+          {
+            "cooling_kwh": 8802.378570749996,
+            "day": "2026-09-28 00:00:00",
+            "it_kwh": 33554.57612975
+          },
+          {
+            "cooling_kwh": 8827.466297749997,
+            "day": "2026-09-29 00:00:00",
+            "it_kwh": 33605.84308725
+          },
+          {
+            "cooling_kwh": 8828.42938925,
+            "day": "2026-09-30 00:00:00",
+            "it_kwh": 33560.360256500004
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 1876.44480725,
+            "day": "2026-09-24 00:00:00",
+            "it_kwh": 13005.542691499997
+          },
+          {
+            "cooling_kwh": 1873.8624952500008,
+            "day": "2026-09-25 00:00:00",
+            "it_kwh": 12997.589215749993
+          },
+          {
+            "cooling_kwh": 1875.398918500001,
+            "day": "2026-09-26 00:00:00",
+            "it_kwh": 13018.040208750008
+          },
+          {
+            "cooling_kwh": 1874.3872197499998,
+            "day": "2026-09-27 00:00:00",
+            "it_kwh": 13023.04767025
+          },
+          {
+            "cooling_kwh": 1872.0313149999995,
+            "day": "2026-09-28 00:00:00",
+            "it_kwh": 12995.64360125
+          },
+          {
+            "cooling_kwh": 1873.9537717500002,
+            "day": "2026-09-29 00:00:00",
+            "it_kwh": 13021.004001000001
+          },
+          {
+            "cooling_kwh": 1875.7419009999999,
+            "day": "2026-09-30 00:00:00",
+            "it_kwh": 13017.6488685
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 1931.8515544999998,
+            "day": "2026-09-17 00:00:00",
+            "it_kwh": 12986.30214625
+          },
+          {
+            "cooling_kwh": 1915.0375347499998,
+            "day": "2026-09-18 00:00:00",
+            "it_kwh": 12971.037389249996
+          },
+          {
+            "cooling_kwh": 1912.4227009999997,
+            "day": "2026-09-19 00:00:00",
+            "it_kwh": 13006.185101249997
+          },
+          {
+            "cooling_kwh": 1898.2641452500002,
+            "day": "2026-09-20 00:00:00",
+            "it_kwh": 12972.63328175
+          },
+          {
+            "cooling_kwh": 1895.7474055000002,
+            "day": "2026-09-21 00:00:00",
+            "it_kwh": 13009.317931249998
+          },
+          {
+            "cooling_kwh": 1885.10239875,
+            "day": "2026-09-22 00:00:00",
+            "it_kwh": 12997.127048999997
+          },
+          {
+            "cooling_kwh": 1879.7058605000004,
+            "day": "2026-09-23 00:00:00",
+            "it_kwh": 12994.356636249999
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 1876.44480725,
+            "day": "2026-09-24 00:00:00",
+            "it_kwh": 13005.542691499997
+          },
+          {
+            "cooling_kwh": 1873.8624952500008,
+            "day": "2026-09-25 00:00:00",
+            "it_kwh": 12997.589215749993
+          },
+          {
+            "cooling_kwh": 1875.398918500001,
+            "day": "2026-09-26 00:00:00",
+            "it_kwh": 13018.040208750008
+          },
+          {
+            "cooling_kwh": 1874.3872197499998,
+            "day": "2026-09-27 00:00:00",
+            "it_kwh": 13023.04767025
+          },
+          {
+            "cooling_kwh": 1872.0313149999995,
+            "day": "2026-09-28 00:00:00",
+            "it_kwh": 12995.64360125
+          },
+          {
+            "cooling_kwh": 1873.9537717500002,
+            "day": "2026-09-29 00:00:00",
+            "it_kwh": 13021.004001000001
+          },
+          {
+            "cooling_kwh": 1875.7419009999999,
+            "day": "2026-09-30 00:00:00",
+            "it_kwh": 13017.6488685
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 10703.008719500001,
+            "day": "2026-09-24 00:00:00",
+            "it_kwh": 46583.657096250034
+          },
+          {
+            "cooling_kwh": 10694.7856985,
+            "day": "2026-09-25 00:00:00",
+            "it_kwh": 46575.629734999995
+          },
+          {
+            "cooling_kwh": 18097.89734549998,
+            "day": "2026-09-26 00:00:00",
+            "it_kwh": 46549.60105375003
+          },
+          {
+            "cooling_kwh": 19981.988857750013,
+            "day": "2026-09-27 00:00:00",
+            "it_kwh": 46598.43305225
+          },
+          {
+            "cooling_kwh": 10674.409885749996,
+            "day": "2026-09-28 00:00:00",
+            "it_kwh": 46550.21973099999
+          },
+          {
+            "cooling_kwh": 10701.420069499996,
+            "day": "2026-09-29 00:00:00",
+            "it_kwh": 46626.84708824996
+          },
+          {
+            "cooling_kwh": 10704.171290250002,
+            "day": "2026-09-30 00:00:00",
+            "it_kwh": 46578.009125
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 9248.880320499999,
+            "day": "2026-09-17 00:00:00",
+            "it_kwh": 40094.571102249996
+          },
+          {
+            "cooling_kwh": 9185.436288500003,
+            "day": "2026-09-18 00:00:00",
+            "it_kwh": 40079.41492500003
+          },
+          {
+            "cooling_kwh": 9148.208863750006,
+            "day": "2026-09-19 00:00:00",
+            "it_kwh": 40067.09719275001
+          },
+          {
+            "cooling_kwh": 9097.813710499999,
+            "day": "2026-09-20 00:00:00",
+            "it_kwh": 40059.95590625
+          },
+          {
+            "cooling_kwh": 9073.029123249993,
+            "day": "2026-09-21 00:00:00",
+            "it_kwh": 40105.57706475001
+          },
+          {
+            "cooling_kwh": 9040.472999999996,
+            "day": "2026-09-22 00:00:00",
+            "it_kwh": 40071.89866850002
+          },
+          {
+            "cooling_kwh": 9008.515968499998,
+            "day": "2026-09-23 00:00:00",
+            "it_kwh": 40049.0667175
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 10703.008719500001,
+            "day": "2026-09-24 00:00:00",
+            "it_kwh": 46583.657096250034
+          },
+          {
+            "cooling_kwh": 10694.7856985,
+            "day": "2026-09-25 00:00:00",
+            "it_kwh": 46575.629734999995
+          },
+          {
+            "cooling_kwh": 18097.89734549998,
+            "day": "2026-09-26 00:00:00",
+            "it_kwh": 46549.60105375003
+          },
+          {
+            "cooling_kwh": 19981.988857750013,
+            "day": "2026-09-27 00:00:00",
+            "it_kwh": 46598.43305225
+          },
+          {
+            "cooling_kwh": 10674.409885749996,
+            "day": "2026-09-28 00:00:00",
+            "it_kwh": 46550.21973099999
+          },
+          {
+            "cooling_kwh": 10701.420069499996,
+            "day": "2026-09-29 00:00:00",
+            "it_kwh": 46626.84708824996
+          },
+          {
+            "cooling_kwh": 10704.171290250002,
+            "day": "2026-09-30 00:00:00",
+            "it_kwh": 46578.009125
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -52,12 +52,12 @@
         "rows": [
           {
             "discharge_kwh": 7115.124734999999,
-            "load_kwh": 146626.7799899999,
-            "peak_kw": 1079.596134,
-            "pue": 1.2747439343791505,
-            "savings_twd": 172440.38016399994,
+            "load_kwh": 139815.43926450005,
+            "peak_kw": 1042.958081,
+            "pue": 1.2625749556016934,
+            "savings_twd": 172436.14234699993,
             "site_id": "ATL-1",
-            "site_name": "新竹・晶圓園區 A",
+            "site_name": "新竹・製程微電網",
             "tenant": "Atlas Semiconductor"
           }
         ],
@@ -113,12 +113,12 @@
         "rows": [
           {
             "discharge_kwh": 7115.124734999999,
-            "load_kwh": 146251.90216424994,
-            "peak_kw": 1081.002508,
+            "load_kwh": 135052.70113225002,
+            "peak_kw": 1028.910776,
             "pue": 1.266389460204798,
-            "savings_twd": 172292.62564300004,
+            "savings_twd": 172258.79428300008,
             "site_id": "ATL-1",
-            "site_name": "新竹・晶圓園區 A",
+            "site_name": "新竹・製程微電網",
             "tenant": "Atlas Semiconductor"
           }
         ],
@@ -174,12 +174,12 @@
         "rows": [
           {
             "discharge_kwh": 7115.124734999999,
-            "load_kwh": 146626.7799899999,
-            "peak_kw": 1079.596134,
-            "pue": 1.2747439343791505,
-            "savings_twd": 172440.38016399994,
+            "load_kwh": 139815.43926450005,
+            "peak_kw": 1042.958081,
+            "pue": 1.2625749556016934,
+            "savings_twd": 172436.14234699993,
             "site_id": "ATL-1",
-            "site_name": "新竹・晶圓園區 A",
+            "site_name": "新竹・製程微電網",
             "tenant": "Atlas Semiconductor"
           }
         ],

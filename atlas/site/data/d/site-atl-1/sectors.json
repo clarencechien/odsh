@@ -27,15 +27,15 @@
         ],
         "rows": [
           {
-            "energy_kwh": 33928.37281325002,
+            "energy_kwh": 39356.912464500034,
             "sector": "智慧樓宇"
           },
           {
-            "energy_kwh": 101426.76847,
+            "energy_kwh": 100458.52680225,
             "sector": "資料中心"
           },
           {
-            "energy_kwh": 11271.638706999986,
+            "energy_kwh": 0,
             "sector": "充電樁"
           }
         ],
@@ -74,7 +74,7 @@
             "sector": "資料中心"
           },
           {
-            "energy_kwh": 11199.20103275001,
+            "energy_kwh": 0,
             "sector": "充電樁"
           }
         ],
@@ -105,15 +105,15 @@
         ],
         "rows": [
           {
-            "energy_kwh": 33928.37281325002,
+            "energy_kwh": 39356.912464500034,
             "sector": "智慧樓宇"
           },
           {
-            "energy_kwh": 101426.76847,
+            "energy_kwh": 100458.52680225,
             "sector": "資料中心"
           },
           {
-            "energy_kwh": 11271.638706999986,
+            "energy_kwh": 0,
             "sector": "充電樁"
           }
         ],

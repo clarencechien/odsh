@@ -1,0 +1,431 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"HEL-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 36,
+            "priority": "優先覆核",
+            "site_id": "HEL-1",
+            "title": "冷卻系統效率劣化"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          },
+          {
+            "name": "priority",
+            "type": "unknown"
+          },
+          {
+            "name": "event_hours",
+            "type": "unknown"
+          },
+          {
+            "name": "checkpoint",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 36,
+            "priority": "優先覆核",
+            "site_id": "HEL-1",
+            "title": "冷卻系統效率劣化"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          },
+          {
+            "name": "priority",
+            "type": "unknown"
+          },
+          {
+            "name": "event_hours",
+            "type": "unknown"
+          },
+          {
+            "name": "checkpoint",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          },
+          {
+            "name": "priority",
+            "type": "unknown"
+          },
+          {
+            "name": "event_hours",
+            "type": "unknown"
+          },
+          {
+            "name": "checkpoint",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          },
+          {
+            "name": "priority",
+            "type": "unknown"
+          },
+          {
+            "name": "event_hours",
+            "type": "unknown"
+          },
+          {
+            "name": "checkpoint",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 36,
+            "priority": "優先覆核",
+            "site_id": "HEL-1",
+            "title": "冷卻系統效率劣化"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          },
+          {
+            "name": "priority",
+            "type": "unknown"
+          },
+          {
+            "name": "event_hours",
+            "type": "unknown"
+          },
+          {
+            "name": "checkpoint",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "actions",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "event_hours",
+            "type": "number"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "action": "設備團隊：清理濾網並覆核冷凍機負載分配",
+            "checkpoint": "下個報告週期覆核",
+            "event_hours": 36,
+            "priority": "優先覆核",
+            "site_id": "HEL-1",
+            "title": "冷卻系統效率劣化"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

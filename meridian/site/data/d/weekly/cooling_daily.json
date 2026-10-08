@@ -1,0 +1,69 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "cooling_daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "it_kwh",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cooling_kwh": 0,
+            "day": "2026-09-24 00:00:00",
+            "it_kwh": 0
+          },
+          {
+            "cooling_kwh": 0,
+            "day": "2026-09-25 00:00:00",
+            "it_kwh": 0
+          },
+          {
+            "cooling_kwh": 0,
+            "day": "2026-09-26 00:00:00",
+            "it_kwh": 0
+          },
+          {
+            "cooling_kwh": 0,
+            "day": "2026-09-27 00:00:00",
+            "it_kwh": 0
+          },
+          {
+            "cooling_kwh": 0,
+            "day": "2026-09-28 00:00:00",
+            "it_kwh": 0
+          },
+          {
+            "cooling_kwh": 0,
+            "day": "2026-09-29 00:00:00",
+            "it_kwh": 0
+          },
+          {
+            "cooling_kwh": 0,
+            "day": "2026-09-30 00:00:00",
+            "it_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

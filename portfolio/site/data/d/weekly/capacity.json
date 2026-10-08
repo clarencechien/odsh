@@ -1,0 +1,74 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "capacity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "actual",
+            "type": "number"
+          },
+          {
+            "name": "target",
+            "type": "number"
+          },
+          {
+            "name": "scale",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "actual": 1042.958081,
+            "scale": 1380,
+            "site_id": "ATL-1",
+            "target": 1200
+          },
+          {
+            "actual": 397.547682,
+            "scale": 690,
+            "site_id": "ATL-2",
+            "target": 600
+          },
+          {
+            "actual": 2385.545455,
+            "scale": 2760,
+            "site_id": "HEL-1",
+            "target": 2400
+          },
+          {
+            "actual": 1135.208693,
+            "scale": 1495,
+            "site_id": "HEL-2",
+            "target": 1300
+          },
+          {
+            "actual": 656.214433,
+            "scale": 977.5,
+            "site_id": "MER-1",
+            "target": 850
+          },
+          {
+            "actual": 844.311265,
+            "scale": 1092.5,
+            "site_id": "MER-2",
+            "target": 950
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

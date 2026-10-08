@@ -27,8 +27,8 @@
         ],
         "rows": [
           {
-            "cost_change": 0.0023657987047522575,
-            "load_change": 0.0025632338465515457
+            "cost_change": 0.053945239704983904,
+            "load_change": 0.03526577471105987
           }
         ],
         "truncated": false
@@ -58,8 +58,8 @@
         ],
         "rows": [
           {
-            "cost_change": -0.016721978829411295,
-            "load_change": -0.01119792632640822
+            "cost_change": -0.01736885541423616,
+            "load_change": -0.011301628948909275
           }
         ],
         "truncated": false
@@ -89,8 +89,8 @@
         ],
         "rows": [
           {
-            "cost_change": 0.0023657987047522575,
-            "load_change": 0.0025632338465515457
+            "cost_change": 0.053945239704983904,
+            "load_change": 0.03526577471105987
           }
         ],
         "truncated": false
