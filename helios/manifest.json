@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "run_id": "helios-2026-q3-v2",
+  "run_id": "helios-2026-q3-v3",
   "company": "ATLED Engergy",
   "synthetic": true,
   "scope": "customer",
   "tenant": "Helios Cloud",
   "template": {
-    "commit": "6da9e1e2654325d63aebc8c8898cdfd3e73ef671",
-    "sha256": "d509b9777c5896ae44f71b698e4f6bb63ddba03febf81cbf29296a50a64f71a5",
+    "commit": "b723b38e7d7779d416e2944a0a604d552b3de067",
+    "sha256": "a3d8890bc9e11cc26e3c33258a3ea06e1ca0aec1bf6758c6c9ac5065462c0034",
     "files": {
       "open-dashboard.config.ts": "9687b0411ea9a5b28027ce060999cced94bb10ddd2d28eb1ba4d1f9fb901315e",
       "dashboards/energy/index.tsx": "9c0e9d13f5022aec47c29bd72b337999669aecec38f8440312cf1dbb8e48f646",
@@ -25,14 +25,14 @@
       "charts/prose/sample.sql": "ad6089134f5caad2461fe4014ba9cad3b00d38abf4ee6bf0bf0a37782c3192a8",
       "themes/atled.json": "b7296145eaac910a1bdfcd7ee94728052cf2ad5837c3eeb4452c2e0a888fa6e2",
       "themes/imitator.json": "323541893b943d0e3d60be4f8f1136db9e0ced272f739db45fb073cb6c0dcd83",
-      "theme-overrides/energy-loop.css": "a3457ac5b0613423f92ac6e486815c69360367e19afd444eee80146764a76fd2",
-      "theme-overrides/imitator.css": "c6e802d582f7358703821cd87e9833fd347047d02aa884688299da11c9cb5da7",
+      "theme-overrides/energy-loop.css": "ba2c25da6f1bd05df49d626428732bb1e4b6d2b0bb26dcd12117680b6742ba12",
+      "theme-overrides/imitator.css": "759d4193de2457d97172fea690df515d0fdfd88b7ab31d56e8fce66b184b9764",
       "databases/energy/database.md": "6874f208371fd5172b71a0d54f00ce16bf6d5070958e3f43461323e8ec0ce43b",
       "snapreport.yaml": "c82d013adec8d7bc6c712e9c6f8ebba159f4245be8a690ec329e9090637f90c7"
     }
   },
   "open_dashboard": "0.7.0",
-  "built_at": "2026-10-08T01:53:06.479Z",
+  "built_at": "2026-10-08T02:02:10.497Z",
   "inputs": {
     "assets.parquet": {
       "sha256": "66528880817e2bf71b7610dd900a2fdc48ed3054c7eea767f897421bfc45fd7d",
@@ -823,16 +823,16 @@
   "quality": "ok",
   "artifacts": {
     "build.log": {
-      "sha256": "563e1128cc3d7d7243eaa9e40dd71f5d488e56eea91555d1f2cd6ac8d0c16eef",
+      "sha256": "3a7a0454223d5040bca48a6fdaa362628e28c5bdc7ff1958893f53108a5a3936",
       "bytes": 327
     },
     "check.json": {
-      "sha256": "823f4772f74e40c68c60e5218ac052b4e0e164894c205d0ec83255f78f047113",
+      "sha256": "79b2f62837dc051ba690096cb0f3694e8aeadaf42e3117d1012c4488ef5dff61",
       "bytes": 54472
     },
     "dashboard.html": {
-      "sha256": "0b78f571cc7ded6b48c7942497a9c3096b129fce6316230a0f8dd2771c47bddf",
-      "bytes": 1976657
+      "sha256": "119aba2c16e88bde17bae9470a1c13199f225954238fb7fef8b2f0531c6f0351",
+      "bytes": 1976784
     },
     "demos/react/assets/index-BnyFbHiB.css": {
       "sha256": "7e0d75ed108b003d2b65d5d5ec7e10fd627dec8a22fb4c233aaaf72c52986e5b",
@@ -863,12 +863,12 @@
       "bytes": 35
     },
     "report-native.html": {
-      "sha256": "8ce8d927a65ca96f4290bdbc5352cf75d943db37906151f06df8b963a7ddad05",
-      "bytes": 727375
+      "sha256": "eeed7238609917eda8381d1ab2c901d2c1fdcc53f0507da097bf21367d6bb409",
+      "bytes": 727502
     },
     "report.html": {
-      "sha256": "7268bacc4a731bcd97e3aa2096dafb9b1ac98ba1561ac2ade40be792a5be58a9",
-      "bytes": 729213
+      "sha256": "a8cc84e1326b0b2541f8a61c1749c75ce77f28bb60e179e4225b35eb6fdcb71a",
+      "bytes": 729773
     },
     "site/assets/define-chart-ChmCMZN3.js": {
       "sha256": "14ffdf0736d5efba9c24e6c0bf90a66548bf3a860adf9afdfe3296ce4cdb34c4",
@@ -931,24 +931,24 @@
       "bytes": 15526
     },
     "site/d/energy/index.html": {
-      "sha256": "0e9db40b2ec91cab4254efe9316edbe6f1fe7057167faec404a1af9885532f1d",
-      "bytes": 4866
+      "sha256": "5a0b9975f2e1dea583f0746c80b23f0c254d67057c6b681b798f1138fa99b0b0",
+      "bytes": 4993
     },
     "site/d/helios/index.html": {
-      "sha256": "60759eb4062ca2b5c02a0365a8151b6bef8c0ae4d721a6bd89acc1d373d512ae",
-      "bytes": 4859
+      "sha256": "7c946c3ddf0cea4c21d4fc054a97dc5925b76fbf6c5b46390af1c39339b6bebb",
+      "bytes": 4986
     },
     "site/d/site-hel-1/index.html": {
-      "sha256": "846c9f61d11ec96d37e96de716c106ce8fca1c7069739845d46d9269e9f4431d",
-      "bytes": 4871
+      "sha256": "6427252118e591f8fb2280c0114c0f47fd3e82f352849cc132a591ee843a9d62",
+      "bytes": 4998
     },
     "site/d/site-hel-2/index.html": {
-      "sha256": "1956e05e751d59ee3e212373caf0ca2ca68915a6d4e4acf4419342998021369a",
-      "bytes": 4874
+      "sha256": "b8d6858277436163524765dd67ecb35eda1a5cf93e1fc9ef30647b8dac466075",
+      "bytes": 5001
     },
     "site/d/weekly/index.html": {
-      "sha256": "07c1255b58eb15b94d16e70ea3d631e45d1557b0f25f89bf77592d2d908b785a",
-      "bytes": 6697
+      "sha256": "35afd26120c5c37b6d3cc0c21372a62dd957194a3c32b47a859bbc51978a43fb",
+      "bytes": 7257
     },
     "site/data/d/energy/actions.json": {
       "sha256": "e31bd39531d93de4147e1fed823eb52be539e7c366af2199484ef2334aeef9eb",
@@ -1527,8 +1527,8 @@
       "bytes": 278
     },
     "site/index.html": {
-      "sha256": "ca52b6cc09568cb7e55e380a85ab1e5b37bcfe5aa0b77c603203f5ff777aa8be",
-      "bytes": 4805
+      "sha256": "8ea5bb1e44cb7732284f2dae4e08d0e44b70fd885b827d3eff70d6bdd4bcdd48",
+      "bytes": 4932
     }
   }
 }
