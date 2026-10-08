@@ -3,25 +3,25 @@
   "synthetic": true,
   "runs": [
     {
-      "id": "atlas-2026-q3-v3",
+      "id": "atlas-2026-q3-v4",
       "path": "atlas",
-      "data_hash": "cf89a739a72425b61e6cd0ff8edea74ebcf7022906d17c0f78a8149b05268e70"
+      "data_hash": "2303751850ab15c504313de5b2c60f89729e5f78af888d3c24100cd5a8cccf75"
     },
     {
-      "id": "meridian-2026-q3-v3",
+      "id": "meridian-2026-q3-v4",
       "path": "meridian",
-      "data_hash": "d2f3d072beba08b1eaecf5f39fa6ba36c1e4548e177d14011a6cb5f2bbbcebeb"
+      "data_hash": "a854cf5528ce2fa7a0b49256980336dd739701d642d3ea6f1672976c76eceb8d"
     },
     {
-      "id": "helios-2026-q3-v3",
+      "id": "helios-2026-q3-v4",
       "path": "helios",
-      "data_hash": "92985d6a29e52ea834b95af54bee725d0b683a63546845f7c4bfb6bbc73db297"
+      "data_hash": "006743a1da8dd2ecbbc9c0ca2c86f1ff949fc2d790161e564a550236f3666c38"
     },
     {
-      "id": "demo-2026-q3-v3",
+      "id": "demo-2026-q3-v4",
       "path": "portfolio",
-      "data_hash": "3f2eef4a700504dfcb69d6e7cfec5e70ef2932f62a755aef1bfc8055eb950a30"
+      "data_hash": "ccd3ab58008cb4e797b666a7217d54135432cfc4ec07973482f4fd74aa469fe7"
     }
   ],
-  "files": 888
+  "files": 892
 }

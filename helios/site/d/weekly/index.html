@@ -32,6 +32,15 @@ body{color:var(--odd-ink)}
 @media print{.loop-masthead nav,.loop-snapshot-label{display:none}.loop-masthead{padding:0 0 18px;border:0}}
 
 .odd-sidebar{background:var(--odd-sidebar)!important;border-color:var(--odd-border)!important}.odd-topbar{background:var(--odd-surface)!important;border-color:var(--odd-border)!important}
+/* Reader controls and personal layouts; all chart/query rendering stays native. */
+.loop-theme-control{display:flex;align-items:center;gap:8px;font-size:12px;color:#163850;white-space:nowrap}.loop-theme-control select{font:inherit;background:#fff;color:#163850;border:1px solid #a9c4d7;border-radius:6px;padding:7px}
+.loop-layout-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 16px;margin-bottom:22px;border:1px solid var(--odd-grid);border-radius:8px;background:var(--odd-surface);color:var(--odd-ink)}
+.loop-layout-toolbar strong{font-size:14px}.loop-layout-toolbar small{display:block;font-size:12px;color:var(--odd-ink-2);margin-top:4px}.loop-layout-toolbar>div{margin-right:auto}
+.loop-layout-toolbar button,.loop-widget-controls button{font:inherit;padding:7px 10px;border:1px solid var(--odd-border-strong);border-radius:5px;background:var(--odd-surface);color:var(--odd-ink);cursor:pointer}.loop-layout-toolbar button[aria-pressed=true]{background:var(--odd-accent);color:#0b0b0b}.loop-layout-toolbar button:disabled,.loop-widget-controls button:disabled{opacity:.45;cursor:default}
+.loop-layout-status{font-size:12px;color:var(--odd-ink-2)}.loop-widget-library{background:var(--odd-surface);color:var(--odd-ink);border:1px solid var(--odd-grid);padding:16px;margin-bottom:20px;border-radius:8px}.loop-widget-library summary{cursor:pointer;font-weight:600}.loop-widget-library p{font-size:13px;color:var(--odd-ink-2)}.loop-widget-library>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}.loop-widget-library label{display:flex;align-items:center;gap:8px;font-size:13px}
+.loop-personal-widget{grid-column:span var(--loop-span,12);min-width:0}.loop-personal-widget[data-dragging]{opacity:.5}.loop-widget-content{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));min-width:0}.loop-widget-controls{display:flex;align-items:center;gap:5px;flex-wrap:wrap;background:var(--odd-surface);border:1px dashed var(--odd-accent);border-radius:7px 7px 0 0;padding:8px;font-size:12px;color:var(--odd-ink)}.loop-widget-controls label{display:flex;align-items:center;gap:4px}.loop-widget-controls select,.loop-widget-controls input{width:65px;font:inherit;color:var(--odd-ink);background:var(--odd-surface);border:1px solid var(--odd-border-strong);padding:5px;border-radius:4px}.loop-drag-handle{cursor:grab!important;touch-action:none;user-select:none}.loop-layout-empty{grid-column:1/-1;padding:30px;background:var(--odd-surface);color:var(--odd-ink)}
+@media(max-width:700px){.loop-personal-widget{grid-column:1/-1}.loop-layout-toolbar{padding:12px}.loop-layout-status{width:100%}.loop-masthead{gap:8px}.loop-theme-control{margin-left:auto}.loop-snapshot-label{display:none}}
+@media print{.loop-layout-toolbar,.loop-widget-library,.loop-widget-controls,.loop-theme-control{display:none!important}}
 </style><style data-snapreport-theme="imitator">/* A fixed weekly decision brief, intentionally different from the operational dashboard. */
 body{background:var(--odd-page)!important}
 .odd-standalone,.odd-dashboard-page{max-width:1060px;margin-inline:auto}
@@ -55,10 +64,25 @@ body{background:var(--odd-page)!important}
 /* Printed briefs remain paper/light, including when the screen uses dark mode. */
 @media print{body{background:white!important}.odd-standalone,.odd-dashboard-page{--odd-page:#ffffff;--odd-surface:#ffffff;--odd-ink:#163850;--odd-ink-2:#405b70;--odd-muted:#526878;--odd-grid:#dce7f1;--odd-accent-ink:#006daf}}
 </style></head>
-<body data-energy-view="report"><header class="loop-masthead"><div class="loop-wordmark"><span class="loop-brand-mark" aria-hidden="true"></span><span>ATLED <strong>Engergy</strong><small>ENERGY LOOP</small></span></div><nav aria-label="呈現模式"><a  href="../../../dashboard.html">營運 Dashboard</a><a aria-current="page" href="../../../report.html">決策週報 Report</a></nav><span class="loop-snapshot-label">固定週期 · 決策文件</span></header>
+<body data-energy-view="report"><header class="loop-masthead"><div class="loop-wordmark"><span class="loop-brand-mark" aria-hidden="true"></span><span>ATLED <strong>Engergy</strong><small>ENERGY LOOP</small></span></div><nav aria-label="呈現模式"><a  href="../../../dashboard.html">營運 Dashboard</a><a aria-current="page" href="../../../report.html">決策週報 Report</a></nav><label class="loop-theme-control">主題<select aria-label="外觀主題" id="loop-theme"><option value="system">跟隨系統</option><option value="light">淺色</option><option value="dark">深色</option></select></label><span class="loop-snapshot-label">固定週期 · 決策文件</span></header>
 <div id="root"></div>
-<script type="module" src="../../assets/main-r9AEhxSd.js"></script>
-<script>(function(){var s=document.currentScript.previousElementSibling;window.__ODD_SNAPSHOT__={builtAt:"2026-10-08T02:02:04",base:new URL('../',s.src).pathname}})()</script>
+<script type="module" src="../../assets/main-CeyT5a_X.js"></script>
+<script>(function(){var s=document.currentScript.previousElementSibling;window.__ODD_SNAPSHOT__={builtAt:"2026-10-08T02:23:51",base:new URL('../',s.src).pathname}})()</script>
 
-</body>
+<script>// Reader appearance only; layout editing lives in the React dashboard component.
+(()=>{
+ const select=document.getElementById('loop-theme');if(!select)return;
+ const root=document.documentElement;
+ const sync=()=>{select.value=['light','dark'].includes(root.dataset.theme)?root.dataset.theme:'system'};
+ try{const value=localStorage.getItem('odd:theme');if(['light','dark'].includes(value))root.dataset.theme=value}catch{}
+ sync();
+ select.addEventListener('change',()=>{
+  const value=select.value;
+  if(value==='system')delete root.dataset.theme;else root.dataset.theme=value;
+  try{if(value==='system')localStorage.removeItem('odd:theme');else localStorage.setItem('odd:theme',value)}catch{}
+ });
+ new MutationObserver(sync).observe(root,{attributes:true,attributeFilter:['data-theme']});
+ window.addEventListener('storage',event=>{if(event.key==='odd:theme'){if(['light','dark'].includes(event.newValue))root.dataset.theme=event.newValue;else delete root.dataset.theme}});
+})();
+</script></body>
 </html>
