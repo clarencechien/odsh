@@ -1,0 +1,7 @@
+version: 1
+dashboards: [energy, weekly]
+reportDashboard: weekly
+maxRuns: 100
+maxAttempts: 3
+lint:
+  allowLiterals: []

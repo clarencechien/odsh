@@ -1,0 +1,10 @@
+/* Original editorial stylesheet: no third-party report.css was supplied. */
+.odd-standalone,.odd-dashboard-page{max-width:1180px;margin-inline:auto}
+.odd-dashboard-page{padding:36px 28px 64px}
+.odd-panel{border-radius:0!important;box-shadow:none!important;border:1px solid var(--odd-grid);border-top:3px solid var(--odd-accent)}
+.odd-section{margin-top:32px}
+.odd-text{font-size:15px;line-height:1.9;letter-spacing:.025em}
+.odd-text strong{color:var(--odd-accent);font-variant-numeric:tabular-nums}
+.odd-panel h2,.odd-panel-title{letter-spacing:.025em}
+@media(max-width:700px){.odd-dashboard-page{padding:12px}.odd-text{font-size:14px}}
+@media print{.odd-filters{display:none!important}.odd-panel{break-inside:avoid}.odd-dashboard-page{padding:0;max-width:none}}
