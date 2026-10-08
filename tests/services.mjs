@@ -2,7 +2,7 @@ import fs from 'node:fs';import path from 'node:path';import assert from 'node:a
 import {chromium} from 'playwright';import {DuckDBInstance} from '@duckdb/node-api';import {parse} from 'yaml';
 import {ROOT,RUNS,readJSON,writeJSON,sqlString} from '../src/common.mjs';
 import {siloClient,serveSilo,publishSilo} from '../src/silo.mjs';
-const suffix=process.env.ATLED_RUN_SUFFIX||'-v2';
+const suffix=process.env.ATLED_RUN_SUFFIX||'-v3';
 const checks=[];const record=name=>{checks.push({name,pass:true});console.log('PASS',name);};
 // Re-execute exported semantic expressions directly over the Rill source Parquet.
 const rill=path.join(RUNS,'demo-2026-q3'+suffix,'rill'),view=parse(fs.readFileSync(path.join(rill,'metrics/energy.yaml'),'utf8'));

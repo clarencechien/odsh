@@ -2,7 +2,7 @@ import fs from 'node:fs';import assert from 'node:assert/strict';
 import {ROOT as root} from '../src/common.mjs';
 const checks=[];
 for(const scope of ['demo','atlas','meridian','helios']){
- const dir=`${root}/runs/${scope}-2026-q3-v2/build/site/data/d/weekly`;
+ const dir=`${root}/runs/${scope}-2026-q3-v3/build/site/data/d/weekly`;
  const query=n=>Object.values(JSON.parse(fs.readFileSync(`${dir}/${n}.json`)).results)[0].result.rows;
  // Seven independently rounded kW terms across 6 × 672 intervals: bounded cumulative error < .005 kWh.
  const flow=query('flow'),incoming=flow.filter(r=>r.target==='站內匯流排').reduce((s,r)=>s+r.energy_kwh,0),outgoing=flow.filter(r=>r.source==='站內匯流排').reduce((s,r)=>s+r.energy_kwh,0);assert.ok(Math.abs(incoming-outgoing)<.005);

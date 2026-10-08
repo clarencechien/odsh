@@ -68,3 +68,11 @@ ClickHouse HTTP adapter 已測輸入邊界與解析，並提供原生 datasource
 本週合成數據：Atlas 模型電費較前週增加約 5.8%；Meridian 充電埠可用率約 96.1%；Helios 模型電費增加約 21.8%，冷卻與非 IT 耗能較前週上升逾 30%。這些差異來自場景與模擬事件，非真實客戶績效。
 
 GitHub Pages 發布沿用已啟用的 gh-pages 分支。環境網路代理不允許直接瀏覽 github.io，因此遠端部署以 GitHub Actions 狀態核對；瀏覽器操作使用相同產物與 /odsh/ 路徑本機驗證。
+
+## v3 主題可讀性修正
+
+移除固定白底與固定深色文字，卡片、正文、標題、接口及側欄改用成套主題變數。週報跟隨螢幕主題，列印使用淺色紙張變數。原 v2 與私有 Silo release 保留，新版使用 `*-2026-q3-v3`。
+
+`npm run test:themes` 在三家客戶的 dashboard、report、report-native 與靜態客戶頁共驗證 48 種頁面／主題組合，涵蓋系統深淺色及相反的手動選擇，並檢查週報列印。KPI、正文、標題及接口說明的實際文字對比皆至少 4.5:1。舊版深色模式可重現 1:1 白字白底。這不是全站 WCAG 認證；圖表色彩與所有 SVG 標籤未納入文字對比斷言。
+
+新版 E2E 15 項、Pages 6 項、四份資料快照守恆／成本橋接檢查通過；資料 hash 與 v2 相同。深色截圖見 `docs/screenshots/dark-dashboard.png` 及 `dark-report.png`。

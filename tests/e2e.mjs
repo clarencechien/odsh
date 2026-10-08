@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';
 import {ROOT,RUNS,readJSON,writeJSON} from '../src/common.mjs';
 import {createPreview} from '../src/server.mjs';
-const suffix=process.env.ATLED_RUN_SUFFIX||'-v2';
+const suffix=process.env.ATLED_RUN_SUFFIX||'-v3';
 const server=await createPreview({port:0}),port=server.address().port;
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
 const results=[],errors=[];fs.mkdirSync(path.join(ROOT,'test-results'),{recursive:true});

@@ -10,7 +10,7 @@ const clients = [
   {slug:'helios',name:'Helios Cloud',focus:'算力能效 · PUE · 排放',description:'溫度與 PUE 散點、IT／冷卻耗能拆解；比較 AI 算力中心和綠能邊緣機房。'},
 ];
 
-export function buildPages({suffix=process.env.ATLED_RUN_SUFFIX||'-v2'}={}) {
+export function buildPages({suffix=process.env.ATLED_RUN_SUFFIX||'-v3'}={}) {
   if(!/^-[A-Za-z0-9_-]+$/.test(suffix))throw Error('Invalid demo suffix');
   const selected=[...clients.map(c=>({...c,prefix:c.slug})),{slug:'portfolio',prefix:'demo',name:'跨客戶示範總覽'}];
   // Public Pages accepts only explicitly synthetic fixtures. Production customer releases stay in Silo.

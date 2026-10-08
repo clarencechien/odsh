@@ -56,7 +56,7 @@ npm run serve                   # 本機產物入口，port 4173
 npm run dev                     # DuckDB 動態開發模式，port 5473
 ```
 
-`npm run demo` 預設產生 `demo-2026-q3-v2` 與三份客戶 run。既有 run 會保留輸入；若模板或輸入變動，build 會拒絕覆寫，請用新的 `ATLED_RUN_SUFFIX`（例如 `-v3`）。每次週報都應建立新的 run。
+`npm run demo` 預設產生 `demo-2026-q3-v3` 與三份客戶 run。既有 run 會保留輸入；若模板或輸入變動，build 會拒絕覆寫，請用新的 `ATLED_RUN_SUFFIX`（例如 `-v4`）。每次週報都應建立新的 run。
 
 ```bash
 node src/cli.mjs generate atlas-new --tenant 'Atlas Semiconductor' --seed 42 --days 92
@@ -83,9 +83,9 @@ node src/cli.mjs export-rill atlas-new
 
 ```bash
 npm run silo:start
-node src/cli.mjs publish-silo atlas-2026-q3-v2
-node src/cli.mjs publish-silo meridian-2026-q3-v2
-node src/cli.mjs publish-silo helios-2026-q3-v2
+node src/cli.mjs publish-silo atlas-2026-q3-v3
+node src/cli.mjs publish-silo meridian-2026-q3-v3
+node src/cli.mjs publish-silo helios-2026-q3-v3
 node src/cli.mjs serve-silo atlas       # port 4174，讀取真正 Silo 物件
 ```
 
@@ -112,6 +112,7 @@ node src/cli.mjs serve-silo atlas       # port 4174，讀取真正 Silo 物件
 npm test                        # 18 個單元／整合測試；生成器、真 DuckDB、實際 renderer 錯誤等
 npm run typecheck
 npm run test:e2e                 # 先 npm run demo；Chromium 離線篩選、版型、iframe、手機、隔離
+npm run test:themes              # 三家客戶深淺色、手動主題覆寫、文字對比與列印
 npm run test:pages               # /odsh/ 部署路徑、連結、篩選與嵌入
 npm run test:snapshots           # 能源流向守恆、成本橋接與差異化事件
 npm run test:services            # 先啟動 Silo 並發布三家；Silo 回讀、gateway、Rill SQL、動態 API
