@@ -2,6 +2,13 @@
 
 以 DuckDB 與 open-dashboard 0.7.0 建立企業能源營運 dashboard、離線週報與可稽核快照。虛構企業整合智慧樓宇、電網、資料中心、儲能、太陽能及充電樁。**所有資料與效益都是合成／模型估算。**
 
+## 文件入口
+
+- [平台科普與未來路線（網頁）](https://clarencechien.github.io/odsh/guide.html)：open-dashboard 是什麼、為何選用、repo 加值、互動流程與中間產物。
+- [下一位 agent 接手指南](handoff.md)：來源地圖、新增 dashboard/widget/report、環境、測試與發布。
+- [Agent / Studio / Chat 串接設計](docs/agent-studio-roadmap.md)：兩條產製路線、草稿格式、tools/API 與分期；**設計提案，尚未實作服務**。
+- [架構](docs/architecture.md) · [驗證與里程碑缺口](docs/validation.md)：原 handoff 約 85% 的範圍估計，非正式驗收或測試通過率。
+
 ## 直接查看成品
 
 [開啟 ATLED Engergy 展示網站](https://clarencechien.github.io/odsh/)
@@ -18,7 +25,7 @@ GitHub Pages 已啟用，可直接使用上方連結。
 
 [物流客戶畫面](docs/screenshots/meridian.png) · [雲端客戶畫面](docs/screenshots/helios.png) · [決策週報畫面](docs/screenshots/report.png)
 
-更新展示站：`npm run demo && npm run pages:publish`。發布器只接受明確標示的合成資料，保留既有網站分支歷史，不會上傳原始 Parquet、憑證或服務日誌。正式客戶資料仍走私有 Silo，不能使用這個公開 demo 發布流程。
+更新展示站：已有正確版本產物時執行 `npm run test:pages && npm run pages:publish`；新 clone 先 `npm run demo`。發布器只接受明確標示的合成資料，保留既有網站分支歷史，不會上傳原始 Parquet、憑證或服務日誌。正式客戶資料仍走私有 Silo，不能使用這個公開 demo 發布流程。
 
 ## Energy Loop 新版
 
@@ -35,6 +42,8 @@ GitHub Pages 已啟用，可直接使用上方連結。
 [查看決策週報範例](https://clarencechien.github.io/odsh/helios/report.html) · [查看營運 Dashboard](https://clarencechien.github.io/odsh/helios/dashboard.html)
 
 ## 個人版面操作
+
+這是本 repo 為靜態 reader 加的 **React 個人化工具，不是 open-dashboard 原生編輯器**。功能測試已通過，但使用者反映不好用；改善操作體驗與比較原生 Edit 仍是待辦。原生 Edit 需 dev API，會寫回 workspace TSX；單純 HTTP 靜態 server 不提供這項寫回功能。
 
 頁面頂端可選淺色、深色或跟隨系統。Dashboard 按「編輯版面」後，可拖曳把手改變順序、設定寬度與高度，並從清單顯示／隱藏 widget；前移／後移按鈕也支援鍵盤與手機操作。「完成編輯」收起操作工具，「還原預設」恢復客戶原始版型。
 
@@ -105,7 +114,8 @@ node src/cli.mjs serve-silo atlas       # port 4174，讀取真正 Silo 物件
 
 - `src/customers.mjs`：客戶 KPI 偏好及逐站整合方案。
 - `src/layouts.mjs`：輸出原生 open-dashboard TSX/SQL 的三套版型，依設備能力裁切面板。
-- `dashboards/energy/`、`dashboards/weekly/`：共用總覽及週報模板。
+- `dashboards/energy/`：共用總覽及具名 SQL。
+- `src/report-layout.mjs`：週報的生成來源；`dashboards/weekly/` 是可見樣板，workspace 會由生成器覆寫。
 - `databases/energy/database.md`：欄位、單位、時間、估算與加總語意，寫 SQL 前必讀。
 - `open-dashboard.config.ts`：DuckDB views；固定單執行緒以確保浮點彙總的可重現性。
 - `adapters/`：ClickHouse HTTP SELECT 邊界與原生 datasource 範例。未宣稱連上真實 ClickHouse；目前 SQL 使用 DuckDB 方言。
@@ -132,3 +142,11 @@ Linux 的預設 Chromium 為 `/usr/bin/chromium`，可用 `CHROMIUM_PATH` 指定
 `src/lint.mjs` 的 `boundedValidation(validate, repair, maxAttempts)` 接受外部 agent 提供的修復 callback，最多三次驗證；成功或修復沒有變動就停止。`check` 可接此 callback，保留每次結果。預設 CLI 不連線 LLM、不猜改 SQL，因此只檢查一次並回報可供 agent 使用的行號。此上限與失敗歷史已用測試驗證。
 
 開發時修改 repo 內模板，使用新 run 重建。不要把 `runs/<id>/workspace/` 的臨時編輯誤認成已更新模板。每個雲端任務已有隔離 checkout，不需額外建立 Git worktree。
+
+## 從開發工具到客戶產品
+
+開發者 agent 現在就能讀資料契約、修改 TSX/SQL，透過 CLI 建立與檢查新 run。下一步可將它包成隔離的 job runner，串接實際模型修復、預覽與版本發布。
+
+客戶 Studio／Chat 則要新增登入、指標／widget 目錄、草稿版本 API、工作佇列與 Node 建置 worker。兩個 UI 共用受約束的草稿，編譯成現有 TSX/SQL，再沿用 check、lint、快照與 Silo；詳見 [串接設計](docs/agent-studio-roadmap.md)。目前的 localStorage 編輯不會新增 SQL 或產生新報表。
+
+原生 0.7.0 的可選聊天助手讀取現有面板與切換篩選，不是生成 TSX 的 authoring agent。本 repo 未配置模型，也未安裝額外的 MCP 套件。Pages 可提供成品閱讀；Vercel／Cloudflare 可承載未來前端或輕 API，DuckDB 原生套件與長時間建置仍建議使用獨立 Node worker。

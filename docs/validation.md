@@ -1,8 +1,16 @@
 # MVP validation / 2026-10-08
 
-企業名稱：**ATLED Engergy**。日期以 Asia/Taipei 為準。以下是實際執行結果；不是預期測試清單。
+企業名稱：**ATLED Engergy**。日期以 Asia/Taipei 為準。以下是各版本實際執行的歷史紀錄；不是預期測試清單，也不代表新 clone 已重跑所有檢查。
 
-## 驗收證據
+## 現行版本與範圍
+
+現行展示為四份 `*-2026-q3-v4` run；v4 功能來源基準為 `9a54f9c`。後續文件／科普頁修改沿用這些凍結產物，沒有重新發布 dashboard 資料版本。v2 的 hash 與重建紀錄保留為歷史證據，不能混稱本次新測試。
+
+原 handoff M0–M3 以里程碑等權粗估 **約 85%**：M0 80%、M1 85%、M2 75%、M3 100%。這是完成範圍的人工估計，非測試通過率或正式驗收。主要缺口是真實資料、實際 agent 生成／修復閉環、原始 imitator CSS 對照、此環境直接雙擊 HTML 與更完整 Git lineage。M3 的要求是匯出 Rill 草稿，不包含運行 Rill。
+
+三家客戶、六案場、Pages、個人版面是使用者追加範圍，不抵掉原 handoff 缺口。未來 Studio／chat 的帳號、草稿 API、job runner 與發布 UI 是新產品工作，尚未實作，詳見 [路線圖](agent-studio-roadmap.md)。
+
+## v2 基礎驗證紀錄（歷史）
 
 | 檢查 | 結果 |
 |---|---|
@@ -79,10 +87,20 @@ GitHub Pages 發布沿用已啟用的 gh-pages 分支。環境網路代理不允
 
 ## v4 個人化控制
 
-Dashboard 使用 React 組合原生 open-dashboard 元件，新增個人版面工具列、Pointer Events 拖曳、前後移動、欄寬／高度設定及顯示／隱藏清單。沒有改動 renderer 或增加查詢引擎。`atled:layout:v1:<dashboard-id>` 儲存經驗證的偏好；未知／損壞設定回到預設。每個客戶與案場分開儲存，同一客戶的單檔與靜態頁共用設定。週報不載入版面編輯元件。
+Dashboard 使用自製 React wrapper 組合原生 open-dashboard 元件，新增個人版面工具列、Pointer Events 拖曳、前後移動、欄寬／高度設定及顯示／隱藏清單。沒有改動 renderer 或增加查詢引擎。`atled:layout:v1:<dashboard-id>` 儲存經驗證的偏好；未知／損壞設定回到預設。每個客戶與案場分開儲存，同一客戶的單檔與靜態頁共用設定。週報不載入版面編輯元件。
 
 頂端主題選單使用既有 `odd:theme` 偏好，提供淺色、深色與跟隨系統。新 release 為 `*-2026-q3-v4`；舊快照不覆寫。
 
 `npm run test:personalization` 共 12 組驗證通過：三家各自實際拖曳、尺寸更新、隱藏／恢復、重新整理持久化、移動按鈕、篩選及週報隔離；另驗證案場隔離、單檔／靜態路徑共用、還原、手機寬度、全部隱藏後恢復、損壞設定與禁止儲存的環境。原有 15 項 E2E、48 個主題／頁面組合及列印、6 項 Pages、4 份資料快照與 9 項服務檢查均通過。
 
 個人設定只存在目前瀏覽器，不提供登入、跨裝置同步或公司共用版面發布。編輯截圖：`docs/screenshots/layout-editor.png`。
+
+使用者已反映 v4 編輯操作不夠好用；上列功能驗證不代表 UX 驗收。需以隔離 fixture 比較原生 Edit 與個人化層，再決定改版。
+
+## 文件與科普頁更新
+
+新增根目錄 `handoff.md`、agent/Studio 架構設計與獨立 `guide.html`。科普頁沿用 Energy Loop，提供流程產物切換、dev／customer 路線切換、深淺／系統主題與列印模式。頁面明確標示未實作的生成服務；首頁加入入口。
+
+本次 `npm run test:pages` **13 組檢查全部通過**：原有三客戶篩選、案場深層路徑與 iframe，以及科普頁連結／章節、六步產物切換、兩條生成路線、主題持久化與文字對比、列印、390px 手機、停用 JavaScript 的內容回退。深／淺與系統模式的抽樣實際文字對比皆至少 4.5:1；瀏覽器無錯誤或遺失資源，不宣稱完整 WCAG 認證。
+
+已檢視桌面與手機截圖；證據位於 `test-results/pages.json`、`guide-desktop.png`、`guide-dark.png`、`guide-mobile.png`（未進 Git）。Dashboard/report 沿用 v4，本次未重跑不相關的資料生成與 Silo 發布。
