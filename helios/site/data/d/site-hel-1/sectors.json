@@ -1,0 +1,124 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "sectors",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "sector",
+            "type": "string"
+          },
+          {
+            "name": "energy_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "energy_kwh": 0,
+            "sector": "智慧樓宇"
+          },
+          {
+            "energy_kwh": 213632.61789449994,
+            "sector": "資料中心"
+          },
+          {
+            "energy_kwh": 0,
+            "sector": "充電樁"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "sectors",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "sector",
+            "type": "string"
+          },
+          {
+            "name": "energy_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "energy_kwh": 0,
+            "sector": "智慧樓宇"
+          },
+          {
+            "energy_kwh": 214351.0407874998,
+            "sector": "資料中心"
+          },
+          {
+            "energy_kwh": 0,
+            "sector": "充電樁"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "sectors",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "sector",
+            "type": "string"
+          },
+          {
+            "name": "energy_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "energy_kwh": 0,
+            "sector": "智慧樓宇"
+          },
+          {
+            "energy_kwh": 213632.61789449994,
+            "sector": "資料中心"
+          },
+          {
+            "energy_kwh": 0,
+            "sector": "充電樁"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

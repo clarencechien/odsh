@@ -1,0 +1,1343 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"ATL-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 16729.050333749994,
+            "load_kwh": 21980.648911249995,
+            "solar_kwh": 5409.712460999999
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 18567.239920999993,
+            "load_kwh": 22046.086197499993,
+            "solar_kwh": 3636.9601589999993
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 15856.365937000006,
+            "load_kwh": 18651.710591000003,
+            "solar_kwh": 4376.483485249998
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 11747.176589000002,
+            "load_kwh": 17642.766234250004,
+            "solar_kwh": 5896.1684187500005
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 15986.40075375,
+            "load_kwh": 22088.731738500006,
+            "solar_kwh": 4679.306036749998
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 18726.304015,
+            "load_kwh": 22096.166700250003,
+            "solar_kwh": 3527.9765675
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 17149.08059375,
+            "load_kwh": 22120.669617249994,
+            "solar_kwh": 5129.7029062500005
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-17 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 17566.786390750003,
+            "load_kwh": 22312.953622999983,
+            "solar_kwh": 4904.281116
+          },
+          {
+            "day": "2026-09-18 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 18830.603354749997,
+            "load_kwh": 22185.333606750002,
+            "solar_kwh": 3512.844136249999
+          },
+          {
+            "day": "2026-09-19 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 14399.299946749998,
+            "load_kwh": 17736.484492749998,
+            "solar_kwh": 4918.32337675
+          },
+          {
+            "day": "2026-09-20 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 11862.62712125,
+            "load_kwh": 17728.897572249996,
+            "solar_kwh": 5866.270451000001
+          },
+          {
+            "day": "2026-09-21 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 16550.566718250004,
+            "load_kwh": 22104.454639999993,
+            "solar_kwh": 4130.862974000001
+          },
+          {
+            "day": "2026-09-22 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 18515.356517750002,
+            "load_kwh": 22086.109354250002,
+            "solar_kwh": 3728.86671775
+          },
+          {
+            "day": "2026-09-23 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 16673.067252249995,
+            "load_kwh": 22097.668875250005,
+            "solar_kwh": 5582.7155062500005
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 16729.050333749994,
+            "load_kwh": 21980.648911249995,
+            "solar_kwh": 5409.712460999999
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 18567.239920999993,
+            "load_kwh": 22046.086197499993,
+            "solar_kwh": 3636.9601589999993
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 15856.365937000006,
+            "load_kwh": 18651.710591000003,
+            "solar_kwh": 4376.483485249998
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 11747.176589000002,
+            "load_kwh": 17642.766234250004,
+            "solar_kwh": 5896.1684187500005
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 15986.40075375,
+            "load_kwh": 22088.731738500006,
+            "solar_kwh": 4679.306036749998
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 18726.304015,
+            "load_kwh": 22096.166700250003,
+            "solar_kwh": 3527.9765675
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 1423.0249469999999,
+            "import_kwh": 17149.08059375,
+            "load_kwh": 22120.669617249994,
+            "solar_kwh": 5129.7029062500005
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2473.724121750001,
+            "load_kwh": 6551.869073000002,
+            "solar_kwh": 6486.327265500001
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2833.2547987500006,
+            "load_kwh": 6519.248206249998,
+            "solar_kwh": 4353.772888249999
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 1622.6496194999997,
+            "load_kwh": 3148.4457519999987,
+            "solar_kwh": 5246.7518334999995
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 1602.0728814999998,
+            "load_kwh": 3158.071573500001,
+            "solar_kwh": 7097.02199875
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2572.355252,
+            "load_kwh": 6495.0500675,
+            "solar_kwh": 5631.7329095000005
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2879.0795302500005,
+            "load_kwh": 6524.159914000003,
+            "solar_kwh": 4206.038987000001
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2515.59151475,
+            "load_kwh": 6564.891740249999,
+            "solar_kwh": 6165.977659249999
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-17 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2603.7137482499993,
+            "load_kwh": 6687.410811249999,
+            "solar_kwh": 5881.053129749999
+          },
+          {
+            "day": "2026-09-18 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2932.63533725,
+            "load_kwh": 6642.954075249996,
+            "solar_kwh": 4228.217066
+          },
+          {
+            "day": "2026-09-19 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 1615.8685049999995,
+            "load_kwh": 3185.8953387499996,
+            "solar_kwh": 5907.005291750001
+          },
+          {
+            "day": "2026-09-20 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 1605.0048139999997,
+            "load_kwh": 3179.4591745000002,
+            "solar_kwh": 7029.151360999997
+          },
+          {
+            "day": "2026-09-21 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2711.1991454999998,
+            "load_kwh": 6596.079907750002,
+            "solar_kwh": 4978.80318275
+          },
+          {
+            "day": "2026-09-22 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2789.0475817499996,
+            "load_kwh": 6544.782692750005,
+            "solar_kwh": 4526.021399250001
+          },
+          {
+            "day": "2026-09-23 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2451.7390992499995,
+            "load_kwh": 6554.965125749999,
+            "solar_kwh": 6693.9841185000005
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2473.724121750001,
+            "load_kwh": 6551.869073000002,
+            "solar_kwh": 6486.327265500001
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2833.2547987500006,
+            "load_kwh": 6519.248206249998,
+            "solar_kwh": 4353.772888249999
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 1622.6496194999997,
+            "load_kwh": 3148.4457519999987,
+            "solar_kwh": 5246.7518334999995
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 1602.0728814999998,
+            "load_kwh": 3158.071573500001,
+            "solar_kwh": 7097.02199875
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2572.355252,
+            "load_kwh": 6495.0500675,
+            "solar_kwh": 5631.7329095000005
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2879.0795302500005,
+            "load_kwh": 6524.159914000003,
+            "solar_kwh": 4206.038987000001
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 2515.59151475,
+            "load_kwh": 6564.891740249999,
+            "solar_kwh": 6165.977659249999
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-3\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-3",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 17994.923592250005,
+            "load_kwh": 17773.564156250006,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 18020.380469750005,
+            "load_kwh": 17799.0210335,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 20018.045750499994,
+            "load_kwh": 17804.45138825,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 17766.471318249998,
+            "load_kwh": 17766.471318249998,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 15781.865953249997,
+            "load_kwh": 17774.100879,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 18015.582643499994,
+            "load_kwh": 17794.223207499996,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 17972.382388749997,
+            "load_kwh": 17751.022952749998,
+            "solar_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-3\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-3",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-17 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 18126.972236500005,
+            "load_kwh": 17905.61280025,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-18 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 18090.297429000002,
+            "load_kwh": 17868.937992750005,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-19 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 20049.135080500007,
+            "load_kwh": 17835.54071825,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-20 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 17836.838519999998,
+            "load_kwh": 17836.838519999998,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-21 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 15862.282818499994,
+            "load_kwh": 17854.517744249995,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-22 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 18036.55748175,
+            "load_kwh": 17815.198045499998,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-23 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 18009.239212500004,
+            "load_kwh": 17787.87977625,
+            "solar_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-3\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-3",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 17994.923592250005,
+            "load_kwh": 17773.564156250006,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 18020.380469750005,
+            "load_kwh": 17799.0210335,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 20018.045750499994,
+            "load_kwh": 17804.45138825,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 17766.471318249998,
+            "load_kwh": 17766.471318249998,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 15781.865953249997,
+            "load_kwh": 17774.100879,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 18015.582643499994,
+            "load_kwh": 17794.223207499996,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 1992.234926,
+            "import_kwh": 17972.382388749997,
+            "load_kwh": 17751.022952749998,
+            "solar_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-4\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "ATL-4",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 2276.8399147500004,
+            "import_kwh": 11711.731353250001,
+            "load_kwh": 11458.749140000002,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 2276.8399155,
+            "import_kwh": 11741.832464250003,
+            "load_kwh": 11488.850251499998,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 7435.6329135000005,
+            "load_kwh": 4905.81078525,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 4881.140420499999,
+            "load_kwh": 4881.140420499999,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 2276.8399155000006,
+            "import_kwh": 9221.112699,
+            "load_kwh": 11497.952614500004,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 2276.8399154999997,
+            "import_kwh": 11690.856146999997,
+            "load_kwh": 11437.873934500005,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 2276.8399154999997,
+            "import_kwh": 11714.917037500003,
+            "load_kwh": 11461.934824750002,
+            "solar_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-4\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "ATL-4",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-17 00:00:00",
+            "discharge_kwh": 2276.83991525,
+            "import_kwh": 11946.805667749995,
+            "load_kwh": 11693.823455000003,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-18 00:00:00",
+            "discharge_kwh": 2276.83991525,
+            "import_kwh": 11823.621402000004,
+            "load_kwh": 11570.639189250005,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-19 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 7453.364288750003,
+            "load_kwh": 4923.542160500001,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-20 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 4919.6402422500005,
+            "load_kwh": 4919.6402422500005,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-21 00:00:00",
+            "discharge_kwh": 2276.83991525,
+            "import_kwh": 9215.6259065,
+            "load_kwh": 11492.465821749998,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-22 00:00:00",
+            "discharge_kwh": 2276.8399154999997,
+            "import_kwh": 11805.239424999998,
+            "load_kwh": 11552.257212249993,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-23 00:00:00",
+            "discharge_kwh": 2276.8399152500006,
+            "import_kwh": 11739.099364500004,
+            "load_kwh": 11486.117152000003,
+            "solar_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"ATL-4\"],[\"window\",null]]": {
+      "params": {
+        "site": "ATL-4",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 2276.8399147500004,
+            "import_kwh": 11711.731353250001,
+            "load_kwh": 11458.749140000002,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 2276.8399155,
+            "import_kwh": 11741.832464250003,
+            "load_kwh": 11488.850251499998,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 7435.6329135000005,
+            "load_kwh": 4905.81078525,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 4881.140420499999,
+            "load_kwh": 4881.140420499999,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 2276.8399155000006,
+            "import_kwh": 9221.112699,
+            "load_kwh": 11497.952614500004,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 2276.8399154999997,
+            "import_kwh": 11690.856146999997,
+            "load_kwh": 11437.873934500005,
+            "solar_kwh": 0
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 2276.8399154999997,
+            "import_kwh": 11714.917037500003,
+            "load_kwh": 11461.934824750002,
+            "solar_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 5692.099787750001,
+            "import_kwh": 48909.429401000016,
+            "load_kwh": 57764.831280500024,
+            "solar_kwh": 11896.039726500001
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 5692.0997885,
+            "import_kwh": 51162.70765374998,
+            "load_kwh": 57853.20568874997,
+            "solar_kwh": 7990.733047249999
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 44932.69422050001,
+            "load_kwh": 44510.41851650001,
+            "solar_kwh": 9623.23531875
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 35996.861209250004,
+            "load_kwh": 43448.449546500015,
+            "solar_kwh": 12993.190417500005
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 5692.099788500001,
+            "import_kwh": 43561.734657999965,
+            "load_kwh": 57855.83529949999,
+            "solar_kwh": 10311.03894625
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 5692.099788499999,
+            "import_kwh": 51311.82233575001,
+            "load_kwh": 57852.42375625003,
+            "solar_kwh": 7734.015554500001
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 5692.099788499999,
+            "import_kwh": 49351.97153474997,
+            "load_kwh": 57898.519134999966,
+            "solar_kwh": 11295.680565500004
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-17 00:00:00",
+            "discharge_kwh": 5692.09978825,
+            "import_kwh": 50244.27804325,
+            "load_kwh": 58599.80068949998,
+            "solar_kwh": 10785.334245750006
+          },
+          {
+            "day": "2026-09-18 00:00:00",
+            "discharge_kwh": 5692.09978825,
+            "import_kwh": 51677.15752300003,
+            "load_kwh": 58267.86486400001,
+            "solar_kwh": 7741.061202250001
+          },
+          {
+            "day": "2026-09-19 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 43517.66782099996,
+            "load_kwh": 43681.46271024996,
+            "solar_kwh": 10825.328668499993
+          },
+          {
+            "day": "2026-09-20 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 36224.11069750001,
+            "load_kwh": 43664.83550900003,
+            "solar_kwh": 12895.421811999999
+          },
+          {
+            "day": "2026-09-21 00:00:00",
+            "discharge_kwh": 5692.09978825,
+            "import_kwh": 44339.67458874996,
+            "load_kwh": 58047.51811375,
+            "solar_kwh": 9109.666156750003
+          },
+          {
+            "day": "2026-09-22 00:00:00",
+            "discharge_kwh": 5692.0997885,
+            "import_kwh": 51146.20100624998,
+            "load_kwh": 57998.34730474994,
+            "solar_kwh": 8254.888117
+          },
+          {
+            "day": "2026-09-23 00:00:00",
+            "discharge_kwh": 5692.0997882500005,
+            "import_kwh": 48873.14492849998,
+            "load_kwh": 57926.63092924996,
+            "solar_kwh": 12276.699624749996
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "daily",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "day",
+            "type": "date"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          },
+          {
+            "name": "import_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "day": "2026-09-24 00:00:00",
+            "discharge_kwh": 5692.099787750001,
+            "import_kwh": 48909.429401000016,
+            "load_kwh": 57764.831280500024,
+            "solar_kwh": 11896.039726500001
+          },
+          {
+            "day": "2026-09-25 00:00:00",
+            "discharge_kwh": 5692.0997885,
+            "import_kwh": 51162.70765374998,
+            "load_kwh": 57853.20568874997,
+            "solar_kwh": 7990.733047249999
+          },
+          {
+            "day": "2026-09-26 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 44932.69422050001,
+            "load_kwh": 44510.41851650001,
+            "solar_kwh": 9623.23531875
+          },
+          {
+            "day": "2026-09-27 00:00:00",
+            "discharge_kwh": 0,
+            "import_kwh": 35996.861209250004,
+            "load_kwh": 43448.449546500015,
+            "solar_kwh": 12993.190417500005
+          },
+          {
+            "day": "2026-09-28 00:00:00",
+            "discharge_kwh": 5692.099788500001,
+            "import_kwh": 43561.734657999965,
+            "load_kwh": 57855.83529949999,
+            "solar_kwh": 10311.03894625
+          },
+          {
+            "day": "2026-09-29 00:00:00",
+            "discharge_kwh": 5692.099788499999,
+            "import_kwh": 51311.82233575001,
+            "load_kwh": 57852.42375625003,
+            "solar_kwh": 7734.015554500001
+          },
+          {
+            "day": "2026-09-30 00:00:00",
+            "discharge_kwh": 5692.099788499999,
+            "import_kwh": 49351.97153474997,
+            "load_kwh": 57898.519134999966,
+            "solar_kwh": 11295.680565500004
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

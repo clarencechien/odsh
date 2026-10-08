@@ -1,0 +1,27 @@
+{
+  "company": "ATLED Engergy",
+  "synthetic": true,
+  "runs": [
+    {
+      "id": "atlas-2026-q3-v1",
+      "path": "atlas",
+      "data_hash": "3d8e849560fc7015dbbff701fdd909d554a505812ba2534483bf5e667d8bbc5d"
+    },
+    {
+      "id": "meridian-2026-q3-v1",
+      "path": "meridian",
+      "data_hash": "f0df3d2510b60db1aaf60734fcf1eab268d91ee307c7b9e7588626963b470e84"
+    },
+    {
+      "id": "helios-2026-q3-v1",
+      "path": "helios",
+      "data_hash": "2087e463e2ff1490ffc2970d31e113631586a110cdd14f6945e7f5512c7f734e"
+    },
+    {
+      "id": "demo-2026-q3-v1",
+      "path": "portfolio",
+      "data_hash": "84d97e54f0f28b621f59fa495422cae3141bbc2e95c17e732deafe5d14a9b3f2"
+    }
+  ],
+  "files": 602
+}

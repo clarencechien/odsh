@@ -1,0 +1,46 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "sites",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "label",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          {
+            "label": "Meridian Logistics / 新竹・物流中心 A",
+            "site_id": "MER-1"
+          },
+          {
+            "label": "Meridian Logistics / 台中・物流中心 B",
+            "site_id": "MER-2"
+          },
+          {
+            "label": "Meridian Logistics / 高雄・物流中心 C",
+            "site_id": "MER-3"
+          },
+          {
+            "label": "Meridian Logistics / 桃園・物流中心 D",
+            "site_id": "MER-4"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"MER-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.022493256714812254,
+            "load_change": -0.005762821974010524
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.042959554743943834,
+            "load_change": -0.020220853625130535
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.022493256714812254,
+            "load_change": -0.005762821974010524
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": 0.05771250810585826,
+            "load_change": -0.0118630971412493
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.0832635345159343,
+            "load_change": -0.021899870894395934
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": 0.05771250810585826,
+            "load_change": -0.0118630971412493
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-3\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-3",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.012592581080752684,
+            "load_change": -0.012203121048318133
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-3\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-3",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.02391530271600855,
+            "load_change": -0.021257736693771363
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-3\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-3",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.012592581080752684,
+            "load_change": -0.012203121048318133
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-4\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-4",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.12893871106540286,
+            "load_change": -0.00960250990950519
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-4\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-4",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.2345416124200644,
+            "load_change": -0.02704887744096107
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-4\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-4",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.12893871106540286,
+            "load_change": -0.00960250990950519
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.008080890445388704,
+            "load_change": -0.010091461798293082
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.04230253174186413,
+            "load_change": -0.022581705058606287
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.008080890445388704,
+            "load_change": -0.010091461798293082
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

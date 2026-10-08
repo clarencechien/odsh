@@ -1,0 +1,130 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 12649.11064125,
+            "discharge_kwh": 11384.199576250001,
+            "max_soc_kwh": 2880,
+            "min_soc_kwh": 480
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 12649.11064125,
+            "discharge_kwh": 11384.199576250001,
+            "max_soc_kwh": 2880,
+            "min_soc_kwh": 480
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 12649.11064125,
+            "discharge_kwh": 11384.199576250001,
+            "max_soc_kwh": 2880,
+            "min_soc_kwh": 480
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

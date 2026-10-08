@@ -1,0 +1,15 @@
+{
+  "default": "atled",
+  "themes": [
+    {
+      "file": "themes/atled.json",
+      "id": "atled",
+      "name": "ATLED Engergy · Control room"
+    },
+    {
+      "file": "themes/imitator.json",
+      "id": "imitator",
+      "name": "ATLED Engergy · Editorial"
+    }
+  ]
+}

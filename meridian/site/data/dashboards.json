@@ -1,0 +1,88 @@
+{
+  "dashboards": [
+    {
+      "description": "Integrated energy operations · 合成資料示範",
+      "file": "",
+      "id": "energy",
+      "panels": 17,
+      "queries": 10,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | 能源營運總覽"
+    },
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "meridian",
+      "panels": 13,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | Meridian Logistics · 車隊補能與場站營運"
+    },
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "site-mer-1",
+      "panels": 12,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | MER-1 新竹・物流中心 A · 車隊補能與場站營運"
+    },
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "site-mer-2",
+      "panels": 13,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | MER-2 台中・物流中心 B · 車隊補能與場站營運"
+    },
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "site-mer-3",
+      "panels": 10,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | MER-3 高雄・物流中心 C · 車隊補能與場站營運"
+    },
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "site-mer-4",
+      "panels": 13,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | MER-4 桃園・物流中心 D · 車隊補能與場站營運"
+    },
+    {
+      "description": "Weekly energy review · 合成資料",
+      "file": "",
+      "id": "weekly",
+      "panels": 11,
+      "queries": 10,
+      "sources": [
+        "energy"
+      ],
+      "theme": "imitator",
+      "title": "ATLED Engergy | 客戶能源週報"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.12893871106540286,
+            "load_change": -0.00960250990950519
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.2345416124200644,
+            "load_change": -0.02704887744096107
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "comparison",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_change",
+            "type": "number"
+          },
+          {
+            "name": "cost_change",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_change": -0.12893871106540286,
+            "load_change": -0.00960250990950519
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

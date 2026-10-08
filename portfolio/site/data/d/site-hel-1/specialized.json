@@ -1,0 +1,175 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "specialized",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "ev_kwh",
+            "type": "number"
+          },
+          {
+            "name": "avg_it_kw",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_self_use",
+            "type": "number"
+          },
+          {
+            "name": "min_headroom_kw",
+            "type": "number"
+          },
+          {
+            "name": "max_site_peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "storage_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "avg_it_kw": 1007.1715727589284,
+            "cooling_kwh": 44427.79367100005,
+            "ev_kwh": 0,
+            "max_site_peak_kw": 1586.402032,
+            "min_headroom_kw": 913.597968,
+            "solar_self_use": 1,
+            "storage_kwh": 7115.124734999999
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "specialized",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "ev_kwh",
+            "type": "number"
+          },
+          {
+            "name": "avg_it_kw",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_self_use",
+            "type": "number"
+          },
+          {
+            "name": "min_headroom_kw",
+            "type": "number"
+          },
+          {
+            "name": "max_site_peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "storage_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "avg_it_kw": 1007.5429754672609,
+            "cooling_kwh": 45083.82090899992,
+            "ev_kwh": 0,
+            "max_site_peak_kw": 1585.731301,
+            "min_headroom_kw": 914.268699,
+            "solar_self_use": 1,
+            "storage_kwh": 7115.124734999999
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "specialized",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "ev_kwh",
+            "type": "number"
+          },
+          {
+            "name": "avg_it_kw",
+            "type": "number"
+          },
+          {
+            "name": "cooling_kwh",
+            "type": "number"
+          },
+          {
+            "name": "solar_self_use",
+            "type": "number"
+          },
+          {
+            "name": "min_headroom_kw",
+            "type": "number"
+          },
+          {
+            "name": "max_site_peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "storage_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "avg_it_kw": 1007.1715727589284,
+            "cooling_kwh": 44427.79367100005,
+            "ev_kwh": 0,
+            "max_site_peak_kw": 1586.402032,
+            "min_headroom_kw": 913.597968,
+            "solar_self_use": 1,
+            "storage_kwh": 7115.124734999999
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

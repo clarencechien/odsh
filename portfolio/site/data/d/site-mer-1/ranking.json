@@ -1,0 +1,190 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 0,
+            "load_kwh": 45239.59530574994,
+            "peak_kw": 495.931846,
+            "pue": null,
+            "savings_twd": 121183.78427399999,
+            "site_id": "MER-1",
+            "site_name": "新竹・物流中心 A",
+            "tenant": "Meridian Logistics"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 0,
+            "load_kwh": 45501.814160249975,
+            "peak_kw": 499.887703,
+            "pue": null,
+            "savings_twd": 120671.36193900014,
+            "site_id": "MER-1",
+            "site_name": "新竹・物流中心 A",
+            "tenant": "Meridian Logistics"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 0,
+            "load_kwh": 45239.59530574994,
+            "peak_kw": 495.931846,
+            "pue": null,
+            "savings_twd": 121183.78427399999,
+            "site_id": "MER-1",
+            "site_name": "新竹・物流中心 A",
+            "tenant": "Meridian Logistics"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

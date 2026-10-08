@@ -1,0 +1,145 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "events",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_id",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "domain",
+            "type": "unknown"
+          },
+          {
+            "name": "severity",
+            "type": "unknown"
+          },
+          {
+            "name": "start_ts",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "events",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_id",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "domain",
+            "type": "unknown"
+          },
+          {
+            "name": "severity",
+            "type": "unknown"
+          },
+          {
+            "name": "start_ts",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "events",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "event_id",
+            "type": "unknown"
+          },
+          {
+            "name": "site_id",
+            "type": "unknown"
+          },
+          {
+            "name": "domain",
+            "type": "unknown"
+          },
+          {
+            "name": "severity",
+            "type": "unknown"
+          },
+          {
+            "name": "start_ts",
+            "type": "unknown"
+          },
+          {
+            "name": "title",
+            "type": "unknown"
+          },
+          {
+            "name": "action",
+            "type": "unknown"
+          }
+        ],
+        "rows": [],
+        "truncated": false
+      }
+    }
+  }
+}

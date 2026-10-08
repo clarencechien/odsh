@@ -1,0 +1,36 @@
+{
+  "file": "",
+  "hash": "41d5d795a2394006",
+  "id": "atled",
+  "theme": {
+    "dark": {
+      "accent": "#60c6b5",
+      "bad": "#ff9782",
+      "good": "#8dd9aa",
+      "grid": "#2b4240",
+      "page": "#10201f",
+      "surface": "#172c2a"
+    },
+    "font": "Inter, Noto Sans TC, system-ui, sans-serif",
+    "light": {
+      "accent": "#007d78",
+      "bad": "#cb4a37",
+      "good": "#138467",
+      "grid": "#e1e7e4",
+      "page": "#f1f4f3",
+      "series": [
+        "#007d78",
+        "#e8a53a",
+        "#4768ac",
+        "#c55b45",
+        "#6b9b77",
+        "#8f74b7",
+        "#4a9cb5",
+        "#b8a268"
+      ],
+      "surface": "#ffffff"
+    },
+    "name": "ATLED Engergy · Control room",
+    "radius": 12
+  }
+}

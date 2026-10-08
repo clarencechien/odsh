@@ -1,0 +1,162 @@
+{
+  "reads": [
+    "site"
+  ],
+  "results": {
+    "[[\"site\",\"HEL-1\"]]": {
+      "params": {
+        "site": "HEL-1"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "solution",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "solution",
+            "type": "string"
+          },
+          {
+            "name": "sites",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "sites": 1,
+            "solution": "智慧電網 + 資料中心 + 太陽能 + 儲能"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"]]": {
+      "params": {
+        "site": "HEL-2"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "solution",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "solution",
+            "type": "string"
+          },
+          {
+            "name": "sites",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "sites": 1,
+            "solution": "智慧電網 + 資料中心 + 儲能"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-3\"]]": {
+      "params": {
+        "site": "HEL-3"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "solution",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "solution",
+            "type": "string"
+          },
+          {
+            "name": "sites",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "sites": 1,
+            "solution": "智慧樓宇 + 智慧電網 + 資料中心 + 儲能 + 太陽能 + 充電樁"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-4\"]]": {
+      "params": {
+        "site": "HEL-4"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "solution",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "solution",
+            "type": "string"
+          },
+          {
+            "name": "sites",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "sites": 1,
+            "solution": "智慧電網 + 資料中心 + 太陽能 + 儲能 + 充電樁"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null]]": {
+      "params": {
+        "site": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "solution",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "solution",
+            "type": "string"
+          },
+          {
+            "name": "sites",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "sites": 4,
+            "solution": "智慧樓宇 + 智慧電網 + 資料中心 + 儲能 + 太陽能 + 充電樁 / 智慧電網 + 資料中心 + 儲能 / 智慧電網 + 資料中心 + 太陽能 + 儲能 / 智慧電網 + 資料中心 + 太陽能 + 儲能 + 充電樁"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

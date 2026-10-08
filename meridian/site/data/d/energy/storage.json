@@ -1,0 +1,638 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"MER-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 0,
+            "discharge_kwh": 0,
+            "max_soc_kwh": 0,
+            "min_soc_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 0,
+            "discharge_kwh": 0,
+            "max_soc_kwh": 0,
+            "min_soc_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 0,
+            "discharge_kwh": 0,
+            "max_soc_kwh": 0,
+            "min_soc_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 9486.83298,
+            "discharge_kwh": 8538.149682,
+            "max_soc_kwh": 2160,
+            "min_soc_kwh": 360
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 9486.83298,
+            "discharge_kwh": 8538.149683749998,
+            "max_soc_kwh": 2160,
+            "min_soc_kwh": 360
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 9486.83298,
+            "discharge_kwh": 8538.149682,
+            "max_soc_kwh": 2160,
+            "min_soc_kwh": 360
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-3\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-3",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 0,
+            "discharge_kwh": 0,
+            "max_soc_kwh": 0,
+            "min_soc_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-3\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-3",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 0,
+            "discharge_kwh": 0,
+            "max_soc_kwh": 0,
+            "min_soc_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-3\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-3",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 0,
+            "discharge_kwh": 0,
+            "max_soc_kwh": 0,
+            "min_soc_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-4\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "MER-4",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 8875.645913,
+            "discharge_kwh": 8023.213245250001,
+            "max_soc_kwh": 2880,
+            "min_soc_kwh": 1065.445178
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-4\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "MER-4",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 9196.480270000002,
+            "discharge_kwh": 8220.382311999998,
+            "max_soc_kwh": 2880,
+            "min_soc_kwh": 1039.137136
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"MER-4\"],[\"window\",null]]": {
+      "params": {
+        "site": "MER-4",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 8875.645913,
+            "discharge_kwh": 8023.213245250001,
+            "max_soc_kwh": 2880,
+            "min_soc_kwh": 1065.445178
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 18362.478892999996,
+            "discharge_kwh": 16561.36292724999,
+            "max_soc_kwh": 2880,
+            "min_soc_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 18683.313249999996,
+            "discharge_kwh": 16758.531995749992,
+            "max_soc_kwh": 2880,
+            "min_soc_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "storage",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          },
+          {
+            "name": "min_soc_kwh",
+            "type": "number"
+          },
+          {
+            "name": "max_soc_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charge_kwh": 18362.478892999996,
+            "discharge_kwh": 16561.36292724999,
+            "max_soc_kwh": 2880,
+            "min_soc_kwh": 0
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "reads": [
+    "window"
+  ],
+  "results": {
+    "[[\"window\",\"current\"]]": {
+      "params": {
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 0,
+            "load_kwh": 38961.73632649997,
+            "peak_kw": 397.547682,
+            "pue": null,
+            "savings_twd": 132054.35955999995,
+            "site_id": "ATL-2",
+            "site_name": "台中・晶圓園區 B",
+            "tenant": "Atlas Semiconductor"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",\"previous\"]]": {
+      "params": {
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 0,
+            "load_kwh": 39391.547126,
+            "peak_kw": 411.419062,
+            "pue": null,
+            "savings_twd": 132523.61100799995,
+            "site_id": "ATL-2",
+            "site_name": "台中・晶圓園區 B",
+            "tenant": "Atlas Semiconductor"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"window\",null]]": {
+      "params": {
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "unknown"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 0,
+            "load_kwh": 38961.73632649997,
+            "peak_kw": 397.547682,
+            "pue": null,
+            "savings_twd": 132054.35955999995,
+            "site_id": "ATL-2",
+            "site_name": "台中・晶圓園區 B",
+            "tenant": "Atlas Semiconductor"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -1,0 +1,1028 @@
+{
+  "reads": [
+    "site",
+    "window"
+  ],
+  "results": {
+    "[[\"site\",\"HEL-1\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 7115.124734999999,
+            "load_kwh": 213632.6178945,
+            "peak_kw": 1586.402032,
+            "pue": 1.2625681263810542,
+            "savings_twd": 172312.52172,
+            "site_id": "HEL-1",
+            "site_name": "新竹・算力中心 A",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 7115.124734999999,
+            "load_kwh": 214351.0407874998,
+            "peak_kw": 1585.731301,
+            "pue": 1.2663470277432405,
+            "savings_twd": 172318.27093100006,
+            "site_id": "HEL-1",
+            "site_name": "新竹・算力中心 A",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-1\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-1",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 7115.124734999999,
+            "load_kwh": 213632.6178945,
+            "peak_kw": 1586.402032,
+            "pue": 1.2625681263810542,
+            "savings_twd": 172312.52172,
+            "site_id": "HEL-1",
+            "site_name": "新竹・算力中心 A",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 8538.149682500001,
+            "load_kwh": 239402.2077280003,
+            "peak_kw": 1803.353745,
+            "pue": 1.262569852146697,
+            "savings_twd": 38137.068581,
+            "site_id": "HEL-2",
+            "site_name": "台中・算力中心 B",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 8538.149682500001,
+            "load_kwh": 240243.97407425006,
+            "peak_kw": 1806.422776,
+            "pue": 1.2663287936891137,
+            "savings_twd": 38137.06858200001,
+            "site_id": "HEL-2",
+            "site_name": "台中・算力中心 B",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-2\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-2",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 8538.149682500001,
+            "load_kwh": 239402.2077280003,
+            "peak_kw": 1803.353745,
+            "pue": 1.262569852146697,
+            "savings_twd": 38137.068581,
+            "site_id": "HEL-2",
+            "site_name": "台中・算力中心 B",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-3\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-3",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 9961.17463,
+            "load_kwh": 324732.08787175047,
+            "peak_kw": 2205.461273,
+            "pue": 1.2626645536491623,
+            "savings_twd": 241514.56911999988,
+            "site_id": "HEL-3",
+            "site_name": "高雄・算力中心 C",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-3\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-3",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 9961.17463,
+            "load_kwh": 325932.33974075003,
+            "peak_kw": 2249.406897,
+            "pue": 1.266380916785193,
+            "savings_twd": 241187.94194000014,
+            "site_id": "HEL-3",
+            "site_name": "高雄・算力中心 C",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-3\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-3",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 9961.17463,
+            "load_kwh": 324732.08787175047,
+            "peak_kw": 2205.461273,
+            "pue": 1.2626645536491623,
+            "savings_twd": 241514.56911999988,
+            "site_id": "HEL-3",
+            "site_name": "高雄・算力中心 C",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-4\"],[\"window\",\"current\"]]": {
+      "params": {
+        "site": "HEL-4",
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 11384.199576250001,
+            "load_kwh": 308591.1546349999,
+            "peak_kw": 2272.907224,
+            "pue": 1.2625597602249374,
+            "savings_twd": 275706.709892,
+            "site_id": "HEL-4",
+            "site_name": "桃園・算力中心 D",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-4\"],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": "HEL-4",
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 11384.199576250001,
+            "load_kwh": 309511.7707799999,
+            "peak_kw": 2267.902621,
+            "pue": 1.2661295981047511,
+            "savings_twd": 275969.79064800014,
+            "site_id": "HEL-4",
+            "site_name": "桃園・算力中心 D",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",\"HEL-4\"],[\"window\",null]]": {
+      "params": {
+        "site": "HEL-4",
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 11384.199576250001,
+            "load_kwh": 308591.1546349999,
+            "peak_kw": 2272.907224,
+            "pue": 1.2625597602249374,
+            "savings_twd": 275706.709892,
+            "site_id": "HEL-4",
+            "site_name": "桃園・算力中心 D",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"current\"]]": {
+      "params": {
+        "site": null,
+        "window": "current"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 9961.17463,
+            "load_kwh": 324732.08787175047,
+            "peak_kw": 2205.461273,
+            "pue": 1.2626645536491623,
+            "savings_twd": 241514.56911999988,
+            "site_id": "HEL-3",
+            "site_name": "高雄・算力中心 C",
+            "tenant": "Helios Cloud"
+          },
+          {
+            "discharge_kwh": 11384.199576250001,
+            "load_kwh": 308591.1546349999,
+            "peak_kw": 2272.907224,
+            "pue": 1.2625597602249374,
+            "savings_twd": 275706.709892,
+            "site_id": "HEL-4",
+            "site_name": "桃園・算力中心 D",
+            "tenant": "Helios Cloud"
+          },
+          {
+            "discharge_kwh": 8538.149682500001,
+            "load_kwh": 239402.2077280003,
+            "peak_kw": 1803.353745,
+            "pue": 1.262569852146697,
+            "savings_twd": 38137.068581,
+            "site_id": "HEL-2",
+            "site_name": "台中・算力中心 B",
+            "tenant": "Helios Cloud"
+          },
+          {
+            "discharge_kwh": 7115.124734999999,
+            "load_kwh": 213632.6178945,
+            "peak_kw": 1586.402032,
+            "pue": 1.2625681263810542,
+            "savings_twd": 172312.52172,
+            "site_id": "HEL-1",
+            "site_name": "新竹・算力中心 A",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",\"previous\"]]": {
+      "params": {
+        "site": null,
+        "window": "previous"
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 9961.17463,
+            "load_kwh": 325932.33974075003,
+            "peak_kw": 2249.406897,
+            "pue": 1.266380916785193,
+            "savings_twd": 241187.94194000014,
+            "site_id": "HEL-3",
+            "site_name": "高雄・算力中心 C",
+            "tenant": "Helios Cloud"
+          },
+          {
+            "discharge_kwh": 11384.199576250001,
+            "load_kwh": 309511.7707799999,
+            "peak_kw": 2267.902621,
+            "pue": 1.2661295981047511,
+            "savings_twd": 275969.79064800014,
+            "site_id": "HEL-4",
+            "site_name": "桃園・算力中心 D",
+            "tenant": "Helios Cloud"
+          },
+          {
+            "discharge_kwh": 8538.149682500001,
+            "load_kwh": 240243.97407425006,
+            "peak_kw": 1806.422776,
+            "pue": 1.2663287936891137,
+            "savings_twd": 38137.06858200001,
+            "site_id": "HEL-2",
+            "site_name": "台中・算力中心 B",
+            "tenant": "Helios Cloud"
+          },
+          {
+            "discharge_kwh": 7115.124734999999,
+            "load_kwh": 214351.0407874998,
+            "peak_kw": 1585.731301,
+            "pue": 1.2663470277432405,
+            "savings_twd": 172318.27093100006,
+            "site_id": "HEL-1",
+            "site_name": "新竹・算力中心 A",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "[[\"site\",null],[\"window\",null]]": {
+      "params": {
+        "site": null,
+        "window": null
+      },
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "ranking",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "site_id",
+            "type": "string"
+          },
+          {
+            "name": "tenant",
+            "type": "string"
+          },
+          {
+            "name": "site_name",
+            "type": "string"
+          },
+          {
+            "name": "load_kwh",
+            "type": "number"
+          },
+          {
+            "name": "savings_twd",
+            "type": "number"
+          },
+          {
+            "name": "peak_kw",
+            "type": "number"
+          },
+          {
+            "name": "pue",
+            "type": "number"
+          },
+          {
+            "name": "discharge_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "discharge_kwh": 9961.17463,
+            "load_kwh": 324732.08787175047,
+            "peak_kw": 2205.461273,
+            "pue": 1.2626645536491623,
+            "savings_twd": 241514.56911999988,
+            "site_id": "HEL-3",
+            "site_name": "高雄・算力中心 C",
+            "tenant": "Helios Cloud"
+          },
+          {
+            "discharge_kwh": 11384.199576250001,
+            "load_kwh": 308591.1546349999,
+            "peak_kw": 2272.907224,
+            "pue": 1.2625597602249374,
+            "savings_twd": 275706.709892,
+            "site_id": "HEL-4",
+            "site_name": "桃園・算力中心 D",
+            "tenant": "Helios Cloud"
+          },
+          {
+            "discharge_kwh": 8538.149682500001,
+            "load_kwh": 239402.2077280003,
+            "peak_kw": 1803.353745,
+            "pue": 1.262569852146697,
+            "savings_twd": 38137.068581,
+            "site_id": "HEL-2",
+            "site_name": "台中・算力中心 B",
+            "tenant": "Helios Cloud"
+          },
+          {
+            "discharge_kwh": 7115.124734999999,
+            "load_kwh": 213632.6178945,
+            "peak_kw": 1586.402032,
+            "pue": 1.2625681263810542,
+            "savings_twd": 172312.52172,
+            "site_id": "HEL-1",
+            "site_name": "新竹・算力中心 A",
+            "tenant": "Helios Cloud"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

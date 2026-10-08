@@ -1,0 +1,1035 @@
+{
+  "schema_version": 1,
+  "run_id": "atlas-2026-q3-v1",
+  "company": "ATLED Engergy",
+  "synthetic": true,
+  "scope": "customer",
+  "tenant": "Atlas Semiconductor",
+  "template": {
+    "commit": "dd5db64ffc27d8ecb19ffafe3f83dc3d44f9854b",
+    "sha256": "c931f31609b5713bf629d4d944708390f48189691f7624351aeb24113506ba11",
+    "files": {
+      "open-dashboard.config.ts": "9687b0411ea9a5b28027ce060999cced94bb10ddd2d28eb1ba4d1f9fb901315e",
+      "dashboards/atlas/index.tsx": "f2006129b514493c72a303b98c6a52e3ba9b60b6e8ee91cbe4dd442c920aeb2e",
+      "dashboards/atlas/queries.sql": "6722cc0e8c0388d7f78fa5081659696cf4bf6c8d487ef470ab1bd975fe88ad0b",
+      "dashboards/energy/index.tsx": "7e93888fb2b7970b655763af958a960619d82d5bbc49f961a4d50847534b0b47",
+      "dashboards/energy/queries.sql": "4958b106da52010950b9a4c765de026451b7b0cb04fcc06c0470af843b7b2cdc",
+      "dashboards/site-atl-1/index.tsx": "18435d4ba36e31a26d6c66eccbb468c177fcb032173958579807abe06afa3f11",
+      "dashboards/site-atl-1/queries.sql": "7144e591d14fc6cad66bb937464b27e954fa8605f9f3deb6be3ccd285f2a521b",
+      "dashboards/site-atl-2/index.tsx": "9a537e0fa809c827d02bd3bc833c489be010e16f29b49ecd9bf8fe4e150ada02",
+      "dashboards/site-atl-2/queries.sql": "f4a9287f729789029ee08857a4b10e9b0c58e0903f272eb3883e5cb073ab21d5",
+      "dashboards/site-atl-3/index.tsx": "d9ae6aa21565ed48a1402f3b8ce686cf4e6787d45fcdb28543932890a2f70570",
+      "dashboards/site-atl-3/queries.sql": "eaaf5da0dd092f6a2dd8eec713aa33d00a16493d817d302c6dcb3d153c8d4864",
+      "dashboards/site-atl-4/index.tsx": "d96985e3e7ca337d16f12c786527bb6c020c800caa6f96fbc52988fed11b715c",
+      "dashboards/site-atl-4/queries.sql": "97987cb83c36f5cecb84186c6696ce476b29e533793a5d5b79c6eff6aaa44d93",
+      "dashboards/weekly/index.tsx": "99ce712fea3c1ef4ee4da3deeda5eced3cf802492770a66979ee3c2e40a86d2c",
+      "dashboards/weekly/queries.sql": "4958b106da52010950b9a4c765de026451b7b0cb04fcc06c0470af843b7b2cdc",
+      "charts/prose/index.tsx": "b9abb5619a140cb38b3db5b82020609f0620e72ce81bafd4833c8d391ae8c086",
+      "charts/prose/sample.sql": "ad6089134f5caad2461fe4014ba9cad3b00d38abf4ee6bf0bf0a37782c3192a8",
+      "themes/atled.json": "41d5d795a23940068d8c5a1303923b2722c96364c474035882f1d8e2d4d0b2d9",
+      "themes/imitator.json": "8a8951d40f1ea30cb4abd3a5ee5bc3342ab92eae576b851f947d56d23a8b5556",
+      "theme-overrides/imitator.css": "5aedcff3cd9543088a5abe9b541ecc962ef381e14fc553e5e143470555267a19",
+      "databases/energy/database.md": "0b4fd38f34ce5f9a051ccc44566166b4eecd2998dcf2f8e2a5f14f9c2c517d37",
+      "snapreport.yaml": "c82d013adec8d7bc6c712e9c6f8ebba159f4245be8a690ec329e9090637f90c7"
+    }
+  },
+  "open_dashboard": "0.7.0",
+  "built_at": "2026-10-08T01:14:48.220Z",
+  "inputs": {
+    "assets.parquet": {
+      "sha256": "3f213e721dd99fb14a8427ebf56a8630c9e8f60dd95e991efffdb1956d6e2ed1",
+      "rows": 16
+    },
+    "events.parquet": {
+      "sha256": "9930e76de797e14f8080faff65b4d574c7612ffe1b5b2af7d8807297ec4ad5a1",
+      "rows": 2
+    },
+    "meters.parquet": {
+      "sha256": "952ef438dbd9d261ba48d48c88cb6d7a6de03e212e634a7af8a4f9521e31cbae",
+      "rows": 35328
+    },
+    "sites.parquet": {
+      "sha256": "5d95828a2470ab562e0b1612290b53ab73551e4a89a378a8d282cf5de4dfb64e",
+      "rows": 4
+    },
+    "telemetry.parquet": {
+      "sha256": "79f892c1639fc65b56ca85cc912e7c3343986c4a4b0199b302b367d49ef08c8a",
+      "rows": 141312
+    }
+  },
+  "catalog": [
+    {
+      "id": "atlas",
+      "title": "ATLED Engergy | Atlas Semiconductor · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": null,
+      "layout": "resilience",
+      "domains": [
+        "building",
+        "grid",
+        "datacenter",
+        "storage",
+        "solar",
+        "charging"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    },
+    {
+      "id": "site-atl-1",
+      "title": "ATLED Engergy | ATL-1 新竹・晶圓園區 A · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": "ATL-1",
+      "layout": "resilience",
+      "domains": [
+        "building",
+        "grid",
+        "datacenter",
+        "storage",
+        "solar",
+        "charging"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    },
+    {
+      "id": "site-atl-2",
+      "title": "ATLED Engergy | ATL-2 台中・晶圓園區 B · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": "ATL-2",
+      "layout": "resilience",
+      "domains": [
+        "building",
+        "grid",
+        "solar"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    },
+    {
+      "id": "site-atl-3",
+      "title": "ATLED Engergy | ATL-3 高雄・晶圓園區 C · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": "ATL-3",
+      "layout": "resilience",
+      "domains": [
+        "grid",
+        "datacenter",
+        "storage"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    },
+    {
+      "id": "site-atl-4",
+      "title": "ATLED Engergy | ATL-4 桃園・晶圓園區 D · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": "ATL-4",
+      "layout": "resilience",
+      "domains": [
+        "building",
+        "grid",
+        "storage",
+        "charging"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    }
+  ],
+  "queries": {
+    "d/atlas/comparison.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/daily.json": {
+      "runs": 15,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/atlas/events.json": {
+      "runs": 15,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/atlas/kpis.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/profile.json": {
+      "runs": 15,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/atlas/ranking.json": {
+      "runs": 15,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/atlas/sectors.json": {
+      "runs": 15,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/atlas/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/atlas/solution.json": {
+      "runs": 5,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/specialized.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/storage.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/energy/comparison.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/daily.json": {
+      "runs": 15,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/energy/events.json": {
+      "runs": 15,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/energy/kpis.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/profile.json": {
+      "runs": 15,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/energy/ranking.json": {
+      "runs": 15,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/energy/sectors.json": {
+      "runs": 15,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/energy/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/energy/storage.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-atl-1/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-atl-1/events.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-atl-1/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-atl-1/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-atl-1/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-atl-2/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-atl-2/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-atl-2/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-atl-2/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-atl-2/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-atl-2/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-atl-3/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-atl-3/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-atl-3/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-atl-3/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-atl-3/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-atl-3/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-atl-4/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-atl-4/events.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-atl-4/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-atl-4/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-atl-4/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/weekly/comparison.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/daily.json": {
+      "runs": 15,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/weekly/events.json": {
+      "runs": 15,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/weekly/kpis.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/profile.json": {
+      "runs": 15,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/weekly/ranking.json": {
+      "runs": 15,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/weekly/sectors.json": {
+      "runs": 15,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/weekly/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/weekly/storage.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    }
+  },
+  "warnings": [],
+  "data_hash": "3d8e849560fc7015dbbff701fdd909d554a505812ba2534483bf5e667d8bbc5d",
+  "check": "ok",
+  "quality": "ok",
+  "artifacts": {
+    "build.log": {
+      "sha256": "1dc2bfc81684fb74d87d2c97f3752495acbde40127e6e34cdda6cc463e31d466",
+      "bytes": 394
+    },
+    "check.json": {
+      "sha256": "6fac886020f46a335ece04f127e9c8105503fd9fc7ba75c2f18b93e320a70e16",
+      "bytes": 26503
+    },
+    "dashboard.html": {
+      "sha256": "a60a62ea5e0062930bb4107737813976e9c8450ec69deadc46e515902afb39d2",
+      "bytes": 843854
+    },
+    "demos/react/assets/index-CDr86rvp.css": {
+      "sha256": "e3c14760eeb346fed6fe94f29b481469b7da8d490a463c8082be0eef50860bac",
+      "bytes": 364
+    },
+    "demos/react/assets/index-DAbvWjJb.js": {
+      "sha256": "ae81b2fd1a8bc2eddc5da367f71aabd31ed871925f34bf16754e148654a8c482",
+      "bytes": 190639
+    },
+    "demos/react/index.html": {
+      "sha256": "272ca7e50183106e3be102ac60da3dcb84a380838f13541670d821909bf7d71e",
+      "bytes": 345
+    },
+    "demos/vue/assets/index-CDr86rvp.css": {
+      "sha256": "e3c14760eeb346fed6fe94f29b481469b7da8d490a463c8082be0eef50860bac",
+      "bytes": 364
+    },
+    "demos/vue/assets/index-DMU5jSmz.js": {
+      "sha256": "e5240ec6adce2bc9426ec2dad17226df875a46a2dd24dd5de49d07c2ac6175dc",
+      "bytes": 58473
+    },
+    "demos/vue/index.html": {
+      "sha256": "63ca260523395cb72d7ece2b43252e4c0649be9ae6889e810e74a8c7b52d21c1",
+      "bytes": 342
+    },
+    "lint.json": {
+      "sha256": "1150f123209f96c52a8de1830efaf1a957e177dcb4a804ac18501f991995e896",
+      "bytes": 35
+    },
+    "report-native.html": {
+      "sha256": "1345bc12f02a0375569f4301f011894c68c1ad8880b55eceda5e1f8bba1b446b",
+      "bytes": 831803
+    },
+    "report.html": {
+      "sha256": "68efb681bc25e374c64037a9700304a9cfb19084761b3a03ee7efef8d211196c",
+      "bytes": 832615
+    },
+    "site/assets/atlas-DQcHm4KJ.js": {
+      "sha256": "cb696423a6522fddb2e55fd010c4abe5285e6484c5986f099030fad2f6ec7794",
+      "bytes": 3335
+    },
+    "site/assets/energy-b9QqgOBg.js": {
+      "sha256": "a44c4f07bd130a238143a4be23adc287fd95a17bd0eeffb6536d3d01629eb703",
+      "bytes": 3706
+    },
+    "site/assets/main-CYE5o86A.js": {
+      "sha256": "578651086be467ad5def4d0f2f8cdfd8878a6f7a57d488e6148c92b3e574b86f",
+      "bytes": 286703
+    },
+    "site/assets/main-DFZNOANX.css": {
+      "sha256": "c1353e6edab25c1da2e46a702b7a0b3603c1ebaaac2c7d240c0da96a25bd1f3b",
+      "bytes": 69765
+    },
+    "site/assets/panel--XCxS9Y-.js": {
+      "sha256": "044c6887daae69070a10df1f603a8863e6c7b243622a8f01a49a342a22031bb8",
+      "bytes": 120997
+    },
+    "site/assets/prose-Di7-TFD6.js": {
+      "sha256": "33685e5709f625760a82cee9069bb16278cd9207e57ecad1bbd5313ab6e214ab",
+      "bytes": 5371
+    },
+    "site/assets/rolldown-runtime-BpQH8Ho1.js": {
+      "sha256": "f42a7e25f42fd00b0935f3a7b06f4429238b50b6798b53c273e30d7095f9e94e",
+      "bytes": 227
+    },
+    "site/assets/site-atl-1-CQHWZ9Kn.js": {
+      "sha256": "e5d3a443e514a6599cf2461aee68ea4480c42eb279de211026fd45c44fad7bd7",
+      "bytes": 3295
+    },
+    "site/assets/site-atl-2-DtQz856e.js": {
+      "sha256": "24d40a405fafe5e43f3b0897fba535342abcda2a6a93857938e92befb0abe9fe",
+      "bytes": 2932
+    },
+    "site/assets/site-atl-3-BK4SCR4z.js": {
+      "sha256": "847f36df807c4b3c20479df2362fea5c8beb8b1517646cc82996db346202a525",
+      "bytes": 2970
+    },
+    "site/assets/site-atl-4-CaHUj7Y0.js": {
+      "sha256": "c5fbe10db58fda42e13972064767f53a113e7763f6d66b37e9fe43b7fc570f02",
+      "bytes": 2982
+    },
+    "site/assets/weekly-Bn04cBUL.js": {
+      "sha256": "ad1c5ecfc25a6f5a318368459ca9c177250a7a6d8de2e7564d65961fbd20447f",
+      "bytes": 3107
+    },
+    "site/assets/xy-chart-C-3n6l3c.js": {
+      "sha256": "ba0ce251ec01366f06e65e7d04eb5b4ac5b8168d546bce7eef91a89448e20bae",
+      "bytes": 17058
+    },
+    "site/d/atlas/index.html": {
+      "sha256": "140bed67cab1b295830e4fb7c93a3e579838bb62a26a23cd8a99ad57f6190c6d",
+      "bytes": 1037
+    },
+    "site/d/energy/index.html": {
+      "sha256": "5f9a05593366e1e29d16502b0b45127cb4d6602826b14ddc1ebedee480dcf791",
+      "bytes": 1005
+    },
+    "site/d/site-atl-1/index.html": {
+      "sha256": "63b475e893d95adcb9c4c70af54691a891e6a0c3f3bd2ccec915df906b026411",
+      "bytes": 1047
+    },
+    "site/d/site-atl-2/index.html": {
+      "sha256": "247126a72461157031a29989a1786362ce6d766ff2d1774cb7b5259d136f5133",
+      "bytes": 1047
+    },
+    "site/d/site-atl-3/index.html": {
+      "sha256": "f980614b7882cd818cc7bffc345e1bb4aede9f543460c885da788ddc2e8fa6a2",
+      "bytes": 1047
+    },
+    "site/d/site-atl-4/index.html": {
+      "sha256": "16da6025f154e5241e457a0ec44bd032160c36fd08dbc376d392905e0cb7e6e3",
+      "bytes": 1047
+    },
+    "site/d/weekly/index.html": {
+      "sha256": "a5c0a7680509488109e7b2507cbe601ff309d4b1efbe7c23587b1e686c2134e9",
+      "bytes": 1817
+    },
+    "site/data/d/atlas/comparison.json": {
+      "sha256": "761819697f70b0e8e04a08c98818a62096baf15d732bb75097f0466e88f0f7b3",
+      "bytes": 10473
+    },
+    "site/data/d/atlas/daily.json": {
+      "sha256": "1dfe759f3297b56609a7463440d63f88b965bc252c6e6c30b25a02109355f9b5",
+      "bytes": 36623
+    },
+    "site/data/d/atlas/events.json": {
+      "sha256": "b64766e047c5f031f7e8c0c8c0fb073a59016aaeceb70a3c741b4b9e941bb6d6",
+      "bytes": 17375
+    },
+    "site/data/d/atlas/kpis.json": {
+      "sha256": "61b7c523f967c7c801fdaacc0268fa7cf84fa09a3c4fddacf1be387f90a2a3c9",
+      "bytes": 33961
+    },
+    "site/data/d/atlas/profile.json": {
+      "sha256": "3bacefca530e34e1c23a21a5de4e4ff6d451f2ee8b3d061d0ee1ce57036ccd8a",
+      "bytes": 448877
+    },
+    "site/data/d/atlas/ranking.json": {
+      "sha256": "5177dbb439c9e1efe19d2485af118cb4c29acf2ad8d30cb8a58b4dd9a5e496ea",
+      "bytes": 24625
+    },
+    "site/data/d/atlas/sectors.json": {
+      "sha256": "5323f10a19a451bf6620f8f6983f91767d0fc29e4d1b0414b588d492ae6b73d4",
+      "bytes": 13005
+    },
+    "site/data/d/atlas/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/atlas/solution.json": {
+      "sha256": "547d86b6bb399b6d3303206d1a269d463ec36b13085c5d6348810d3b4712090d",
+      "bytes": 3378
+    },
+    "site/data/d/atlas/specialized.json": {
+      "sha256": "780e885f07697fc720b882c1763e845547664f50954aa79d9b9bfc1dcdfd27be",
+      "bytes": 20075
+    },
+    "site/data/d/atlas/storage.json": {
+      "sha256": "d385bde68f27b9b972106eeddfdce96fcf157fdf56af0f02fc10bb96f74b7b8e",
+      "bytes": 13823
+    },
+    "site/data/d/atlas/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/energy/comparison.json": {
+      "sha256": "761819697f70b0e8e04a08c98818a62096baf15d732bb75097f0466e88f0f7b3",
+      "bytes": 10473
+    },
+    "site/data/d/energy/daily.json": {
+      "sha256": "1dfe759f3297b56609a7463440d63f88b965bc252c6e6c30b25a02109355f9b5",
+      "bytes": 36623
+    },
+    "site/data/d/energy/events.json": {
+      "sha256": "b64766e047c5f031f7e8c0c8c0fb073a59016aaeceb70a3c741b4b9e941bb6d6",
+      "bytes": 17375
+    },
+    "site/data/d/energy/kpis.json": {
+      "sha256": "61b7c523f967c7c801fdaacc0268fa7cf84fa09a3c4fddacf1be387f90a2a3c9",
+      "bytes": 33961
+    },
+    "site/data/d/energy/profile.json": {
+      "sha256": "3bacefca530e34e1c23a21a5de4e4ff6d451f2ee8b3d061d0ee1ce57036ccd8a",
+      "bytes": 448877
+    },
+    "site/data/d/energy/ranking.json": {
+      "sha256": "5177dbb439c9e1efe19d2485af118cb4c29acf2ad8d30cb8a58b4dd9a5e496ea",
+      "bytes": 24625
+    },
+    "site/data/d/energy/sectors.json": {
+      "sha256": "5323f10a19a451bf6620f8f6983f91767d0fc29e4d1b0414b588d492ae6b73d4",
+      "bytes": 13005
+    },
+    "site/data/d/energy/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/energy/storage.json": {
+      "sha256": "d385bde68f27b9b972106eeddfdce96fcf157fdf56af0f02fc10bb96f74b7b8e",
+      "bytes": 13823
+    },
+    "site/data/d/energy/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-atl-1/comparison.json": {
+      "sha256": "06492ad91103351f35c7c7d609b74ba4ee5cb051a934f307010357d6c2b63fb8",
+      "bytes": 2001
+    },
+    "site/data/d/site-atl-1/daily.json": {
+      "sha256": "1f22d98d5c93f00bc319a41ccdedac9155a97181e3b37bff8e99b1b76913d665",
+      "bytes": 7452
+    },
+    "site/data/d/site-atl-1/events.json": {
+      "sha256": "c2fdfdbcc5fc143126e29104744c685dcd0feaf762f63e680828b4fd169f5ea5",
+      "bytes": 3521
+    },
+    "site/data/d/site-atl-1/kpis.json": {
+      "sha256": "57ab350c9bf086dbf339af642e0a55e14c5063caf48fc0ef7ef3991413b38bed",
+      "bytes": 6754
+    },
+    "site/data/d/site-atl-1/profile.json": {
+      "sha256": "9c1b01452304ba3564bddc1da2ff1c70cf6e872e86e0bdb2ee56c8fa3350ba19",
+      "bytes": 91025
+    },
+    "site/data/d/site-atl-1/ranking.json": {
+      "sha256": "67848b1cf47aa7750392c52c46c5ad689b8f2d42271c199923def481c5189c0c",
+      "bytes": 4249
+    },
+    "site/data/d/site-atl-1/sectors.json": {
+      "sha256": "ef7ad2ff35c109925a03015b736f6d93655c388fab2ed60e867bfc2602ba5825",
+      "bytes": 2551
+    },
+    "site/data/d/site-atl-1/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/site-atl-1/solution.json": {
+      "sha256": "e7bf0477497f3134b90e86eb5aeccf41795bc4334c36c9832b65f89348264064",
+      "bytes": 647
+    },
+    "site/data/d/site-atl-1/specialized.json": {
+      "sha256": "af21d660ebf6fb57b0010be22c57be775ae6f8cb38e782220411dfe4bcbd7270",
+      "bytes": 4006
+    },
+    "site/data/d/site-atl-1/storage.json": {
+      "sha256": "cf64d25e52e9049679294dfb24d6591d07994a1cd3f56b6d7b2a4f338cd22384",
+      "bytes": 2704
+    },
+    "site/data/d/site-atl-1/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-atl-2/comparison.json": {
+      "sha256": "ad79c7b63bb1848f3b5c989aa8a91fac229482c47ee3670ecf6c6a7bb1facf34",
+      "bytes": 1998
+    },
+    "site/data/d/site-atl-2/daily.json": {
+      "sha256": "a6c8bc425504aa418da9c463abc5c9acec0de0de7b655c37aa974e59fc2a2ee5",
+      "bytes": 7175
+    },
+    "site/data/d/site-atl-2/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-atl-2/kpis.json": {
+      "sha256": "5b1c9e41dd5d29c1482d445f79120a1525fa8210c8193c6144d6aa009632f47f",
+      "bytes": 6689
+    },
+    "site/data/d/site-atl-2/profile.json": {
+      "sha256": "b3a909565e91cc3cdd64846c12c93d7e72ee9981415f8d50df5a3f12269f3130",
+      "bytes": 89020
+    },
+    "site/data/d/site-atl-2/ranking.json": {
+      "sha256": "aee968ab551d1219404ada633ea7f2ce15bed660ca14e3477c3a8ccebad2e380",
+      "bytes": 4154
+    },
+    "site/data/d/site-atl-2/sectors.json": {
+      "sha256": "de934f8ffef854cb9b5af5fcce42e2b38023fa00f36c1fb9b9c6af0e244036a7",
+      "bytes": 2456
+    },
+    "site/data/d/site-atl-2/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/site-atl-2/solution.json": {
+      "sha256": "d6b5841447495be0a5c0a537d9813b8d8444cffa080a72483c0c86098bfe2c77",
+      "bytes": 611
+    },
+    "site/data/d/site-atl-2/specialized.json": {
+      "sha256": "2dd67448b9653066b2fa21a7ccfc1496409ae84c0e674951ad2135a66bc2eb4b",
+      "bytes": 3808
+    },
+    "site/data/d/site-atl-2/storage.json": {
+      "sha256": "f3f0a0de98f1fd53edd10962aa09faf71d0d2f2df32514d2435528bcf3593cef",
+      "bytes": 2593
+    },
+    "site/data/d/site-atl-2/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-atl-3/comparison.json": {
+      "sha256": "56a6c3d2b48886f19d0a018840b8c00352b2619dfe21106438be889d2ac89207",
+      "bytes": 2002
+    },
+    "site/data/d/site-atl-3/daily.json": {
+      "sha256": "7ee33db25366d5a1a8aa54dc6e8824873ac2e42b7633c0e61fc3ffab7cdf369e",
+      "bytes": 7014
+    },
+    "site/data/d/site-atl-3/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-atl-3/kpis.json": {
+      "sha256": "22cd37a3b9334f37dc2cb476b1b44a6c19808d174778b754012bc438075fc5ae",
+      "bytes": 6664
+    },
+    "site/data/d/site-atl-3/profile.json": {
+      "sha256": "4c88bade267f31e776079d921adf4db8c2bfa4799b407d7dc60bb50e92e0dcab",
+      "bytes": 87818
+    },
+    "site/data/d/site-atl-3/ranking.json": {
+      "sha256": "2c99516fd54f0ba64a060bfd5c14857a1d9416daf5196fdb1b24d2945c9ea3eb",
+      "bytes": 4219
+    },
+    "site/data/d/site-atl-3/sectors.json": {
+      "sha256": "25f0b6d79295b0abdbf9b094cf6fdfe38b1b576171a2ec16fbd62de0b31a9bd2",
+      "bytes": 2464
+    },
+    "site/data/d/site-atl-3/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/site-atl-3/solution.json": {
+      "sha256": "3489f17bff7f238aa58257514ce5f4383dcffd49284b4e6e51869cd308e2e9f9",
+      "bytes": 608
+    },
+    "site/data/d/site-atl-3/specialized.json": {
+      "sha256": "755e786966cb5254e61f6380270e5f4fa91736333b8b45214b0d62836978a812",
+      "bytes": 3897
+    },
+    "site/data/d/site-atl-3/storage.json": {
+      "sha256": "2a3a820c2892ffc78e2eb06989b555da853128fd3c924933037c330739e09f4a",
+      "bytes": 2665
+    },
+    "site/data/d/site-atl-3/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-atl-4/comparison.json": {
+      "sha256": "d495f5de9696917d41d0b11d15f8128c6733a222016f7abde78e4dde25d73494",
+      "bytes": 2003
+    },
+    "site/data/d/site-atl-4/daily.json": {
+      "sha256": "e3560f3107de1831a135ee77d3a3e1f8c57a65203f8e3c98da65e05e28c6e4ac",
+      "bytes": 7102
+    },
+    "site/data/d/site-atl-4/events.json": {
+      "sha256": "2bb0aaf18998719dcbd950c6cd14637e526f2c52b109961f37172eafccbdec01",
+      "bytes": 3501
+    },
+    "site/data/d/site-atl-4/kpis.json": {
+      "sha256": "349a4ea8fd2b0d930b0beffdb13bc6894ae3542bfe8797518cc3bff3d82b4314",
+      "bytes": 6607
+    },
+    "site/data/d/site-atl-4/profile.json": {
+      "sha256": "fec45f56f70939ca13eb4848fd6d56271dfd190306f3951596630bd1f0063cba",
+      "bytes": 87420
+    },
+    "site/data/d/site-atl-4/ranking.json": {
+      "sha256": "786325f112f18d1d4d65524b397568ca67eb52fab41587a66c56e2d70386574e",
+      "bytes": 4187
+    },
+    "site/data/d/site-atl-4/sectors.json": {
+      "sha256": "8c846c50762ea431e03f539833e0563f3823586a63fcd5c7c0d1ba0699e7fd32",
+      "bytes": 2505
+    },
+    "site/data/d/site-atl-4/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/site-atl-4/solution.json": {
+      "sha256": "a7c7300db6bbc019cd4d20d100a6550f051563e88e44ff5fd5352476532b925e",
+      "bytes": 620
+    },
+    "site/data/d/site-atl-4/specialized.json": {
+      "sha256": "50eacfd210db4262eecf667aa36f755ca23c0d28281abcecf8693be08826e45c",
+      "bytes": 3873
+    },
+    "site/data/d/site-atl-4/storage.json": {
+      "sha256": "2b1a75af64da29f198881804411605bbaec853d1068b7d43474724634a98c439",
+      "bytes": 2693
+    },
+    "site/data/d/site-atl-4/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/weekly/comparison.json": {
+      "sha256": "761819697f70b0e8e04a08c98818a62096baf15d732bb75097f0466e88f0f7b3",
+      "bytes": 10473
+    },
+    "site/data/d/weekly/daily.json": {
+      "sha256": "1dfe759f3297b56609a7463440d63f88b965bc252c6e6c30b25a02109355f9b5",
+      "bytes": 36623
+    },
+    "site/data/d/weekly/events.json": {
+      "sha256": "b64766e047c5f031f7e8c0c8c0fb073a59016aaeceb70a3c741b4b9e941bb6d6",
+      "bytes": 17375
+    },
+    "site/data/d/weekly/kpis.json": {
+      "sha256": "61b7c523f967c7c801fdaacc0268fa7cf84fa09a3c4fddacf1be387f90a2a3c9",
+      "bytes": 33961
+    },
+    "site/data/d/weekly/profile.json": {
+      "sha256": "3bacefca530e34e1c23a21a5de4e4ff6d451f2ee8b3d061d0ee1ce57036ccd8a",
+      "bytes": 448877
+    },
+    "site/data/d/weekly/ranking.json": {
+      "sha256": "5177dbb439c9e1efe19d2485af118cb4c29acf2ad8d30cb8a58b4dd9a5e496ea",
+      "bytes": 24625
+    },
+    "site/data/d/weekly/sectors.json": {
+      "sha256": "5323f10a19a451bf6620f8f6983f91767d0fc29e4d1b0414b588d492ae6b73d4",
+      "bytes": 13005
+    },
+    "site/data/d/weekly/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/weekly/storage.json": {
+      "sha256": "d385bde68f27b9b972106eeddfdce96fcf157fdf56af0f02fc10bb96f74b7b8e",
+      "bytes": 13823
+    },
+    "site/data/d/weekly/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/dashboards.json": {
+      "sha256": "9dd9613133b47a08359c03ef34be675e1fb5f7e5ffed462e0524c9ae9c6b3ed8",
+      "bytes": 2194
+    },
+    "site/data/themes/atled.json": {
+      "sha256": "7618a78434c35b52a08517b0e66345a8fa101fd124bd4aa05739e284bc93906a",
+      "bytes": 729
+    },
+    "site/data/themes/imitator.json": {
+      "sha256": "69112925fb474338707da1052cbb80f1567a32dae393b622d4aa356029d14c9e",
+      "bytes": 666
+    },
+    "site/data/themes.json": {
+      "sha256": "db3ca35577f216581ef07c1244b8123705722c52acd72d268d2c11bd7227d77e",
+      "bytes": 276
+    },
+    "site/index.html": {
+      "sha256": "63506fe786ceebb3af40144e8a1adb9f08602ea58cd3375b891f0836bcc2555e",
+      "bytes": 959
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "file": "",
+  "hash": "8a8951d40f1ea30c",
+  "id": "imitator",
+  "theme": {
+    "dark": {
+      "accent": "#a0c2ad",
+      "grid": "#505447",
+      "page": "#252720",
+      "surface": "#30332a"
+    },
+    "font": "Georgia, Noto Serif TC, serif",
+    "light": {
+      "accent": "#276058",
+      "bad": "#b24531",
+      "good": "#28764e",
+      "grid": "#ded9cc",
+      "page": "#f6f3ea",
+      "series": [
+        "#276058",
+        "#bc8431",
+        "#668ca1",
+        "#a8543a",
+        "#87996a",
+        "#897da1",
+        "#487a89",
+        "#a59a7b"
+      ],
+      "surface": "#fffcf6"
+    },
+    "name": "ATLED Engergy · Editorial",
+    "radius": 0
+  }
+}

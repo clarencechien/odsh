@@ -1,0 +1,88 @@
+{
+  "dashboards": [
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "atlas",
+      "panels": 14,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | Atlas Semiconductor · 供電韌性與需量管理"
+    },
+    {
+      "description": "Integrated energy operations · 合成資料示範",
+      "file": "",
+      "id": "energy",
+      "panels": 17,
+      "queries": 10,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | 能源營運總覽"
+    },
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "site-atl-1",
+      "panels": 14,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | ATL-1 新竹・晶圓園區 A · 供電韌性與需量管理"
+    },
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "site-atl-2",
+      "panels": 13,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | ATL-2 台中・晶圓園區 B · 供電韌性與需量管理"
+    },
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "site-atl-3",
+      "panels": 12,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | ATL-3 高雄・晶圓園區 C · 供電韌性與需量管理"
+    },
+    {
+      "description": "客戶客製化方案 · 合成資料",
+      "file": "",
+      "id": "site-atl-4",
+      "panels": 12,
+      "queries": 12,
+      "sources": [
+        "energy"
+      ],
+      "theme": "atled",
+      "title": "ATLED Engergy | ATL-4 桃園・晶圓園區 D · 供電韌性與需量管理"
+    },
+    {
+      "description": "Weekly energy review · 合成資料",
+      "file": "",
+      "id": "weekly",
+      "panels": 11,
+      "queries": 10,
+      "sources": [
+        "energy"
+      ],
+      "theme": "imitator",
+      "title": "ATLED Engergy | 客戶能源週報"
+    }
+  ]
+}

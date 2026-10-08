@@ -1,0 +1,2410 @@
+{
+  "schema_version": 1,
+  "run_id": "demo-2026-q3-v1",
+  "company": "ATLED Engergy",
+  "synthetic": true,
+  "scope": "internal-portfolio",
+  "tenant": null,
+  "template": {
+    "commit": "dd5db64ffc27d8ecb19ffafe3f83dc3d44f9854b",
+    "sha256": "7b82d2ed9ffe2f220c858000a1fd69edb36ce3099c8743ea466c713be1fb96a0",
+    "files": {
+      "open-dashboard.config.ts": "9687b0411ea9a5b28027ce060999cced94bb10ddd2d28eb1ba4d1f9fb901315e",
+      "dashboards/atlas/index.tsx": "f2006129b514493c72a303b98c6a52e3ba9b60b6e8ee91cbe4dd442c920aeb2e",
+      "dashboards/atlas/queries.sql": "6722cc0e8c0388d7f78fa5081659696cf4bf6c8d487ef470ab1bd975fe88ad0b",
+      "dashboards/energy/index.tsx": "7e93888fb2b7970b655763af958a960619d82d5bbc49f961a4d50847534b0b47",
+      "dashboards/energy/queries.sql": "4958b106da52010950b9a4c765de026451b7b0cb04fcc06c0470af843b7b2cdc",
+      "dashboards/helios/index.tsx": "53a19e02d942dbf4a1e08e9bed8b501b78616a1398dfa187a4ebb51ed09bab35",
+      "dashboards/helios/queries.sql": "90292915f579203637dc546b3cb0070f5afe5da714bf9274a8c6a0523a78cc5a",
+      "dashboards/meridian/index.tsx": "cfe7b886d3c5023de179f7070f48b6ea8ac696b721a768a6c324588b448fdb0c",
+      "dashboards/meridian/queries.sql": "db76e6f391a03e173155f108f0edbc397510e84d11443be9175374390ca6a8f1",
+      "dashboards/site-atl-1/index.tsx": "18435d4ba36e31a26d6c66eccbb468c177fcb032173958579807abe06afa3f11",
+      "dashboards/site-atl-1/queries.sql": "7144e591d14fc6cad66bb937464b27e954fa8605f9f3deb6be3ccd285f2a521b",
+      "dashboards/site-atl-2/index.tsx": "9a537e0fa809c827d02bd3bc833c489be010e16f29b49ecd9bf8fe4e150ada02",
+      "dashboards/site-atl-2/queries.sql": "f4a9287f729789029ee08857a4b10e9b0c58e0903f272eb3883e5cb073ab21d5",
+      "dashboards/site-atl-3/index.tsx": "d9ae6aa21565ed48a1402f3b8ce686cf4e6787d45fcdb28543932890a2f70570",
+      "dashboards/site-atl-3/queries.sql": "eaaf5da0dd092f6a2dd8eec713aa33d00a16493d817d302c6dcb3d153c8d4864",
+      "dashboards/site-atl-4/index.tsx": "d96985e3e7ca337d16f12c786527bb6c020c800caa6f96fbc52988fed11b715c",
+      "dashboards/site-atl-4/queries.sql": "97987cb83c36f5cecb84186c6696ce476b29e533793a5d5b79c6eff6aaa44d93",
+      "dashboards/site-hel-1/index.tsx": "cef37196e070e9000775edfbbc155de7d119d276eeeafd6d9bddd8a1e48d95ac",
+      "dashboards/site-hel-1/queries.sql": "fcbaa884ce2b6fa3789a4ee0fee02b9a130519cc8c6c75e461b51eb8980347be",
+      "dashboards/site-hel-2/index.tsx": "230afb5a4e9e5449849e49b5910c5d596de4172fa23ed0ec3145ac64ac503e7d",
+      "dashboards/site-hel-2/queries.sql": "13931b50508af37a72d4d0fc54e72ddda6965d8b77c4a1338c6744b188a23f0b",
+      "dashboards/site-hel-3/index.tsx": "13c71887a34d54734f59dd4059de980e6927b0fd961551568c5f1c3ff2828d21",
+      "dashboards/site-hel-3/queries.sql": "0178e11b9cd91b65473b726511f4f734fabcb882815e7631c50a7d90d4c2620d",
+      "dashboards/site-hel-4/index.tsx": "2f73d141359eb488a2562dc177da35fcd8e231fb68563af9382c4e377da0cd68",
+      "dashboards/site-hel-4/queries.sql": "6e70a7f1a1f2d1e550b0305624f5a20b28b16881158a417935a1928c04ec84c9",
+      "dashboards/site-mer-1/index.tsx": "24d899388d6aa3e4aff096393ba78d8adcd1f8e20c6faa12c6a31ca6b6d4aa34",
+      "dashboards/site-mer-1/queries.sql": "13a097495055534407e3240bbb834b42b138bac453b9b181407a510c87367434",
+      "dashboards/site-mer-2/index.tsx": "eeafed79a1f0073fcfbb7870408a6620d5c79474128caa71e4c8cc7065497056",
+      "dashboards/site-mer-2/queries.sql": "fbbd78fed9eb145507dc0ed9ae83a9429bd4ff024e2b2ee323582fafe31fbd6f",
+      "dashboards/site-mer-3/index.tsx": "5124d45dca01cdfb280564e50a775f93b4582b97bbe083af7b4045c27cc9f352",
+      "dashboards/site-mer-3/queries.sql": "9490031be3a4ba8917536b48ec847833e4e60be5e0e154038a2a59758ba74711",
+      "dashboards/site-mer-4/index.tsx": "3f423bd0993a24a594ce2ee6170a5d489385b24fe19cb55f4146d75e2106d120",
+      "dashboards/site-mer-4/queries.sql": "c3f5ce545bc2710c18de87ab8f780b078decd833949dfb9a01f7b7d4dfe054ee",
+      "dashboards/weekly/index.tsx": "99ce712fea3c1ef4ee4da3deeda5eced3cf802492770a66979ee3c2e40a86d2c",
+      "dashboards/weekly/queries.sql": "4958b106da52010950b9a4c765de026451b7b0cb04fcc06c0470af843b7b2cdc",
+      "charts/prose/index.tsx": "b9abb5619a140cb38b3db5b82020609f0620e72ce81bafd4833c8d391ae8c086",
+      "charts/prose/sample.sql": "ad6089134f5caad2461fe4014ba9cad3b00d38abf4ee6bf0bf0a37782c3192a8",
+      "themes/atled.json": "41d5d795a23940068d8c5a1303923b2722c96364c474035882f1d8e2d4d0b2d9",
+      "themes/imitator.json": "8a8951d40f1ea30cb4abd3a5ee5bc3342ab92eae576b851f947d56d23a8b5556",
+      "theme-overrides/imitator.css": "5aedcff3cd9543088a5abe9b541ecc962ef381e14fc553e5e143470555267a19",
+      "databases/energy/database.md": "0b4fd38f34ce5f9a051ccc44566166b4eecd2998dcf2f8e2a5f14f9c2c517d37",
+      "snapreport.yaml": "c82d013adec8d7bc6c712e9c6f8ebba159f4245be8a690ec329e9090637f90c7"
+    }
+  },
+  "open_dashboard": "0.7.0",
+  "built_at": "2026-10-08T01:16:51.350Z",
+  "inputs": {
+    "assets.parquet": {
+      "sha256": "127909368dca47bf69c603378563b1e5df282516aeb803d67fb20ab4a33ccced",
+      "rows": 50
+    },
+    "events.parquet": {
+      "sha256": "7d1b8668a79a595237004dbd848f773886516942da3c2eff35fba2652c944fa3",
+      "rows": 4
+    },
+    "meters.parquet": {
+      "sha256": "d241089ff40a7500c7282612dfc57f8ce8150fcafa76bd74a941fb73cbfb43c6",
+      "rows": 105984
+    },
+    "sites.parquet": {
+      "sha256": "5c6a03b352cf5c82fc08b2dcacc2b8da2d1b0954aaf1969ca4600e106092b04c",
+      "rows": 12
+    },
+    "telemetry.parquet": {
+      "sha256": "42e1cad5c23fa36acc6edde277443c1928ed7bf3bb77d4b99bb6a1122c4eb722",
+      "rows": 441600
+    }
+  },
+  "catalog": [
+    {
+      "id": "atlas",
+      "title": "ATLED Engergy | Atlas Semiconductor · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": null,
+      "layout": "resilience",
+      "domains": [
+        "building",
+        "grid",
+        "datacenter",
+        "storage",
+        "solar",
+        "charging"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    },
+    {
+      "id": "site-atl-1",
+      "title": "ATLED Engergy | ATL-1 新竹・晶圓園區 A · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": "ATL-1",
+      "layout": "resilience",
+      "domains": [
+        "building",
+        "grid",
+        "datacenter",
+        "storage",
+        "solar",
+        "charging"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    },
+    {
+      "id": "site-atl-2",
+      "title": "ATLED Engergy | ATL-2 台中・晶圓園區 B · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": "ATL-2",
+      "layout": "resilience",
+      "domains": [
+        "building",
+        "grid",
+        "solar"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    },
+    {
+      "id": "site-atl-3",
+      "title": "ATLED Engergy | ATL-3 高雄・晶圓園區 C · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": "ATL-3",
+      "layout": "resilience",
+      "domains": [
+        "grid",
+        "datacenter",
+        "storage"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    },
+    {
+      "id": "site-atl-4",
+      "title": "ATLED Engergy | ATL-4 桃園・晶圓園區 D · 供電韌性與需量管理",
+      "tenant": "Atlas Semiconductor",
+      "site": "ATL-4",
+      "layout": "resilience",
+      "domains": [
+        "building",
+        "grid",
+        "storage",
+        "charging"
+      ],
+      "kpis": [
+        "契約容量裕度",
+        "十五分鐘需量峰值",
+        "儲能放電",
+        "模型節省"
+      ]
+    },
+    {
+      "id": "meridian",
+      "title": "ATLED Engergy | Meridian Logistics · 車隊補能與場站營運",
+      "tenant": "Meridian Logistics",
+      "site": null,
+      "layout": "mobility",
+      "domains": [
+        "building",
+        "grid",
+        "solar",
+        "charging",
+        "storage"
+      ],
+      "kpis": [
+        "充電埠可用率",
+        "充電量",
+        "太陽能自用率",
+        "模型電費"
+      ]
+    },
+    {
+      "id": "site-mer-1",
+      "title": "ATLED Engergy | MER-1 新竹・物流中心 A · 車隊補能與場站營運",
+      "tenant": "Meridian Logistics",
+      "site": "MER-1",
+      "layout": "mobility",
+      "domains": [
+        "building",
+        "grid",
+        "solar",
+        "charging"
+      ],
+      "kpis": [
+        "充電埠可用率",
+        "充電量",
+        "太陽能自用率",
+        "模型電費"
+      ]
+    },
+    {
+      "id": "site-mer-2",
+      "title": "ATLED Engergy | MER-2 台中・物流中心 B · 車隊補能與場站營運",
+      "tenant": "Meridian Logistics",
+      "site": "MER-2",
+      "layout": "mobility",
+      "domains": [
+        "building",
+        "grid",
+        "solar",
+        "storage",
+        "charging"
+      ],
+      "kpis": [
+        "充電埠可用率",
+        "充電量",
+        "太陽能自用率",
+        "模型電費"
+      ]
+    },
+    {
+      "id": "site-mer-3",
+      "title": "ATLED Engergy | MER-3 高雄・物流中心 C · 車隊補能與場站營運",
+      "tenant": "Meridian Logistics",
+      "site": "MER-3",
+      "layout": "mobility",
+      "domains": [
+        "building",
+        "grid",
+        "charging"
+      ],
+      "kpis": [
+        "充電埠可用率",
+        "充電量",
+        "太陽能自用率",
+        "模型電費"
+      ]
+    },
+    {
+      "id": "site-mer-4",
+      "title": "ATLED Engergy | MER-4 桃園・物流中心 D · 車隊補能與場站營運",
+      "tenant": "Meridian Logistics",
+      "site": "MER-4",
+      "layout": "mobility",
+      "domains": [
+        "building",
+        "grid",
+        "solar",
+        "storage"
+      ],
+      "kpis": [
+        "充電埠可用率",
+        "充電量",
+        "太陽能自用率",
+        "模型電費"
+      ]
+    },
+    {
+      "id": "helios",
+      "title": "ATLED Engergy | Helios Cloud · 算力能效與碳管理",
+      "tenant": "Helios Cloud",
+      "site": null,
+      "layout": "compute",
+      "domains": [
+        "grid",
+        "datacenter",
+        "solar",
+        "storage",
+        "building",
+        "charging"
+      ],
+      "kpis": [
+        "能源加權 PUE",
+        "IT 負載",
+        "電網排放",
+        "冷卻耗能"
+      ]
+    },
+    {
+      "id": "site-hel-1",
+      "title": "ATLED Engergy | HEL-1 新竹・算力中心 A · 算力能效與碳管理",
+      "tenant": "Helios Cloud",
+      "site": "HEL-1",
+      "layout": "compute",
+      "domains": [
+        "grid",
+        "datacenter",
+        "solar",
+        "storage"
+      ],
+      "kpis": [
+        "能源加權 PUE",
+        "IT 負載",
+        "電網排放",
+        "冷卻耗能"
+      ]
+    },
+    {
+      "id": "site-hel-2",
+      "title": "ATLED Engergy | HEL-2 台中・算力中心 B · 算力能效與碳管理",
+      "tenant": "Helios Cloud",
+      "site": "HEL-2",
+      "layout": "compute",
+      "domains": [
+        "grid",
+        "datacenter",
+        "storage"
+      ],
+      "kpis": [
+        "能源加權 PUE",
+        "IT 負載",
+        "電網排放",
+        "冷卻耗能"
+      ]
+    },
+    {
+      "id": "site-hel-3",
+      "title": "ATLED Engergy | HEL-3 高雄・算力中心 C · 算力能效與碳管理",
+      "tenant": "Helios Cloud",
+      "site": "HEL-3",
+      "layout": "compute",
+      "domains": [
+        "building",
+        "grid",
+        "datacenter",
+        "storage",
+        "solar",
+        "charging"
+      ],
+      "kpis": [
+        "能源加權 PUE",
+        "IT 負載",
+        "電網排放",
+        "冷卻耗能"
+      ]
+    },
+    {
+      "id": "site-hel-4",
+      "title": "ATLED Engergy | HEL-4 桃園・算力中心 D · 算力能效與碳管理",
+      "tenant": "Helios Cloud",
+      "site": "HEL-4",
+      "layout": "compute",
+      "domains": [
+        "grid",
+        "datacenter",
+        "solar",
+        "storage",
+        "charging"
+      ],
+      "kpis": [
+        "能源加權 PUE",
+        "IT 負載",
+        "電網排放",
+        "冷卻耗能"
+      ]
+    }
+  ],
+  "queries": {
+    "d/atlas/comparison.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/daily.json": {
+      "runs": 15,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/atlas/events.json": {
+      "runs": 15,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/atlas/kpis.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/profile.json": {
+      "runs": 15,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/atlas/ranking.json": {
+      "runs": 15,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/atlas/sectors.json": {
+      "runs": 15,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/atlas/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/atlas/solution.json": {
+      "runs": 5,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/specialized.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/storage.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/atlas/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/energy/comparison.json": {
+      "runs": 39,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/daily.json": {
+      "runs": 39,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/energy/events.json": {
+      "runs": 39,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/energy/kpis.json": {
+      "runs": 39,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/profile.json": {
+      "runs": 39,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/energy/ranking.json": {
+      "runs": 39,
+      "rows_max": 12,
+      "trimmed": false
+    },
+    "d/energy/sectors.json": {
+      "runs": 39,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/energy/sites.json": {
+      "runs": 1,
+      "rows_max": 12,
+      "trimmed": false
+    },
+    "d/energy/storage.json": {
+      "runs": 39,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/helios/comparison.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/daily.json": {
+      "runs": 15,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/helios/events.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/kpis.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/profile.json": {
+      "runs": 15,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/helios/ranking.json": {
+      "runs": 15,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/helios/sectors.json": {
+      "runs": 15,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/helios/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/helios/solution.json": {
+      "runs": 5,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/specialized.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/storage.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/meridian/comparison.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/meridian/daily.json": {
+      "runs": 15,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/meridian/events.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/meridian/kpis.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/meridian/profile.json": {
+      "runs": 15,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/meridian/ranking.json": {
+      "runs": 15,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/meridian/sectors.json": {
+      "runs": 15,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/meridian/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/meridian/solution.json": {
+      "runs": 5,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/meridian/specialized.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/meridian/storage.json": {
+      "runs": 15,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/meridian/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-atl-1/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-atl-1/events.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-atl-1/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-atl-1/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-atl-1/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-1/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-atl-2/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-atl-2/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-atl-2/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-atl-2/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-atl-2/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-atl-2/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-2/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-atl-3/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-atl-3/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-atl-3/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-atl-3/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-atl-3/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-atl-3/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-3/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-atl-4/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-atl-4/events.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-atl-4/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-atl-4/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-atl-4/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-atl-4/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-hel-1/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-hel-1/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-hel-1/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-hel-1/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-hel-1/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-hel-1/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-hel-2/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-hel-2/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-hel-2/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-hel-2/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-hel-2/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-hel-2/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-hel-3/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-3/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-hel-3/events.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-3/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-3/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-hel-3/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-3/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-hel-3/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-hel-3/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-3/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-3/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-3/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-hel-4/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-4/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-hel-4/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-hel-4/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-4/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-hel-4/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-4/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-hel-4/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-hel-4/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-4/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-4/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-4/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-mer-1/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-1/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-mer-1/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-mer-1/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-1/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-mer-1/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-1/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-mer-1/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-mer-1/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-1/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-1/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-1/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-mer-2/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-2/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-mer-2/events.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-2/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-2/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-mer-2/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-2/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-mer-2/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-mer-2/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-2/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-2/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-2/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-mer-3/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-3/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-mer-3/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-mer-3/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-3/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-mer-3/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-3/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-mer-3/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-mer-3/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-3/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-3/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-3/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/site-mer-4/comparison.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-4/daily.json": {
+      "runs": 3,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/site-mer-4/events.json": {
+      "runs": 3,
+      "rows_max": 0,
+      "trimmed": false
+    },
+    "d/site-mer-4/kpis.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-4/profile.json": {
+      "runs": 3,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/site-mer-4/ranking.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-4/sectors.json": {
+      "runs": 3,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/site-mer-4/sites.json": {
+      "runs": 1,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/site-mer-4/solution.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-4/specialized.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-4/storage.json": {
+      "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-mer-4/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    },
+    "d/weekly/comparison.json": {
+      "runs": 39,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/daily.json": {
+      "runs": 39,
+      "rows_max": 7,
+      "trimmed": false
+    },
+    "d/weekly/events.json": {
+      "runs": 39,
+      "rows_max": 4,
+      "trimmed": false
+    },
+    "d/weekly/kpis.json": {
+      "runs": 39,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/profile.json": {
+      "runs": 39,
+      "rows_max": 168,
+      "trimmed": false
+    },
+    "d/weekly/ranking.json": {
+      "runs": 39,
+      "rows_max": 12,
+      "trimmed": false
+    },
+    "d/weekly/sectors.json": {
+      "runs": 39,
+      "rows_max": 3,
+      "trimmed": false
+    },
+    "d/weekly/sites.json": {
+      "runs": 1,
+      "rows_max": 12,
+      "trimmed": false
+    },
+    "d/weekly/storage.json": {
+      "runs": 39,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/windows.json": {
+      "runs": 1,
+      "rows_max": 2,
+      "trimmed": false
+    }
+  },
+  "warnings": [],
+  "data_hash": "84d97e54f0f28b621f59fa495422cae3141bbc2e95c17e732deafe5d14a9b3f2",
+  "check": "ok",
+  "quality": "ok",
+  "artifacts": {
+    "build.log": {
+      "sha256": "e176130a2b53e0bcb5559eac6289b03d10e4a7e661db31d9c7978fa3406f47f6",
+      "bytes": 729
+    },
+    "check.json": {
+      "sha256": "5c3670481a5452fd910c2ad107274fab75ea961552b0890c7549b46224fd10a6",
+      "bytes": 68636
+    },
+    "dashboard.html": {
+      "sha256": "db4e7ceff8f98fbe6b12fd4dd6687846fe626a265a64550d07f1badc8127d9f8",
+      "bytes": 1354335
+    },
+    "demos/react/assets/index-CDr86rvp.css": {
+      "sha256": "e3c14760eeb346fed6fe94f29b481469b7da8d490a463c8082be0eef50860bac",
+      "bytes": 364
+    },
+    "demos/react/assets/index-DAbvWjJb.js": {
+      "sha256": "ae81b2fd1a8bc2eddc5da367f71aabd31ed871925f34bf16754e148654a8c482",
+      "bytes": 190639
+    },
+    "demos/react/index.html": {
+      "sha256": "272ca7e50183106e3be102ac60da3dcb84a380838f13541670d821909bf7d71e",
+      "bytes": 345
+    },
+    "demos/vue/assets/index-CDr86rvp.css": {
+      "sha256": "e3c14760eeb346fed6fe94f29b481469b7da8d490a463c8082be0eef50860bac",
+      "bytes": 364
+    },
+    "demos/vue/assets/index-DMU5jSmz.js": {
+      "sha256": "e5240ec6adce2bc9426ec2dad17226df875a46a2dd24dd5de49d07c2ac6175dc",
+      "bytes": 58473
+    },
+    "demos/vue/index.html": {
+      "sha256": "63ca260523395cb72d7ece2b43252e4c0649be9ae6889e810e74a8c7b52d21c1",
+      "bytes": 342
+    },
+    "lint.json": {
+      "sha256": "1150f123209f96c52a8de1830efaf1a957e177dcb4a804ac18501f991995e896",
+      "bytes": 35
+    },
+    "report-native.html": {
+      "sha256": "8614db489c876664d4dbf23c7b9fcd7975dd2cf76415ba297bec984e0b826375",
+      "bytes": 1354179
+    },
+    "report.html": {
+      "sha256": "d8cb1c79b290ca5f5391dbf65ab6cb404141ac6b653fb9eac8f0eca5d61debbe",
+      "bytes": 1354991
+    },
+    "site/assets/atlas-BslYarfS.js": {
+      "sha256": "0650ea54ffb18efc66a3823be9956a48f54e62c697a4a4706c4842becb544a0f",
+      "bytes": 3335
+    },
+    "site/assets/energy-B4rCnzNh.js": {
+      "sha256": "d8963e9001b11e32fb0ae00869b28fc26a9e662270ce245c558bbfe7c51829bf",
+      "bytes": 3706
+    },
+    "site/assets/helios-QQt47Vbb.js": {
+      "sha256": "c80e5fd35ce412102de862bbcae3ad83c81176c506af40339f8b65ea6ce7096c",
+      "bytes": 3383
+    },
+    "site/assets/main-CNtz8rZc.js": {
+      "sha256": "eeaafabc73b28c464bf303f83b9591b2aba9731a9f8e5293f6fd862317660c44",
+      "bytes": 288115
+    },
+    "site/assets/main-DFZNOANX.css": {
+      "sha256": "c1353e6edab25c1da2e46a702b7a0b3603c1ebaaac2c7d240c0da96a25bd1f3b",
+      "bytes": 69765
+    },
+    "site/assets/meridian-BsW0cVte.js": {
+      "sha256": "f29e3b741daf129ecd6c26719a29cbd1f0dc01c5f8c663fa91453e455627ce9f",
+      "bytes": 3131
+    },
+    "site/assets/panel--XCxS9Y-.js": {
+      "sha256": "044c6887daae69070a10df1f603a8863e6c7b243622a8f01a49a342a22031bb8",
+      "bytes": 120997
+    },
+    "site/assets/prose-Di7-TFD6.js": {
+      "sha256": "33685e5709f625760a82cee9069bb16278cd9207e57ecad1bbd5313ab6e214ab",
+      "bytes": 5371
+    },
+    "site/assets/rolldown-runtime-BpQH8Ho1.js": {
+      "sha256": "f42a7e25f42fd00b0935f3a7b06f4429238b50b6798b53c273e30d7095f9e94e",
+      "bytes": 227
+    },
+    "site/assets/site-atl-1-DTnPPanj.js": {
+      "sha256": "b6e821ec3421c493c6745f2c9232558df8df34acb22ebf14328f5db2edbbdde8",
+      "bytes": 3295
+    },
+    "site/assets/site-atl-2-p4AQ38HF.js": {
+      "sha256": "9d61af9627bcd08346cca0db3d945a03aa66f6d35185614d7db6fac84f0c91ae",
+      "bytes": 2932
+    },
+    "site/assets/site-atl-3-ClqwQhOd.js": {
+      "sha256": "4a11844e00d039d054ba0d31f7868b090dbc23f84b00b94c9e8248dce6caa304",
+      "bytes": 2970
+    },
+    "site/assets/site-atl-4-DQEJAZJ0.js": {
+      "sha256": "4d2884c915c89699351d24692fa7b65125d7ce7151a1b93509a65f02edb8ac02",
+      "bytes": 2982
+    },
+    "site/assets/site-hel-1-CTCgmaal.js": {
+      "sha256": "ebd2619ea39765d0083b669e5a9e85163b0d1e772db65492bd831d7ec4b1294c",
+      "bytes": 3330
+    },
+    "site/assets/site-hel-2-DbIBdAsV.js": {
+      "sha256": "ee4d077ccbaf01e7fdf89506ff7f490a696a788c80346c09b628f86f42386f3f",
+      "bytes": 3032
+    },
+    "site/assets/site-hel-3-C77dQcpl.js": {
+      "sha256": "0f501de41721e657e68b1c69896599d06a8dbf8334aa91ec4c64eebd9c68db10",
+      "bytes": 3357
+    },
+    "site/assets/site-hel-4-DFTD_J2R.js": {
+      "sha256": "d932e88f6b13155f6c5d86deecef6beb886d1b41d036b6affd89d08643a5e7e3",
+      "bytes": 3342
+    },
+    "site/assets/site-mer-1-Czc-hO-y.js": {
+      "sha256": "2d31742ab1a24480e00fdda766e51088db5badaec9f2e21ac7e6587c8309fc5f",
+      "bytes": 2752
+    },
+    "site/assets/site-mer-2-CKQ8BO0R.js": {
+      "sha256": "e44a10d7b93c9ee786ed2424b0a04621b0c39fcc71052b1c38d97fd67c851192",
+      "bytes": 3078
+    },
+    "site/assets/site-mer-3-Dk0lus-d.js": {
+      "sha256": "c455b72f16d760b40226078d7a0cd26b23fe4aa88dfc6b9d4c7d39e5da8203dd",
+      "bytes": 2454
+    },
+    "site/assets/site-mer-4-DeaVOkgc.js": {
+      "sha256": "895c524962a14c521c607d21f633671949441d243cde51893aae3bb49affe90c",
+      "bytes": 3056
+    },
+    "site/assets/weekly-b8Kk4aXw.js": {
+      "sha256": "3cb8397c8032ded12fa6e6d073ace313883ab7d1daae29a44d2b3cd4d9fec4b8",
+      "bytes": 3107
+    },
+    "site/assets/xy-chart-CkdFGZse.js": {
+      "sha256": "6caba2d5b8c7e5a1a744621543a6db4759e5c96c536e81862e556538b956b145",
+      "bytes": 17058
+    },
+    "site/d/atlas/index.html": {
+      "sha256": "dd7e06080cb307fa9aef99dc587ab2a2738fd410065a851db111611a19300be6",
+      "bytes": 1037
+    },
+    "site/d/energy/index.html": {
+      "sha256": "473031a8eed6c7dc23cf0e42f33976018c9fd888dcb8139a987930b41cd57944",
+      "bytes": 1005
+    },
+    "site/d/helios/index.html": {
+      "sha256": "62cc9ede51a41ca5a4d1e232754430542fbe88ce3316b70935dc3c180010afbf",
+      "bytes": 1027
+    },
+    "site/d/meridian/index.html": {
+      "sha256": "efb84325959c4b2578a9442ca74f695a40e0fe4935bfc0b475b20f6291a5cc38",
+      "bytes": 1036
+    },
+    "site/d/site-atl-1/index.html": {
+      "sha256": "5f42ff1bbb2e15091c8740d8443a13cb282a39de4e8c9a816b316cd88964845f",
+      "bytes": 1047
+    },
+    "site/d/site-atl-2/index.html": {
+      "sha256": "baea43aec41d39cd48731c541edaa107d9830e1d5f77ab42ba1773ebf324b04a",
+      "bytes": 1047
+    },
+    "site/d/site-atl-3/index.html": {
+      "sha256": "406c6bab0e656b64b5c523af561744fb2e3bc29356bafa634dc10fc9216b4d21",
+      "bytes": 1047
+    },
+    "site/d/site-atl-4/index.html": {
+      "sha256": "45af3adb0d5a27144b9cd537a018d71cde8ed6f0180d28e693ec963852331110",
+      "bytes": 1047
+    },
+    "site/d/site-hel-1/index.html": {
+      "sha256": "8f6b0b8ff033b38f725ce8e88c2e20d8638fcf6c7a64601e8608e757a687e2a0",
+      "bytes": 1044
+    },
+    "site/d/site-hel-2/index.html": {
+      "sha256": "88d8a603e028650a2ead71f22b11ab0300519293223f025df936bc1809343f13",
+      "bytes": 1044
+    },
+    "site/d/site-hel-3/index.html": {
+      "sha256": "7517c3ba4a03659440164bdaa601c29afdce56e6011ff80381e42c871d2aabe5",
+      "bytes": 1044
+    },
+    "site/d/site-hel-4/index.html": {
+      "sha256": "77a82382adcdea7b36f2043d123db7aa243eef4796df7eef06d79adc419d0e47",
+      "bytes": 1044
+    },
+    "site/d/site-mer-1/index.html": {
+      "sha256": "12fabcee6d1c83e4f0d7f8c60898ddb07586e65591be7709d22f76ade36b649b",
+      "bytes": 1047
+    },
+    "site/d/site-mer-2/index.html": {
+      "sha256": "219e866698d721d7feacc2934dbeea57726cc1a737f24e52d2d5a6afb3f480e9",
+      "bytes": 1047
+    },
+    "site/d/site-mer-3/index.html": {
+      "sha256": "287ae9a68c455fbcdd05e42d8e0841eb1b8a096fe02a63648db1b921cb3c01b0",
+      "bytes": 1047
+    },
+    "site/d/site-mer-4/index.html": {
+      "sha256": "87e3ce45e467ce9dfcf78453596752b8b912b626fc923f8bf6c07d2c3dc80a82",
+      "bytes": 1047
+    },
+    "site/d/weekly/index.html": {
+      "sha256": "630caf3d0e83878eb366b442f7774b3346eafffbc0b3823879e1b4d815b5d007",
+      "bytes": 1817
+    },
+    "site/data/d/atlas/comparison.json": {
+      "sha256": "761819697f70b0e8e04a08c98818a62096baf15d732bb75097f0466e88f0f7b3",
+      "bytes": 10473
+    },
+    "site/data/d/atlas/daily.json": {
+      "sha256": "1dfe759f3297b56609a7463440d63f88b965bc252c6e6c30b25a02109355f9b5",
+      "bytes": 36623
+    },
+    "site/data/d/atlas/events.json": {
+      "sha256": "b64766e047c5f031f7e8c0c8c0fb073a59016aaeceb70a3c741b4b9e941bb6d6",
+      "bytes": 17375
+    },
+    "site/data/d/atlas/kpis.json": {
+      "sha256": "61b7c523f967c7c801fdaacc0268fa7cf84fa09a3c4fddacf1be387f90a2a3c9",
+      "bytes": 33961
+    },
+    "site/data/d/atlas/profile.json": {
+      "sha256": "3bacefca530e34e1c23a21a5de4e4ff6d451f2ee8b3d061d0ee1ce57036ccd8a",
+      "bytes": 448877
+    },
+    "site/data/d/atlas/ranking.json": {
+      "sha256": "5177dbb439c9e1efe19d2485af118cb4c29acf2ad8d30cb8a58b4dd9a5e496ea",
+      "bytes": 24625
+    },
+    "site/data/d/atlas/sectors.json": {
+      "sha256": "5323f10a19a451bf6620f8f6983f91767d0fc29e4d1b0414b588d492ae6b73d4",
+      "bytes": 13005
+    },
+    "site/data/d/atlas/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/atlas/solution.json": {
+      "sha256": "547d86b6bb399b6d3303206d1a269d463ec36b13085c5d6348810d3b4712090d",
+      "bytes": 3378
+    },
+    "site/data/d/atlas/specialized.json": {
+      "sha256": "780e885f07697fc720b882c1763e845547664f50954aa79d9b9bfc1dcdfd27be",
+      "bytes": 20075
+    },
+    "site/data/d/atlas/storage.json": {
+      "sha256": "d385bde68f27b9b972106eeddfdce96fcf157fdf56af0f02fc10bb96f74b7b8e",
+      "bytes": 13823
+    },
+    "site/data/d/atlas/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/energy/comparison.json": {
+      "sha256": "1ff11abef4bd65ca728a885aa37b6511bbe9e6ed4b90a5dfc91c24f273ad0be7",
+      "bytes": 27159
+    },
+    "site/data/d/energy/daily.json": {
+      "sha256": "3dbc1dbdbdef60c437ec06a0d077d76f745472a39a5e2ddfb2ca4db987a9feaf",
+      "bytes": 95024
+    },
+    "site/data/d/energy/events.json": {
+      "sha256": "9e2835fe194158f400d1c18923f70af2a5911e9234132e82aae065fa03129135",
+      "bytes": 43491
+    },
+    "site/data/d/energy/kpis.json": {
+      "sha256": "0f2ad2459003b6e71619d40d5cf1093b55767cdaacb3cb64ff8d802c7f66034a",
+      "bytes": 88262
+    },
+    "site/data/d/energy/profile.json": {
+      "sha256": "cf03363fb61c4f489a54620715f4f8c4074d7db43c19980317fee2cd1ea92604",
+      "bytes": 1167715
+    },
+    "site/data/d/energy/ranking.json": {
+      "sha256": "10cd115cbd452a10dbf8637ea15c247aaac2dcd3c9e0822e1010f841799210ae",
+      "bytes": 67105
+    },
+    "site/data/d/energy/sectors.json": {
+      "sha256": "d837094a6933a046209a8ce187713f706a1027ddce0324b1ebb5ddf75797c898",
+      "bytes": 33660
+    },
+    "site/data/d/energy/sites.json": {
+      "sha256": "897c727ce62cb32da6b045c1f0e4a7ec0c5692eabb937427d0233a4f8212a253",
+      "bytes": 1972
+    },
+    "site/data/d/energy/storage.json": {
+      "sha256": "6e356c2de4709216ce0fc374f4b8f0ad8442b66c123fe8e00c2d5b70fe454030",
+      "bytes": 35822
+    },
+    "site/data/d/energy/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/helios/comparison.json": {
+      "sha256": "d79698b425fa9a97c5d0122d62239d478f921fe6c7c12f37533b7ff446ab9397",
+      "bytes": 10488
+    },
+    "site/data/d/helios/daily.json": {
+      "sha256": "284f49171a1bf17eee5ad03d9afdb495f325f9d61afd90b51dd34fd36e1305ee",
+      "bytes": 36910
+    },
+    "site/data/d/helios/events.json": {
+      "sha256": "2040531552b40608060f181b04e96843806c66b06c53b848d317540821121c11",
+      "bytes": 16057
+    },
+    "site/data/d/helios/kpis.json": {
+      "sha256": "55fff8c78483fe5fd60f2be0cf2e23a92e595e4349c76deec880aba0582b272f",
+      "bytes": 34253
+    },
+    "site/data/d/helios/profile.json": {
+      "sha256": "c4798397d4dc9dcaea2021e42158c328b15f3309c53a7b43d653999d8383288a",
+      "bytes": 457219
+    },
+    "site/data/d/helios/ranking.json": {
+      "sha256": "4e53e35ed830e02b24b201904195863186fe2266ac555fb9c570e7b0cb0c9737",
+      "bytes": 24721
+    },
+    "site/data/d/helios/sectors.json": {
+      "sha256": "a32ed4fe4c681534e7581ce784251b055dc840914de751910bdf4aebfa2e2094",
+      "bytes": 13020
+    },
+    "site/data/d/helios/sites.json": {
+      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
+      "bytes": 968
+    },
+    "site/data/d/helios/solution.json": {
+      "sha256": "eaac37791a55b48355f898d09d97dfdb329117d9a37de384da17c3a33b7f921b",
+      "bytes": 3420
+    },
+    "site/data/d/helios/specialized.json": {
+      "sha256": "1408ec67e5df4155f9997868a44a01f1cc7086061fd025eadf831d9c78f3904c",
+      "bytes": 20207
+    },
+    "site/data/d/helios/storage.json": {
+      "sha256": "0a8f61d66afec4873f476ce62b6f43ba4ad244c68d5542459c3108a4888ccc43",
+      "bytes": 13923
+    },
+    "site/data/d/helios/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/meridian/comparison.json": {
+      "sha256": "9d52adbb59effe12c9bda6740dd49ed1e32731e7c1a5a410eb26c3cadd46aa9b",
+      "bytes": 10457
+    },
+    "site/data/d/meridian/daily.json": {
+      "sha256": "fcde53f11a056a20137c7e6e409ae1b6c25c1ddb04cb9fc011526ba420cd698e",
+      "bytes": 36543
+    },
+    "site/data/d/meridian/events.json": {
+      "sha256": "7a10fdff8d58aaf8e174e1564d074d06b3058e891bd63c3c4d321520074e66d4",
+      "bytes": 16033
+    },
+    "site/data/d/meridian/kpis.json": {
+      "sha256": "998171da1640e7c6e45a7acd405ac3a270f6729572632bdd5dcc82b3065bcd67",
+      "bytes": 33814
+    },
+    "site/data/d/meridian/profile.json": {
+      "sha256": "66bf29db954ef6e1be4b568c0802c8d85360345201d4dae460d0c30570045f18",
+      "bytes": 446379
+    },
+    "site/data/d/meridian/ranking.json": {
+      "sha256": "c0b533b7b77438d1cef6360acfe517d72a65c03a2afdd26fc9badb09ce71158d",
+      "bytes": 24316
+    },
+    "site/data/d/meridian/sectors.json": {
+      "sha256": "2757f642088add59ba62caaad0a254096d59eec6ba746f120ceb64708f8d351b",
+      "bytes": 12967
+    },
+    "site/data/d/meridian/sites.json": {
+      "sha256": "a7f51647cf3130403ebcaa24c062e6493a47fd2f1226f2aa3b2daaa66427aced",
+      "bytes": 992
+    },
+    "site/data/d/meridian/solution.json": {
+      "sha256": "40dc694ac7e92c4162a45836f1acf63021faea4b894d010c448aa1858c29bf9a",
+      "bytes": 3378
+    },
+    "site/data/d/meridian/specialized.json": {
+      "sha256": "9241f4e5c0eb49f5ef46477e5232842620f0197321c1f8f4f6fe9c5e0df25d52",
+      "bytes": 19843
+    },
+    "site/data/d/meridian/storage.json": {
+      "sha256": "88bbf2f2568814010bfd990f54e5ad0342119723d2ce52fa8a67424679a2545f",
+      "bytes": 13741
+    },
+    "site/data/d/meridian/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-atl-1/comparison.json": {
+      "sha256": "06492ad91103351f35c7c7d609b74ba4ee5cb051a934f307010357d6c2b63fb8",
+      "bytes": 2001
+    },
+    "site/data/d/site-atl-1/daily.json": {
+      "sha256": "1f22d98d5c93f00bc319a41ccdedac9155a97181e3b37bff8e99b1b76913d665",
+      "bytes": 7452
+    },
+    "site/data/d/site-atl-1/events.json": {
+      "sha256": "c2fdfdbcc5fc143126e29104744c685dcd0feaf762f63e680828b4fd169f5ea5",
+      "bytes": 3521
+    },
+    "site/data/d/site-atl-1/kpis.json": {
+      "sha256": "57ab350c9bf086dbf339af642e0a55e14c5063caf48fc0ef7ef3991413b38bed",
+      "bytes": 6754
+    },
+    "site/data/d/site-atl-1/profile.json": {
+      "sha256": "9c1b01452304ba3564bddc1da2ff1c70cf6e872e86e0bdb2ee56c8fa3350ba19",
+      "bytes": 91025
+    },
+    "site/data/d/site-atl-1/ranking.json": {
+      "sha256": "67848b1cf47aa7750392c52c46c5ad689b8f2d42271c199923def481c5189c0c",
+      "bytes": 4249
+    },
+    "site/data/d/site-atl-1/sectors.json": {
+      "sha256": "ef7ad2ff35c109925a03015b736f6d93655c388fab2ed60e867bfc2602ba5825",
+      "bytes": 2551
+    },
+    "site/data/d/site-atl-1/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/site-atl-1/solution.json": {
+      "sha256": "e7bf0477497f3134b90e86eb5aeccf41795bc4334c36c9832b65f89348264064",
+      "bytes": 647
+    },
+    "site/data/d/site-atl-1/specialized.json": {
+      "sha256": "af21d660ebf6fb57b0010be22c57be775ae6f8cb38e782220411dfe4bcbd7270",
+      "bytes": 4006
+    },
+    "site/data/d/site-atl-1/storage.json": {
+      "sha256": "cf64d25e52e9049679294dfb24d6591d07994a1cd3f56b6d7b2a4f338cd22384",
+      "bytes": 2704
+    },
+    "site/data/d/site-atl-1/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-atl-2/comparison.json": {
+      "sha256": "ad79c7b63bb1848f3b5c989aa8a91fac229482c47ee3670ecf6c6a7bb1facf34",
+      "bytes": 1998
+    },
+    "site/data/d/site-atl-2/daily.json": {
+      "sha256": "a6c8bc425504aa418da9c463abc5c9acec0de0de7b655c37aa974e59fc2a2ee5",
+      "bytes": 7175
+    },
+    "site/data/d/site-atl-2/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-atl-2/kpis.json": {
+      "sha256": "5b1c9e41dd5d29c1482d445f79120a1525fa8210c8193c6144d6aa009632f47f",
+      "bytes": 6689
+    },
+    "site/data/d/site-atl-2/profile.json": {
+      "sha256": "b3a909565e91cc3cdd64846c12c93d7e72ee9981415f8d50df5a3f12269f3130",
+      "bytes": 89020
+    },
+    "site/data/d/site-atl-2/ranking.json": {
+      "sha256": "aee968ab551d1219404ada633ea7f2ce15bed660ca14e3477c3a8ccebad2e380",
+      "bytes": 4154
+    },
+    "site/data/d/site-atl-2/sectors.json": {
+      "sha256": "de934f8ffef854cb9b5af5fcce42e2b38023fa00f36c1fb9b9c6af0e244036a7",
+      "bytes": 2456
+    },
+    "site/data/d/site-atl-2/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/site-atl-2/solution.json": {
+      "sha256": "d6b5841447495be0a5c0a537d9813b8d8444cffa080a72483c0c86098bfe2c77",
+      "bytes": 611
+    },
+    "site/data/d/site-atl-2/specialized.json": {
+      "sha256": "2dd67448b9653066b2fa21a7ccfc1496409ae84c0e674951ad2135a66bc2eb4b",
+      "bytes": 3808
+    },
+    "site/data/d/site-atl-2/storage.json": {
+      "sha256": "f3f0a0de98f1fd53edd10962aa09faf71d0d2f2df32514d2435528bcf3593cef",
+      "bytes": 2593
+    },
+    "site/data/d/site-atl-2/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-atl-3/comparison.json": {
+      "sha256": "56a6c3d2b48886f19d0a018840b8c00352b2619dfe21106438be889d2ac89207",
+      "bytes": 2002
+    },
+    "site/data/d/site-atl-3/daily.json": {
+      "sha256": "7ee33db25366d5a1a8aa54dc6e8824873ac2e42b7633c0e61fc3ffab7cdf369e",
+      "bytes": 7014
+    },
+    "site/data/d/site-atl-3/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-atl-3/kpis.json": {
+      "sha256": "22cd37a3b9334f37dc2cb476b1b44a6c19808d174778b754012bc438075fc5ae",
+      "bytes": 6664
+    },
+    "site/data/d/site-atl-3/profile.json": {
+      "sha256": "4c88bade267f31e776079d921adf4db8c2bfa4799b407d7dc60bb50e92e0dcab",
+      "bytes": 87818
+    },
+    "site/data/d/site-atl-3/ranking.json": {
+      "sha256": "2c99516fd54f0ba64a060bfd5c14857a1d9416daf5196fdb1b24d2945c9ea3eb",
+      "bytes": 4219
+    },
+    "site/data/d/site-atl-3/sectors.json": {
+      "sha256": "25f0b6d79295b0abdbf9b094cf6fdfe38b1b576171a2ec16fbd62de0b31a9bd2",
+      "bytes": 2464
+    },
+    "site/data/d/site-atl-3/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/site-atl-3/solution.json": {
+      "sha256": "3489f17bff7f238aa58257514ce5f4383dcffd49284b4e6e51869cd308e2e9f9",
+      "bytes": 608
+    },
+    "site/data/d/site-atl-3/specialized.json": {
+      "sha256": "755e786966cb5254e61f6380270e5f4fa91736333b8b45214b0d62836978a812",
+      "bytes": 3897
+    },
+    "site/data/d/site-atl-3/storage.json": {
+      "sha256": "2a3a820c2892ffc78e2eb06989b555da853128fd3c924933037c330739e09f4a",
+      "bytes": 2665
+    },
+    "site/data/d/site-atl-3/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-atl-4/comparison.json": {
+      "sha256": "d495f5de9696917d41d0b11d15f8128c6733a222016f7abde78e4dde25d73494",
+      "bytes": 2003
+    },
+    "site/data/d/site-atl-4/daily.json": {
+      "sha256": "e3560f3107de1831a135ee77d3a3e1f8c57a65203f8e3c98da65e05e28c6e4ac",
+      "bytes": 7102
+    },
+    "site/data/d/site-atl-4/events.json": {
+      "sha256": "2bb0aaf18998719dcbd950c6cd14637e526f2c52b109961f37172eafccbdec01",
+      "bytes": 3501
+    },
+    "site/data/d/site-atl-4/kpis.json": {
+      "sha256": "349a4ea8fd2b0d930b0beffdb13bc6894ae3542bfe8797518cc3bff3d82b4314",
+      "bytes": 6607
+    },
+    "site/data/d/site-atl-4/profile.json": {
+      "sha256": "fec45f56f70939ca13eb4848fd6d56271dfd190306f3951596630bd1f0063cba",
+      "bytes": 87420
+    },
+    "site/data/d/site-atl-4/ranking.json": {
+      "sha256": "786325f112f18d1d4d65524b397568ca67eb52fab41587a66c56e2d70386574e",
+      "bytes": 4187
+    },
+    "site/data/d/site-atl-4/sectors.json": {
+      "sha256": "8c846c50762ea431e03f539833e0563f3823586a63fcd5c7c0d1ba0699e7fd32",
+      "bytes": 2505
+    },
+    "site/data/d/site-atl-4/sites.json": {
+      "sha256": "dc0f3a5650d3218765814aefc2e94a828360ed4136d071222c52d5cd8fb1c7b7",
+      "bytes": 996
+    },
+    "site/data/d/site-atl-4/solution.json": {
+      "sha256": "a7c7300db6bbc019cd4d20d100a6550f051563e88e44ff5fd5352476532b925e",
+      "bytes": 620
+    },
+    "site/data/d/site-atl-4/specialized.json": {
+      "sha256": "50eacfd210db4262eecf667aa36f755ca23c0d28281abcecf8693be08826e45c",
+      "bytes": 3873
+    },
+    "site/data/d/site-atl-4/storage.json": {
+      "sha256": "2b1a75af64da29f198881804411605bbaec853d1068b7d43474724634a98c439",
+      "bytes": 2693
+    },
+    "site/data/d/site-atl-4/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-hel-1/comparison.json": {
+      "sha256": "9efff919adc6c63896cb3cbcd631dd3d571bd5cd85deb94b72fc4334da2e953b",
+      "bytes": 2003
+    },
+    "site/data/d/site-hel-1/daily.json": {
+      "sha256": "0590db555a79f9f8bfba63264209e64a5571b74c924056a1d82f128958e88e47",
+      "bytes": 7399
+    },
+    "site/data/d/site-hel-1/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-hel-1/kpis.json": {
+      "sha256": "768a284abdc96c3e8ededbc952274959700cbebc5dd7686f0906cff0b0bb433b",
+      "bytes": 6762
+    },
+    "site/data/d/site-hel-1/profile.json": {
+      "sha256": "0fb6998e7996586376adab07c66c1e81a1856e66a6fc2f3c8de7f0f6c9535e4f",
+      "bytes": 91537
+    },
+    "site/data/d/site-hel-1/ranking.json": {
+      "sha256": "8e581d2b041f06720a564115b115bc976cdef840f7570c49404cbcb49f3a974f",
+      "bytes": 4210
+    },
+    "site/data/d/site-hel-1/sectors.json": {
+      "sha256": "393362695d177ad5b7cfe3d5f2f378ce5821983af5e453c9cb22ba78de027eb5",
+      "bytes": 2455
+    },
+    "site/data/d/site-hel-1/sites.json": {
+      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
+      "bytes": 968
+    },
+    "site/data/d/site-hel-1/solution.json": {
+      "sha256": "58a9ada4c0eeb66297b893787ba5572e2b81f323bf82263e8c37d627fbda1dd9",
+      "bytes": 620
+    },
+    "site/data/d/site-hel-1/specialized.json": {
+      "sha256": "85253e0036dbddb6be873bbbb6a1f869f46cdaa4788ceaf34bd9200766977349",
+      "bytes": 3904
+    },
+    "site/data/d/site-hel-1/storage.json": {
+      "sha256": "cf64d25e52e9049679294dfb24d6591d07994a1cd3f56b6d7b2a4f338cd22384",
+      "bytes": 2704
+    },
+    "site/data/d/site-hel-1/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-hel-2/comparison.json": {
+      "sha256": "c7c3e3d694a3fe7b1439372451d0dfa5aed0111d4e66226c54fbca20e1ae9bc4",
+      "bytes": 2005
+    },
+    "site/data/d/site-hel-2/daily.json": {
+      "sha256": "66bf8b50830394a745be57b187fbcf4427ee8a3fff80139486786965baf1ac27",
+      "bytes": 6980
+    },
+    "site/data/d/site-hel-2/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-hel-2/kpis.json": {
+      "sha256": "78bcd65b75116024725067c5e5a5e3b6bab6d2749a1fc0d6997ea47630c809a3",
+      "bytes": 6645
+    },
+    "site/data/d/site-hel-2/profile.json": {
+      "sha256": "9873fa96c50772b9ebb23f67b147b658735186250c9c5b756830e98dd89f9220",
+      "bytes": 88588
+    },
+    "site/data/d/site-hel-2/ranking.json": {
+      "sha256": "fd0d6613e4424ecda41e1be6900eca9fb5da15a983176724399d9a662ee7ff05",
+      "bytes": 4214
+    },
+    "site/data/d/site-hel-2/sectors.json": {
+      "sha256": "441b686d303aead8c3b7a53a5b5a614883242e7c63ba3873a1e5e2431531b56d",
+      "bytes": 2462
+    },
+    "site/data/d/site-hel-2/sites.json": {
+      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
+      "bytes": 968
+    },
+    "site/data/d/site-hel-2/solution.json": {
+      "sha256": "3489f17bff7f238aa58257514ce5f4383dcffd49284b4e6e51869cd308e2e9f9",
+      "bytes": 608
+    },
+    "site/data/d/site-hel-2/specialized.json": {
+      "sha256": "69e21bbddfb68994341cb5584ec92f523b3e5cb617c989467987dfebe8fbe291",
+      "bytes": 3938
+    },
+    "site/data/d/site-hel-2/storage.json": {
+      "sha256": "53c56ea212af6a47090b03352bafbfb69c65e2ceed88ca429f966d66dc04c881",
+      "bytes": 2683
+    },
+    "site/data/d/site-hel-2/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-hel-3/comparison.json": {
+      "sha256": "46aa01d7bdb176f8c3843a02eca848c73d704170cadea991f47db435115fac79",
+      "bytes": 2006
+    },
+    "site/data/d/site-hel-3/daily.json": {
+      "sha256": "180e69c940017970cfd9f257959507d430ff8c5b1d7ef75d648a46f5bb9db302",
+      "bytes": 7278
+    },
+    "site/data/d/site-hel-3/events.json": {
+      "sha256": "4601311ec15c950ce4593d434edd1003d958ae29a8554f83aa797af194a9ec75",
+      "bytes": 3501
+    },
+    "site/data/d/site-hel-3/kpis.json": {
+      "sha256": "c0a2eee8432f5ae2120842a072fe7506e3360fa778d907c96f2ac41eb84eeaea",
+      "bytes": 6800
+    },
+    "site/data/d/site-hel-3/profile.json": {
+      "sha256": "08bb82652105f97adfb01bc365b754cd14103565384677b7ab66b253aaa2c6cc",
+      "bytes": 92051
+    },
+    "site/data/d/site-hel-3/ranking.json": {
+      "sha256": "8be16e62837757d3af31ec1c01e1d9d925634c9b35c78fa0e6453fff80057a72",
+      "bytes": 4209
+    },
+    "site/data/d/site-hel-3/sectors.json": {
+      "sha256": "4a7cbd0a938a36f4e0975b6b07bfae2517b181188d187e1012eeec8b3ae0a1b5",
+      "bytes": 2561
+    },
+    "site/data/d/site-hel-3/sites.json": {
+      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
+      "bytes": 968
+    },
+    "site/data/d/site-hel-3/solution.json": {
+      "sha256": "e7bf0477497f3134b90e86eb5aeccf41795bc4334c36c9832b65f89348264064",
+      "bytes": 647
+    },
+    "site/data/d/site-hel-3/specialized.json": {
+      "sha256": "f943578cb79b6b4304768e60b9b6487228bfc1e5025bda07112c34c43ef415c4",
+      "bytes": 3956
+    },
+    "site/data/d/site-hel-3/storage.json": {
+      "sha256": "2a3a820c2892ffc78e2eb06989b555da853128fd3c924933037c330739e09f4a",
+      "bytes": 2665
+    },
+    "site/data/d/site-hel-3/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-hel-4/comparison.json": {
+      "sha256": "884da63e410dcd800d0a9eb2e01d4df8a6f21e256fcc521ed419278483d7edb9",
+      "bytes": 2004
+    },
+    "site/data/d/site-hel-4/daily.json": {
+      "sha256": "ccf8e59e4023de4719b759b31da4a3763f1902a7c2912d6bf92f92eae6bf90c2",
+      "bytes": 7323
+    },
+    "site/data/d/site-hel-4/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-hel-4/kpis.json": {
+      "sha256": "5eca7021110e3b951c61b025041b4b7d78221853c3ce9c08e41c8ca9f6435e86",
+      "bytes": 6764
+    },
+    "site/data/d/site-hel-4/profile.json": {
+      "sha256": "a629fda935a9f4afca399f233c807e5e2d47268f9e2f4acad51fa8c97b60dbce",
+      "bytes": 91771
+    },
+    "site/data/d/site-hel-4/ranking.json": {
+      "sha256": "bce4c9f561498f2bc449e88449536fa544a2075f0b3749d4810b0ad37debda13",
+      "bytes": 4221
+    },
+    "site/data/d/site-hel-4/sectors.json": {
+      "sha256": "cb96ec8f88e0eac956a7a481f1495bbcef5d9349f410507fad92b10c9335719f",
+      "bytes": 2512
+    },
+    "site/data/d/site-hel-4/sites.json": {
+      "sha256": "22cc9d7018e4f713ab6a46d2c9479316e1d1a17819801d16a00cee51edf630ae",
+      "bytes": 968
+    },
+    "site/data/d/site-hel-4/solution.json": {
+      "sha256": "4997c7f91329e6102483d48d299963cc4e82e5e93b6d5f8f62e073ab26c23546",
+      "bytes": 632
+    },
+    "site/data/d/site-hel-4/specialized.json": {
+      "sha256": "2e0df78e28d128175198760e1b5e63bf6a9c84b68e51502fa3bbeef591735721",
+      "bytes": 3966
+    },
+    "site/data/d/site-hel-4/storage.json": {
+      "sha256": "71c1b6519b1167edd5a892fafdab0f998d1ea83a3f20ef0e628d6757054b6461",
+      "bytes": 2698
+    },
+    "site/data/d/site-hel-4/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-mer-1/comparison.json": {
+      "sha256": "382a22ae4fa1edb4fe1a8b8fd72a58622befb76a16876ba76fdd8e3132f82915",
+      "bytes": 2002
+    },
+    "site/data/d/site-mer-1/daily.json": {
+      "sha256": "1769eba45aa1b9e00c242108752a437b38a293295f0a5fca94de69e3665e2c9c",
+      "bytes": 7162
+    },
+    "site/data/d/site-mer-1/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-mer-1/kpis.json": {
+      "sha256": "1a6f85709de7fa061e16e21bc9aca826ae8d61812bdcc9b4e4cf86ca2a8a685e",
+      "bytes": 6686
+    },
+    "site/data/d/site-mer-1/profile.json": {
+      "sha256": "a1ead34fefa9127ca21dd5143f6c408dfaa93f47e52bedb9abf624d7758276c7",
+      "bytes": 89479
+    },
+    "site/data/d/site-mer-1/ranking.json": {
+      "sha256": "78729e3ff1227a00591b95fb69f16a98b526b305e6e0287f62cd13c9c05b936b",
+      "bytes": 4157
+    },
+    "site/data/d/site-mer-1/sectors.json": {
+      "sha256": "feb51cb814073a92ba9bbf27250a765d676af407e44df4a276981f96bc921880",
+      "bytes": 2508
+    },
+    "site/data/d/site-mer-1/sites.json": {
+      "sha256": "a7f51647cf3130403ebcaa24c062e6493a47fd2f1226f2aa3b2daaa66427aced",
+      "bytes": 992
+    },
+    "site/data/d/site-mer-1/solution.json": {
+      "sha256": "1c016d0b13fc07f19eb54f4c867e1e1a370386b311511c10f9135d964eed8646",
+      "bytes": 623
+    },
+    "site/data/d/site-mer-1/specialized.json": {
+      "sha256": "216ceb85bc83ff79cb3967dce27b1b22572fa4ab988ab3b7b8f71f170429d590",
+      "bytes": 3866
+    },
+    "site/data/d/site-mer-1/storage.json": {
+      "sha256": "f3f0a0de98f1fd53edd10962aa09faf71d0d2f2df32514d2435528bcf3593cef",
+      "bytes": 2593
+    },
+    "site/data/d/site-mer-1/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-mer-2/comparison.json": {
+      "sha256": "53f729ea5450132bc17d0f3dbc6560584efd2cb50f39e2bb0ad548f3ec35a752",
+      "bytes": 1992
+    },
+    "site/data/d/site-mer-2/daily.json": {
+      "sha256": "27d85e63a40efc7977451b4b88e4825a3dee0290a837d161cbfdd5d7a78de43b",
+      "bytes": 7310
+    },
+    "site/data/d/site-mer-2/events.json": {
+      "sha256": "7a0338f2479b2323e55f2e82e38f66beceedfd71bb83e86e7161aeb178c3d8f1",
+      "bytes": 3489
+    },
+    "site/data/d/site-mer-2/kpis.json": {
+      "sha256": "15f24d82fe93aa44312439402fce6709236e83ad0876c56d8bbd23b62b0dc1d4",
+      "bytes": 6662
+    },
+    "site/data/d/site-mer-2/profile.json": {
+      "sha256": "d469d7e9606cd70e4293f3a803bc1e9a207832aa8018f450f0d0d888578916e3",
+      "bytes": 88675
+    },
+    "site/data/d/site-mer-2/ranking.json": {
+      "sha256": "0e6b791343effacfb566d942e254b131cb604ddf176b9849a70e14cecdeb7bbb",
+      "bytes": 4189
+    },
+    "site/data/d/site-mer-2/sectors.json": {
+      "sha256": "bf4b29730b62c5235bb68a4acb5e5f20238fe41aa200f3d0e73dd09d19fb6b2e",
+      "bytes": 2507
+    },
+    "site/data/d/site-mer-2/sites.json": {
+      "sha256": "a7f51647cf3130403ebcaa24c062e6493a47fd2f1226f2aa3b2daaa66427aced",
+      "bytes": 992
+    },
+    "site/data/d/site-mer-2/solution.json": {
+      "sha256": "bfbd09fed9268e0fab21fc02c0839bcbd4579aa6f14d825af8ebaa56debfedfd",
+      "bytes": 632
+    },
+    "site/data/d/site-mer-2/specialized.json": {
+      "sha256": "bad992a393b559f21598a7023a708e68721c2ad7b54c7baec31ff0caf5b33640",
+      "bytes": 3908
+    },
+    "site/data/d/site-mer-2/storage.json": {
+      "sha256": "8592d171e2523dc53171cdfb55cf4fbdabdc625cc1c14da2109d4aaef1f243f3",
+      "bytes": 2671
+    },
+    "site/data/d/site-mer-2/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-mer-3/comparison.json": {
+      "sha256": "1d8b24607fdf4ffba9965a086c30e08004e23b019219a9651d1d21e14cf9410b",
+      "bytes": 2001
+    },
+    "site/data/d/site-mer-3/daily.json": {
+      "sha256": "c3ea6beca2d6c391c8dbc113e4613390f1c5875d3aea4602c5c0a59ee13b4bd2",
+      "bytes": 6862
+    },
+    "site/data/d/site-mer-3/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-mer-3/kpis.json": {
+      "sha256": "e26aebaf76b521bfbadb0927a7a52e0076dca31141b730ceb14a46a4c360b5d9",
+      "bytes": 6541
+    },
+    "site/data/d/site-mer-3/profile.json": {
+      "sha256": "ced7a05abf0ec635f108e94fa9bed378db97c79a4aed9748ddeadce1c83d10c2",
+      "bytes": 87713
+    },
+    "site/data/d/site-mer-3/ranking.json": {
+      "sha256": "ead9fea2e691d86269a24d6887c0fc867b0f8e8127c93472fb462c1b560f311a",
+      "bytes": 4107
+    },
+    "site/data/d/site-mer-3/sectors.json": {
+      "sha256": "2793cc216ded6eac17fed226a3652a5ea3df8eeaeafd912d97e55bfb9d1ff76b",
+      "bytes": 2512
+    },
+    "site/data/d/site-mer-3/sites.json": {
+      "sha256": "a7f51647cf3130403ebcaa24c062e6493a47fd2f1226f2aa3b2daaa66427aced",
+      "bytes": 992
+    },
+    "site/data/d/site-mer-3/solution.json": {
+      "sha256": "5caf6a640a20b4870f6b006890d8c13ee46c9fd1ac8dbc6c2381081c5811c515",
+      "bytes": 611
+    },
+    "site/data/d/site-mer-3/specialized.json": {
+      "sha256": "e72f9921a3393bf4cf5557c837a2c2f8d52aa66d5f7ca58490211d351fd8c4ae",
+      "bytes": 3834
+    },
+    "site/data/d/site-mer-3/storage.json": {
+      "sha256": "f3f0a0de98f1fd53edd10962aa09faf71d0d2f2df32514d2435528bcf3593cef",
+      "bytes": 2593
+    },
+    "site/data/d/site-mer-3/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/site-mer-4/comparison.json": {
+      "sha256": "03494bf0fafab7cc398ac24d784c5877b7452b2445827fea84c24118ffed6396",
+      "bytes": 1995
+    },
+    "site/data/d/site-mer-4/daily.json": {
+      "sha256": "3a84562e8c0795dea2c744c44004c93659afd92ab74ed7f7ec82c7398da67f79",
+      "bytes": 7351
+    },
+    "site/data/d/site-mer-4/events.json": {
+      "sha256": "501353ba5c08d6f3e5a831551078587e9790d3e28e69e702673450bce23ce859",
+      "bytes": 2863
+    },
+    "site/data/d/site-mer-4/kpis.json": {
+      "sha256": "e66986bcc1cbfb43d71f08abf5b46caa79aba8a1aa4e523407d367f5476e0630",
+      "bytes": 6725
+    },
+    "site/data/d/site-mer-4/profile.json": {
+      "sha256": "bb56a510be726cdb9c5f93eb1834ae9db45c2abb9ea716b643dc53caf3777531",
+      "bytes": 87876
+    },
+    "site/data/d/site-mer-4/ranking.json": {
+      "sha256": "06367e71240fc0d3fe9a95f8d293b935ef4a5b7f4100d55d5d79b391fcbce5f0",
+      "bytes": 4203
+    },
+    "site/data/d/site-mer-4/sectors.json": {
+      "sha256": "a45abcdabfa87cca2aee48b4daaf7e7243e7959337e608fbb974f6d758c0a5d8",
+      "bytes": 2461
+    },
+    "site/data/d/site-mer-4/sites.json": {
+      "sha256": "a7f51647cf3130403ebcaa24c062e6493a47fd2f1226f2aa3b2daaa66427aced",
+      "bytes": 992
+    },
+    "site/data/d/site-mer-4/solution.json": {
+      "sha256": "d5d651564dac3264e592e73868e232a0a2b6f52787ee3c86e63c331156c35710",
+      "bytes": 620
+    },
+    "site/data/d/site-mer-4/specialized.json": {
+      "sha256": "8c6f6b949e2112a288cfe93526c753c985190ddd50344914005f3529a8a9e4fb",
+      "bytes": 3856
+    },
+    "site/data/d/site-mer-4/storage.json": {
+      "sha256": "4c8b31dadd65682d66fd33ecbaff3cba386eebd606cb6bf1af838ed3aa04b9d5",
+      "bytes": 2716
+    },
+    "site/data/d/site-mer-4/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/d/weekly/comparison.json": {
+      "sha256": "1ff11abef4bd65ca728a885aa37b6511bbe9e6ed4b90a5dfc91c24f273ad0be7",
+      "bytes": 27159
+    },
+    "site/data/d/weekly/daily.json": {
+      "sha256": "3dbc1dbdbdef60c437ec06a0d077d76f745472a39a5e2ddfb2ca4db987a9feaf",
+      "bytes": 95024
+    },
+    "site/data/d/weekly/events.json": {
+      "sha256": "9e2835fe194158f400d1c18923f70af2a5911e9234132e82aae065fa03129135",
+      "bytes": 43491
+    },
+    "site/data/d/weekly/kpis.json": {
+      "sha256": "0f2ad2459003b6e71619d40d5cf1093b55767cdaacb3cb64ff8d802c7f66034a",
+      "bytes": 88262
+    },
+    "site/data/d/weekly/profile.json": {
+      "sha256": "cf03363fb61c4f489a54620715f4f8c4074d7db43c19980317fee2cd1ea92604",
+      "bytes": 1167715
+    },
+    "site/data/d/weekly/ranking.json": {
+      "sha256": "10cd115cbd452a10dbf8637ea15c247aaac2dcd3c9e0822e1010f841799210ae",
+      "bytes": 67105
+    },
+    "site/data/d/weekly/sectors.json": {
+      "sha256": "d837094a6933a046209a8ce187713f706a1027ddce0324b1ebb5ddf75797c898",
+      "bytes": 33660
+    },
+    "site/data/d/weekly/sites.json": {
+      "sha256": "897c727ce62cb32da6b045c1f0e4a7ec0c5692eabb937427d0233a4f8212a253",
+      "bytes": 1972
+    },
+    "site/data/d/weekly/storage.json": {
+      "sha256": "6e356c2de4709216ce0fc374f4b8f0ad8442b66c123fe8e00c2d5b70fe454030",
+      "bytes": 35822
+    },
+    "site/data/d/weekly/windows.json": {
+      "sha256": "c2d0d7e1548c9b0da1a5eec55be3aa86bb88b685906c6971d894387037267394",
+      "bytes": 697
+    },
+    "site/data/dashboards.json": {
+      "sha256": "25a30204638fd81dc4216f1b5d54edec91de47e7b38949197e848892eea31707",
+      "bytes": 5375
+    },
+    "site/data/themes/atled.json": {
+      "sha256": "7618a78434c35b52a08517b0e66345a8fa101fd124bd4aa05739e284bc93906a",
+      "bytes": 729
+    },
+    "site/data/themes/imitator.json": {
+      "sha256": "69112925fb474338707da1052cbb80f1567a32dae393b622d4aa356029d14c9e",
+      "bytes": 666
+    },
+    "site/data/themes.json": {
+      "sha256": "db3ca35577f216581ef07c1244b8123705722c52acd72d268d2c11bd7227d77e",
+      "bytes": 276
+    },
+    "site/index.html": {
+      "sha256": "58e28e11c48787576adbc890e39ea007b24d8d41eff76b0a6ce7791b41485620",
+      "bytes": 959
+    }
+  }
+}
