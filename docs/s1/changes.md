@@ -43,3 +43,9 @@
 - 所有能源查詢補上符合粒度／設備可用性的 expect；來源標為 static。check 的錯誤、截斷與 trimming 會阻擋建置。
 - 移除未接 agent 的三輪 callback；S2 修復應使用原生 MCP 的 check/lint/render，而非另一層偽自動修復。保留原生尚未支援的 Prose placeholder／格式／敘事裸數字檢查（`lint-prose.mjs`）。
 - 驗證：18 tests 全通過；23 條 input 規則確實執行；反號購電功率使原生 q_energy_balance expectation 失敗。這不是只檢查 SQL 存在。
+
+## W6 — 原樣 imitator chassis + 獨立 brand pack
+
+- 新增 `packs/imitator-brand`；22,857-byte `report.css` 原樣內嵌，SHA、來源 commit 見 `brand/provenance.json`。o11y 報告預設使用此品牌，Dashboard 保留操作介面。
+- 通用 `brand.mjs` 注入模板、fingerprint metadata、標題與 CSS；差異全部在 brand pack。0.12 單檔 viewer 仍顯示 header，使用 scoped CSS 隱藏重複標題，未改上游。
+- `node --test tests/brand.test.mjs`：1/1；瀏覽器實測 light/dark 背景、襯線標題、卡片邊框、主題切換、390px、列印與零外連。此測試使用 offline setContent，不能冒稱通過受管理瀏覽器禁止的 file:// 導航。

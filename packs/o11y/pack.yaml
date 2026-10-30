@@ -3,7 +3,7 @@ inputs: [http_requests.parquet]
 dashboards: [rca]
 report: rca
 default_dashboard: rca
-brand: o11y
+brand: imitator-brand
 ingest: ingest/generate.mjs
 lint: { allowLiterals: [5xx] }
 rill: rill/metrics.yaml

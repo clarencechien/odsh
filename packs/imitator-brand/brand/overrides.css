@@ -1,0 +1,33 @@
+/* REGISTER: 工程事件簿 — 用請求時序與分母覆核服務異常。
+   REFERENCE: 1990 年代工程維護手冊的事件紀錄頁。
+   PAPER: 中性暖白記錄紙 #fbfbfa；夜間採炭灰 #191917。
+   VOICE: 宋體標題、清楚的表格與不誇大因果的敘事。
+   RECENT: unavailable. The original chassis above is kept byte-for-byte. */
+:root{--disp:var(--serif)}
+:root,body[data-report-brand="imitator"] .odd-dashboard-page{
+ --odd-page:var(--paper)!important;--odd-surface:var(--card)!important;
+ --odd-ink:var(--ink)!important;--odd-ink-2:var(--ink-2)!important;--odd-ink-3:var(--mist)!important;
+ --odd-grid:var(--rule)!important;--odd-border-strong:var(--rule-hard)!important;
+ --odd-accent:var(--accent)!important;--odd-accent-ink:var(--accent)!important;
+ --odd-font:var(--sans)!important;--odd-mono:var(--mono)!important;--odd-radius:var(--radius)!important;
+ --odd-series-1:var(--c1)!important;--odd-series-2:var(--c2)!important;--odd-series-3:var(--c3)!important;
+ --odd-series-4:var(--c4)!important;--odd-series-5:var(--c5)!important;--odd-series-6:var(--c6)!important;
+}
+body[data-report-brand="imitator"]{background:var(--paper)!important;color:var(--ink)!important;font-family:var(--sans);font-size:var(--fs-body);line-height:var(--lh-body)}
+.odd-dashboard-page{max-width:var(--page-wide)!important;margin:auto!important;padding:var(--sp-7) var(--sp-5)!important;background:var(--paper)!important}
+.report-title,.odd-dash-titles h1{font-family:var(--disp)!important;color:var(--ink)!important;font-size:var(--fs-1)!important;line-height:1.3!important}
+.odd-dash-titles p{color:var(--ink-2)!important;font-size:var(--fs-body)!important;line-height:1.85!important}
+.odd-panel{border:1px solid var(--rule)!important;border-radius:var(--radius)!important;background:var(--card)!important;box-shadow:none!important;min-width:0}
+.odd-panel h3{font-family:var(--sans);color:var(--ink)!important}
+.odd-section h2{font-family:var(--disp);color:var(--accent)!important;margin:var(--sp-6) 0 var(--sp-4)!important}
+.odd-panel-prose{height:auto!important;min-height:130px}
+.odd-text{font:var(--fs-body)/var(--lh-body) var(--sans)!important;color:var(--ink)!important;max-width:var(--measure);overflow-wrap:anywhere}
+.odd-text strong{color:var(--accent)!important}.odd-panel-stat .odd-stat-value{color:var(--ink)!important}
+.odd-panel svg{max-width:100%}.odd-panel-table{overflow:auto}.odd-panel-table table{font-size:var(--fs-sm);color:var(--ink)}
+.report-source{max-width:var(--page-wide);margin:auto;padding:var(--sp-4) var(--sp-5);border-bottom:1px solid var(--rule);font:var(--fs-sm)/1.8 var(--sans);color:var(--ink-2)}
+@media(max-width:640px){.odd-dashboard-page{padding:var(--sp-5) var(--sp-4)!important}.odd-row{grid-template-columns:minmax(0,1fr)!important}.odd-row>*{grid-column:1/-1!important}.report-source{padding-right:100px}}
+@media print{.report-source,.odd-filters,.theme-toggle{display:none!important}.odd-dashboard-page{padding:0!important}.odd-panel{break-inside:avoid}}
+
+/* Single-file viewer retains its own header in 0.12; the report owns this title. */
+body[data-report-brand="imitator"] .odd-header,body[data-report-brand="imitator"] .odd-dash-titles h1{display:none}
+body[data-report-brand="imitator"] .odd-dashboard{max-width:var(--page-wide);margin:auto}
