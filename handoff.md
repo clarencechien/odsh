@@ -1,6 +1,8 @@
 # odsh 接手文件 — S1 / open-dashboard 0.12.0
 
-更新：2026-10-30。來源基準：`clarencechien/dataxpr/docs/odsh-handoff-s1.md`（2026-10-30）；本 repo 升版前基準 `cd16508`。工作分支 `codex/odsh-s1`。這份文件描述目前程式，不代表 GitHub Pages 已更新。
+更新：2026-10-30。來源基準：`clarencechien/dataxpr/docs/odsh-handoff-s1.md`（2026-10-30）；本 repo 升版前基準 `cd16508`。工作分支 `codex/odsh-s1`。2026-10-30 已依使用者後續要求把 S1 energy 成品推至 gh-pages（f01815f），沿用 v4 相同資料；實際 Pages 上線狀態受環境連線限制，尚未確認。
+
+文件入口：[索引](docs/README.md) · [發布操作](docs/deployment.md) · [驗收](docs/validation.md)。目前閱讀來源應選 `codex/odsh-s1`；`main` 尚未合併 S1。
 
 ## 先看結論
 
@@ -47,7 +49,7 @@ npm run test:consistency
 npm run test:runtime
 ```
 
-現有模板未變時可重建同 run；模板修改後用 `--suffix=-next` 或新 run_id。`runs/`、`test-results/`、`.runtime/` 被忽略，不在 Git 中；新機器要生成，不能假設上一個 agent 的 processes 還在。瀏覽器測試預設 `/usr/bin/chromium`；可透過 CHROMIUM_PATH 指定其他安裝位置。
+現有模板未變時可重建同 run；模板修改後用 `--suffix=-next` 或新 run_id。**database.md 也在 template fingerprint 內**：本次更新 pack 資料契約文件後，舊 `*-s1-final` 保留作為已發布快照，不應拿目前 pack 重建。可繼續 verify／預覽／pages:publish，若需重建用新 suffix。odsh 的 check／lint／dev／live／mcp 也會先 prepareWorkspace；來源改變後請在新 run 操作，避免覆寫舊 run 的 workspace，影響 T18 對 frozen template 的核對。`runs/`、`test-results/`、`.runtime/` 被忽略，不在 Git 中；新機器要生成，不能假設上一個 agent 的 processes 還在。瀏覽器測試預設 `/usr/bin/chromium`；可透過 CHROMIUM_PATH 指定其他安裝位置。
 
 Native MCP render_panel 的 Playwright browser 安裝曾收到 `403 Domain forbidden`（cdn.playwright.dev、playwright.download.prss.microsoft.com）。不應跳過 TLS 或用假 browser cache；該工具的 screenshot 呼叫未驗證，其餘 MCP 與自有 Playwright 測試正常。
 
@@ -69,7 +71,7 @@ Native MCP render_panel 的 Playwright browser 安裝曾收到 `403 Domain forbi
 | 指標與一致性 | `packs/*/rill/metrics.yaml`、`src/metrics.mjs`、`src/consistency.mjs` |
 | TD | `td/options.mjs` → `packs/*/td/options.json`；保留既有檔案維持字母歷史 |
 | 交付 | `src/release.mjs`、`silo.mjs`、`server.mjs`；Silo 使用 PGSTY silo，minio npm 是 S3 client |
-| 展示網站 | `scripts/build-pages.mjs`、`docs/open-dashboard-guide.html`；S1 不自動發布 |
+| 展示網站 | `scripts/build-pages.mjs`、`docs/open-dashboard-guide.html`；更新文件後明確執行 pages:publish，同步公開指南 |
 
 公司名稱是 **ATLED Engergy**，保留使用者拼字。Energy Loop 主色 #0087dc、teal、lime；3 客戶 6 案場。既有個人主題／版面存在瀏覽器，不能改正式 report。
 
@@ -118,6 +120,12 @@ manifest 固定輸入／模板 SHA、完整 artifact SHA、data_hash、pack/bran
 
 check 的 maxRuns 與 build 同取 pack.limits（預設 100）；錯誤、truncation、sweep trimming 會擋建置。Shared SQL 未被引用不會自動驗證，因此 quality dashboard 必須存在且引用全部規則；它不在交付 dashboards 清單內。
 
+## 發布交接
+
+首次 S1 energy 發布為 `gh-pages@f01815f`，來自程式 `98a0c1d`。與 v4 比對，四份 run 的所有 input SHA／row count 相同；公開站不包含 o11y、原始 Parquet 或 authoring runtime。後續指南同步與完整操作見 [deployment](docs/deployment.md)。發布分支更新已確認，github.io 上線／渲染未確認，兩者不可混稱。
+
+`docs/s1/w*-evidence.json` 與 `final-evidence.json` 是歷史 checkpoint，不回寫成最新部署狀態。新驗收或部署建立新紀錄；`changes.md` 依時間追加。
+
 ## 下一步與不要誤稱完成的事
 
 - 優先取得真實 o11y Parquet，確認時間戳型別／單位並完成實際 RCA；目前只能證明合成 fixture 可跑。
@@ -125,6 +133,6 @@ check 的 maxRuns 與 build 同取 pack.limits（預設 100）；錯誤、trunca
 - 在一般桌面 browser 雙擊 report/dashboard，斷網操作並驗證零外連。雲端 fallback 是替代驗證，不是該 exit 通過。
 - S2 重用原生 MCP 做隔離 draft/revision/job orchestration、compiler 與 Studio；不重寫通用工具或 editor。真實模型閉環、customer auth 尚未實作。
 - Rill 現在只有可攜資料／reviewed metrics／一致性；ClickHouse 為 seam，沒有生產服務驗證。
-- Silo/Pages/個人排版不擴大功能範圍。這次只回歸既有相容性，沒有把 S1 發布到線上，也沒有重跑 Docker Silo 服務。
+- Silo/個人排版不擴大功能範圍；未重跑 Docker Silo 服務。使用者後續授權 S1 Pages 發布，已推送 gh-pages；輸入 hash 比對與遠端檔案驗證見 docs/s1/pages-deployment.json，無法由此環境確認 github.io 上線狀態。
 
 若要交付 PR，工作包已有 W1–W8 與收尾 commit；可按序 review。遠端分支推送與 API PR 建立是不同能力，不要因 git 可用就宣稱 PR 已建立。詳細驗收與限制以 [validation](docs/validation.md) 為準。

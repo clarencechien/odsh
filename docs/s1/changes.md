@@ -2,6 +2,8 @@
 
 依據 [dataxpr S1 handoff](https://github.com/clarencechien/dataxpr/blob/main/docs/odsh-handoff-s1.md)。保留能源展示與快照交付，將引擎責任交回原生能力；不 fork，不實作 S2 compiler/agent 或 S3 ClickHouse。
 
+這是依工作包與時間排列的歷史紀錄；W9 的「未發布」描述的是當時狀態，後續已取得發布授權。當前狀態以 [發布指南](../deployment.md) 與 [驗收文件](../validation.md) 為準，原始 JSON 證據不覆寫。
+
 ## W1 — open-dashboard 0.12.0
 
 - core / cli / mcp 精確固定 0.12.0；DuckDB 原版 1.5.6-r.1 符合 upstream optional peer，沿用。
@@ -63,7 +65,7 @@
 - >26 個值標 `needs_narrowing`，不截斷。原生 widget 也超過 26，因此提供 widget_group 與分組槽位；o11y path=40，必須縮小。
 - `node --test tests/options.test.mjs tests/t19.test.mjs`：3/3。pack options 已產生（energy 18 slots、o11y 16 slots）；`thresholds.lock.json` 維持空殼，未宣稱完成 S3 校準。
 
-## W9 — 收尾、相容性與實際驗收
+## W9 — 收尾、相容性與實際驗收（首次 Pages 發布前）
 
 - README/handoff/architecture/validation/agent roadmap/科普 HTML 全面更新為 0.12 + packs；列出嚴格 S1 的三個缺口、原生 screenshot 環境限制與未部署狀態。移除「MCP 未裝」「仍有 callback」「仍產 Rill drafts」等舊描述。
 - 修正 report/default_dashboard 指向同頁時的輸出角色判定；check 與 build 共享 pack maxRuns；manifest 增加 commit dirty 標記。
@@ -73,3 +75,17 @@
 - 「殼變薄」是責任移轉：刪 custom quality runner、未接線的 repair callback、Rill drafts、domain imports；CLI/MCP/runtime 使用上游。src 實體行數 598→556，另新增 TD 51 行；合計未減少，不能把這當大幅縮碼的宣傳數字。T19 的零領域耦合與唯一 export adapter 才是主要邊界。
 - 雲端 start_skill 已更新為目前 pack 路徑與原生 runtime 驗證；安裝腳本保持原有 npm ci。保存草稿不等於發布環境。
 - 每個工作包以獨立 commit 留存；GitHub API 受限，未建立逐包 PR。未送上游 PR，未發布 S1 Pages 或外部服務。
+
+## 後續授權 — S1 Pages 發布 / 2026-10-30
+
+- 使用者要求沿用上一版資料發布 S1。比對原 gh-pages `f26697c`：三客戶及 portfolio 的所有 inputs SHA/rows 與 S1 完全相同；保留合成標記。
+- 重新執行 Pages 13 項測試全部通過，使用現有 publisher 推送 `gh-pages` 至 `f01815f`（來源 `98a0c1d`），未合併 main 或加入其他場景。
+- 遠端 deployment.json、四份 manifest、guide.html 與 staging 逐 byte 相同。環境 proxy 阻擋 github.io，實際部署完成／線上渲染仍無法確認。證據見 pages-deployment.json。
+
+## 文件全面同步 / 2026-10-30
+
+- 更新 README、handoff、架構、驗收、roadmap、upstream 提案、科普 HTML 及兩個 pack 的資料契約；新增文件索引與 Pages 發布／回復指南。
+- 統一 S1/gh-pages/main 分支狀態、v4 相同合成輸入、energy 公開／o11y 本機範圍、原生工具能力與尚未驗收項目。歷史 JSON／品牌 provenance 保留原值。
+- 修正科普頁連到舊 main 的文件連結、已不存在的草稿格式／API 文件描述、input 步驟誤列 build/check 產物、公開 URL 與 frozen run 生命週期混淆，以及資料契約中的搬移前路徑與 Rill drafts 描述。
+- 說明 database.md 參與 template fingerprint；既有成品可直接 verify／發布，後續 build 或會 prepareWorkspace 的命令須選新 run。
+- 文件驗證：11 份 Markdown 的 59 個本機連結全部有效；更新後的科普指南通過既有 Pages 13 項瀏覽器檢查（含主題、列印、手機與無 JavaScript）。此輪只修改文件，未重建或更換已發布能源資料。
