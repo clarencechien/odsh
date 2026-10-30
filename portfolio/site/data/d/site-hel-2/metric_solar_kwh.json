@@ -1,0 +1,29 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "metric_solar_kwh",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "solar_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "solar_kwh": 1908001.5327632478
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "metric_modeled_savings_twd",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "modeled_savings_twd",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "modeled_savings_twd": 9741778.850653075
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

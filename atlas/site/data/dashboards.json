@@ -1,11 +1,19 @@
 {
+  "builtAt": "2026-10-30T12:57:36",
   "dashboards": [
     {
       "description": "工廠韌性與樓宇節能 · 合成資料 / 可切換快照",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "atlas",
-      "panels": 16,
-      "queries": 28,
+      "panels": 15,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -15,9 +23,16 @@
     {
       "description": "ENERGY LOOP · 跨產業方案組合 / 合成資料",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "energy",
-      "panels": 13,
-      "queries": 28,
+      "panels": 12,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -27,9 +42,16 @@
     {
       "description": "MICROGRID / 工廠微電網 · 光儲協同，壓低尖峰並保留儲能備援 · 合成資料 / 可切換快照",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "site-atl-1",
-      "panels": 16,
-      "queries": 28,
+      "panels": 15,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -39,9 +61,16 @@
     {
       "description": "SMART BUILDING / 智慧樓宇 · 串接樓控與屋頂光電，辨識非營業用電 · 合成資料 / 可切換快照",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "site-atl-2",
-      "panels": 15,
-      "queries": 28,
+      "panels": 14,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -51,9 +80,16 @@
     {
       "description": "WEEKLY DECISION BRIEF · 需量管理與樓宇排程 · 固定週期 / 可列印",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "weekly",
       "panels": 13,
-      "queries": 28,
+      "queries": 58,
       "sources": [
         "energy"
       ],

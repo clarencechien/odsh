@@ -1,0 +1,29 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "q_soc_transition",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "residual",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "residual": 9.915811176597344e-7
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

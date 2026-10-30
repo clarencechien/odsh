@@ -1,11 +1,19 @@
 {
+  "builtAt": "2026-10-30T12:57:51",
   "dashboards": [
     {
       "description": "ENERGY LOOP · 跨產業方案組合 / 合成資料",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "energy",
-      "panels": 13,
-      "queries": 28,
+      "panels": 12,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -15,9 +23,16 @@
     {
       "description": "車隊補能與場站調度 · 合成資料 / 可切換快照",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "meridian",
-      "panels": 14,
-      "queries": 28,
+      "panels": 13,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -27,9 +42,16 @@
     {
       "description": "FLEET HUB / 車隊基地 · 讓夜間車隊補能與白天光儲調度相容 · 合成資料 / 可切換快照",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "site-mer-1",
-      "panels": 14,
-      "queries": 28,
+      "panels": 13,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -39,9 +61,16 @@
     {
       "description": "COLD CHAIN / 冷鏈補能 · 維持冷鏈負載，同時追蹤充電服務中斷 · 合成資料 / 可切換快照",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "site-mer-2",
-      "panels": 14,
-      "queries": 28,
+      "panels": 13,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -51,9 +80,16 @@
     {
       "description": "WEEKLY DECISION BRIEF · 補能服務與場站成本 · 固定週期 / 可列印",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "weekly",
       "panels": 13,
-      "queries": 28,
+      "queries": 58,
       "sources": [
         "energy"
       ],

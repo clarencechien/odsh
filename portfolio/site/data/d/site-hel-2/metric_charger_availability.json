@@ -1,0 +1,29 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "metric_charger_availability",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "charger_availability",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "charger_availability": 0.9970355731225297
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

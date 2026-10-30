@@ -1,0 +1,29 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "q_grid_exclusivity",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "residual",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "residual": 0
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

@@ -1,11 +1,19 @@
 {
+  "builtAt": "2026-10-30T12:58:07",
   "dashboards": [
     {
       "description": "ENERGY LOOP · 跨產業方案組合 / 合成資料",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "energy",
-      "panels": 13,
-      "queries": 28,
+      "panels": 12,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -15,9 +23,16 @@
     {
       "description": "算力能效與綠電協同 · 合成資料 / 可切換快照",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "helios",
-      "panels": 15,
-      "queries": 28,
+      "panels": 14,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -27,9 +42,16 @@
     {
       "description": "AI COMPUTE / 高密度算力 · 辨識訓練工作負載與冷卻劣化的不同影響 · 合成資料 / 可切換快照",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "site-hel-1",
-      "panels": 15,
-      "queries": 28,
+      "panels": 14,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -39,9 +61,16 @@
     {
       "description": "GREEN EDGE / 綠能邊緣 · 整合屋頂光電、儲能與高效率機房 · 合成資料 / 可切換快照",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "site-hel-2",
-      "panels": 15,
-      "queries": 28,
+      "panels": 14,
+      "queries": 58,
       "sources": [
         "energy"
       ],
@@ -51,9 +80,16 @@
     {
       "description": "WEEKLY DECISION BRIEF · 算力擴張與冷卻效率 · 固定週期 / 可列印",
       "file": "",
+      "freshness": {
+        "collected": [],
+        "live": [],
+        "static": [
+          "energy"
+        ]
+      },
       "id": "weekly",
       "panels": 13,
-      "queries": 28,
+      "queries": 58,
       "sources": [
         "energy"
       ],

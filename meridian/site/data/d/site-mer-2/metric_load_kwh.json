@@ -1,0 +1,29 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "metric_load_kwh",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "load_kwh",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "load_kwh": 1702278.757869992
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

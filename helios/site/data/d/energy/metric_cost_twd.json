@@ -1,0 +1,29 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "metric_cost_twd",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "cost_twd",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "cost_twd": 17733433.816713
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

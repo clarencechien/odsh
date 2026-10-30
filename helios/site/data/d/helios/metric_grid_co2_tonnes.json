@@ -1,0 +1,29 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "metric_grid_co2_tonnes",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "grid_co2_tonnes",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "grid_co2_tonnes": 2210.238158652003
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}

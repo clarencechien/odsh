@@ -1,40 +1,62 @@
 {
-  "schema_version": 1,
-  "run_id": "helios-2026-q3-v4",
+  "schema_version": 2,
+  "run_id": "helios-2026-q3-s1-final",
+  "pack": "energy",
+  "brand": "energy",
   "company": "ATLED Engergy",
   "synthetic": true,
+  "release": {
+    "bucket_prefix": "atled",
+    "internal_scope": "internal",
+    "scopes": {
+      "Atlas Semiconductor": "atlas",
+      "Meridian Logistics": "meridian",
+      "Helios Cloud": "helios"
+    },
+    "scope": "helios"
+  },
+  "default_dashboard": "helios",
   "scope": "customer",
   "tenant": "Helios Cloud",
   "template": {
-    "commit": "7cab51246c57869a6d826614a1dc2aaac3424c21",
-    "sha256": "a0014bec6036e5d1d2298c725be46cac08f38a0931898b13f086a25831e9972f",
+    "commit": "e99f56d0be64b6136b982766b2e2b451ff5b81f2",
+    "dirty": true,
+    "sha256": "972bcc4c854e320423f4e8f41f464249558aa71def6224529bd4831d7db918a0",
     "files": {
-      "open-dashboard.config.ts": "9687b0411ea9a5b28027ce060999cced94bb10ddd2d28eb1ba4d1f9fb901315e",
+      "open-dashboard.config.ts": "b80370bebab3625aa0f05a855604c6fee25aece625e906a82951bd78e0d9da2e",
       "dashboards/energy/index.tsx": "729b61dea083c1b7afb629e6f0b803aeea5cbd92d50373238d39034d28fda6ba",
-      "dashboards/energy/queries.sql": "9e2cd3d568691c24bb65379b83db951e952db0067e4c2f8ee65afa16add2f394",
+      "dashboards/energy/queries.sql": "d2f3204766ea9bbf3986d971ba14b022a7631fcdb931761398fab917fa2b2f9a",
       "dashboards/helios/index.tsx": "7c3b6e4765c54f1531d2a1794073070fe1ec2d3dca4bd95542a1b2de2dc35d7a",
-      "dashboards/helios/queries.sql": "b7159c3f2fd3ce23b5d7b3421d18fd5199d3dfdd3511905c3b58abfbb6feba0e",
+      "dashboards/helios/queries.sql": "b3e6746af59adc93a0d837472f0faa260c01a0f81c087de553604eb3f4a20b82",
+      "dashboards/quality/index.tsx": "91cf2ab93f64f6927d5a8fba9364a739d4de6754475dea40f3adc4412ccf59d0",
+      "dashboards/quality/queries.sql": "39e1e26792b2ad7dab5891c1ebcf770518143c4b76cd6ba66bebf9450defe8bf",
       "dashboards/site-hel-1/index.tsx": "6190bf05838735ef0bb5284783b4eac84ea7aaa1333f713c761c24f3a7d162a1",
-      "dashboards/site-hel-1/queries.sql": "2cd5e0f2279776f2c1d85ebd77d713808030f113922f91fa2000250c396ad507",
+      "dashboards/site-hel-1/queries.sql": "b57fa608ec31277ce91b13829658ecbccb3330d24363292dea00fcde1e9ba27e",
       "dashboards/site-hel-2/index.tsx": "45921a1e58ef7125bd2ad0043cdf9eadbeb54ed2cc06beca607f373d2c775822",
-      "dashboards/site-hel-2/queries.sql": "b79b250a9574e4c982e417f5e022227d51c8060bf25e54b3b8f610efc7cb490e",
+      "dashboards/site-hel-2/queries.sql": "64eace51606d5567fa78761ed10ecccf726cbb920b5feaf0cfcdaa7850f17771",
       "dashboards/weekly/index.tsx": "a6bd3cf7924f6a261449338fce9e7779ac2242362f944b832792cc18285b3198",
-      "dashboards/weekly/queries.sql": "30978f8a4ce2692015479ebb5afb4cde9e0072aecdcfcf2a9e2fb08a57b39172",
+      "dashboards/weekly/queries.sql": "4a6535ff99b25c792a598683e76320fd17964a73f05c42e7c5b7d13510cc2cff",
       "charts/integration-map/index.tsx": "9e522f5933939fb591c277e7b05a8ccf75d12d9b16edba5f3e3cd47ee9a53151",
       "charts/personal-dashboard/index.tsx": "3cd756c74e3ed3febe57d9eabba9c8a54067a706dd0e5e585e99799d7be81a60",
       "charts/prose/index.tsx": "b9abb5619a140cb38b3db5b82020609f0620e72ce81bafd4833c8d391ae8c086",
       "charts/prose/sample.sql": "ad6089134f5caad2461fe4014ba9cad3b00d38abf4ee6bf0bf0a37782c3192a8",
       "themes/atled.json": "b7296145eaac910a1bdfcd7ee94728052cf2ad5837c3eeb4452c2e0a888fa6e2",
       "themes/imitator.json": "323541893b943d0e3d60be4f8f1136db9e0ced272f739db45fb073cb6c0dcd83",
-      "theme-overrides/energy-loop.css": "146abfe6833589db40e6311429153eec6f9b1cf94f0b5ef1614d9bd3a6b92e47",
-      "theme-overrides/imitator.css": "759d4193de2457d97172fea690df515d0fdfd88b7ab31d56e8fce66b184b9764",
-      "theme-overrides/reader-controls.js": "b9757831a325f6c2e779ebe8e6f4eff1837b76d2e2d6104b189a963bee908682",
       "databases/energy/database.md": "6874f208371fd5172b71a0d54f00ce16bf6d5070958e3f43461323e8ec0ce43b",
-      "snapreport.yaml": "c82d013adec8d7bc6c712e9c6f8ebba159f4245be8a690ec329e9090637f90c7"
+      "queries/quality_checks.sql": "f10a9e6c991506c4388778561d224feedd7a66949cc2dbd7602ed840e00c883a",
+      "brand/controls.js": "b9757831a325f6c2e779ebe8e6f4eff1837b76d2e2d6104b189a963bee908682",
+      "brand/dashboard-attributes.html": "645b21405b7a4edcf53f842b169dcbe717646571579d8fa28c960a814b411ac0",
+      "brand/masthead.html": "6142562a7f07f757aab9109993cd94517d2583e5326f1d483b12119c3423944d",
+      "brand/overrides.css": "146abfe6833589db40e6311429153eec6f9b1cf94f0b5ef1614d9bd3a6b92e47",
+      "brand/report-attributes.html": "b18222b80fa06c4cae5fd7221fba61ee89917aba236b325ebb78eb454b8eee84",
+      "brand/report-overrides.css": "759d4193de2457d97172fea690df515d0fdfd88b7ab31d56e8fce66b184b9764",
+      "brand/theme.json": "b7296145eaac910a1bdfcd7ee94728052cf2ad5837c3eeb4452c2e0a888fa6e2",
+      "pack.json": "60f042cbab2580909198d05361f3b3267c52432f5be250857688b716a179dfa1",
+      "metrics.yaml": "aeee01102cba68172ceb5f817f86566ea40c2255cc1a3cf0169b306025293646"
     }
   },
-  "open_dashboard": "0.7.0",
-  "built_at": "2026-10-08T02:23:56.727Z",
+  "open_dashboard": "0.12.0",
+  "built_at": "2026-10-30T04:58:16.426Z",
   "inputs": {
     "assets.parquet": {
       "sha256": "66528880817e2bf71b7610dd900a2fdc48ed3054c7eea767f897421bfc45fd7d",
@@ -188,6 +210,41 @@
       "rows_max": 1,
       "trimmed": false
     },
+    "d/energy/metric_charger_availability.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/metric_cost_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/metric_grid_co2_tonnes.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/metric_load_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/metric_modeled_savings_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/metric_pue.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/metric_solar_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/energy/profile.json": {
       "runs": 9,
       "rows_max": 168,
@@ -196,6 +253,121 @@
     "d/energy/pue_sites.json": {
       "runs": 9,
       "rows_max": 2,
+      "trimmed": false
+    },
+    "d/energy/q_cadence.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_charge_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_emissions_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_end_use_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_energy_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_events_present.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_grid_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_meter_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_night_solar.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_null_observations.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_pue_ports.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_scope_assets.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_scope_events.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_scope_meters.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_scope_sites.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_scope_telemetry.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_soc_bounds.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_soc_continuity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_soc_transition.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_tariff_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_telemetry_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_telemetry_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/energy/q_unique_intervals.json": {
+      "runs": 1,
+      "rows_max": 1,
       "trimmed": false
     },
     "d/energy/ranking.json": {
@@ -328,6 +500,41 @@
       "rows_max": 1,
       "trimmed": false
     },
+    "d/helios/metric_charger_availability.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/metric_cost_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/metric_grid_co2_tonnes.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/metric_load_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/metric_modeled_savings_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/metric_pue.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/metric_solar_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/helios/profile.json": {
       "runs": 9,
       "rows_max": 168,
@@ -336,6 +543,121 @@
     "d/helios/pue_sites.json": {
       "runs": 9,
       "rows_max": 2,
+      "trimmed": false
+    },
+    "d/helios/q_cadence.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_charge_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_emissions_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_end_use_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_energy_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_events_present.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_grid_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_meter_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_night_solar.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_null_observations.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_pue_ports.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_scope_assets.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_scope_events.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_scope_meters.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_scope_sites.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_scope_telemetry.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_soc_bounds.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_soc_continuity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_soc_transition.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_tariff_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_telemetry_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_telemetry_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/helios/q_unique_intervals.json": {
+      "runs": 1,
+      "rows_max": 1,
       "trimmed": false
     },
     "d/helios/ranking.json": {
@@ -468,6 +790,41 @@
       "rows_max": 1,
       "trimmed": false
     },
+    "d/site-hel-1/metric_charger_availability.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/metric_cost_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/metric_grid_co2_tonnes.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/metric_load_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/metric_modeled_savings_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/metric_pue.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/metric_solar_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/site-hel-1/profile.json": {
       "runs": 3,
       "rows_max": 168,
@@ -475,6 +832,121 @@
     },
     "d/site-hel-1/pue_sites.json": {
       "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_cadence.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_charge_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_emissions_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_end_use_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_energy_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_events_present.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_grid_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_meter_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_night_solar.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_null_observations.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_pue_ports.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_scope_assets.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_scope_events.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_scope_meters.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_scope_sites.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_scope_telemetry.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_soc_bounds.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_soc_continuity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_soc_transition.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_tariff_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_telemetry_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_telemetry_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-1/q_unique_intervals.json": {
+      "runs": 1,
       "rows_max": 1,
       "trimmed": false
     },
@@ -608,6 +1080,41 @@
       "rows_max": 1,
       "trimmed": false
     },
+    "d/site-hel-2/metric_charger_availability.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/metric_cost_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/metric_grid_co2_tonnes.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/metric_load_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/metric_modeled_savings_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/metric_pue.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/metric_solar_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/site-hel-2/profile.json": {
       "runs": 3,
       "rows_max": 168,
@@ -615,6 +1122,121 @@
     },
     "d/site-hel-2/pue_sites.json": {
       "runs": 3,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_cadence.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_charge_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_emissions_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_end_use_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_energy_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_events_present.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_grid_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_meter_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_night_solar.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_null_observations.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_pue_ports.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_scope_assets.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_scope_events.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_scope_meters.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_scope_sites.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_scope_telemetry.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_soc_bounds.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_soc_continuity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_soc_transition.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_tariff_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_telemetry_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_telemetry_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/site-hel-2/q_unique_intervals.json": {
+      "runs": 1,
       "rows_max": 1,
       "trimmed": false
     },
@@ -748,6 +1370,41 @@
       "rows_max": 1,
       "trimmed": false
     },
+    "d/weekly/metric_charger_availability.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/metric_cost_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/metric_grid_co2_tonnes.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/metric_load_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/metric_modeled_savings_twd.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/metric_pue.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/metric_solar_kwh.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
     "d/weekly/profile.json": {
       "runs": 1,
       "rows_max": 168,
@@ -756,6 +1413,121 @@
     "d/weekly/pue_sites.json": {
       "runs": 1,
       "rows_max": 2,
+      "trimmed": false
+    },
+    "d/weekly/q_cadence.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_charge_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_emissions_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_end_use_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_energy_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_events_present.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_grid_exclusivity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_meter_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_night_solar.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_null_observations.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_pue_ports.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_scope_assets.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_scope_events.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_scope_meters.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_scope_sites.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_scope_telemetry.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_soc_bounds.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_soc_continuity.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_soc_transition.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_tariff_ledger.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_telemetry_balance.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_telemetry_row_count.json": {
+      "runs": 1,
+      "rows_max": 1,
+      "trimmed": false
+    },
+    "d/weekly/q_unique_intervals.json": {
+      "runs": 1,
+      "rows_max": 1,
       "trimmed": false
     },
     "d/weekly/ranking.json": {
@@ -820,21 +1592,24 @@
     }
   },
   "warnings": [],
-  "data_hash": "006743a1da8dd2ecbbc9c0ca2c86f1ff949fc2d790161e564a550236f3666c38",
+  "data_hash": "b72643112e38c6947f6f7713ea5699d86b45ef69bf260435af6a513b0dc0dd34",
   "check": "ok",
-  "quality": "ok",
+  "quality": {
+    "engine": "upstream-expect",
+    "passed": 435
+  },
   "artifacts": {
     "build.log": {
-      "sha256": "b91968bdefaeb03dd1648617874890be7f485cdb2e5cddede9e60ed3c5394683",
-      "bytes": 327
+      "sha256": "a26b16f9efdedf782f1ab9bc534972ebac6b763edbe92e17ad73e8002aba6618",
+      "bytes": 441
     },
     "check.json": {
-      "sha256": "f68e5c99a49c7e45e6b21c741fef9a573bdc000cb10703e01b2611ad42862682",
-      "bytes": 55779
+      "sha256": "cd60eccbf2a1b12a1b7660ea119221927dbbd102f684d53b4d357237a3b4a573",
+      "bytes": 119484
     },
     "dashboard.html": {
-      "sha256": "653141f6e854f0a7466a8e1c745db6360d472a5c9c2adacb6eeaaab4af917afc",
-      "bytes": 1986734
+      "sha256": "32b97061a159563ff447ec2b220d137f338e28c8e4e3e9d19afaa7b17fabdf16",
+      "bytes": 2051313
     },
     "demos/react/assets/index-BnyFbHiB.css": {
       "sha256": "7e0d75ed108b003d2b65d5d5ec7e10fd627dec8a22fb4c233aaaf72c52986e5b",
@@ -864,97 +1639,101 @@
       "sha256": "1150f123209f96c52a8de1830efaf1a957e177dcb4a804ac18501f991995e896",
       "bytes": 35
     },
+    "native-lint.json": {
+      "sha256": "14c78d89e243e0ff05ac2d18932d76541150e82e7f7e82d907aa04a2e2f68596",
+      "bytes": 42291
+    },
     "report-native.html": {
-      "sha256": "971fe34b8a7bc9b7330dbaaed62a3d21788f3c4bd8cebdc5a5892b924ff59c0c",
-      "bytes": 731593
+      "sha256": "4e1c5fc1e6087944fec52c974a410bf6e8a5c10cd5fdb6ccde09f9381e9b78ec",
+      "bytes": 793061
     },
     "report.html": {
-      "sha256": "d66a9a2884f03e9a7f97fd6ac50155054fd5b50e33d387f82dffd7c20c660949",
-      "bytes": 733864
+      "sha256": "f3e7147a8e7f032c9861c40993c5b768fdd6d7ea400d16b33919fb31bdd80a7b",
+      "bytes": 795326
     },
-    "site/assets/define-chart-fVxudfj_.js": {
-      "sha256": "bbcd7006ccd2178d792efdb165386f2a6bfc9f4c95d38145fcb96d9d4d0fa4a8",
+    "site/assets/define-chart-BvITjXKB.js": {
+      "sha256": "2fec1b2613725731b337878aaa9601af8d15ab60632e587cc52f92b7fc8dc16d",
       "bytes": 5155
     },
-    "site/assets/energy-Dvwi-HMT.js": {
-      "sha256": "6c10a7601e398459a96f5f5568a55abd89c41389d184a36e8f611b30798f0cfe",
+    "site/assets/energy-CqNe4U9R.js": {
+      "sha256": "1969ca3842ab39c41a831e32647404ac224a10cc835b672f3e3c8904cb431944",
       "bytes": 5926
     },
-    "site/assets/helios-BKhdrK9T.js": {
-      "sha256": "00b93548e6bfe9e3db9dba144bdd03a4741d7ee1d22ab591b30132047ff7c135",
+    "site/assets/helios-4MSSMflp.js": {
+      "sha256": "58a7b0779c8dfa7b7ddb699422d163b5e91dae14ef7b72edd021d96093133c76",
       "bytes": 3717
     },
-    "site/assets/integration-map-D5yQ7piX.js": {
-      "sha256": "a0ec34603fdce74728e2c27fe83332394054ed2372c614a4a90e2788a2c71868",
+    "site/assets/integration-map-CNaSyEUM.js": {
+      "sha256": "d99ca6ab4eaac98f1ab755866a2383dedb6a2636275a0cc189faf921758a045a",
       "bytes": 628
     },
-    "site/assets/layout-XbOK7dXn.js": {
-      "sha256": "09e29c07a65df1136f80946fe7908104a992eb662f33a8b798b7654cf5dcc276",
-      "bytes": 105915
+    "site/assets/layout-TNecloXG.js": {
+      "sha256": "6a428069850e1a71fc6668052469cab91f5213c94117a108b88cfe70f8bf363b",
+      "bytes": 111179
     },
-    "site/assets/main-CeyT5a_X.js": {
-      "sha256": "4d75365de48105b7d28e0dc59ab301fd1e14210c1a1c478130d1c9a6efa72585",
-      "bytes": 301850
+    "site/assets/main-BbFFqqsY.js": {
+      "sha256": "9dea8e7a3a1e103e5445e2a2904cb50c2ec214ea5511fa3598dc685668b7ae63",
+      "bytes": 322583
     },
-    "site/assets/main-DFZNOANX.css": {
-      "sha256": "c1353e6edab25c1da2e46a702b7a0b3603c1ebaaac2c7d240c0da96a25bd1f3b",
-      "bytes": 69765
+    "site/assets/main-D2MFd96e.css": {
+      "sha256": "0e2b4794483eda27db7b69e63d8a1f0019171971652685c1bb4b0215c487bb8c",
+      "bytes": 89327
     },
-    "site/assets/personal-dashboard-oOaxoHZN.js": {
-      "sha256": "eb61ae3790b58c7bde94aff0cefa0a65c8039c83cb35d8d45370c6fa793a9d70",
+    "site/assets/personal-dashboard-Ch5zlgQ5.js": {
+      "sha256": "b9ec6e888b2735c5aa9bc9ced96d5a1e4904eae3ba29b775924c40a450cf3c08",
       "bytes": 5868
     },
-    "site/assets/prose-Cwu-xqRq.js": {
-      "sha256": "40d5481d8b70ad09ebba269ee695463d5a624098ad00978292555b02a98313b9",
+    "site/assets/prose-C5jmy9Gj.js": {
+      "sha256": "ebf5f465c003541612103d47a62d419ba527b060b07b010b5ec2a7a23f2b987c",
       "bytes": 541
     },
-    "site/assets/sankey-DWTRnXgJ.js": {
-      "sha256": "4b1386dcd218db79eae50e999b9d50a7c59d58bd67d806a9da419264f6bed369",
+    "site/assets/sankey-9VFpPFSD.js": {
+      "sha256": "6ba936516ec228ee0e1efdce66b9e9da6dfb63abc3f96f16936274888087060b",
       "bytes": 10598
     },
-    "site/assets/site-hel-1-CADGQtrR.js": {
-      "sha256": "ece7776e50b209489c3a419af1be5751cb7762d2319f07ac565ff645f1fe8e3d",
+    "site/assets/site-hel-1-Cl60I52F.js": {
+      "sha256": "797bc4176b49ac578bb261fdf8f0e4ba06230e589c0c037cfd2514edd947c2a9",
       "bytes": 3709
     },
-    "site/assets/site-hel-2-xU64Mt9_.js": {
-      "sha256": "626a58c3bccda5bc7c437075d4970f41db6c35a7cdc0f63e562ee3cb08b04ce9",
+    "site/assets/site-hel-2-CDxht9Ca.js": {
+      "sha256": "0850e1245eeedf2b061492f5b39d6261fb0cb732f3e09a6dca5ceb7039577290",
       "bytes": 3700
     },
-    "site/assets/text-CNOXGov1.js": {
-      "sha256": "ffe242926f9432af3d6445761e87eec261ccc088bf9dce1f8003bbe533ee6a68",
-      "bytes": 8902
+    "site/assets/text-BkOWyEd0.js": {
+      "sha256": "4e7fc1f1e26a184f85dcfd138bb0c020108268515e1f40f5a8aead631c79b220",
+      "bytes": 16566
     },
     "site/assets/timeseries-BIgUP13Q.js": {
       "sha256": "c1db65d718981cbb6a5784354e8cd08507665922d863b5b82f8756b8b0044241",
       "bytes": 1394
     },
-    "site/assets/weekly-0phGAwDg.js": {
-      "sha256": "fff3389e69f9d33b934efcb8c2ce1d275c1cb317f41ff3cf5ea0bf76b4afbf78",
+    "site/assets/weekly-B69flcvr.js": {
+      "sha256": "4120f7bb72a3f7cfeec3a957510ccfb37cf8a7a783d161931a92ff133ca06a22",
       "bytes": 10326
     },
-    "site/assets/xy-chart-DP64laLW.js": {
-      "sha256": "24f17ab3ff6b91b7b492a8a4f548956ca70a9c3258ae7e46fc3e10e6f49d9fd4",
-      "bytes": 15527
+    "site/assets/xy-chart-BFD8cGK0.js": {
+      "sha256": "1dd9a0845d3f649bbca4a7d3ae5b4170e8fc0ce69f83f7cc4b11c9f319af1181",
+      "bytes": 18575
     },
     "site/d/energy/index.html": {
-      "sha256": "b3e9e8c1f58739ebe622e0a0dbc8b7785c40d8fdb577d665132f168a23d9902b",
-      "bytes": 9084
+      "sha256": "bcd0b041f56620b756b345965e9499ad11d4bcf0eb95de47e18d70223813412d",
+      "bytes": 9087
     },
     "site/d/helios/index.html": {
-      "sha256": "5351dbadc2eca7ca7c39bdc26d4592670439020ea8eb9b1fa2a388e3ac1236c0",
-      "bytes": 9077
+      "sha256": "5c7fafb699233311af764b8f0bb15dd0a71069c6359f96296c054ba9ea18dcef",
+      "bytes": 9080
     },
     "site/d/site-hel-1/index.html": {
-      "sha256": "e23e0ae73d3d79c633d746f83d147936888191fc05488490509b0b4c3c1c4d21",
-      "bytes": 9089
-    },
-    "site/d/site-hel-2/index.html": {
-      "sha256": "596fed900a1cda3766299bbd75683e7c1ab93dfbd1e44b5cb9fa3e6c008a527f",
+      "sha256": "aebace79a441a116d96a39f39e03b513951d765917ad97dba8e6bdebfc3f1faf",
       "bytes": 9092
     },
+    "site/d/site-hel-2/index.html": {
+      "sha256": "c36057aa053f4c962b78993ef8ad8121ca1a4f9bac39be3c4190f9e1b962a8f6",
+      "bytes": 9095
+    },
     "site/d/weekly/index.html": {
-      "sha256": "5074c843d8d2dcec0e515dfa16aed02f372e404856427bf4a38d80f38695362f",
-      "bytes": 11348
+      "sha256": "6c0dba0e0bb1372b39767545fd3037739334a0e7509dd988314a7462597cf9b6",
+      "bytes": 11342
     },
     "site/data/d/energy/actions.json": {
       "sha256": "e31bd39531d93de4147e1fed823eb52be539e7c366af2199484ef2334aeef9eb",
@@ -1012,6 +1791,34 @@
       "sha256": "e6048cd13aebdb4de9f9fe424f4a0e0a6db6fe930ff73c6dd7b96a0d53f712c4",
       "bytes": 20462
     },
+    "site/data/d/energy/metric_charger_availability.json": {
+      "sha256": "91e26f5b801a3ecdc0e27f9b0fa8db20c00d1fce0a15c636e0372be5ba4effbd",
+      "bytes": 511
+    },
+    "site/data/d/energy/metric_cost_twd.json": {
+      "sha256": "2e4371d18b33980817a5a5517256e21084ce2446c3013342e02ec5eef19db6ed",
+      "bytes": 485
+    },
+    "site/data/d/energy/metric_grid_co2_tonnes.json": {
+      "sha256": "88ee63f5d4297548ba7ff71e265e0529592982627767617c9627f4056d8be129",
+      "bytes": 508
+    },
+    "site/data/d/energy/metric_load_kwh.json": {
+      "sha256": "94489bfea60b9768ab26039155c5e7435497366a7fe85837937b6169b2d009fa",
+      "bytes": 487
+    },
+    "site/data/d/energy/metric_modeled_savings_twd.json": {
+      "sha256": "e72afe25212465b47e04c7939e8ad3418be5dfa744bff354dd8498489c729ae2",
+      "bytes": 521
+    },
+    "site/data/d/energy/metric_pue.json": {
+      "sha256": "bb61d726520abd481669fe120f4b3408d1598fd8185f4d6c47f1ed70d7d4fc07",
+      "bytes": 473
+    },
+    "site/data/d/energy/metric_solar_kwh.json": {
+      "sha256": "7995300fec1088265a6431a4c579dfb983fc267760176a2b30c64115b43dc28b",
+      "bytes": 490
+    },
     "site/data/d/energy/profile.json": {
       "sha256": "94ef5c55c31d943b7690db382b16d779899559f5c6fe940296ef596416c1af78",
       "bytes": 271639
@@ -1019,6 +1826,98 @@
     "site/data/d/energy/pue_sites.json": {
       "sha256": "aacbf4c044bf6d1a77e5895a85797842c1373cbb10d30dad8c218ec9fadf25be",
       "bytes": 8423
+    },
+    "site/data/d/energy/q_cadence.json": {
+      "sha256": "1d8f36bc4002b94869a101da27d22d8ed979ae26534cced83f26c7e923f0a6fc",
+      "bytes": 465
+    },
+    "site/data/d/energy/q_charge_exclusivity.json": {
+      "sha256": "f314ba1def6d332a8a199c962491015b7b5a9b7373e827f9c5c412ae7d6ea508",
+      "bytes": 476
+    },
+    "site/data/d/energy/q_emissions_ledger.json": {
+      "sha256": "5d25ae05b213007689bc34201c8e591e596815245f491059113d16f3386a78c2",
+      "bytes": 493
+    },
+    "site/data/d/energy/q_end_use_balance.json": {
+      "sha256": "b1f17fc4cba55de2e77cce8f271d2091b660387eeb542f882a2d2c30ebdd35bc",
+      "bytes": 496
+    },
+    "site/data/d/energy/q_energy_balance.json": {
+      "sha256": "e3ddc2e6ec9ec9c1620655c3d64e60dc76e5d55e5cc2aff174eebe19a5f4959e",
+      "bytes": 495
+    },
+    "site/data/d/energy/q_events_present.json": {
+      "sha256": "bb72c54ca31663bf9adeae7849d1bb82bde7dcee113485ec978eae24fefcb8dd",
+      "bytes": 472
+    },
+    "site/data/d/energy/q_grid_exclusivity.json": {
+      "sha256": "9eab762bb6b6d8e087877c9d1e05b9568560f4f9e6898af827e423483036b4f2",
+      "bytes": 474
+    },
+    "site/data/d/energy/q_meter_row_count.json": {
+      "sha256": "d0483f0478f3413c742984bd898d048427149f9a50c1712c79b078e52cb13a9b",
+      "bytes": 473
+    },
+    "site/data/d/energy/q_night_solar.json": {
+      "sha256": "a4ffc4ff999d15621b17a84c72f47b81f0fb1b65d2e9d125f29eff4269b79601",
+      "bytes": 469
+    },
+    "site/data/d/energy/q_null_observations.json": {
+      "sha256": "83138469a4abb81d4ceaa8b2384b75cd75c7b0eb4ab86adfc3d5d6ae82594ec7",
+      "bytes": 475
+    },
+    "site/data/d/energy/q_pue_ports.json": {
+      "sha256": "8f907edfa6b6cb570918821dd1f09738ff25bc223cf77c6ec0558b3e8841f3d3",
+      "bytes": 467
+    },
+    "site/data/d/energy/q_scope_assets.json": {
+      "sha256": "8a7ac7f7ecb75d6664761543bea554958aa68a2a22a76d26c614c2440c251b72",
+      "bytes": 470
+    },
+    "site/data/d/energy/q_scope_events.json": {
+      "sha256": "23bd6a1e323c53d971fe8abeceb0bc57a54b6a0d6d67287ab9dd36d24a9999d1",
+      "bytes": 470
+    },
+    "site/data/d/energy/q_scope_meters.json": {
+      "sha256": "0087e1c913ddbd53ea61907ffacb1d3c72d59cba1046b35e1b0ccdc35f903f77",
+      "bytes": 470
+    },
+    "site/data/d/energy/q_scope_sites.json": {
+      "sha256": "526c0920bcdac9422afa28a5b585b6eebb20c4dfaaaf4497f5191ac47cd3ac67",
+      "bytes": 469
+    },
+    "site/data/d/energy/q_scope_telemetry.json": {
+      "sha256": "162e0329374e6725e34dec6e7281022a602c92cb36dd0aab79e80b50a700ac16",
+      "bytes": 473
+    },
+    "site/data/d/energy/q_soc_bounds.json": {
+      "sha256": "a26cc4837800717ced3715c72ffdda2b0785cd95f63dc68af45817ba4533b7d0",
+      "bytes": 468
+    },
+    "site/data/d/energy/q_soc_continuity.json": {
+      "sha256": "1c8fc297839e7a4c9d5bd040d0a42c28646a006673061d6f8742c061c6cabdd3",
+      "bytes": 472
+    },
+    "site/data/d/energy/q_soc_transition.json": {
+      "sha256": "406c73e7f9ed5fdd812b18527a881757bf9bae42b4acd47b8c5d0e037f376138",
+      "bytes": 491
+    },
+    "site/data/d/energy/q_tariff_ledger.json": {
+      "sha256": "8c18e4c59f106edb00f9acdf86293be741872562b833504c0c69c0723e17dc1e",
+      "bytes": 494
+    },
+    "site/data/d/energy/q_telemetry_balance.json": {
+      "sha256": "92df5274ee34c907efc7249635fdbfc56f8bb6b73025dc21214045e7e486f672",
+      "bytes": 498
+    },
+    "site/data/d/energy/q_telemetry_row_count.json": {
+      "sha256": "0371a75830d61932da094e638fed46c9f0354668ad19e5dfeba9023cc0c60fe3",
+      "bytes": 477
+    },
+    "site/data/d/energy/q_unique_intervals.json": {
+      "sha256": "619daf0028f7e488e082aad35fb9f5ed36479973dae23a708e9b875fafc03eb2",
+      "bytes": 474
     },
     "site/data/d/energy/ranking.json": {
       "sha256": "153ad0ccc90a4cbc37c1d798a76654560319eb2247a9dea243d4341507e286f7",
@@ -1124,6 +2023,34 @@
       "sha256": "e6048cd13aebdb4de9f9fe424f4a0e0a6db6fe930ff73c6dd7b96a0d53f712c4",
       "bytes": 20462
     },
+    "site/data/d/helios/metric_charger_availability.json": {
+      "sha256": "91e26f5b801a3ecdc0e27f9b0fa8db20c00d1fce0a15c636e0372be5ba4effbd",
+      "bytes": 511
+    },
+    "site/data/d/helios/metric_cost_twd.json": {
+      "sha256": "2e4371d18b33980817a5a5517256e21084ce2446c3013342e02ec5eef19db6ed",
+      "bytes": 485
+    },
+    "site/data/d/helios/metric_grid_co2_tonnes.json": {
+      "sha256": "88ee63f5d4297548ba7ff71e265e0529592982627767617c9627f4056d8be129",
+      "bytes": 508
+    },
+    "site/data/d/helios/metric_load_kwh.json": {
+      "sha256": "94489bfea60b9768ab26039155c5e7435497366a7fe85837937b6169b2d009fa",
+      "bytes": 487
+    },
+    "site/data/d/helios/metric_modeled_savings_twd.json": {
+      "sha256": "e72afe25212465b47e04c7939e8ad3418be5dfa744bff354dd8498489c729ae2",
+      "bytes": 521
+    },
+    "site/data/d/helios/metric_pue.json": {
+      "sha256": "bb61d726520abd481669fe120f4b3408d1598fd8185f4d6c47f1ed70d7d4fc07",
+      "bytes": 473
+    },
+    "site/data/d/helios/metric_solar_kwh.json": {
+      "sha256": "7995300fec1088265a6431a4c579dfb983fc267760176a2b30c64115b43dc28b",
+      "bytes": 490
+    },
     "site/data/d/helios/profile.json": {
       "sha256": "94ef5c55c31d943b7690db382b16d779899559f5c6fe940296ef596416c1af78",
       "bytes": 271639
@@ -1131,6 +2058,98 @@
     "site/data/d/helios/pue_sites.json": {
       "sha256": "aacbf4c044bf6d1a77e5895a85797842c1373cbb10d30dad8c218ec9fadf25be",
       "bytes": 8423
+    },
+    "site/data/d/helios/q_cadence.json": {
+      "sha256": "1d8f36bc4002b94869a101da27d22d8ed979ae26534cced83f26c7e923f0a6fc",
+      "bytes": 465
+    },
+    "site/data/d/helios/q_charge_exclusivity.json": {
+      "sha256": "f314ba1def6d332a8a199c962491015b7b5a9b7373e827f9c5c412ae7d6ea508",
+      "bytes": 476
+    },
+    "site/data/d/helios/q_emissions_ledger.json": {
+      "sha256": "5d25ae05b213007689bc34201c8e591e596815245f491059113d16f3386a78c2",
+      "bytes": 493
+    },
+    "site/data/d/helios/q_end_use_balance.json": {
+      "sha256": "b1f17fc4cba55de2e77cce8f271d2091b660387eeb542f882a2d2c30ebdd35bc",
+      "bytes": 496
+    },
+    "site/data/d/helios/q_energy_balance.json": {
+      "sha256": "e3ddc2e6ec9ec9c1620655c3d64e60dc76e5d55e5cc2aff174eebe19a5f4959e",
+      "bytes": 495
+    },
+    "site/data/d/helios/q_events_present.json": {
+      "sha256": "bb72c54ca31663bf9adeae7849d1bb82bde7dcee113485ec978eae24fefcb8dd",
+      "bytes": 472
+    },
+    "site/data/d/helios/q_grid_exclusivity.json": {
+      "sha256": "9eab762bb6b6d8e087877c9d1e05b9568560f4f9e6898af827e423483036b4f2",
+      "bytes": 474
+    },
+    "site/data/d/helios/q_meter_row_count.json": {
+      "sha256": "d0483f0478f3413c742984bd898d048427149f9a50c1712c79b078e52cb13a9b",
+      "bytes": 473
+    },
+    "site/data/d/helios/q_night_solar.json": {
+      "sha256": "a4ffc4ff999d15621b17a84c72f47b81f0fb1b65d2e9d125f29eff4269b79601",
+      "bytes": 469
+    },
+    "site/data/d/helios/q_null_observations.json": {
+      "sha256": "83138469a4abb81d4ceaa8b2384b75cd75c7b0eb4ab86adfc3d5d6ae82594ec7",
+      "bytes": 475
+    },
+    "site/data/d/helios/q_pue_ports.json": {
+      "sha256": "8f907edfa6b6cb570918821dd1f09738ff25bc223cf77c6ec0558b3e8841f3d3",
+      "bytes": 467
+    },
+    "site/data/d/helios/q_scope_assets.json": {
+      "sha256": "8a7ac7f7ecb75d6664761543bea554958aa68a2a22a76d26c614c2440c251b72",
+      "bytes": 470
+    },
+    "site/data/d/helios/q_scope_events.json": {
+      "sha256": "23bd6a1e323c53d971fe8abeceb0bc57a54b6a0d6d67287ab9dd36d24a9999d1",
+      "bytes": 470
+    },
+    "site/data/d/helios/q_scope_meters.json": {
+      "sha256": "0087e1c913ddbd53ea61907ffacb1d3c72d59cba1046b35e1b0ccdc35f903f77",
+      "bytes": 470
+    },
+    "site/data/d/helios/q_scope_sites.json": {
+      "sha256": "526c0920bcdac9422afa28a5b585b6eebb20c4dfaaaf4497f5191ac47cd3ac67",
+      "bytes": 469
+    },
+    "site/data/d/helios/q_scope_telemetry.json": {
+      "sha256": "162e0329374e6725e34dec6e7281022a602c92cb36dd0aab79e80b50a700ac16",
+      "bytes": 473
+    },
+    "site/data/d/helios/q_soc_bounds.json": {
+      "sha256": "a26cc4837800717ced3715c72ffdda2b0785cd95f63dc68af45817ba4533b7d0",
+      "bytes": 468
+    },
+    "site/data/d/helios/q_soc_continuity.json": {
+      "sha256": "1c8fc297839e7a4c9d5bd040d0a42c28646a006673061d6f8742c061c6cabdd3",
+      "bytes": 472
+    },
+    "site/data/d/helios/q_soc_transition.json": {
+      "sha256": "406c73e7f9ed5fdd812b18527a881757bf9bae42b4acd47b8c5d0e037f376138",
+      "bytes": 491
+    },
+    "site/data/d/helios/q_tariff_ledger.json": {
+      "sha256": "8c18e4c59f106edb00f9acdf86293be741872562b833504c0c69c0723e17dc1e",
+      "bytes": 494
+    },
+    "site/data/d/helios/q_telemetry_balance.json": {
+      "sha256": "92df5274ee34c907efc7249635fdbfc56f8bb6b73025dc21214045e7e486f672",
+      "bytes": 498
+    },
+    "site/data/d/helios/q_telemetry_row_count.json": {
+      "sha256": "0371a75830d61932da094e638fed46c9f0354668ad19e5dfeba9023cc0c60fe3",
+      "bytes": 477
+    },
+    "site/data/d/helios/q_unique_intervals.json": {
+      "sha256": "619daf0028f7e488e082aad35fb9f5ed36479973dae23a708e9b875fafc03eb2",
+      "bytes": 474
     },
     "site/data/d/helios/ranking.json": {
       "sha256": "153ad0ccc90a4cbc37c1d798a76654560319eb2247a9dea243d4341507e286f7",
@@ -1236,6 +2255,34 @@
       "sha256": "3997ccae140274fe5150f5eea251e4fc7f8570f255fe3eabac57f585e3545f72",
       "bytes": 6669
     },
+    "site/data/d/site-hel-1/metric_charger_availability.json": {
+      "sha256": "91e26f5b801a3ecdc0e27f9b0fa8db20c00d1fce0a15c636e0372be5ba4effbd",
+      "bytes": 511
+    },
+    "site/data/d/site-hel-1/metric_cost_twd.json": {
+      "sha256": "2e4371d18b33980817a5a5517256e21084ce2446c3013342e02ec5eef19db6ed",
+      "bytes": 485
+    },
+    "site/data/d/site-hel-1/metric_grid_co2_tonnes.json": {
+      "sha256": "88ee63f5d4297548ba7ff71e265e0529592982627767617c9627f4056d8be129",
+      "bytes": 508
+    },
+    "site/data/d/site-hel-1/metric_load_kwh.json": {
+      "sha256": "94489bfea60b9768ab26039155c5e7435497366a7fe85837937b6169b2d009fa",
+      "bytes": 487
+    },
+    "site/data/d/site-hel-1/metric_modeled_savings_twd.json": {
+      "sha256": "e72afe25212465b47e04c7939e8ad3418be5dfa744bff354dd8498489c729ae2",
+      "bytes": 521
+    },
+    "site/data/d/site-hel-1/metric_pue.json": {
+      "sha256": "bb61d726520abd481669fe120f4b3408d1598fd8185f4d6c47f1ed70d7d4fc07",
+      "bytes": 473
+    },
+    "site/data/d/site-hel-1/metric_solar_kwh.json": {
+      "sha256": "7995300fec1088265a6431a4c579dfb983fc267760176a2b30c64115b43dc28b",
+      "bytes": 490
+    },
     "site/data/d/site-hel-1/profile.json": {
       "sha256": "2ea53994de5641a2f3652330c80ded321eac0bae07c1eb3ffb254d743a65c387",
       "bytes": 88761
@@ -1243,6 +2290,98 @@
     "site/data/d/site-hel-1/pue_sites.json": {
       "sha256": "cdcaabbe558559b9cdc0f8eb150f803cdb879c3f2f9bae2d1546811d5d225f19",
       "bytes": 2557
+    },
+    "site/data/d/site-hel-1/q_cadence.json": {
+      "sha256": "1d8f36bc4002b94869a101da27d22d8ed979ae26534cced83f26c7e923f0a6fc",
+      "bytes": 465
+    },
+    "site/data/d/site-hel-1/q_charge_exclusivity.json": {
+      "sha256": "f314ba1def6d332a8a199c962491015b7b5a9b7373e827f9c5c412ae7d6ea508",
+      "bytes": 476
+    },
+    "site/data/d/site-hel-1/q_emissions_ledger.json": {
+      "sha256": "5d25ae05b213007689bc34201c8e591e596815245f491059113d16f3386a78c2",
+      "bytes": 493
+    },
+    "site/data/d/site-hel-1/q_end_use_balance.json": {
+      "sha256": "b1f17fc4cba55de2e77cce8f271d2091b660387eeb542f882a2d2c30ebdd35bc",
+      "bytes": 496
+    },
+    "site/data/d/site-hel-1/q_energy_balance.json": {
+      "sha256": "e3ddc2e6ec9ec9c1620655c3d64e60dc76e5d55e5cc2aff174eebe19a5f4959e",
+      "bytes": 495
+    },
+    "site/data/d/site-hel-1/q_events_present.json": {
+      "sha256": "bb72c54ca31663bf9adeae7849d1bb82bde7dcee113485ec978eae24fefcb8dd",
+      "bytes": 472
+    },
+    "site/data/d/site-hel-1/q_grid_exclusivity.json": {
+      "sha256": "9eab762bb6b6d8e087877c9d1e05b9568560f4f9e6898af827e423483036b4f2",
+      "bytes": 474
+    },
+    "site/data/d/site-hel-1/q_meter_row_count.json": {
+      "sha256": "d0483f0478f3413c742984bd898d048427149f9a50c1712c79b078e52cb13a9b",
+      "bytes": 473
+    },
+    "site/data/d/site-hel-1/q_night_solar.json": {
+      "sha256": "a4ffc4ff999d15621b17a84c72f47b81f0fb1b65d2e9d125f29eff4269b79601",
+      "bytes": 469
+    },
+    "site/data/d/site-hel-1/q_null_observations.json": {
+      "sha256": "83138469a4abb81d4ceaa8b2384b75cd75c7b0eb4ab86adfc3d5d6ae82594ec7",
+      "bytes": 475
+    },
+    "site/data/d/site-hel-1/q_pue_ports.json": {
+      "sha256": "8f907edfa6b6cb570918821dd1f09738ff25bc223cf77c6ec0558b3e8841f3d3",
+      "bytes": 467
+    },
+    "site/data/d/site-hel-1/q_scope_assets.json": {
+      "sha256": "8a7ac7f7ecb75d6664761543bea554958aa68a2a22a76d26c614c2440c251b72",
+      "bytes": 470
+    },
+    "site/data/d/site-hel-1/q_scope_events.json": {
+      "sha256": "23bd6a1e323c53d971fe8abeceb0bc57a54b6a0d6d67287ab9dd36d24a9999d1",
+      "bytes": 470
+    },
+    "site/data/d/site-hel-1/q_scope_meters.json": {
+      "sha256": "0087e1c913ddbd53ea61907ffacb1d3c72d59cba1046b35e1b0ccdc35f903f77",
+      "bytes": 470
+    },
+    "site/data/d/site-hel-1/q_scope_sites.json": {
+      "sha256": "526c0920bcdac9422afa28a5b585b6eebb20c4dfaaaf4497f5191ac47cd3ac67",
+      "bytes": 469
+    },
+    "site/data/d/site-hel-1/q_scope_telemetry.json": {
+      "sha256": "162e0329374e6725e34dec6e7281022a602c92cb36dd0aab79e80b50a700ac16",
+      "bytes": 473
+    },
+    "site/data/d/site-hel-1/q_soc_bounds.json": {
+      "sha256": "a26cc4837800717ced3715c72ffdda2b0785cd95f63dc68af45817ba4533b7d0",
+      "bytes": 468
+    },
+    "site/data/d/site-hel-1/q_soc_continuity.json": {
+      "sha256": "1c8fc297839e7a4c9d5bd040d0a42c28646a006673061d6f8742c061c6cabdd3",
+      "bytes": 472
+    },
+    "site/data/d/site-hel-1/q_soc_transition.json": {
+      "sha256": "406c73e7f9ed5fdd812b18527a881757bf9bae42b4acd47b8c5d0e037f376138",
+      "bytes": 491
+    },
+    "site/data/d/site-hel-1/q_tariff_ledger.json": {
+      "sha256": "8c18e4c59f106edb00f9acdf86293be741872562b833504c0c69c0723e17dc1e",
+      "bytes": 494
+    },
+    "site/data/d/site-hel-1/q_telemetry_balance.json": {
+      "sha256": "92df5274ee34c907efc7249635fdbfc56f8bb6b73025dc21214045e7e486f672",
+      "bytes": 498
+    },
+    "site/data/d/site-hel-1/q_telemetry_row_count.json": {
+      "sha256": "0371a75830d61932da094e638fed46c9f0354668ad19e5dfeba9023cc0c60fe3",
+      "bytes": 477
+    },
+    "site/data/d/site-hel-1/q_unique_intervals.json": {
+      "sha256": "619daf0028f7e488e082aad35fb9f5ed36479973dae23a708e9b875fafc03eb2",
+      "bytes": 474
     },
     "site/data/d/site-hel-1/ranking.json": {
       "sha256": "1d4efcb528ee99829d30349814a3a89adc0cc0fe1d23641aa9d12650802945e6",
@@ -1348,6 +2487,34 @@
       "sha256": "a66e4fe98d64b9a3d7caa8fc9a775334c102a97abb92d904a61320baf6324598",
       "bytes": 6713
     },
+    "site/data/d/site-hel-2/metric_charger_availability.json": {
+      "sha256": "91e26f5b801a3ecdc0e27f9b0fa8db20c00d1fce0a15c636e0372be5ba4effbd",
+      "bytes": 511
+    },
+    "site/data/d/site-hel-2/metric_cost_twd.json": {
+      "sha256": "2e4371d18b33980817a5a5517256e21084ce2446c3013342e02ec5eef19db6ed",
+      "bytes": 485
+    },
+    "site/data/d/site-hel-2/metric_grid_co2_tonnes.json": {
+      "sha256": "88ee63f5d4297548ba7ff71e265e0529592982627767617c9627f4056d8be129",
+      "bytes": 508
+    },
+    "site/data/d/site-hel-2/metric_load_kwh.json": {
+      "sha256": "94489bfea60b9768ab26039155c5e7435497366a7fe85837937b6169b2d009fa",
+      "bytes": 487
+    },
+    "site/data/d/site-hel-2/metric_modeled_savings_twd.json": {
+      "sha256": "e72afe25212465b47e04c7939e8ad3418be5dfa744bff354dd8498489c729ae2",
+      "bytes": 521
+    },
+    "site/data/d/site-hel-2/metric_pue.json": {
+      "sha256": "bb61d726520abd481669fe120f4b3408d1598fd8185f4d6c47f1ed70d7d4fc07",
+      "bytes": 473
+    },
+    "site/data/d/site-hel-2/metric_solar_kwh.json": {
+      "sha256": "7995300fec1088265a6431a4c579dfb983fc267760176a2b30c64115b43dc28b",
+      "bytes": 490
+    },
     "site/data/d/site-hel-2/profile.json": {
       "sha256": "9682b50ddcd57ad503c5dd62af63fdf2b71db42135e732556d5f7e7251815ea2",
       "bytes": 90534
@@ -1355,6 +2522,98 @@
     "site/data/d/site-hel-2/pue_sites.json": {
       "sha256": "e9e60dec4860eb736cdfc25186f05d5e3ef513359112ba1a9dc7a45d1f9572f3",
       "bytes": 2557
+    },
+    "site/data/d/site-hel-2/q_cadence.json": {
+      "sha256": "1d8f36bc4002b94869a101da27d22d8ed979ae26534cced83f26c7e923f0a6fc",
+      "bytes": 465
+    },
+    "site/data/d/site-hel-2/q_charge_exclusivity.json": {
+      "sha256": "f314ba1def6d332a8a199c962491015b7b5a9b7373e827f9c5c412ae7d6ea508",
+      "bytes": 476
+    },
+    "site/data/d/site-hel-2/q_emissions_ledger.json": {
+      "sha256": "5d25ae05b213007689bc34201c8e591e596815245f491059113d16f3386a78c2",
+      "bytes": 493
+    },
+    "site/data/d/site-hel-2/q_end_use_balance.json": {
+      "sha256": "b1f17fc4cba55de2e77cce8f271d2091b660387eeb542f882a2d2c30ebdd35bc",
+      "bytes": 496
+    },
+    "site/data/d/site-hel-2/q_energy_balance.json": {
+      "sha256": "e3ddc2e6ec9ec9c1620655c3d64e60dc76e5d55e5cc2aff174eebe19a5f4959e",
+      "bytes": 495
+    },
+    "site/data/d/site-hel-2/q_events_present.json": {
+      "sha256": "bb72c54ca31663bf9adeae7849d1bb82bde7dcee113485ec978eae24fefcb8dd",
+      "bytes": 472
+    },
+    "site/data/d/site-hel-2/q_grid_exclusivity.json": {
+      "sha256": "9eab762bb6b6d8e087877c9d1e05b9568560f4f9e6898af827e423483036b4f2",
+      "bytes": 474
+    },
+    "site/data/d/site-hel-2/q_meter_row_count.json": {
+      "sha256": "d0483f0478f3413c742984bd898d048427149f9a50c1712c79b078e52cb13a9b",
+      "bytes": 473
+    },
+    "site/data/d/site-hel-2/q_night_solar.json": {
+      "sha256": "a4ffc4ff999d15621b17a84c72f47b81f0fb1b65d2e9d125f29eff4269b79601",
+      "bytes": 469
+    },
+    "site/data/d/site-hel-2/q_null_observations.json": {
+      "sha256": "83138469a4abb81d4ceaa8b2384b75cd75c7b0eb4ab86adfc3d5d6ae82594ec7",
+      "bytes": 475
+    },
+    "site/data/d/site-hel-2/q_pue_ports.json": {
+      "sha256": "8f907edfa6b6cb570918821dd1f09738ff25bc223cf77c6ec0558b3e8841f3d3",
+      "bytes": 467
+    },
+    "site/data/d/site-hel-2/q_scope_assets.json": {
+      "sha256": "8a7ac7f7ecb75d6664761543bea554958aa68a2a22a76d26c614c2440c251b72",
+      "bytes": 470
+    },
+    "site/data/d/site-hel-2/q_scope_events.json": {
+      "sha256": "23bd6a1e323c53d971fe8abeceb0bc57a54b6a0d6d67287ab9dd36d24a9999d1",
+      "bytes": 470
+    },
+    "site/data/d/site-hel-2/q_scope_meters.json": {
+      "sha256": "0087e1c913ddbd53ea61907ffacb1d3c72d59cba1046b35e1b0ccdc35f903f77",
+      "bytes": 470
+    },
+    "site/data/d/site-hel-2/q_scope_sites.json": {
+      "sha256": "526c0920bcdac9422afa28a5b585b6eebb20c4dfaaaf4497f5191ac47cd3ac67",
+      "bytes": 469
+    },
+    "site/data/d/site-hel-2/q_scope_telemetry.json": {
+      "sha256": "162e0329374e6725e34dec6e7281022a602c92cb36dd0aab79e80b50a700ac16",
+      "bytes": 473
+    },
+    "site/data/d/site-hel-2/q_soc_bounds.json": {
+      "sha256": "a26cc4837800717ced3715c72ffdda2b0785cd95f63dc68af45817ba4533b7d0",
+      "bytes": 468
+    },
+    "site/data/d/site-hel-2/q_soc_continuity.json": {
+      "sha256": "1c8fc297839e7a4c9d5bd040d0a42c28646a006673061d6f8742c061c6cabdd3",
+      "bytes": 472
+    },
+    "site/data/d/site-hel-2/q_soc_transition.json": {
+      "sha256": "406c73e7f9ed5fdd812b18527a881757bf9bae42b4acd47b8c5d0e037f376138",
+      "bytes": 491
+    },
+    "site/data/d/site-hel-2/q_tariff_ledger.json": {
+      "sha256": "8c18e4c59f106edb00f9acdf86293be741872562b833504c0c69c0723e17dc1e",
+      "bytes": 494
+    },
+    "site/data/d/site-hel-2/q_telemetry_balance.json": {
+      "sha256": "92df5274ee34c907efc7249635fdbfc56f8bb6b73025dc21214045e7e486f672",
+      "bytes": 498
+    },
+    "site/data/d/site-hel-2/q_telemetry_row_count.json": {
+      "sha256": "0371a75830d61932da094e638fed46c9f0354668ad19e5dfeba9023cc0c60fe3",
+      "bytes": 477
+    },
+    "site/data/d/site-hel-2/q_unique_intervals.json": {
+      "sha256": "619daf0028f7e488e082aad35fb9f5ed36479973dae23a708e9b875fafc03eb2",
+      "bytes": 474
     },
     "site/data/d/site-hel-2/ranking.json": {
       "sha256": "494372fcf3acec64d122aa48b5f376959fbc26c3d996fea4d03728c7b7334de4",
@@ -1460,6 +2719,34 @@
       "sha256": "51076e0f8a88c7c4d5d82b82d69c65b9d44343230013be3ce14dd0acf36b8060",
       "bytes": 2227
     },
+    "site/data/d/weekly/metric_charger_availability.json": {
+      "sha256": "91e26f5b801a3ecdc0e27f9b0fa8db20c00d1fce0a15c636e0372be5ba4effbd",
+      "bytes": 511
+    },
+    "site/data/d/weekly/metric_cost_twd.json": {
+      "sha256": "2e4371d18b33980817a5a5517256e21084ce2446c3013342e02ec5eef19db6ed",
+      "bytes": 485
+    },
+    "site/data/d/weekly/metric_grid_co2_tonnes.json": {
+      "sha256": "88ee63f5d4297548ba7ff71e265e0529592982627767617c9627f4056d8be129",
+      "bytes": 508
+    },
+    "site/data/d/weekly/metric_load_kwh.json": {
+      "sha256": "94489bfea60b9768ab26039155c5e7435497366a7fe85837937b6169b2d009fa",
+      "bytes": 487
+    },
+    "site/data/d/weekly/metric_modeled_savings_twd.json": {
+      "sha256": "e72afe25212465b47e04c7939e8ad3418be5dfa744bff354dd8498489c729ae2",
+      "bytes": 521
+    },
+    "site/data/d/weekly/metric_pue.json": {
+      "sha256": "bb61d726520abd481669fe120f4b3408d1598fd8185f4d6c47f1ed70d7d4fc07",
+      "bytes": 473
+    },
+    "site/data/d/weekly/metric_solar_kwh.json": {
+      "sha256": "7995300fec1088265a6431a4c579dfb983fc267760176a2b30c64115b43dc28b",
+      "bytes": 490
+    },
     "site/data/d/weekly/profile.json": {
       "sha256": "16614f56b7a361b0c766b84441ebc149ab4f3a00c652625cc8c200262ecc106c",
       "bytes": 30677
@@ -1467,6 +2754,98 @@
     "site/data/d/weekly/pue_sites.json": {
       "sha256": "9b79e95c0195ba5c834994875c0ecb10045cb2df8911e10b4cd9a6fa19f8b793",
       "bytes": 968
+    },
+    "site/data/d/weekly/q_cadence.json": {
+      "sha256": "1d8f36bc4002b94869a101da27d22d8ed979ae26534cced83f26c7e923f0a6fc",
+      "bytes": 465
+    },
+    "site/data/d/weekly/q_charge_exclusivity.json": {
+      "sha256": "f314ba1def6d332a8a199c962491015b7b5a9b7373e827f9c5c412ae7d6ea508",
+      "bytes": 476
+    },
+    "site/data/d/weekly/q_emissions_ledger.json": {
+      "sha256": "5d25ae05b213007689bc34201c8e591e596815245f491059113d16f3386a78c2",
+      "bytes": 493
+    },
+    "site/data/d/weekly/q_end_use_balance.json": {
+      "sha256": "b1f17fc4cba55de2e77cce8f271d2091b660387eeb542f882a2d2c30ebdd35bc",
+      "bytes": 496
+    },
+    "site/data/d/weekly/q_energy_balance.json": {
+      "sha256": "e3ddc2e6ec9ec9c1620655c3d64e60dc76e5d55e5cc2aff174eebe19a5f4959e",
+      "bytes": 495
+    },
+    "site/data/d/weekly/q_events_present.json": {
+      "sha256": "bb72c54ca31663bf9adeae7849d1bb82bde7dcee113485ec978eae24fefcb8dd",
+      "bytes": 472
+    },
+    "site/data/d/weekly/q_grid_exclusivity.json": {
+      "sha256": "9eab762bb6b6d8e087877c9d1e05b9568560f4f9e6898af827e423483036b4f2",
+      "bytes": 474
+    },
+    "site/data/d/weekly/q_meter_row_count.json": {
+      "sha256": "d0483f0478f3413c742984bd898d048427149f9a50c1712c79b078e52cb13a9b",
+      "bytes": 473
+    },
+    "site/data/d/weekly/q_night_solar.json": {
+      "sha256": "a4ffc4ff999d15621b17a84c72f47b81f0fb1b65d2e9d125f29eff4269b79601",
+      "bytes": 469
+    },
+    "site/data/d/weekly/q_null_observations.json": {
+      "sha256": "83138469a4abb81d4ceaa8b2384b75cd75c7b0eb4ab86adfc3d5d6ae82594ec7",
+      "bytes": 475
+    },
+    "site/data/d/weekly/q_pue_ports.json": {
+      "sha256": "8f907edfa6b6cb570918821dd1f09738ff25bc223cf77c6ec0558b3e8841f3d3",
+      "bytes": 467
+    },
+    "site/data/d/weekly/q_scope_assets.json": {
+      "sha256": "8a7ac7f7ecb75d6664761543bea554958aa68a2a22a76d26c614c2440c251b72",
+      "bytes": 470
+    },
+    "site/data/d/weekly/q_scope_events.json": {
+      "sha256": "23bd6a1e323c53d971fe8abeceb0bc57a54b6a0d6d67287ab9dd36d24a9999d1",
+      "bytes": 470
+    },
+    "site/data/d/weekly/q_scope_meters.json": {
+      "sha256": "0087e1c913ddbd53ea61907ffacb1d3c72d59cba1046b35e1b0ccdc35f903f77",
+      "bytes": 470
+    },
+    "site/data/d/weekly/q_scope_sites.json": {
+      "sha256": "526c0920bcdac9422afa28a5b585b6eebb20c4dfaaaf4497f5191ac47cd3ac67",
+      "bytes": 469
+    },
+    "site/data/d/weekly/q_scope_telemetry.json": {
+      "sha256": "162e0329374e6725e34dec6e7281022a602c92cb36dd0aab79e80b50a700ac16",
+      "bytes": 473
+    },
+    "site/data/d/weekly/q_soc_bounds.json": {
+      "sha256": "a26cc4837800717ced3715c72ffdda2b0785cd95f63dc68af45817ba4533b7d0",
+      "bytes": 468
+    },
+    "site/data/d/weekly/q_soc_continuity.json": {
+      "sha256": "1c8fc297839e7a4c9d5bd040d0a42c28646a006673061d6f8742c061c6cabdd3",
+      "bytes": 472
+    },
+    "site/data/d/weekly/q_soc_transition.json": {
+      "sha256": "406c73e7f9ed5fdd812b18527a881757bf9bae42b4acd47b8c5d0e037f376138",
+      "bytes": 491
+    },
+    "site/data/d/weekly/q_tariff_ledger.json": {
+      "sha256": "8c18e4c59f106edb00f9acdf86293be741872562b833504c0c69c0723e17dc1e",
+      "bytes": 494
+    },
+    "site/data/d/weekly/q_telemetry_balance.json": {
+      "sha256": "92df5274ee34c907efc7249635fdbfc56f8bb6b73025dc21214045e7e486f672",
+      "bytes": 498
+    },
+    "site/data/d/weekly/q_telemetry_row_count.json": {
+      "sha256": "0371a75830d61932da094e638fed46c9f0354668ad19e5dfeba9023cc0c60fe3",
+      "bytes": 477
+    },
+    "site/data/d/weekly/q_unique_intervals.json": {
+      "sha256": "619daf0028f7e488e082aad35fb9f5ed36479973dae23a708e9b875fafc03eb2",
+      "bytes": 474
     },
     "site/data/d/weekly/ranking.json": {
       "sha256": "aa0cff582ca45eb58c6503e7e3b1e6f4cc37ff44bb758bebdf627384084c167c",
@@ -1517,8 +2896,8 @@
       "bytes": 697
     },
     "site/data/dashboards.json": {
-      "sha256": "9159528ba34b36523f2a6e97b89b0b318e2540edc3c0105e11a16051a10704d5",
-      "bytes": 1673
+      "sha256": "18d375969a17a7a99f5a0b3524646a4e96676fea99f9316f665490867d6820ff",
+      "bytes": 2329
     },
     "site/data/themes/atled.json": {
       "sha256": "5f7a50feb20e51b1310ca3d077ab0d50d104c8a1daec99b46ee805ea47b7e70f",
@@ -1533,8 +2912,8 @@
       "bytes": 278
     },
     "site/index.html": {
-      "sha256": "f2d92d9d295b31cbeb5dde6ba1784501385ba8b22eeff15cfc2a1a74ea262e9a",
-      "bytes": 9023
+      "sha256": "6ff608694e3a9c5de8fa378d41cdcaab797033f6613c6bc274be3581e7ce8266",
+      "bytes": 9026
     }
   }
 }

@@ -1,0 +1,29 @@
+{
+  "reads": [],
+  "results": {
+    "[]": {
+      "params": {},
+      "query": {
+        "file": "",
+        "line": 0,
+        "name": "metric_pue",
+        "source": "energy",
+        "sql": ""
+      },
+      "result": {
+        "columns": [
+          {
+            "name": "pue",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "pue": 1.2401479742636878
+          }
+        ],
+        "truncated": false
+      }
+    }
+  }
+}
