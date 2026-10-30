@@ -20,5 +20,5 @@ export default {
       storage_baseline_cost_twd - energy_cost_twd AS storage_savings_twd
       FROM meters`
   ]}},
-  defaultSource: 'energy', maxRows: 5000, timeoutMs: 30000, theme: 'atled',
+  timeZone: 'Asia/Taipei', defaultSource: 'energy', maxRows: 5000, timeoutMs: 30000, theme: 'atled',
 } satisfies OpenDashboardConfig

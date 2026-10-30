@@ -5,3 +5,4 @@ maxRuns: 100
 maxAttempts: 3
 lint:
   allowLiterals: []
+timeZone: Asia/Taipei

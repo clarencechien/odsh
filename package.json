@@ -30,7 +30,9 @@
   "dependencies": {
     "@babel/parser": "8.0.4",
     "@duckdb/node-api": "1.5.6-r.1",
-    "@open-dashboard/core": "0.7.0",
+    "@open-dashboard/cli": "0.12.0",
+    "@open-dashboard/core": "0.12.0",
+    "@open-dashboard/mcp": "0.12.0",
     "minio": "8.0.6",
     "yaml": "2.8.1"
   },
@@ -40,5 +42,8 @@
     "react-dom": "19.2.8",
     "typescript": "5.9.3",
     "vue": "3.5.22"
+  },
+  "openDashboard": {
+    "version": "0.12.0"
   }
 }

@@ -74,7 +74,7 @@ export async function build(id) {
     const proc=spawnSync(process.execPath,[path.join(ROOT,'node_modules/@open-dashboard/core/bin.js'),'build',...config.dashboards,'--root',workspace,'--out',path.join(stage,'site'),'--max-runs',String(config.maxRuns)],{encoding:'utf8',timeout:240000,maxBuffer:10*1024*1024});
     fs.writeFileSync(path.join(stage,'build.log'),proc.stdout+'\n'+proc.stderr);
     if(proc.status!==0)throw Error(`Renderer build failed: ${proc.stderr}`);
-    const data={};for(const file of filesUnder(path.join(stage,'site/data'))){if(!file.endsWith('.json'))continue;const normalized=canonical(readJSON(file));writeJSON(file,normalized);data[path.relative(path.join(stage,'site/data'),file)]=normalized;}
+    const data={};for(const file of filesUnder(path.join(stage,'site/data'))){if(!file.endsWith('.json'))continue;const normalized=canonical(readJSON(file));writeJSON(file,normalized);const key=path.relative(path.join(stage,'site/data'),file);data[key]=key==='dashboards.json'?Object.fromEntries(Object.entries(normalized).filter(([k])=>k!=='builtAt')):normalized;}
     const trimmed=[...proc.stdout.matchAll(/defaults kept for ([^\n]+)/g)].flatMap(m=>m[1].split(', '));
     const inspection=inspectSnapshot(data,{maxRuns:config.maxRuns,trimmed});
     if(inspection.warnings.length)console.warn('WARNING:',JSON.stringify(inspection.warnings));
@@ -98,7 +98,7 @@ export async function build(id) {
     const generation=readJSON(path.join(dir,'generation.json'));
     await buildDemos(stage);
     const artifacts={};for(const f of filesUnder(stage))artifacts[path.relative(stage,f)]={sha256:fileHash(f),bytes:fs.statSync(f).size};
-    writeJSON(path.join(stage,'manifest.json'),{schema_version:1,run_id:id,company:'ATLED Engergy',synthetic:true,scope:generation.scope,tenant:generation.tenant,template:{commit:git.stdout.trim()||null,sha256:hash(stableJSON(templateFiles)),files:templateFiles},open_dashboard:'0.7.0',built_at:new Date().toISOString(),inputs,catalog:readJSON(path.join(workspace,'catalog.json')),queries:inspection.queries,warnings:inspection.warnings,data_hash:hash(stableJSON(data)),check:'ok',quality:'ok',artifacts});
+    writeJSON(path.join(stage,'manifest.json'),{schema_version:1,run_id:id,company:'ATLED Engergy',synthetic:true,scope:generation.scope,tenant:generation.tenant,template:{commit:git.stdout.trim()||null,sha256:hash(stableJSON(templateFiles)),files:templateFiles},open_dashboard:readJSON(path.join(ROOT,'package.json')).openDashboard.version,built_at:new Date().toISOString(),inputs,catalog:readJSON(path.join(workspace,'catalog.json')),queries:inspection.queries,warnings:inspection.warnings,data_hash:hash(stableJSON(data)),check:'ok',quality:'ok',artifacts});
     const final=path.join(dir,'build'), backup=path.join(dir,'.build-previous');
     fs.rmSync(backup,{recursive:true,force:true});if(fs.existsSync(final))fs.renameSync(final,backup);
     try{fs.renameSync(stage,final);}catch(e){if(fs.existsSync(backup))fs.renameSync(backup,final);throw e;}
