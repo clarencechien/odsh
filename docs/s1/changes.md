@@ -28,3 +28,10 @@
 - CLI 支援 `--pack`；`live` 委派唯讀原生 serve，`dev` 啟用原生 MCP，靜態 run 索引仍用受限的 reader server。
 - 原本硬寫在 Rill exporter 的指標改為 pack 檔案；無價值的預彙總 drafts 在這次拆分時一起移除，W7 補跨層一致性驗證。
 - 驗證：四 run data_hash 與 W1 完全相同（`w3-evidence.json`）；T19 禁字／直接 import 測試通過。
+
+## W4 — 第二場景 o11y
+
+- 新增獨立 pack：120,960 筆、三服務、十四天的可重現請求情境，RCA 頁可篩服務；資料契約與來源標記跟著產物走。
+- `generate <id> --pack o11y --input <file.parquet>` 可匯入符合欄位的實際 Parquet，保留原檔 bytes 與來源 checksum；本次未取得真實資料，只驗證合成場景。
+- 新增 pack 時 `src/` 修改行數為 0，檔案雜湊亦相同。build / verify / native all-params check 通過；六項瀏覽器／交付檢查通過（`w4-evidence.json`）。
+- 此環境 Chromium 的 `file://` 導航仍被管理政策阻擋；測試改用關網 setContent，實測服務篩選、手機與零外連。嚴格「直接開檔」驗收仍列缺口。

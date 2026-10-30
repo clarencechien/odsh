@@ -1,0 +1,18 @@
+name: o11y
+inputs: [http_requests.parquet]
+dashboards: [rca]
+report: rca
+default_dashboard: rca
+brand: o11y
+ingest: ingest/generate.mjs
+lint: { allowLiterals: [5xx] }
+rill: rill/metrics.yaml
+manifest: { company: Service Reliability Lab, synthetic: true }
+release:
+  bucket_prefix: odsh
+  internal_scope: o11y
+  scopes: {}
+demo:
+  suffix: -s1
+  runs:
+    - {prefix: o11y, period: 2026-10, days: 14, seed: 73}
