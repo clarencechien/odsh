@@ -1,0 +1,27 @@
+name: energy
+inputs: [meters.parquet, sites.parquet, telemetry.parquet, assets.parquet, events.parquet]
+dashboards: [energy, weekly]
+report: weekly
+default_dashboard: energy
+brand: energy
+ingest: ingest/generate.mjs
+lint: { allowLiterals: [] }
+hooks:
+  layouts: hooks/layouts.mjs
+  delivery: hooks/demos.mjs
+rill: rill/metrics.yaml
+manifest: { company: "ATLED Engergy", synthetic: true }
+release:
+  bucket_prefix: atled
+  internal_scope: internal
+  scopes:
+    Atlas Semiconductor: atlas
+    Meridian Logistics: meridian
+    Helios Cloud: helios
+demo:
+  suffix: -s1-final
+  runs:
+    - {prefix: demo, period: 2026-q3}
+    - {prefix: atlas, period: 2026-q3, tenant: Atlas Semiconductor}
+    - {prefix: meridian, period: 2026-q3, tenant: Meridian Logistics}
+    - {prefix: helios, period: 2026-q3, tenant: Helios Cloud}

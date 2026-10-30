@@ -7,30 +7,37 @@
     "node": ">=22.18"
   },
   "scripts": {
-    "generate": "node src/cli.mjs generate demo-2026-q3-v4",
-    "build": "node src/cli.mjs build demo-2026-q3-v4",
-    "check": "node src/cli.mjs check demo-2026-q3-v4",
-    "dev": "node src/cli.mjs dev demo-2026-q3-v4",
+    "generate": "node src/cli.mjs generate demo-2026-q3-s1-final",
+    "build": "node src/cli.mjs build demo-2026-q3-s1-final",
+    "check": "node src/cli.mjs check demo-2026-q3-s1-final",
+    "dev": "node src/cli.mjs dev demo-2026-q3-s1-final",
     "serve": "node src/cli.mjs serve",
     "test": "node --test tests/*.test.mjs",
-    "test:e2e": "ATLED_RUN_SUFFIX=-v4 node tests/e2e.mjs",
-    "export:rill": "node src/cli.mjs export-rill demo-2026-q3-v4",
+    "test:e2e": "node tests/e2e.mjs",
+    "export:rill": "node src/cli.mjs export-rill demo-2026-q3-s1-final",
     "snapreport": "node src/cli.mjs",
     "demo": "node scripts/demo.mjs",
     "typecheck": "tsc --noEmit",
     "silo:start": "node scripts/silo-dev.mjs",
-    "test:services": "ATLED_RUN_SUFFIX=-v4 node tests/services.mjs",
+    "test:services": "node tests/services.mjs",
     "pages:build": "node scripts/build-pages.mjs",
     "pages:publish": "node scripts/publish-pages.mjs",
     "test:pages": "node tests/pages.mjs",
     "test:snapshots": "node tests/snapshots.mjs",
     "test:themes": "node tests/themes.mjs",
-    "test:personalization": "node tests/personalization.mjs"
+    "test:personalization": "node tests/personalization.mjs",
+    "test:o11y": "node tests/o11y.mjs",
+    "test:consistency": "node tests/consistency.mjs",
+    "test:runtime": "node tests/runtime.mjs",
+    "options": "node td/options.mjs",
+    "test:reproducibility": "node tests/reproducibility.mjs"
   },
   "dependencies": {
     "@babel/parser": "8.0.4",
     "@duckdb/node-api": "1.5.6-r.1",
-    "@open-dashboard/core": "0.7.0",
+    "@open-dashboard/cli": "0.12.0",
+    "@open-dashboard/core": "0.12.0",
+    "@open-dashboard/mcp": "0.12.0",
     "minio": "8.0.6",
     "yaml": "2.8.1"
   },
@@ -40,5 +47,8 @@
     "react-dom": "19.2.8",
     "typescript": "5.9.3",
     "vue": "3.5.22"
+  },
+  "openDashboard": {
+    "version": "0.12.0"
   }
 }

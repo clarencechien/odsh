@@ -1,10 +1,10 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import { lintSource,boundedValidation } from '../src/lint.mjs';
+import { lintSource } from '../src/lint-prose.mjs';
 import { canonical,hash,stableJSON,runPath } from '../src/common.mjs';
-import { inspectSnapshot,normalizeHtml } from '../src/build.mjs';
+import { inspectSnapshot,normalizeHtml } from '../src/run.mjs';
 import { queryMetadata } from '../src/export-rill.mjs';
-import { layoutSource } from '../src/layouts.mjs';
-import { CUSTOMERS } from '../src/customers.mjs';
+import { layoutSource } from '../packs/energy/hooks/layouts.mjs';
+import { CUSTOMERS } from '../packs/energy/hooks/customers.mjs';
 import { readClickHouse } from '../adapters/clickhouse.mjs';
 const prose=text=>`const C=()=> <Prose query="q" text=${JSON.stringify(text)}/>;`;
 test('valid SQL-backed prose and format',()=>assert.deepEqual(lintSource(prose('用電 {{energy:integer}}，可用率 {{availability:percent}}'),{q:['energy','availability']}),[]));
@@ -16,8 +16,6 @@ test('Text import aliases are checked',()=>assert.ok(lintSource('import {Text as
 test('normalization drops timing only, preserves result order and values',()=>{assert.equal(hash(stableJSON({rows:[{n:4}],ranAt:'a',elapsedMs:8})),hash(stableJSON({elapsedMs:1,ranAt:'b',rows:[{n:4}]})));assert.notEqual(hash(stableJSON({rows:[1,2]})),hash(stableJSON({rows:[2,1]})));assert.deepEqual(canonical({builtAt:'kept'}),{builtAt:'kept'});});
 test('embedded normalization keeps malicious HTML data inert',()=>{const {html,data}=normalizeHtml('<script>window.__ODD_DATA__={"x":"\\u003c/script>hello","ranAt":"today"}</script>');assert.equal(data.x,'</script>hello');assert.ok(html.includes('\\u003c/script>'));assert.ok(!html.includes('ranAt'));});
 test('trimmed filters warn; query errors and truncated data fail',()=>{const run={result:{rows:[{x:1}],truncated:false}};assert.equal(inspectSnapshot({q:{results:{one:run}}},{trimmed:['q']}).warnings[0].code,'trimmed-filter');assert.throws(()=>inspectSnapshot({q:{results:{one:{error:'broken'}}}}));assert.throws(()=>inspectSnapshot({q:{results:{one:{result:{rows:[],truncated:true}}}}}));});
-test('bounded repair stops at three attempts and retains failure history',async()=>{let n=0;const result=await boundedValidation(async()=>({ok:false,n:++n}),async()=>true);assert.equal(n,3);assert.equal(result.attempts.length,3);assert.equal(result.ok,false);});
-test('bounded repair stops early on success or no change',async()=>{let n=0;assert.equal((await boundedValidation(async()=>({ok:++n===2}),async()=>true)).attempts.length,2);assert.equal((await boundedValidation(async()=>({ok:false}),async()=>false)).attempts.length,1);});
 test('run identifiers cannot escape run root',()=>{for(const id of ['../x','x/y','','.','a?b'])assert.throws(()=>runPath(id));});
 test('SQL metric contract extracts semantic comments',()=>assert.deepEqual(queryMetadata('-- name: cost\n-- description: Bill\n-- metric: TWD, integer\nSELECT 1 AS n;'),[{name:'cost',description:'Bill',metric:'TWD, integer'}]));
 test('customer layouts are distinct and site without storage has no storage panel',()=>{const [a,m,h]=Object.values(CUSTOMERS).map(c=>layoutSource(c).source);assert.match(a,/契約容量裕度/);assert.match(m,/充電埠可用率/);assert.match(h,/冷卻及非 IT/);const s=layoutSource(CUSTOMERS.ATL,{site_id:'ATL-2',site_name:'test',domains:'building,grid,solar',solution:'test'}).source;assert.ok(!s.includes('STORAGE /'));assert.ok(!s.includes('充電埠可用率'));});

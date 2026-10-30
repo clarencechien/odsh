@@ -1,0 +1,117 @@
+[
+  {
+    "legacy": "meter row count",
+    "query": "q_meter_row_count",
+    "tolerance": 0
+  },
+  {
+    "legacy": "telemetry row count",
+    "query": "q_telemetry_row_count",
+    "tolerance": 0
+  },
+  {
+    "legacy": "unique interval keys",
+    "query": "q_unique_intervals",
+    "tolerance": 0
+  },
+  {
+    "legacy": "energy balance kW",
+    "query": "q_energy_balance",
+    "tolerance": 1e-05
+  },
+  {
+    "legacy": "end use balance",
+    "query": "q_end_use_balance",
+    "tolerance": 1e-05
+  },
+  {
+    "legacy": "battery SOC transition",
+    "query": "q_soc_transition",
+    "tolerance": 1e-05
+  },
+  {
+    "legacy": "SOC continuity",
+    "query": "q_soc_continuity",
+    "tolerance": 1e-05
+  },
+  {
+    "legacy": "SOC bounds",
+    "query": "q_soc_bounds",
+    "tolerance": 0
+  },
+  {
+    "legacy": "no simultaneous charge/discharge",
+    "query": "q_charge_exclusivity",
+    "tolerance": 0
+  },
+  {
+    "legacy": "no simultaneous import/export",
+    "query": "q_grid_exclusivity",
+    "tolerance": 0
+  },
+  {
+    "legacy": "tariff ledger",
+    "query": "q_tariff_ledger",
+    "tolerance": 1e-05
+  },
+  {
+    "legacy": "emissions ledger",
+    "query": "q_emissions_ledger",
+    "tolerance": 1e-05
+  },
+  {
+    "legacy": "valid PUE and ports",
+    "query": "q_pue_ports",
+    "tolerance": 0
+  },
+  {
+    "legacy": "regular interval cadence",
+    "query": "q_cadence",
+    "tolerance": 0
+  },
+  {
+    "legacy": "night solar",
+    "query": "q_night_solar",
+    "tolerance": 0
+  },
+  {
+    "legacy": "telemetry reconciles with meters",
+    "query": "q_telemetry_balance",
+    "tolerance": 1e-05
+  },
+  {
+    "legacy": "declared events present",
+    "query": "q_events_present",
+    "tolerance": 0
+  },
+  {
+    "legacy": "no null meter observations",
+    "query": "q_null_observations",
+    "tolerance": 0
+  },
+  {
+    "legacy": "tenant isolation meters",
+    "query": "q_scope_meters",
+    "tolerance": 0
+  },
+  {
+    "legacy": "tenant isolation sites",
+    "query": "q_scope_sites",
+    "tolerance": 0
+  },
+  {
+    "legacy": "tenant isolation assets",
+    "query": "q_scope_assets",
+    "tolerance": 0
+  },
+  {
+    "legacy": "tenant isolation telemetry",
+    "query": "q_scope_telemetry",
+    "tolerance": 0
+  },
+  {
+    "legacy": "tenant isolation events",
+    "query": "q_scope_events",
+    "tolerance": 0
+  }
+]

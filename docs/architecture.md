@@ -1,45 +1,50 @@
-# Architecture and delivery boundaries
+# Architecture — S1, open-dashboard 0.12.0
 
 ```mermaid
 flowchart LR
-  Generator[Seeded site/asset simulation] --> P[Scoped immutable Parquet]
-  CH[Future ClickHouse ingestion] -. same contract .-> P
-  P --> Duck[DuckDB semantic views]
-  Templates[Native TSX + SQL + customer layouts] --> Check[Renderer check + narrative lint]
-  Duck --> Check
-  Check --> OD[open-dashboard 0.7.0]
-  OD --> Site[Static site + single HTML]
-  Site --> Manifest[Normalized data hash + artifact manifest]
-  Manifest --> Silo[PGSTY Silo / private customer buckets]
-  Silo --> Host[Customer host / iframe]
-  P --> Rill[Rill source + reviewed metrics]
+  Pack[Domain pack: inputs / SQL / TSX / hooks / metrics] --> Workspace[Generated workspace]
+  Input[Immutable Parquet + provenance] --> Workspace
+  Workspace --> Check[Native CLI check all params + lint]
+  Prose[Small Prose-template lint] --> Check
+  Check --> Build[Native CLI build]
+  Workspace --> Export[Export-only private adapter]
+  Build --> Brand[Brand files + host artifacts]
+  Export --> Brand
+  Brand --> Run[Checksums / data hash / frozen run]
+  Run --> Delivery[Static hosting / existing Silo release]
+  Input --> Metrics[Reviewed metrics expressions]
+  Metrics --> T18[Scalar snapshot consistency]
+  Run --> T18
+  Metrics --> TD[Stable TD options]
+  Workspace --> Catalog[Native charts CLI]
+  Catalog --> TD
+  Workspace --> Runtime[Native dev + MCP / read-only serve]
 ```
 
-The build shell uses open-dashboard's CLI and public `Workspace/loadConfig/exportHtml` boundary. The v4 personal-layout wrapper composes public React components (`Dashboard`, `Section`, `Filters`, `Row`) from the package; it is a custom reader extension, not the native editor. No renderer fork or private component imports are used. Prose is an official `defineChart` extension and uses escaped React text, including database values.
+`src/` and `td/` are domain-neutral, guarded by T19. Packs own domain data, semantics, charts, branding and optional generation hooks. Adding `packs/o11y` required zero core changes in W4; hashes captured in `docs/s1/w4-evidence.json` prove that boundary. `charts/prose` is the shared `defineChart` extension.
 
-Build is staged and checked before replacing the prior build. Input/template fingerprints prevent semantic mutation of an already built run. File hashes cover complete bytes; `data_hash` covers all normalized `site/data` JSON, retaining row order and dropping only `ranAt` and `elapsedMs`. Site/single query payloads must match. Wall-clock HTML build timestamps are intentionally outside `data_hash`; byte-identical full HTML is not promised.
+The public integration surface is CLI, MCP, config, component props, query headers, static build output and documented host embedding. `/__odd/api/*` is not an integration contract. `upstream.mjs` centralizes the only production private import: three export-only symbols required by 0.12. This is an explicit exception and a strict S1 gap, not a public API claim.
 
-A default 92-day dataset contains 6 × 92 × 96 = 52,992 site intervals and 25 installed subsystem meters × 92 × 96 = 220,800 telemetry rows. The same seeded draws are used when selecting an individual tenant; scoped inputs are a reproducible subset of the portfolio. Each run stores five Parquet tables plus generation lineage.
+`dev --mcp` provides authoring; `serve` executes live read-only queries; built snapshots require only static HTTP or single HTML. MCP is an authoring tool surface, not authentication or customer authorization. The energy personal-layout wrapper remains a pack-specific reader extension; it does not duplicate a shared runtime editor.
 
-Snapshot filter enumeration has a per-query cap of 100. The largest supported site × window product is 7 × 3 = 21 (including null defaults). The developer live API does not have this snapshot product restriction. Any build-time query error or row truncation is fatal; filter trimming is a manifest warning, and demo builds must have none.
+## Frozen-run contract
 
-Customer data is sliced before materialization and never relies on browser filters as authorization. Published report assets do not contain Parquet, SQL, runtime credentials or source workspaces. Silo uses private buckets. The development reader gateway is bound to loopback and can only read a specified tenant bucket and committed release artifacts. Production authentication, policies, backup/restore and TLS termination belong to the deploying host.
+Each run stores `input/`, `generation.json`, generated `workspace/`, `build/site/`, `build/{dashboard,report,report-native}.html`, checks, native lint and `manifest.json`. `rill/`, `consistency.json` and `validation/` are separate derived outputs. No separate custom `quality.json` runner remains.
 
-Rill's reviewed metrics calculate ratios from interval-level numerator/denominator sums. Query-derived draft metrics use MAX on already aggregated values as a deliberately conservative placeholder and are excluded with `.rillignore`; they are not valid automatic additive rollups. ClickHouse is an extension point with a tested HTTP adapter boundary, not a completed production connector or promised cross-dialect compatibility.
+Build uses a lock and staging directory; successful output atomically replaces the previous build. Existing input/template hash changes are rejected. Workspace preparation is generated and may replace local edits: promote authored changes to pack source and create a new run; do not use a frozen run as a long-lived draft database.
 
-Energy Loop uses native chart widgets for operational exploration (Sankey, heatmap, gauge, bullet, scatter, timeline, line, bar and treemap). The fixed weekly report intentionally has no filters: SQL-derived prose, a cost waterfall, site comparison dumbbells and an action table. IntegrationMap is a second official defineChart extension describing mocked protocol seams. All six sites inherit only widgets supported by their installed domains.
+`data_hash` covers canonical site JSON, retaining row order and freshness. Only runtime `ranAt`/`elapsedMs` and the top-level dashboard index `builtAt` are excluded from that hash. The written `dashboards.json` preserves `builtAt` for the host; complete byte hashes cover artifacts. Full HTML byte equality is not promised. DuckDB uses threads=1 and config timeZone=Asia/Taipei. Manifest includes source commit and dirty flag; template SHA is authoritative for generated source bytes.
 
+Native `check --all-params` and `lint --json` run before build, with the pack's maxRuns (default 100). Query errors, row truncation and check sweep trimming are blocking. All declared shared energy quality queries are referenced by a validation-only dashboard, because upstream does not execute unused shared queries. That dashboard is omitted from delivered output. `quality.passed` counts default-query expectation results; it is not a count of all sweep combinations.
 
-## Reader, developer runtime, and proposed authoring service
+## Semantics and delivery
 
-The static reader needs only HTTP hosting (or a single-file HTML reader), with finite precomputed filters. Its personal theme/layout preferences live in localStorage. The native developer server runs Node and DuckDB, queries live local inputs, and saves editor changes into the workspace TSX. `prepareWorkspace()` can overwrite these changes: persist them to the authoritative source templates before rebuilding.
+Energy creates six sites × 92 days × 96 intervals = 52,992 rows, plus 220,800 subsystem telemetry rows and dimensions/events. Three customer runs physically contain only the respective two sites. Browser filters are not authorization. o11y produces 120,960 requests over 14 days, three services, 40 endpoints and an injected checkout incident; synthetic provenance remains visible.
 
-A future customer Studio/chat product is a third mode, requiring an application API, identity and tenant scope, draft revisions, a job runner and durable storage. Studio and chat should edit the same constrained draft specification; a compiler generates existing TSX/SQL, then validation, preview and release reuse this repo. Developer tools can edit reviewed source drafts more freely. These services are **proposed, not implemented**. Native assistant tools read existing panels and set filters; they are not a source authoring service.
+Reviewed metrics are pack files. T18 evaluates expressions against raw immutable Parquet, parameterizes derived macros, and compares independently authored `-- metric: view.measure` queries in the delivered snapshot. Scope is full input, one-row references, all measures covered; arbitrary filter scopes remain future work. Numeric tolerance is relative 1e-9; NULL must match NULL. Rill export checks input/template hashes and copies sources plus reviewed metrics, without draft aggregates.
 
-The runtime split permits a Vercel/Cloudflare frontend with a separate Node build worker. Cloudflare Workers cannot directly load this project's native DuckDB addon; transient function filesystems are not durable source repositories. Rill is an optional exploration service; exports alone do not provide a hosted Rill runtime.
+TD letters persist across additions/removals; retired letters are not reused. Slots exceeding 26 values or exhausting their historical letters require narrowing. Native widgets are additionally grouped by native chart group. `options_version` hashes content, metric definition and chart catalog, with no wall clock. `thresholds.lock.json` remains empty; this does not implement S2 compiler or S3 threshold calibration.
 
-See [handoff](../handoff.md) for source ownership and recipes, [agent/Studio design](agent-studio-roadmap.md) for proposed tools/API contracts, and [the illustrated guide](https://clarencechien.github.io/odsh/guide.html) for the product explanation.
+Brand CSS is isolated. imitator report.css is original, byte-hashed and inline; mappings use `overrides.css`. Native DOM selectors are a presentation compatibility seam and require browser regression on upgrades. Energy Loop preserves #0087dc, teal and lime, with explicit light/dark contrast.
 
-## Provenance and current boundaries
-
-`manifest.template.commit` records checkout HEAD and may omit uncommitted template changes; the template file fingerprints represent the actual build inputs. Complete Git/dirty lineage remains a gap. Regex-based SQL scope rewriting supports trusted templates, not arbitrary customer SQL authorization. Customer-generated content needs semantic metric validation and service-enforced tenant scoping before exposing authoring tools.
+Existing Silo release isolation/checksums and static Pages staging remain. S1 does not deploy them or add auth/multitenant runtime. Published artifacts exclude Parquet, SQL, credentials and source workspaces. Rill runtime and ClickHouse production connection are not provisioned by this change.

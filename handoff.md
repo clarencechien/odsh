@@ -1,197 +1,130 @@
-# ATLED Engergy / odsh — 下一位 agent 接手指南
+# odsh 接手文件 — S1 / open-dashboard 0.12.0
 
-更新：2026-10-08（Asia/Taipei）。這是**目前 repo 的接手文件**，不是原始 `handoff-snapreport-v3.md` 的複製品。原始 handoff 目標、使用者追加需求、已交付能力與未完成事項在下方分開記錄。
+更新：2026-10-30。來源基準：`clarencechien/dataxpr/docs/odsh-handoff-s1.md`（2026-10-30）；本 repo 升版前基準 `cd16508`。工作分支 `codex/odsh-s1`。這份文件描述目前程式，不代表 GitHub Pages 已更新。
 
-## 1. 先掌握目前產品與使用者意圖
+## 先看結論
 
-- 公司名稱依使用者指定為 **ATLED Engergy**，保留這個拼法。
-- 這是虛構 ToB 能源整合公司的 MVP：智慧樓宇、電網、資料中心、儲能、太陽能、充電樁；**3 個客戶、6 個案場**，不同設備組合與 KPI。不要回到 12 案場。
-- 主色 `#0087dc`，青色與萊姆綠組成 Energy Loop；深／淺模式及列印皆須可讀。曾發生固定白底配深色模式白字的 regression。
-- Dashboard 用於營運探索；Report 是固定週期的決策文件。靜態篩選只切預先計算的查詢結果，不是即時 BI。
-- 所有數據與接口都是合成示範；`BACnet/OCPP/Modbus/Redfish` 卡片並未連接真實設備。
-- 使用者要求用 [PGSTY Silo](https://github.com/pgsty/silo) 取代原 handoff 的 MinIO，這項已實作；Rill / ClickHouse 保留接入可能。
-- v4 新增的「編輯版面」是我們的 React 個人化介面，**不是原生編輯器**。使用者明確覺得不好用。功能測試通過不代表 UX 已被接受；下一輪先比較原生操作，再決定保留／重作。
-- 最新要求：更新文件與科普 HTML，說明 dev agent 產製、customer Studio／chat 產製的可行架構。這些產品路線目前是設計文件，不要宣稱已建置客戶 AI Studio。
+W1–W9 的程式與文件已落地，S1 **尚不能宣稱全部 exit 完成**：嚴格的「私有 import ≤1」仍是 3；o11y 尚無真實資料；受管理 Chromium 禁止 file://。合成資料、兩個 pack、原生 CLI／MCP／唯讀 runtime、品牌、品質、T18、TD 與既有成品回歸均有機器驗證。
 
-## 2. 入口、版本與部署
-
-- 原始碼：<https://github.com/clarencechien/odsh>，發布原始碼至 `main`。
-- 展示站：<https://clarencechien.github.io/odsh/>，由 `gh-pages` 分支 `/` 部署。
-- 科普與路線圖：<https://clarencechien.github.io/odsh/guide.html>；來源 `docs/open-dashboard-guide.html`。
-- 現行 dashboard/report release：`demo-2026-q3-v4`、`atlas-2026-q3-v4`、`meridian-2026-q3-v4`、`helios-2026-q3-v4`。展示頁路徑固定為 `/atlas/` 等，不含 run_id。
-- v4 功能基準 source commit：`9a54f9c`；後續文件 commit 請看 `git log`。不要把文件 commit 當成已重建的 run 模板版本。
-- `runs/`、`node_modules/`、`.runtime/`、`test-results/` 全被忽略：新 clone 不一定有產物，需要重建。原有雲端快照可能保留它們；先檢查，不要假設。
-- 使用現有 checkout，先 `pwd`、`git status --short`，保留別人的修改。不要為了接手額外建立 worktree。
-
-## 3. 最短啟動路徑
-
-Node ≥22.18（已驗證 24.19）、npm；Chromium 用於瀏覽器測試；Docker 只在 Silo demo 需要。
-
-```bash
-npm ci
-npm run demo             # 沒有既有 v4 產物時，產生四個 run / HTML / Rill 匯出
-npm run serve            # 靜態產物預覽，loopback 4173
-npm run dev              # 準備 demo v4 workspace，再啟動原生 dev，loopback 5473
-```
-
-`npm run dev` 會呼叫 `prepareWorkspace()`，重新複製 repo 模板並生成客戶頁。**原生編輯器改的是 `runs/<id>/workspace/` 裡的 TSX，下一次 prepare 可能覆蓋它。** 在 repo 正式來源納入修改以前，不可把這些臨時編輯當作已保存的產品功能。
-
-只想重開既有臨時 workspace、不重置它時：
-
-```bash
-node node_modules/@open-dashboard/core/bin.js dev --root runs/demo-2026-q3-v4/workspace --port 5473
-```
-
-常駐程序與 Docker 不保證隨環境快照恢復；檢查頁面／實際查詢，不只檢查 port。`npm run serve` 不開放來源 Parquet 與 workspace。
-
-## 4. 原始碼地圖：改什麼，去哪裡改
-
-| 工作 | 權威來源／實作 |
-|---|---|
-| 客戶、案場、設備組合與 KPI 偏好 | `src/customers.mjs`；生成器仍假設 ATL/MER/HEL 三家，增加新客戶需一起改 `src/generate.mjs` |
-| 合成資料、事件、季度觀測 | `src/generate.mjs`；`src/quality.mjs` 驗證物理與租戶邊界 |
-| 指標語意 | **先讀** `databases/energy/database.md` |
-| DuckDB views、固定單執行緒 | `open-dashboard.config.ts` |
-| 共用 SQL | `dashboards/energy/queries.sql`；具名 query 與 `description` / `metric` 註解 |
-| 跨客戶 Dashboard | `dashboards/energy/index.tsx` |
-| 客戶／固定案場 Dashboard | **`src/layouts.mjs`** 生成 TSX/SQL；不要只改 run 裡的副本 |
-| 週報 | **`src/report-layout.mjs`** 是生成來源；`dashboards/weekly/index.tsx` 是可見樣板，會被 workspace 生成結果覆蓋 |
-| 週報 SQL | workspace 由共用 energy SQL 固定 `:window='current'`、`:site=NULL` 生成，來源輸入本身已按客戶切片 |
-| 敘事與接口卡 | `charts/prose/`、`charts/integration-map/`，使用官方 `defineChart` |
-| v4 個人版面 | `charts/personal-dashboard/index.tsx`，組合原生公開元件；不適用正式週報 |
-| 主題與後處理 | `themes/`、`theme-overrides/`、`src/presentation.mjs`；頂端主題選單 `reader-controls.js` |
-| run、check、快照、manifest | `src/build.mjs`、`src/lint.mjs`、`src/common.mjs`、`src/cli.mjs` |
-| Silo 發布／gateway | `src/silo.mjs`、`src/release.mjs`、`scripts/silo-dev.mjs` |
-| Rill、ClickHouse seam | `src/export-rill.mjs`、`adapters/` |
-| 公開入口／科普文件打包 | `scripts/build-pages.mjs`、`docs/open-dashboard-guide.html` |
-| 推送 gh-pages | `scripts/publish-pages.mjs`；保留分支歷史，拒絕覆蓋非本專案管理的站點 |
-
-## 5. 新增 dashboard / widget / report 的實際做法
-
-### A. 在現有客戶頁加一個 widget
-
-1. 決定資料粒度、單位、分母、時間與適用設備。未裝機回傳不適用，勿假造零績效。
-2. 在 `dashboards/energy/queries.sql` 加具名 SELECT（有 `-- name:`、`-- description:`、`-- metric:`）；沿用 `:site` / `:window`。寫法要能被 `scopeSQL()` 的 scoping 規則處理。
-3. 在 `src/layouts.mjs` 對應客戶版型加原生元件；以設備能力決定是否顯示。能用現有圖表就不新增 library；自訂圖先用 `defineChart`。
-4. 敘事數字用 `Prose` 的 SQL placeholder；`Text` 只放定義與注意事項。避免讓敘事結論和 SQL 數字各自維護。
-5. 使用新 run 進行下列檢查，再開瀏覽器核對預設、篩選、深淺模式與手機。
-
-### B. 新增一個獨立 dashboard
-
-建立 `dashboards/<new-id>/{queries.sql,index.tsx}`，將 id 加入 `snapreport.yaml` 的 `dashboards`。產物在 `site/d/<new-id>/`。需要放到公開首頁，另更新 `scripts/build-pages.mjs`；`writeLayouts()` 的 catalog 只自動涵蓋生成的客戶／案場頁，不會自動列出你手加的頁面。
-
-若要獨立的個人版面偏好，可引用公開包裝 `charts/personal-dashboard` 並給唯一 id；若要比較原生編輯體驗，用原生 `Dashboard`，避免混入個人化包裝與 localStorage 設定。
-
-### C. 新增或改週報
-
-修改 `src/report-layout.mjs` 與共用具名 SQL。固定週期；結論、模型假設、風險及行動要分開。同步根目錄可見週報樣板，避免下一位 agent 讀到不同版本。
-
-### D. 新 run 的完整驗證路徑
-
-```bash
-node src/cli.mjs generate atlas-next --tenant 'Atlas Semiconductor' --seed 42 --days 92
-node src/cli.mjs check atlas-next
-node src/cli.mjs build atlas-next
-node src/cli.mjs verify atlas-next
-node src/cli.mjs export-rill atlas-next
-```
-
-需重建四家展示產物時：`ATLED_RUN_SUFFIX=-v5 npm run demo`。同一 suffix 後續需一致用於 `pages:build` / `pages:publish`。**部分 npm 測試腳本與 snapshots 測試仍固定 v4**：新 release 需調整 package scripts、測試預設／明確參數、`scripts/package.mjs` 及文件，不能只改環境變數就假設全部測到 v5。
-
-`check/lint/build/dev` 會重建 workspace；目前 CLI `check` 與 `lint` 共用整套 renderer＋敘事檢查。不要在 agent repair callback 每次嘗試間呼叫會覆寫草稿的 prepare；對同一隔離草稿做迴圈，完成後才納入模板。
-
-## 6. run 契約與中間產物
-
-```text
-runs/<run_id>/
-  generation.json       合成來源、seed、scope、期間、案場、事件
-  input/*.parquet       meters / telemetry / sites / assets / events
-  workspace/            這次產製用的 TSX、SQL、config、theme 副本
-  quality.json          物理／資料品質與租戶檢查
-  validation/           單獨執行 check/lint 的輸出
-  failure.json          建置失敗原因；成功建置後清除
-  build/
-    check.json lint.json build.log
-    site/               靜態多頁 + 查詢結果 JSON + JS/CSS
-    dashboard.html      單檔營運快照；有限篩選
-    report.html         固定週期、完整套版週報
-    report-native.html  同報告的原生呈現對照
-    demos/react/ demos/vue/
-    manifest.json       inputs/artifacts SHA-256、rows、scope、模板指紋、data_hash
-  rill/                 複製的 Parquet、sources、metrics、草稿與匯出 manifest
-```
-
-- 已建置 run 的 input/template 指紋不可變；改了就用新 run_id。不得刪除已發布 release 以規避限制。
-- 正規化只去掉 `ranAt`、`elapsedMs`，保留查詢結果／順序；不承諾整份 HTML byte-identical。建置會比較 site 與 single 的查詢 payload。
-- manifest 的 `template.commit` 是建置時 checkout HEAD，未必包含當時未提交的修改；檔案指紋才是實際模板內容證據。精確 Git lineage（含 dirty/repo）是後續待補，不可只憑 commit 宣稱完整重現。
-- build log 與 validation 留在 run；公開 Pages 僅複製 reader artifacts，不公開 input/SQL/workspace/憑證。
-
-## 7. 三種 runtime，不要混稱
-
-| 模式 | 功能 | 持久化 |
+| 工作包 | 狀態 | 實作／證據 |
 |---|---|---|
-| 靜態 reader / Pages | 快照篩選、主題、v4 個人版面 | 個人版面 localStorage；不建新 SQL／widget |
-| 原生 dev server | 查 DuckDB、原生 Edit、熱更新 | Save 改 workspace TSX；不是多租戶正式 authoring server |
-| 未來 Studio/chat 服務 | 登入、草稿、生成、預覽、發布、版本 | 需要應用後端＋DB＋工作佇列＋Node worker＋Silo |
+| W1 升版 | 已驗證 | core/cli/mcp exact 0.12.0；upgrade 無待辦；W1 四 run 重建 hash 相同 |
+| W2 公開面 | 部分／明確例外 | build/check/lint/dev/serve/mcp 走原生 CLI；單檔 export 暫留 3 個私有符號，未達 ≤1 |
+| W3 core + packs | 已驗證 | T19 無領域字與直接 pack import；拆分前後 W1/W3 data_hash 相同 |
+| W4 o11y | 合成版本已驗證 | W4 新 pack 時 src 改動 0 行；120,960 requests，明確 synthetic；待真實 Parquet |
+| W5 expect | 已驗證 | 23 條原品質規則映射；反號注入被原生 check 拒絕 |
+| W6 imitator | 已驗證 | 原樣 22,857 bytes CSS；light/dark、字體、邊框、列印、手機、零外連 |
+| W7 metrics / T18 | 已驗證指定範圍 | energy 7/7、o11y 3/3；公式竄改失敗；只比完整輸入 scalar references |
+| W8 TD | 已驗證 | metrics 改變會更新 options_version；字母穩定；path 40 項需縮小 |
+| W9 文件／回歸 | 已完成 | README、本文件、架構、科普 HTML、roadmap、提案及驗收文件同步 |
 
-`npx` 是執行套件的工具，不是另一個 runtime。Vercel Functions / Cloudflare Workers 不能照搬「常駐 dev server＋永久本機 TSX」；Workers 也不能直接載入本案 native DuckDB `.node` 套件。可把前端／輕 API 放這些平台，建置與 DuckDB 放獨立 Node 容器；或先單一 Node 服務搭持久磁碟驗證原生操作。GitHub Pages 不能跑這些後端工作。
+[逐包修正](docs/s1/changes.md)；[驗收結果](docs/validation.md)。逐包拆成可 review commits。GitHub API 存取受限，因此未自動建立逐包 PR，亦未送上游 PR。
 
-## 8. agent 友善 ≠ 已有客戶生成產品
+## S1 exit 表
 
-已確認 0.7.0 CLI 有 `schema/query/charts/check/render/build`，含 JSON 輸出；TSX/SQL 是可版本控管的輸入。可選 `mcp` / `dev --mcp` 需要 **額外的 `@open-dashboard/mcp`**，本 repo 尚未安裝、未驗證；不要直接宣稱 MCP 可用。
+| Exit | 結果 | 邊界 |
+|---|---|---|
+| T19 pack 可攜性 | ✓ | 原始 W4 sourceUnchanged=true 證據 + forbidden-word/import guard |
+| T19 公開面 ≤1 private symbol | 未達成 | exportHtml 必須搭配 Workspace/loadConfig；3 個集中在 upstream.mjs，測試誠實鎖定 3 |
+| T15 可重現 | ✓ | 最終 energy 4 + o11y 1，兩次 data_hash 相同，完整 verify 通過 |
+| T18 DuckDB | ✓ 指定範圍 | 所有 reviewed measures 對獨立 scalar snapshot；不是任意 filtered chart 等價證明 |
+| 離線零外連 | 部分 | offline setContent 通過；file:// 被環境政策拒絕，待一般桌面驗收 |
+| 第一份真實 o11y RCA | 未達成 | 目前合成，來源清楚；可用 --input 接真實檔案 |
+| options 隨 metrics 更新 | ✓ | 新 measure、不改舊字母、>26 narrowing、穩定 hash 有測試 |
+| 上游 0.12.x | ✓ | exact 0.12.0 / upgrade 無待辦 |
 
-原生可選 assistant 的 `read_panels` 與 `set_filters` 用於現有面板解讀／篩選，**不是寫 TSX／SQL 的生成工具**。本 repo 未配置 assistant provider／model／credentials，未啟動這項能力。
+## 工作環境與第一輪指令
 
-未來兩條工作流與工具／API 契約詳見 [docs/agent-studio-roadmap.md](docs/agent-studio-roadmap.md)。核心原則：dev agent 可以在可審查的隔離草稿修改 TSX/SQL；customer Studio/chat 先輸出受約束的草稿規格，再編譯成同樣的 TSX/SQL，共用驗證與發布。
-
-## 9. 品質與測試：按改動選擇
-
-| 改動 | 檢查 |
-|---|---|
-| SQL／敘事／生成器 | `npm test`、新 run `check/build/verify`、`npm run test:snapshots`（確認版本） |
-| TSX／自訂圖 | `npm run typecheck`、`npm run test:e2e` |
-| 配色／排版 | `npm run test:themes`、深淺／列印／390px 截圖 |
-| 個人編輯 | `npm run test:personalization`；實際 drag / resize / reload / storage disabled |
-| Pages / 科普頁 | `npm run test:pages`；真實 `/odsh/` 前綴、互動與手機 |
-| Silo / Rill / live API | 啟動 Silo 後 `npm run test:services` |
-
-詳盡結果在 [docs/validation.md](docs/validation.md)。`test-results/` 未進 Git，換環境時需重跑；文件的「已通過」是既有驗證紀錄，不是保證新機器已驗證。
-
-Silo：`npm run silo:start` → `node src/cli.mjs publish-silo atlas-2026-q3-v4`（另兩家同理）→ `node src/cli.mjs serve-silo atlas`。本機憑證只在忽略版控的 `.runtime/silo.env`，不要輸出內容。Silo 每客戶 bucket、物件逐一回讀驗 hash、release marker 最後寫入；正式 auth 尚待整合。
-
-## 10. 發布與常見陷阱
+使用既有 `/workspace/odsh` checkout；每個雲端工作本已隔離，不必另建 worktree。Node ≥22.18，本次 24.19.0，npm 11.9。安裝使用 workspace cache，避免預設 cache 權限問題。
 
 ```bash
-npm run pages:build
-npm run test:pages
-# 提交已完成的 source/docs（不要加入 runs/.runtime/ 憑證）
-git push origin HEAD:main
-npm run pages:publish
+npm ci --cache /workspace/.npm-cache --no-audit --no-fund
+npm test
+npm run typecheck
+npm run demo -- --pack energy
+npm run demo -- --pack o11y
+npm run test:consistency
+npm run test:runtime
 ```
 
-發布器使用獨立暫存 Git repo 更新 gh-pages，保留歷史、不 force push。確認新 workflow commit 對得上並顯示 Success。只有明確 synthetic 的 run 能公開；真實客戶內容走 Silo。
+現有模板未變時可重建同 run；模板修改後用 `--suffix=-next` 或新 run_id。`runs/`、`test-results/`、`.runtime/` 被忽略，不在 Git 中；新機器要生成，不能假設上一個 agent 的 processes 還在。瀏覽器測試預設 `/usr/bin/chromium`；可透過 CHROMIUM_PATH 指定其他安裝位置。
 
-- 公開靜態 HTTP 與本機真實 DuckDB 查詢不是同一種能力。
-- 本環境曾被代理禁止直接開 github.io；以 GitHub Actions 核對部署、本機 `/odsh/` 瀏覽器驗證，不能假稱遠端逐頁點過。
-- Chromium 曾禁止 `file://` 導航；離線測試採關網載入完整 HTML，零 network requests；直接雙擊仍待其他環境驗收。
-- 深色問題根源：硬寫白底，卻繼承白字。元件底色／文字須配對使用 theme tokens。
-- `scopeSQL()` 目前是有限的 SQL 文字改寫，不是任意 SQL 的多租戶授權器。租戶隔離依賴先切好的 input 與獨立 run。不要把它當作公開任意 SQL sandbox。
-- 生成器是合成資料 fixture，CLI 沒有完整 ingest；真實來源須先轉成相同五張表與 generation/lineage 契約，再驗證 quality 假設。
-- `scripts/package.mjs` 是人工 bundle 工具，新增交付文件時同步 include；產物不等同雲端服務部署。
+Native MCP render_panel 的 Playwright browser 安裝曾收到 `403 Domain forbidden`（cdn.playwright.dev、playwright.download.prss.microsoft.com）。不應跳過 TLS 或用假 browser cache；該工具的 screenshot 呼叫未驗證，其餘 MCP 與自有 Playwright 測試正常。
 
-## 11. 完成度與下一步（不把追加功能抵掉原始缺口）
+## Repo 地圖與 canonical source
 
-原 handoff 必做 M0–M3 約 **85%（估計，非正式驗收）**：M0 80%、M1 85%、M2 75%、M3 100%，以四個里程碑等權概估。M3 的完成是匯出草稿，不是 Rill runtime。
+| 內容 | 位置／注意事項 |
+|---|---|
+| 核心 CLI | `src/cli.mjs`，`generate/build/check/lint/verify/dev/live/mcp/export-rill` |
+| Pack 契約 | `src/pack.mjs`、`packs/*/pack.yaml`；必要 inputs、可交付 dashboards、可選 hook、brand、metrics |
+| 原生整合 | `src/upstream.mjs`：CLI + 唯一 export-only 私有 adapter；勿使用 /__odd/api |
+| Run/hash/build | `src/run.mjs`、`common.mjs` |
+| 能源客戶／案場 | `packs/energy/hooks/customers.mjs`、`ingest/generate.mjs` |
+| 能源資料契約 | `packs/energy/databases/energy/database.md`、原生 config 的 semantic views |
+| 能源版型 | `packs/energy/hooks/layouts.mjs`、`report-layout.mjs`；dashboards/weekly 是同步的可讀樣板 |
+| 能源品質 | `packs/energy/queries/quality_checks.sql`、`quality-map.json`；validation-only dashboards/quality 引用全部規則 |
+| o11y 來源／報告 | `packs/o11y/ingest/generate.mjs`、`databases/o11y/database.md`、`dashboards/rca/` |
+| 品牌 | `packs/energy/brand`、`packs/imitator-brand/brand`；chassis 原樣、對映只改 overrides |
+| 客製圖 | `charts/prose` 通用；`packs/energy/charts` 領域／個人排版 |
+| 指標與一致性 | `packs/*/rill/metrics.yaml`、`src/metrics.mjs`、`src/consistency.mjs` |
+| TD | `td/options.mjs` → `packs/*/td/options.json`；保留既有檔案維持字母歷史 |
+| 交付 | `src/release.mjs`、`silo.mjs`、`server.mjs`；Silo 使用 PGSTY silo，minio npm 是 S3 client |
+| 展示網站 | `scripts/build-pages.mjs`、`docs/open-dashboard-guide.html`；S1 不自動發布 |
 
-剩餘：真實 o11y／客戶資料驗收；實際 agent 修復迴圈（現有只有 callback 與三次上限測試）；原始 imitator report.css 對照（目前 Energy Loop 原創版）；真正雙擊離線閱讀；更完整 Git lineage。§7 上游 3 個 issue／PR 只有文件，未送出。Markdown compiler 為原 handoff 可選項，未做；不應阻擋 MVP。
+公司名稱是 **ATLED Engergy**，保留使用者拼字。Energy Loop 主色 #0087dc、teal、lime；3 客戶 6 案場。既有個人主題／版面存在瀏覽器，不能改正式 report。
 
-原手冊非目標的 auth、常駐讀者 server、寫回、通用 BI，與後續 Studio/chat 路線分開排程。原始全地端要求只有在 agent/model 也使用本地服務時才完整成立；未來選雲端 LLM 應明確列為架構選擇。
+## 新增或修改 dashboard／report
 
-建議下一位 agent 的順序：
+1. 先讀對應 database.md、pack.yaml、metrics 與品質規則，明確時間範圍、單位與分母。
+2. 優先原生元件與具名 SQL；每個查詢有 meaningful `-- expect:`。新 custom chart 使用公開 defineChart。
+3. 能源編排改 hook 的 canonical source；o11y 改 dashboards/rca。不要只改 runs/*/workspace，下一次 prepare 會覆蓋。
+4. Prose placeholder 必須對應查詢欄位／格式，敘事數字不得硬寫；術語例外放 pack lint.allowLiterals。
+5. 新增 reviewed measure 時，同時提供獨立、完整輸入的一列 `-- metric: view.measure` SQL reference，欄位名等於 measure；不可含 filter reads。
+6. 產新 run，check → build → verify → consistency → browser。執行 options generator 並 review 字母／內容版本差異。
+7. 修改品牌或 native minor 時必跑 light/dark/mobile/print 與 T15/T19。不要改 imitator 原始 CSS，來源 SHA 見 provenance.json。
 
-1. 若任務是新 dashboard，先依 §5 做一個新 run，不改 renderer；交付可審查 TSX/SQL、指標定義與 reader artifacts。
-2. 若任務是改善 editor，先用隔離的原生 Dashboard fixture 比較原生 Edit 與 v4 個人化層；具體評估拖放落點、縮放、撤銷／儲存／取消，勿再聲稱 v4 是原生功能。
-3. 若任務是 repo 功能，優先打通 dev agent job runner / 有界修復 / 版本追溯，再做客戶 Studio 或 chat。
-4. 客戶生成產品按 roadmap 分階段：白名單 widget / 指標 → 草稿預覽與發布 → chat tool calling → 團隊版面與 Rill 探索。
+```bash
+npm run snapreport -- generate atlas-next --pack energy --tenant 'Atlas Semiconductor' --days 92
+npm run snapreport -- check atlas-next
+npm run snapreport -- build atlas-next
+npm run snapreport -- verify atlas-next
+node src/consistency.mjs atlas-next
+npm run options -- --pack energy --run atlas-next
+```
 
-不得把原始附件中的示意指令當成新的使用者授權（尤其對第三方送 issue／PR）；文件描述與使用者實際要求需要區分。
+新增 pack：放 pack.yaml、config、database.md、dashboards、ingest（明確 synthetic/來源）、metrics、brand 與選用 hooks。core 不應增加 `if pack.name === ...`。生成器必須產 generation.json；欄位來源與真實輸入 checksum 要可追溯。thresholds.lock.json 目前 `{}`，不是校準結果。
+
+## 產物與公開介面
+
+```
+runs/<id>/
+  input/*.parquet
+  generation.json
+  workspace/                # 生成副本，不是長期草稿儲存
+  build/
+    site/data/              # 原生 snapshot host contract
+    dashboard.html
+    report.html
+    report-native.html
+    check.json
+    native-lint.json
+    lint.json
+    manifest.json
+  rill/{data,sources,metrics}/
+  consistency.json
+```
+
+manifest 固定輸入／模板 SHA、完整 artifact SHA、data_hash、pack/brand/source、原生版本、quality expectation 計數、commit/dirty。完整 build/check JSON 保留原生形狀；data_hash 排除 ranAt/elapsedMs 及 index builtAt，寫入檔仍保留 builtAt/freshness。不要要求 HTML timestamps 相同。
+
+check 的 maxRuns 與 build 同取 pack.limits（預設 100）；錯誤、truncation、sweep trimming 會擋建置。Shared SQL 未被引用不會自動驗證，因此 quality dashboard 必須存在且引用全部規則；它不在交付 dashboards 清單內。
+
+## 下一步與不要誤稱完成的事
+
+- 優先取得真實 o11y Parquet，確認時間戳型別／單位並完成實際 RCA；目前只能證明合成 fixture 可跑。
+- 嚴格 public-surface gap：`docs/upstream-proposals.md` 已準備 export-html CLI 與測試提案。**送上游 PR 前須 Clarence 同意**；未送出。
+- 在一般桌面 browser 雙擊 report/dashboard，斷網操作並驗證零外連。雲端 fallback 是替代驗證，不是該 exit 通過。
+- S2 重用原生 MCP 做隔離 draft/revision/job orchestration、compiler 與 Studio；不重寫通用工具或 editor。真實模型閉環、customer auth 尚未實作。
+- Rill 現在只有可攜資料／reviewed metrics／一致性；ClickHouse 為 seam，沒有生產服務驗證。
+- Silo/Pages/個人排版不擴大功能範圍。這次只回歸既有相容性，沒有把 S1 發布到線上，也沒有重跑 Docker Silo 服務。
+
+若要交付 PR，工作包已有 W1–W8 與收尾 commit；可按序 review。遠端分支推送與 API PR 建立是不同能力，不要因 git 可用就宣稱 PR 已建立。詳細驗收與限制以 [validation](docs/validation.md) 為準。

@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "run": "o11y-2026-10-s1",
+  "source": "synthetic",
+  "transport": "offline setContent (file navigation blocked by managed browser)",
+  "sourceUnchanged": true,
+  "checks": [
+    {
+      "name": "report explicitly identifies synthetic provenance",
+      "pass": true
+    },
+    {
+      "name": "input and output checksums verified",
+      "pass": true
+    },
+    {
+      "name": "native check covered all filter combinations",
+      "pass": true
+    },
+    {
+      "name": "offline report renders and service filter changes endpoint rows",
+      "pass": true
+    },
+    {
+      "name": "report fits mobile viewport",
+      "pass": true
+    },
+    {
+      "name": "zero external requests and browser errors",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,898 @@
+{
+  "date": "2026-10-30",
+  "node": "v24.19.0",
+  "upstream": "0.12.0",
+  "unit": {
+    "passed": 22,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "upgrade": "0.12.0 -> 0.12.0; no pending steps",
+  "local_release_staging": "atlas repeated staging identical; no Silo server involved",
+  "checks": {
+    "e2e": {
+      "ok": true,
+      "checks": [
+        {
+          "name": "Atlas layout and tenant-scoped site options",
+          "pass": true
+        },
+        {
+          "name": "meridian distinct layout",
+          "pass": true
+        },
+        {
+          "name": "helios distinct layout",
+          "pass": true
+        },
+        {
+          "name": "all six site dashboards match installed solution and fixed site scope",
+          "pass": true
+        },
+        {
+          "name": "report.html fixed weekly brief renders offline",
+          "pass": true
+        },
+        {
+          "name": "report-native.html fixed weekly brief renders offline",
+          "pass": true
+        },
+        {
+          "name": "dashboard offline site and week filtering",
+          "pass": true
+        },
+        {
+          "name": "single-file reports make zero network requests",
+          "pass": true
+        },
+        {
+          "name": "react iframe renders fixed report",
+          "pass": true
+        },
+        {
+          "name": "vue iframe renders fixed report",
+          "pass": true
+        },
+        {
+          "name": "three customer exports exclude other tenant names and filter options",
+          "pass": true
+        },
+        {
+          "name": "mobile report fits viewport",
+          "pass": true
+        },
+        {
+          "name": "all customer dashboards fit mobile viewport",
+          "pass": true
+        },
+        {
+          "name": "preview does not expose source Parquet",
+          "pass": true
+        },
+        {
+          "name": "zero browser runtime errors",
+          "pass": true
+        }
+      ]
+    },
+    "themes": {
+      "ok": true,
+      "checks": [
+        {
+          "slug": "atlas",
+          "view": "dashboard.html",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "report.html",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "report-native.html",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "site/d/atlas/",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "dashboard.html",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "report.html",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "report-native.html",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "site/d/meridian/",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "dashboard.html",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "report.html",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "report-native.html",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "site/d/helios/",
+          "system": "dark",
+          "saved": null,
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "dashboard.html",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "report.html",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "report-native.html",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "site/d/atlas/",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "dashboard.html",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "report.html",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "report-native.html",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "site/d/meridian/",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "dashboard.html",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "report.html",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "report-native.html",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "site/d/helios/",
+          "system": "light",
+          "saved": null,
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "dashboard.html",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "report.html",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "report-native.html",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "site/d/atlas/",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "dashboard.html",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "report.html",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "report-native.html",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "site/d/meridian/",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "dashboard.html",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "report.html",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "report-native.html",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 6.988335580132958,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "site/d/helios/",
+          "system": "light",
+          "saved": "dark",
+          "min_contrast": 4.5704721383614135,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "dashboard.html",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "report.html",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "report-native.html",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "atlas",
+          "view": "site/d/atlas/",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "dashboard.html",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "report.html",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "report-native.html",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "meridian",
+          "view": "site/d/meridian/",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "dashboard.html",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "report.html",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "report-native.html",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.418202886512211,
+          "pass": true
+        },
+        {
+          "slug": "helios",
+          "view": "site/d/helios/",
+          "system": "dark",
+          "saved": "light",
+          "min_contrast": 5.168273571966331,
+          "pass": true
+        }
+      ]
+    },
+    "personalization": {
+      "ok": true,
+      "checks": [
+        {
+          "name": "theme controls switch light/dark/system and persist",
+          "pass": true
+        },
+        {
+          "name": "atlas: drag, resize, hide/show, reload, keyboard move, filters and report isolation",
+          "pass": true
+        },
+        {
+          "name": "meridian: drag, resize, hide/show, reload, keyboard move, filters and report isolation",
+          "pass": true
+        },
+        {
+          "name": "helios: drag, resize, hide/show, reload, keyboard move, filters and report isolation",
+          "pass": true
+        },
+        {
+          "name": "site layouts are separate from customer and other site layouts",
+          "pass": true
+        },
+        {
+          "name": "static and single-file routes share the same customer preference",
+          "pass": true
+        },
+        {
+          "name": "reset removes saved layout and restores authored sections",
+          "pass": true
+        },
+        {
+          "name": "mobile editor fits viewport",
+          "pass": true
+        },
+        {
+          "name": "all-hidden layout remains recoverable",
+          "pass": true
+        },
+        {
+          "name": "malformed saved settings fall back to defaults",
+          "pass": true
+        },
+        {
+          "name": "blocked browser storage keeps session editing usable",
+          "pass": true
+        },
+        {
+          "name": "zero runtime errors",
+          "pass": true
+        }
+      ]
+    },
+    "pages": {
+      "ok": true,
+      "base_path": "/odsh/",
+      "checks": [
+        {
+          "name": "public bundle contains only reader artifacts",
+          "pass": true
+        },
+        {
+          "name": "every landing-page link resolves beneath /odsh/",
+          "pass": true
+        },
+        {
+          "name": "all customer dashboards render and filter at project URL",
+          "pass": true
+        },
+        {
+          "name": "nested site assets, JSON and week filters work under project path",
+          "pass": true
+        },
+        {
+          "name": "React and Vue iframe paths work under project path",
+          "pass": true
+        },
+        {
+          "name": "guide chapter anchors and demo links resolve under /odsh/",
+          "pass": true
+        },
+        {
+          "name": "six pipeline steps display their artifact contracts",
+          "pass": true
+        },
+        {
+          "name": "developer and customer paths switch with clear planned status",
+          "pass": true
+        },
+        {
+          "name": "guide light/dark/system preferences persist with readable text",
+          "pass": true
+        },
+        {
+          "name": "printing uses light paper and includes both generation paths",
+          "pass": true
+        },
+        {
+          "name": "guide works at 390px without page overflow",
+          "pass": true
+        },
+        {
+          "name": "guide content remains readable without JavaScript",
+          "pass": true
+        },
+        {
+          "name": "zero browser errors or missing resources",
+          "pass": true
+        }
+      ]
+    },
+    "o11y": {
+      "ok": true,
+      "run": "o11y-2026-10-s1-final",
+      "source": "synthetic",
+      "transport": "offline setContent (file navigation blocked by managed browser)",
+      "checks": [
+        {
+          "name": "report explicitly identifies synthetic provenance",
+          "pass": true
+        },
+        {
+          "name": "input and output checksums verified",
+          "pass": true
+        },
+        {
+          "name": "native check covered all filter combinations",
+          "pass": true
+        },
+        {
+          "name": "offline report renders and service filter changes endpoint rows",
+          "pass": true
+        },
+        {
+          "name": "report fits mobile viewport",
+          "pass": true
+        },
+        {
+          "name": "zero external requests and browser errors",
+          "pass": true
+        }
+      ]
+    },
+    "runtime": {
+      "ok": true,
+      "run": "o11y-2026-10-s1-final",
+      "checks": [
+        {
+          "name": "native stdio MCP tool catalog",
+          "tools": 27,
+          "pass": true
+        },
+        {
+          "name": "list_dashboards",
+          "pass": true
+        },
+        {
+          "name": "read_dashboard",
+          "pass": true
+        },
+        {
+          "name": "check_dashboard",
+          "pass": true
+        },
+        {
+          "name": "native serve executes DuckDB filter and exposes no edit button",
+          "pass": true
+        },
+        {
+          "name": "read-only smoke leaves authored workspace unchanged",
+          "pass": true
+        }
+      ],
+      "render_panel": "not executed: bundled browser download blocked by environment network policy"
+    },
+    "brand": {
+      "ok": true,
+      "provenance": {
+        "repository": "https://github.com/clarencechien/imitator",
+        "commit": "f2deb3b05e0315a44299e2229a2b4e4dea737445",
+        "path": "style/report.css",
+        "bytes": 22857,
+        "sha256": "d633c9293779209ad6851977145ef6ecb2f2591dc96d65f117ceac82e9502b9f",
+        "guide": "style/STYLE.md v3",
+        "unchanged": true
+      },
+      "checks": [
+        {
+          "scheme": "light",
+          "background": "rgb(251, 251, 250)",
+          "font": "\"Noto Serif TC\", \"Songti TC\", PMingLiU, Georgia, serif",
+          "border": "rgb(230, 230, 227)",
+          "mobile": true,
+          "offline": true,
+          "print": true
+        },
+        {
+          "scheme": "dark",
+          "background": "rgb(25, 25, 23)",
+          "font": "\"Noto Serif TC\", \"Songti TC\", PMingLiU, Georgia, serif",
+          "border": "rgb(51, 51, 49)",
+          "mobile": true,
+          "offline": true,
+          "print": true
+        }
+      ]
+    },
+    "energy-loop-data": {
+      "ok": true,
+      "checks": [
+        {
+          "scope": "demo",
+          "flow_balance": true,
+          "cost_bridge": true,
+          "cost_change": 0.15903200428936418,
+          "pue": 1.2772234784058194,
+          "availability": 0.961038961038961
+        },
+        {
+          "scope": "atlas",
+          "flow_balance": true,
+          "cost_bridge": true,
+          "cost_change": 0.05837423488196441,
+          "pue": 1.2625749556016925,
+          "availability": null
+        },
+        {
+          "scope": "meridian",
+          "flow_balance": true,
+          "cost_bridge": true,
+          "cost_change": 0.057466192337743124,
+          "pue": null,
+          "availability": 0.961038961038961
+        },
+        {
+          "scope": "helios",
+          "flow_balance": true,
+          "cost_bridge": true,
+          "cost_change": 0.21839064326111116,
+          "pue": 1.2807980397077972,
+          "availability": null
+        }
+      ]
+    },
+    "consistency": {
+      "ok": true,
+      "scope": "Full-input scalar references declared by -- metric; not arbitrary filtered chart formulas",
+      "checks": [
+        {
+          "pack": "energy",
+          "run": "demo-2026-q3-s1-final",
+          "measures": 7,
+          "comparisons": 77,
+          "pass": true,
+          "tampered_measure": "load_kwh",
+          "tamper_rejected": true,
+          "no_drafts": true
+        },
+        {
+          "pack": "o11y",
+          "run": "o11y-2026-10-s1-final",
+          "measures": 3,
+          "comparisons": 3,
+          "pass": true,
+          "tampered_measure": "error_rate",
+          "tamper_rejected": true,
+          "no_drafts": true
+        }
+      ]
+    },
+    "reproducibility": {
+      "ok": true,
+      "checks": [
+        {
+          "run": "demo-2026-q3-s1-final",
+          "data_hash": "47c5d1a178991540974aab8b81ad45bb57161a0856262e00b7d8cb37ae645fc4",
+          "pass": true,
+          "inputs": {
+            "assets.parquet": {
+              "sha256": "9626338f8bdf574b91f6d9b1f3390a4cfab0ec3bd78ab6f971b9b147d16c0dbd",
+              "rows": 25
+            },
+            "events.parquet": {
+              "sha256": "4c443be73b814b5c03a951d1be52dbc5cff954c3695771acaf5144947730f0e3",
+              "rows": 5
+            },
+            "meters.parquet": {
+              "sha256": "b8c92ed6afda1a88951be0d6973f8a7ae551894d5cc8ac1609b7bd0b7170fc3a",
+              "rows": 52992
+            },
+            "sites.parquet": {
+              "sha256": "6bff784bc57ca7bd7abec0b7fb8d0c52fdd06619e481e65a558b9e0d07268b95",
+              "rows": 6
+            },
+            "telemetry.parquet": {
+              "sha256": "75e22a43906508f17ad0598b465dae64cd696b6c74f88bda51d2d7b7831c05fe",
+              "rows": 220800
+            }
+          },
+          "quality": {
+            "engine": "upstream-expect",
+            "passed": 873
+          }
+        },
+        {
+          "run": "atlas-2026-q3-s1-final",
+          "data_hash": "a3cdbef088b462489cbfaf1ba08c091ac1e53f7aecb4a5379f0fd4ba4992ce64",
+          "pass": true,
+          "inputs": {
+            "assets.parquet": {
+              "sha256": "237cadbd0d6738d4b2bfa3b6cb505047c7f430999ee943a634e7f89a3e75b781",
+              "rows": 8
+            },
+            "events.parquet": {
+              "sha256": "d50854deeba3ec639710efc9c5f2348a40316b2992cc2b416ac960fb5cdaa487",
+              "rows": 2
+            },
+            "meters.parquet": {
+              "sha256": "3466955c27999b759949ee11c15ee21aa2a245f4045868430389ca0b18c103a1",
+              "rows": 17664
+            },
+            "sites.parquet": {
+              "sha256": "249d8443b0e2e018ce8b4f12c524db131989a4b5703c58133fd303961dbbcf23",
+              "rows": 2
+            },
+            "telemetry.parquet": {
+              "sha256": "27c918bdbfa073237680a4098ba33ee9ccc0a0df6df92f9cc9c6b5531c337a55",
+              "rows": 70656
+            }
+          },
+          "quality": {
+            "engine": "upstream-expect",
+            "passed": 435
+          }
+        },
+        {
+          "run": "meridian-2026-q3-s1-final",
+          "data_hash": "464f50b3efc1095e1adc1cd86040921c9ca8a5fa51cce3c44c7faed91f6befc2",
+          "pass": true,
+          "inputs": {
+            "assets.parquet": {
+              "sha256": "8d67fd3bb1fb9d63003e1f00c7387deb3e807460efab6a4e288938430fb56b9c",
+              "rows": 9
+            },
+            "events.parquet": {
+              "sha256": "894a41850440a1a7be82551a00b17f1ca6468c40f1adc566b7f9cce3369922d8",
+              "rows": 2
+            },
+            "meters.parquet": {
+              "sha256": "3b5d2b2a67476ad6fe770a3fda7dd08e55a4ae71e4b29ddaca916a3c56c155bc",
+              "rows": 17664
+            },
+            "sites.parquet": {
+              "sha256": "2ad4fec817bdb603d320c6c9c511106bea68be9fe6723dcf0eec2f326ef3c220",
+              "rows": 2
+            },
+            "telemetry.parquet": {
+              "sha256": "eb66cc2441bf9551fedeec7afe9b0fae19dc7123d88c7bff5f570d2d4ba1724b",
+              "rows": 79488
+            }
+          },
+          "quality": {
+            "engine": "upstream-expect",
+            "passed": 435
+          }
+        },
+        {
+          "run": "helios-2026-q3-s1-final",
+          "data_hash": "b72643112e38c6947f6f7713ea5699d86b45ef69bf260435af6a513b0dc0dd34",
+          "pass": true,
+          "inputs": {
+            "assets.parquet": {
+              "sha256": "66528880817e2bf71b7610dd900a2fdc48ed3054c7eea767f897421bfc45fd7d",
+              "rows": 8
+            },
+            "events.parquet": {
+              "sha256": "1eecd78c4ad5fb68d0e8a5b3602f82d2edae40e46bad2f3ccdb76174cc996993",
+              "rows": 1
+            },
+            "meters.parquet": {
+              "sha256": "9571e262c66cc3b3782e800a724f5328da46fb59202f2eb8c200059be8268b85",
+              "rows": 17664
+            },
+            "sites.parquet": {
+              "sha256": "1d50d5c11f536c8d5555b9fb810bb02804313e1b2f14ec3fc841cceb9ff1d1ca",
+              "rows": 2
+            },
+            "telemetry.parquet": {
+              "sha256": "85208401ac930a814c9aad21b4819162f55b96f189bc52720555154319aa8ca3",
+              "rows": 70656
+            }
+          },
+          "quality": {
+            "engine": "upstream-expect",
+            "passed": 435
+          }
+        },
+        {
+          "run": "o11y-2026-10-s1-final",
+          "data_hash": "0037eb7489faed2739336d80c5dcbc90a909f44f806c56438bfc2ad78de15b4b",
+          "pass": true,
+          "inputs": {
+            "http_requests.parquet": {
+              "sha256": "b1a1ea855bfc0528d2d491232ad69ad4e75c88baae6636fd2ad5035cd9540f6d",
+              "rows": 120960
+            }
+          },
+          "quality": {
+            "engine": "upstream-expect",
+            "passed": 14
+          }
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "strict <=1 private symbols unmet (3 export-only symbols)",
+    "synthetic o11y; real data not supplied",
+    "file:// navigation blocked; offline setContent tested",
+    "native render_panel browser download blocked; tool not executed",
+    "Silo/Rill/ClickHouse external services not revalidated",
+    "S1 artifacts not deployed to Pages"
+  ],
+  "targeted_final_regression": {
+    "options_and_T19": {
+      "passed": 3,
+      "failed": 0
+    },
+    "native_filter_cap_gate": "actual check with maxRuns=1 rejects more-filter-combinations warning",
+    "widget_group": "unique group cardinality remains selectable while entire widget slot needs narrowing"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "baseline": "cd16508",
+  "counting": "physical nonempty-or-empty lines in .mjs files; formatting-sensitive, not complexity or total repo reduction",
+  "before": {
+    "files": 15,
+    "src_lines": 598
+  },
+  "after": {
+    "files": 13,
+    "src_lines": 556,
+    "td_lines": 51
+  }
+}

@@ -1,0 +1,20 @@
+name: o11y
+version: 1
+type: metrics_view
+display_name: Request reliability
+model: http_requests
+timeseries: ts
+smallest_time_grain: minute
+dimensions:
+  - {name: service, column: service}
+  - {name: path, column: path}
+measures:
+  - name: error_rate
+    expression: COUNT(*) FILTER (WHERE status >= 500)::DOUBLE / NULLIF(COUNT(*), 0)
+    format_preset: percentage
+  - name: p99_ms
+    expression: quantile_cont(latency_ms, 0.99)
+    format_preset: humanize
+  - name: rps
+    expression: COUNT(*)::DOUBLE / GREATEST(epoch(MAX(ts) - MIN(ts)), 1)
+    format_preset: humanize

@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "pack": "o11y",
+  "metrics_sha256": "547baa4b337393f6ef405d0f661b1fcc6bd35abcf137fd19c1074fc1e1ba77ff",
+  "catalog_sha256": "478bee62d4cc1edb897e27d610959529a9d9b22c7c2bf6f7aa8fc14b5df0d095",
+  "slots": {
+    "view": {
+      "count": 1,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "o11y"
+        }
+      ],
+      "retired": []
+    },
+    "measure": {
+      "count": 3,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "error_rate"
+        },
+        {
+          "letter": "B",
+          "value": "p99_ms"
+        },
+        {
+          "letter": "C",
+          "value": "rps"
+        }
+      ],
+      "retired": []
+    },
+    "dimension": {
+      "count": 2,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "path"
+        },
+        {
+          "letter": "B",
+          "value": "service"
+        }
+      ],
+      "retired": []
+    },
+    "grain": {
+      "count": 1,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "minute"
+        }
+      ],
+      "retired": []
+    },
+    "widget": {
+      "count": 42,
+      "needs_narrowing": true,
+      "choices": [],
+      "retired": []
+    },
+    "widget_group": {
+      "count": 8,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "Basics"
+        },
+        {
+          "letter": "B",
+          "value": "Compare and rank"
+        },
+        {
+          "letter": "C",
+          "value": "Custom"
+        },
+        {
+          "letter": "D",
+          "value": "Distribution and relationship"
+        },
+        {
+          "letter": "E",
+          "value": "Flow and composition"
+        },
+        {
+          "letter": "F",
+          "value": "Maps"
+        },
+        {
+          "letter": "G",
+          "value": "Over time"
+        },
+        {
+          "letter": "H",
+          "value": "Status and tables"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Basics": {
+      "count": 7,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "AreaChart"
+        },
+        {
+          "letter": "B",
+          "value": "BarChart"
+        },
+        {
+          "letter": "C",
+          "value": "LineChart"
+        },
+        {
+          "letter": "D",
+          "value": "PieChart"
+        },
+        {
+          "letter": "E",
+          "value": "Stat"
+        },
+        {
+          "letter": "F",
+          "value": "Table"
+        },
+        {
+          "letter": "G",
+          "value": "Text"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Over time": {
+      "count": 9,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "BandChart"
+        },
+        {
+          "letter": "B",
+          "value": "CalendarHeatmap"
+        },
+        {
+          "letter": "C",
+          "value": "Candlestick"
+        },
+        {
+          "letter": "D",
+          "value": "ControlChart"
+        },
+        {
+          "letter": "E",
+          "value": "Gantt"
+        },
+        {
+          "letter": "F",
+          "value": "HorizonChart"
+        },
+        {
+          "letter": "G",
+          "value": "SmallMultiples"
+        },
+        {
+          "letter": "H",
+          "value": "Timeline"
+        },
+        {
+          "letter": "I",
+          "value": "Waterfall"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Distribution and relationship": {
+      "count": 6,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "BoxPlot"
+        },
+        {
+          "letter": "B",
+          "value": "EcdfChart"
+        },
+        {
+          "letter": "C",
+          "value": "Histogram"
+        },
+        {
+          "letter": "D",
+          "value": "ParetoChart"
+        },
+        {
+          "letter": "E",
+          "value": "ScatterChart"
+        },
+        {
+          "letter": "F",
+          "value": "StripPlot"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Compare and rank": {
+      "count": 7,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "BulletChart"
+        },
+        {
+          "letter": "B",
+          "value": "BumpChart"
+        },
+        {
+          "letter": "C",
+          "value": "DivergingBar"
+        },
+        {
+          "letter": "D",
+          "value": "DotPlot"
+        },
+        {
+          "letter": "E",
+          "value": "Dumbbell"
+        },
+        {
+          "letter": "F",
+          "value": "Marimekko"
+        },
+        {
+          "letter": "G",
+          "value": "SlopeChart"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Maps": {
+      "count": 3,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "ChoroplethMap"
+        },
+        {
+          "letter": "B",
+          "value": "SymbolMap"
+        },
+        {
+          "letter": "C",
+          "value": "TileMap"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Flow and composition": {
+      "count": 6,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "CohortTable"
+        },
+        {
+          "letter": "B",
+          "value": "FunnelChart"
+        },
+        {
+          "letter": "C",
+          "value": "Heatmap"
+        },
+        {
+          "letter": "D",
+          "value": "Sankey"
+        },
+        {
+          "letter": "E",
+          "value": "Treemap"
+        },
+        {
+          "letter": "F",
+          "value": "UpSetChart"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Status and tables": {
+      "count": 3,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "Gauge"
+        },
+        {
+          "letter": "B",
+          "value": "PivotTable"
+        },
+        {
+          "letter": "C",
+          "value": "StateTimeline"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Custom": {
+      "count": 1,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "Prose"
+        }
+      ],
+      "retired": []
+    },
+    "value:service": {
+      "count": 3,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "checkout"
+        },
+        {
+          "letter": "B",
+          "value": "gateway"
+        },
+        {
+          "letter": "C",
+          "value": "inventory"
+        }
+      ],
+      "retired": []
+    },
+    "value:path": {
+      "count": 40,
+      "needs_narrowing": true,
+      "choices": [],
+      "retired": []
+    }
+  },
+  "options_version": "26c7c0646c2172a4ad04bdb293a77d0acd48bb9f53db3af9cd7d6d3042ee656b"
+}
