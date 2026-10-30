@@ -44,3 +44,24 @@ SELECT CASE WHEN synthetic THEN '合成資料 / SYNTHETIC：情境注入，非�
 -- expect: rows = 1
 -- expect: invalid_rows = 0
 SELECT count(*) FILTER(WHERE ts IS NULL OR service IS NULL OR path IS NULL OR status IS NULL OR status NOT BETWEEN 100 AND 599 OR latency_ms IS NULL OR NOT isfinite(latency_ms) OR latency_ms<0) AS invalid_rows FROM http_requests;
+
+
+-- name: metric_error_rate
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: o11y.error_rate
+-- expect: error_rate between 0 and 1
+SELECT count(*) FILTER(WHERE status>=500)::DOUBLE/count(*) AS error_rate FROM http_requests;
+
+
+-- name: metric_p99_ms
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: o11y.p99_ms
+-- expect: rows = 1
+SELECT quantile_cont(latency_ms,0.99) AS p99_ms FROM http_requests;
+
+
+-- name: metric_rps
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: o11y.rps
+-- expect: rows = 1
+SELECT count(*)::DOUBLE/greatest(epoch(max(ts)-min(ts)),1) AS rps FROM http_requests;

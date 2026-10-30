@@ -1,8 +1,10 @@
+name: energy
 version: 1
 type: metrics_view
 display_name: ATLED Engergy · Interval energy
 model: meters
 timeseries: ts
+smallest_time_grain: hour
 dimensions:
   - name: tenant
     column: tenant

@@ -49,3 +49,10 @@
 - 新增 `packs/imitator-brand`；22,857-byte `report.css` 原樣內嵌，SHA、來源 commit 見 `brand/provenance.json`。o11y 報告預設使用此品牌，Dashboard 保留操作介面。
 - 通用 `brand.mjs` 注入模板、fingerprint metadata、標題與 CSS；差異全部在 brand pack。0.12 單檔 viewer 仍顯示 header，使用 scoped CSS 隱藏重複標題，未改上游。
 - `node --test tests/brand.test.mjs`：1/1；瀏覽器實測 light/dark 背景、襯線標題、卡片邊框、主題切換、390px、列印與零外連。此測試使用 offline setContent，不能冒稱通過受管理瀏覽器禁止的 file:// 導航。
+
+## W7 — reviewed metrics + T18
+
+- Rill 匯出讀 frozen workspace 的 `metrics.yaml`，驗證模板及原始 Parquet hash；不再產 `drafts/MAX(預彙總)`。
+- 新增通用 `metrics.mjs`／`consistency.mjs`：simple expression 與 parameterized derived macro；比對獨立 SQL 宣告的 `-- metric: view.measure` 快照，檢查輸入、SQL、快照 checksum 與完整覆蓋。
+- `npm run test:consistency`：energy 7/7 measures（77 scalar snapshots）、o11y 3/3（3 snapshots）；各自修改一個 expression 會失敗並指出 measure。`node --test tests/metrics.test.mjs`：derived aggregate、quoted column、NULL、循環依賴皆驗證。
+- **界線**：T18 覆蓋完整不可變輸入的 scalar references，不宣稱驗證每一張有篩選的圖表公式；後續需明確定義 filter scope，不能拿完整資料總值比子集合。

@@ -1,3 +1,4 @@
+name: o11y
 version: 1
 type: metrics_view
 display_name: Request reliability

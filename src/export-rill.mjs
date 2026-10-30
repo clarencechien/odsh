@@ -7,6 +7,7 @@ export async function exportRill(id){
  const dir=runPath(id),build=path.join(dir,'build'),manifest=readJSON(path.join(build,'manifest.json'));
  const workspace=path.join(dir,'workspace'),source=path.join(workspace,'metrics.yaml');
  if(!fs.existsSync(source))throw Error('Pack has no metrics definition');
+ if(fileHash(source)!==manifest.template.files['metrics.yaml'])throw Error('Metrics differ from built template');
  const metrics=parse(fs.readFileSync(source,'utf8')),out=path.join(dir,'rill'),stage=path.join(dir,'.rill-staging');
  fs.rmSync(stage,{recursive:true,force:true});for(const folder of ['data','sources','metrics'])fs.mkdirSync(path.join(stage,folder),{recursive:true});
  const yaml=(file,value)=>fs.writeFileSync(path.join(stage,file),stringify(value));

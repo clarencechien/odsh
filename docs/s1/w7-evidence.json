@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "scope": "Full-input scalar references declared by -- metric; not arbitrary filtered chart formulas",
+  "checks": [
+    {
+      "pack": "energy",
+      "run": "demo-2026-q3-s1-final",
+      "measures": 7,
+      "comparisons": 77,
+      "pass": true,
+      "tampered_measure": "load_kwh",
+      "tamper_rejected": true,
+      "no_drafts": true
+    },
+    {
+      "pack": "o11y",
+      "run": "o11y-2026-10-s1-final",
+      "measures": 3,
+      "comparisons": 3,
+      "pass": true,
+      "tampered_measure": "error_rate",
+      "tamper_rejected": true,
+      "no_drafts": true
+    }
+  ]
+}

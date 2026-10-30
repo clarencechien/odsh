@@ -315,3 +315,52 @@ CASE WHEN m.site_id='HEL-2' THEN 1.22 ELSE 1.32 END AS target,1.9 AS scale
 FROM interval_energy m CROSS JOIN windows w
 WHERE w.window_id=coalesce('current','current') AND m.ts>=w.start_ts AND m.ts<w.end_ts
 AND (NULL IS NULL OR m.site_id=NULL) AND it_kw>0 GROUP BY m.site_id ORDER BY m.site_id;
+
+
+-- name: metric_load_kwh
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: energy.load_kwh
+-- expect: rows = 1
+SELECT sum(load_kw)*0.25 AS load_kwh FROM meters;
+
+
+-- name: metric_solar_kwh
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: energy.solar_kwh
+-- expect: rows = 1
+SELECT sum(solar_kw)*0.25 AS solar_kwh FROM meters;
+
+
+-- name: metric_cost_twd
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: energy.cost_twd
+-- expect: rows = 1
+SELECT sum(energy_cost_twd) AS cost_twd FROM meters;
+
+
+-- name: metric_modeled_savings_twd
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: energy.modeled_savings_twd
+-- expect: rows = 1
+SELECT sum(baseline_cost_twd)-sum(energy_cost_twd) AS modeled_savings_twd FROM meters;
+
+
+-- name: metric_pue
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: energy.pue
+-- expect: pue >= 1
+SELECT sum(datacenter_kw)/nullif(sum(it_kw),0) AS pue FROM meters;
+
+
+-- name: metric_charger_availability
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: energy.charger_availability
+-- expect: charger_availability between 0 and 1
+SELECT sum(available_ports)::DOUBLE/nullif(sum(total_ports),0) AS charger_availability FROM meters;
+
+
+-- name: metric_grid_co2_tonnes
+-- description: Full-input scalar reference for metrics consistency; independent of reader filters
+-- metric: energy.grid_co2_tonnes
+-- expect: rows = 1
+SELECT sum(grid_co2_kg)/1000 AS grid_co2_tonnes FROM meters;
