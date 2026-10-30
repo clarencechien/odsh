@@ -8,7 +8,6 @@ ingest: ingest/generate.mjs
 lint: { allowLiterals: [] }
 hooks:
   layouts: hooks/layouts.mjs
-  quality: hooks/quality.mjs
   delivery: hooks/demos.mjs
 rill: rill/metrics.yaml
 manifest: { company: "ATLED Engergy", synthetic: true }

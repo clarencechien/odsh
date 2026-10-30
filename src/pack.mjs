@@ -80,7 +80,7 @@ export function brandFingerprint(pack){
 export async function runHook(pack,key,...args){
  const file=pack.hooks?.[key];if(!file)return undefined;
  const module=await import(pathToFileURL(packFile(pack,file)).href);
- const run=module.default||module.validateData||module.buildDemos;
+ const run=module.default||module.buildDemos;
  if(typeof run!=='function')throw Error(`Invalid ${key} hook`);
  return run(...args);
 }

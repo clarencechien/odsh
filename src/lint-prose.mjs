@@ -46,14 +46,3 @@ export function lintSource(code, queries, {allowLiterals=[]}={}) {
   });
   return findings;
 }
-export async function boundedValidation(validate, repair, maxAttempts=3) {
-  if(!Number.isInteger(maxAttempts)||maxAttempts<1||maxAttempts>3) throw Error('maxAttempts must be 1..3');
-  const attempts=[];
-  for(let attempt=1;attempt<=maxAttempts;attempt++){
-    const result=await validate(attempt);attempts.push(result);
-    if(result.ok)return {ok:true,attempts};
-    if(!repair||attempt===maxAttempts)break;
-    const changed=await repair(result,attempt);if(!changed)break;
-  }
-  return {ok:false,attempts};
-}

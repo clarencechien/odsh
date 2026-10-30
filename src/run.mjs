@@ -4,7 +4,7 @@ import { spawnSync } from 'node:child_process';
 import { DuckDBInstance } from '@duckdb/node-api';
 import {upstream,upstreamJSON,singleHtml} from './upstream.mjs';
 import { ROOT, RUNS, runPath, readJSON, writeJSON, fileHash, hash, stableJSON, canonical, filesUnder, sqlString, escapeHTML } from './common.mjs';
-import { lintSource, boundedValidation } from './lint.mjs';
+import { lintSource } from './lint-prose.mjs';
 import { presentHtml } from './brand.mjs';
 import {prepareWorkspace,runPack,runHook} from './pack.mjs';
 export {prepareWorkspace} from './pack.mjs';
@@ -12,8 +12,7 @@ export function templateFingerprint(root){
  const entries=['open-dashboard.config.ts','dashboards','charts','themes','databases','queries','brand','report-brand','pack.json','metrics.yaml'];
  const out={};for(const entry of entries){const p=path.join(root,entry);if(fs.existsSync(p))for(const f of fs.statSync(p).isDirectory()?filesUnder(p):[p])out[path.relative(root,f)]=fileHash(f);}return out;
 }
-export function check(workspace, outputDir, {repair}={}) {
-  return boundedValidation(async()=>{
+export async function check(workspace, outputDir) {
     const proc=upstreamJSON(['check','--all-params','--max-runs','100'],{root:workspace});
     const reports=proc.data;
     const native=upstreamJSON(['lint'],{root:workspace});
@@ -21,10 +20,10 @@ export function check(workspace, outputDir, {repair}={}) {
     writeJSON(path.join(outputDir,'check.json'),reports);
     const file=path.join(workspace,'pack.json');const config=fs.existsSync(file)?readJSON(file):{lint:{}};
     const findings=reports.flatMap(r=>lintSource(fs.readFileSync(path.join(workspace,'dashboards',r.id,'index.tsx'),'utf8'),Object.fromEntries(r.queries.map(q=>[q.name,q.columns||[]])),config.lint).map(f=>({...f,where:`dashboards/${r.id}/index.tsx:${f.line}`})));
-    for(const r of reports)for(const q of r.queries)if(q.error)findings.push({severity:'error',message:q.error});
+    for(const r of reports)for(const finding of r.findings)if(finding.severity==='error'||(finding.severity==='warning'&&/truncated|trimmed/.test(finding.message)))findings.push(finding);
+    for(const r of native.data)for(const finding of r.findings)if(finding.rule==='missing-expectations')findings.push({...finding,severity:'error'});
     if(!reports.length)findings.push({severity:'error',message:'No dashboards checked'});
     const result={ok:proc.status===0&&native.status===0&&findings.length===0,findings};writeJSON(path.join(outputDir,'lint.json'),result);return result;
-  },repair,3);
 }
 export function inspectSnapshot(data, {maxRuns=100,trimmed=[]}={}) {
   const queries={},warnings=trimmed.map(query=>({code:'trimmed-filter',query,severity:'warning'}));
@@ -53,7 +52,6 @@ export async function build(id,options={}) {
   const stage=path.join(dir,'.build-staging');
   try{
     const workspace=await prepareWorkspace(id,options), config=readJSON(path.join(workspace,'pack.json')),pack=runPack(id,options.pack);
-    const quality=await runHook(pack,'quality',dir);if(quality&&!quality.ok)throw Error('Data quality failed; see quality.json');
     config.dashboards=[...config.dashboards,...readJSON(path.join(workspace,'catalog.json')).map(c=>c.id)];
     const inputs=await inputManifest(dir),templateFiles=templateFingerprint(workspace);
     const old=path.join(dir,'build/manifest.json');
@@ -87,7 +85,7 @@ export async function build(id,options={}) {
     const generation=readJSON(path.join(dir,'generation.json'));
     await runHook(pack,'delivery',stage);
     const artifacts={};for(const f of filesUnder(stage))artifacts[path.relative(stage,f)]={sha256:fileHash(f),bytes:fs.statSync(f).size};
-    writeJSON(path.join(stage,'manifest.json'),{schema_version:2,run_id:id,pack:pack.name,brand:config.brand,company:config.manifest.company,synthetic:generation.synthetic,release:config.release,default_dashboard:config.default_dashboard,scope:generation.scope,tenant:generation.tenant,template:{commit:git.stdout.trim()||null,sha256:hash(stableJSON(templateFiles)),files:templateFiles},open_dashboard:readJSON(path.join(ROOT,'package.json')).openDashboard.version,built_at:new Date().toISOString(),inputs,catalog:readJSON(path.join(workspace,'catalog.json')),queries:inspection.queries,warnings:inspection.warnings,data_hash:hash(stableJSON(data)),check:'ok',quality:'ok',artifacts});
+    writeJSON(path.join(stage,'manifest.json'),{schema_version:2,run_id:id,pack:pack.name,brand:config.brand,company:config.manifest.company,synthetic:generation.synthetic,release:config.release,default_dashboard:config.default_dashboard,scope:generation.scope,tenant:generation.tenant,template:{commit:git.stdout.trim()||null,sha256:hash(stableJSON(templateFiles)),files:templateFiles},open_dashboard:readJSON(path.join(ROOT,'package.json')).openDashboard.version,built_at:new Date().toISOString(),inputs,catalog:readJSON(path.join(workspace,'catalog.json')),queries:inspection.queries,warnings:inspection.warnings,data_hash:hash(stableJSON(data)),check:'ok',quality:{engine:'upstream-expect',passed:readJSON(path.join(stage,'check.json')).flatMap(r=>r.queries).flatMap(q=>q.expectations||[]).filter(e=>e.ok).length},artifacts});
     const final=path.join(dir,'build'), backup=path.join(dir,'.build-previous');
     fs.rmSync(backup,{recursive:true,force:true});if(fs.existsSync(final))fs.renameSync(final,backup);
     try{fs.renameSync(stage,final);}catch(e){if(fs.existsSync(backup))fs.renameSync(backup,final);throw e;}

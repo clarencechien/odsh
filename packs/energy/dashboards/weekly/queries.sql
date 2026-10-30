@@ -1,14 +1,25 @@
 -- name: sites
+-- expect: unique site_id
+-- expect: not_null site_id
 -- description: 客戶及站點篩選；內部總覽包含所有客戶
 -- metric: dimension, text
 SELECT site_id, tenant || ' / ' || site_name AS label FROM sites ORDER BY site_id;
 
 -- name: windows
+-- expect: unique window_id
+-- expect: not_null window_id
 -- description: 以輸入資料末日為基準的固定報告區間，與建置時鐘無關
 -- metric: dimension, text
 SELECT window_id, strftime(start_ts, '%m/%d') || ' – ' || strftime(end_ts - INTERVAL 1 DAY, '%m/%d') AS label FROM windows ORDER BY window_id;
 
 -- name: kpis
+-- expect: rows = 1
+-- expect: not_null load_kwh
+-- expect: load_kwh >= 0
+-- expect: pue >= 1
+-- expect: charger_availability between 0 and 1
+-- expect: onsite_solar_ratio between 0 and 1
+-- expect: estimated_ratio between 0 and 1
 -- description: 電量為十五分鐘平均功率乘區間長度；成本含購電與售電抵扣，不含需量費；節省為無光儲模型相對差額
 -- metric: mixed, number
 SELECT sum(load_kwh) AS load_kwh, sum(import_kwh) AS import_kwh,
@@ -27,6 +38,9 @@ WHERE w.window_id = coalesce('current', 'current') AND m.ts >= w.start_ts AND m.
   AND (NULL IS NULL OR m.site_id = NULL);
 
 -- name: daily
+-- expect: unique day
+-- expect: load_kwh >= 0
+-- expect: solar_kwh >= 0
 -- description: 按日彙總電量；不將功率直接加總為電量
 -- metric: kWh, integer
 SELECT date_trunc('day',m.ts) AS day, sum(load_kwh) AS load_kwh, sum(solar_kwh) AS solar_kwh, sum(import_kwh) AS import_kwh, sum(discharge_kwh) AS discharge_kwh FROM interval_energy m CROSS JOIN windows w
@@ -34,6 +48,9 @@ WHERE w.window_id = coalesce('current', 'current') AND m.ts >= w.start_ts AND m.
   AND (NULL IS NULL OR m.site_id = NULL) GROUP BY 1 ORDER BY 1;
 
 -- name: profile
+-- expect: unique hour
+-- expect: not_null hour
+-- expect: load_kw >= 0
 -- description: 每小時跨站點平均功率；需量峰值另取十五分鐘站點峰值
 -- metric: kW, integer
 SELECT date_trunc('hour',m.ts) AS hour, sum(load_kw)/4 AS load_kw, sum(grid_import_kw)/4 AS grid_kw, sum(solar_kw)/4 AS solar_kw FROM interval_energy m CROSS JOIN windows w
@@ -41,6 +58,8 @@ WHERE w.window_id = coalesce('current', 'current') AND m.ts >= w.start_ts AND m.
   AND (NULL IS NULL OR m.site_id = NULL) GROUP BY 1 ORDER BY 1;
 
 -- name: sectors
+-- expect: unique sector
+-- expect: energy_kwh >= 0
 -- description: 三種終端用電部門；發電與儲能不重複算作負載
 -- metric: kWh, integer
 WITH totals AS (SELECT sum(building_kw)*.25 AS building, sum(datacenter_kw)*.25 AS datacenter, sum(ev_kw)*.25 AS charging FROM interval_energy m CROSS JOIN windows w
@@ -48,6 +67,9 @@ WHERE w.window_id = coalesce('current', 'current') AND m.ts >= w.start_ts AND m.
   AND (NULL IS NULL OR m.site_id = NULL)) SELECT '智慧樓宇' AS sector, building AS energy_kwh FROM totals UNION ALL SELECT '資料中心', datacenter FROM totals UNION ALL SELECT '充電樁', charging FROM totals;
 
 -- name: ranking
+-- expect: unique site_id
+-- expect: load_kwh >= 0
+-- expect: pue >= 1
 -- description: 站點週用電、模型節省與單站需量峰值；PUE 是能源加權比值
 -- metric: mixed, number
 SELECT m.site_id, m.tenant, m.site_name, sum(load_kwh) AS load_kwh, sum(modeled_savings_twd) AS savings_twd, max(grid_import_kw) AS peak_kw, sum(datacenter_kw)/nullif(sum(it_kw),0) AS pue, sum(discharge_kwh) AS discharge_kwh FROM interval_energy m CROSS JOIN windows w
@@ -55,11 +77,15 @@ WHERE w.window_id = coalesce('current', 'current') AND m.ts >= w.start_ts AND m.
   AND (NULL IS NULL OR m.site_id = NULL) GROUP BY 1,2,3 ORDER BY load_kwh DESC, site_id;
 
 -- name: events
+-- expect: unique event_id
+-- expect: not_null event_id
 -- description: 固定報告視窗內與選定站點重疊的事件；原因為模擬注入的已知原因
 -- metric: event, text
 SELECT e.event_id,e.site_id,e.domain,e.severity,e.start_ts,e.title,e.action FROM events e CROSS JOIN windows w WHERE w.window_id=coalesce('current','current') AND e.start_ts<w.end_ts AND e.end_ts>w.start_ts AND (NULL IS NULL OR e.site_id=NULL) ORDER BY e.start_ts, e.event_id;
 
 -- name: comparison
+-- expect: rows = 1
+-- expect: not_null load_change, cost_change
 -- description: 與同站點緊接前週比較；成本變動率分母為前週實際模型帳單
 -- metric: ratio, percent
 WITH current AS (SELECT sum(load_kwh) AS load_kwh, sum(energy_cost_twd) AS cost_twd FROM interval_energy m CROSS JOIN windows w
@@ -69,6 +95,9 @@ previous AS (SELECT sum(load_kwh) AS load_kwh, sum(energy_cost_twd) AS cost_twd 
 SELECT (c.load_kwh-p.load_kwh)/nullif(p.load_kwh,0) AS load_change, (c.cost_twd-p.cost_twd)/nullif(p.cost_twd,0) AS cost_change FROM current c CROSS JOIN previous p;
 
 -- name: storage
+-- expect: rows = 1
+-- expect: charge_kwh >= 0
+-- expect: discharge_kwh >= 0
 -- description: 儲能輸入輸出電量與觀測區間末平均SOC；非循環效率估計
 -- metric: mixed, number
 SELECT sum(charge_kwh) AS charge_kwh, sum(discharge_kwh) AS discharge_kwh, min(soc_kwh) AS min_soc_kwh, max(soc_kwh) AS max_soc_kwh FROM interval_energy m CROSS JOIN windows w
@@ -77,11 +106,16 @@ WHERE w.window_id = coalesce('current', 'current') AND m.ts >= w.start_ts AND m.
 
 
 -- name: solution
+-- expect: sites >= 0
+-- expect: not_null solution
 -- description: 案場整合組合及服務目標
 -- metric: dimension, text
 SELECT string_agg(DISTINCT solution, ' / ' ORDER BY solution) AS solution, count(*) AS sites FROM sites WHERE (NULL IS NULL OR site_id=NULL);
 
 -- name: specialized
+-- expect: rows = 1
+-- expect: max_site_peak_kw >= 0
+-- expect: availability between 0 and 1
 -- description: 需量裕度依單站契約容量；自用率以光電為分母
 -- metric: mixed, number
 WITH observations AS (SELECT m.* FROM interval_energy m CROSS JOIN windows w
@@ -98,6 +132,9 @@ sum(available_ports)::DOUBLE/nullif(sum(total_ports),0) AS availability,
 FROM observations;
 
 -- name: flow
+-- expect: unique source, target
+-- expect: not_null source, target
+-- expect: energy_kwh >= 0
 -- description: 供給與去向為同一區間的交流電量；匯流排不追蹤電力來源歸屬；充放電分開避免循環
 -- metric: kWh, integer
 WITH a AS (SELECT sum(import_kwh) grid,sum(solar_kwh) pv,sum(discharge_kwh) discharge,
@@ -116,6 +153,9 @@ SELECT 8,'站內匯流排','餘電外送',exported FROM a)
 SELECT source,target,energy_kwh FROM links WHERE energy_kwh>0 ORDER BY ord;
 
 -- name: capacity
+-- expect: unique site_id
+-- expect: target > 0
+-- expect: actual >= 0
 -- description: 單站實際十五分鐘峰值相對契約容量，非跨站峰值總和
 -- metric: kW, integer
 SELECT m.site_id,max(grid_import_kw) AS actual,max(contract_kw) AS target,max(contract_kw)*1.15 AS scale FROM interval_energy m CROSS JOIN windows w
@@ -123,6 +163,8 @@ WHERE w.window_id=coalesce('current','current') AND m.ts>=w.start_ts AND m.ts<w.
 AND (NULL IS NULL OR m.site_id=NULL) GROUP BY m.site_id ORDER BY m.site_id;
 
 -- name: charging_heat
+-- expect: unique day, hour
+-- expect: power_kw >= 0
 -- description: 每日與小時的車隊補能功率；多站時彙總每小時站點均值
 -- metric: kW, integer
 SELECT strftime(ts,'%H') AS hour,strftime(ts,'%m/%d') AS day,sum(ev_kw)/4 AS power_kw FROM interval_energy m CROSS JOIN windows w
@@ -130,6 +172,8 @@ WHERE w.window_id=coalesce('current','current') AND m.ts>=w.start_ts AND m.ts<w.
 AND (NULL IS NULL OR m.site_id=NULL) GROUP BY 1,2 ORDER BY 2,1;
 
 -- name: building_heat
+-- expect: unique day, hour
+-- expect: power_kw >= 0
 -- description: 每日與小時的樓宇功率，可辨識非營業排程
 -- metric: kW, integer
 SELECT strftime(ts,'%H') AS hour,strftime(ts,'%m/%d') AS day,sum(building_kw)/4 AS power_kw FROM interval_energy m CROSS JOIN windows w
@@ -137,6 +181,8 @@ WHERE w.window_id=coalesce('current','current') AND m.ts>=w.start_ts AND m.ts<w.
 AND (NULL IS NULL OR m.site_id=NULL) GROUP BY 1,2 ORDER BY 2,1;
 
 -- name: soc_profile
+-- expect: unique hour, site_id
+-- expect: soc_ratio between 0 and 1
 -- description: 每小時末電池 SOC 依容量加權；非裝機站點不列入
 -- metric: ratio, percent
 SELECT date_trunc('hour',ts) AS hour,site_id, arg_max(soc_kwh,ts)/nullif(max(battery_capacity_kwh),0) AS soc_ratio FROM interval_energy m CROSS JOIN windows w
@@ -144,6 +190,9 @@ WHERE w.window_id=coalesce('current','current') AND m.ts>=w.start_ts AND m.ts<w.
 AND (NULL IS NULL OR m.site_id=NULL) AND battery_capacity_kwh>0 GROUP BY 1,2 ORDER BY 1,2;
 
 -- name: thermal
+-- expect: unique hour, site_id
+-- expect: pue >= 1
+-- expect: it_kw > 0
 -- description: 每站每小時環境溫度對能源加權 PUE；標記已知冷卻事件，不做相關性因果推論
 -- metric: ratio, decimal
 SELECT date_trunc('hour',ts) AS hour,site_id,avg(temperature_c) AS temperature_c,
@@ -154,6 +203,9 @@ WHERE w.window_id=coalesce('current','current') AND m.ts>=w.start_ts AND m.ts<w.
 AND (NULL IS NULL OR m.site_id=NULL) AND it_kw>0 GROUP BY 1,2 ORDER BY 1,2;
 
 -- name: cooling_daily
+-- expect: unique day
+-- expect: it_kwh >= 0
+-- expect: cooling_kwh >= 0
 -- description: 日尺度機房 IT 與非IT耗能拆解
 -- metric: kWh, integer
 SELECT date_trunc('day',ts) AS day,sum(it_kw)*.25 AS it_kwh,sum(datacenter_kw-it_kw)*.25 AS cooling_kwh FROM interval_energy m CROSS JOIN windows w
@@ -161,6 +213,8 @@ WHERE w.window_id=coalesce('current','current') AND m.ts>=w.start_ts AND m.ts<w.
 AND (NULL IS NULL OR m.site_id=NULL) GROUP BY 1 ORDER BY 1;
 
 -- name: asset_states
+-- expect: unique start_ts, lane
+-- expect: not_null status
 -- description: 每小時子系統狀態；異常優先呈現，狀態來自模擬遙測
 -- metric: state, text
 SELECT date_trunc('hour',t.ts) AS start_ts, date_trunc('hour',t.ts)+INTERVAL 1 HOUR AS end_ts,
@@ -175,6 +229,8 @@ AND t.domain IN ('storage','charging','datacenter','solar')
 GROUP BY 1,2,3 ORDER BY 3,1;
 
 -- name: connectors
+-- expect: unique domain
+-- expect: subsystem_count > 0
 -- description: 已安裝子系統的接口規劃；全部為模擬接口，並非真實連線狀態
 -- metric: integration, text
 SELECT domain,
@@ -183,6 +239,8 @@ CASE domain WHEN 'building' THEN 'BACnet / BEMS' WHEN 'grid' THEN 'Modbus / MQTT
 count(*) AS subsystem_count FROM assets WHERE (NULL IS NULL OR site_id=NULL) GROUP BY domain ORDER BY domain;
 
 -- name: cost_bridge
+-- expect: unique step
+-- expect: not_null value
 -- description: 無光儲反事實帳單到模型帳單的精確橋接；光電與儲能效應按固定順序拆解，非保證節省
 -- metric: TWD, integer
 WITH a AS (SELECT sum(baseline_cost_twd) baseline,sum(storage_baseline_cost_twd) solar_only,sum(energy_cost_twd) actual FROM interval_energy m CROSS JOIN windows w
@@ -194,12 +252,18 @@ SELECT '儲能差額',actual-solar_only,'change' FROM a UNION ALL
 SELECT '本週模型帳單',actual,'total' FROM a;
 
 -- name: weekly_stats
+-- expect: rows = 1
+-- expect: load_current >= 0
+-- expect: pue_current >= 1
+-- expect: availability_current between 0 and 1
 -- description: 與前一完整週比較，PUE及可用率保持能源或埠時間加權；沒有安裝設備時為NULL
 -- metric: mixed, number
 SELECT sum(load_kwh) FILTER(WHERE m.ts>=w.start_ts) AS load_current,sum(load_kwh) FILTER(WHERE m.ts<w.start_ts) AS load_previous,sum(energy_cost_twd) FILTER(WHERE m.ts>=w.start_ts) AS cost_current,sum(energy_cost_twd) FILTER(WHERE m.ts<w.start_ts) AS cost_previous,sum(grid_co2_kg/1000) FILTER(WHERE m.ts>=w.start_ts) AS carbon_current,sum(grid_co2_kg/1000) FILTER(WHERE m.ts<w.start_ts) AS carbon_previous,sum(solar_kwh) FILTER(WHERE m.ts>=w.start_ts) AS solar_current,sum(solar_kwh) FILTER(WHERE m.ts<w.start_ts) AS solar_previous,sum(ev_kw*.25) FILTER(WHERE m.ts>=w.start_ts) AS ev_current,sum(ev_kw*.25) FILTER(WHERE m.ts<w.start_ts) AS ev_previous,sum((datacenter_kw-it_kw)*.25) FILTER(WHERE m.ts>=w.start_ts) AS cooling_current,sum((datacenter_kw-it_kw)*.25) FILTER(WHERE m.ts<w.start_ts) AS cooling_previous,sum(datacenter_kw) FILTER(WHERE m.ts>=w.start_ts)/nullif(sum(it_kw) FILTER(WHERE m.ts>=w.start_ts),0) AS pue_current,sum(available_ports) FILTER(WHERE m.ts>=w.start_ts)::DOUBLE/nullif(sum(total_ports) FILTER(WHERE m.ts>=w.start_ts),0) AS availability_current,sum(datacenter_kw) FILTER(WHERE m.ts<w.start_ts)/nullif(sum(it_kw) FILTER(WHERE m.ts<w.start_ts),0) AS pue_previous,sum(available_ports) FILTER(WHERE m.ts<w.start_ts)::DOUBLE/nullif(sum(total_ports) FILTER(WHERE m.ts<w.start_ts),0) AS availability_previous FROM interval_energy m CROSS JOIN windows w WHERE w.window_id=coalesce('current','current')
 AND m.ts>=w.start_ts-INTERVAL 7 DAY AND m.ts<w.end_ts AND (NULL IS NULL OR m.site_id=NULL);
 
 -- name: report_story
+-- expect: rows = 1
+-- expect: not_null cost_verdict, cooling_verdict, charging_verdict
 -- description: 敘事結論只使用SQL計算的本週和前週觀測；不宣稱推論因果
 -- uses: weekly_stats
 -- metric: narrative, text
@@ -212,6 +276,8 @@ CASE WHEN availability_current<0.99 THEN '充電服務未達示範目標，優�
 FROM weekly_stats;
 
 -- name: week_sites
+-- expect: unique site_id
+-- expect: not_null current, previous
 -- description: 逐案場前後週成本，不以日均值冒充整週；供報告比較圖
 -- metric: TWD, integer
 SELECT m.site_id,sum(energy_cost_twd) FILTER(WHERE m.ts<w.start_ts) AS previous,
@@ -219,6 +285,7 @@ sum(energy_cost_twd) FILTER(WHERE m.ts>=w.start_ts) AS current FROM interval_ene
 AND m.ts>=w.start_ts-INTERVAL 7 DAY AND m.ts<w.end_ts AND (NULL IS NULL OR m.site_id=NULL) GROUP BY 1 ORDER BY 1;
 
 -- name: actions
+-- expect: not_null site_id, title, action
 -- description: 本週事件的後續覆核清單；時數為記錄事件時段，不等同全部停機時數
 -- metric: action, text
 SELECT e.site_id,e.title,e.action,
@@ -228,6 +295,9 @@ round(epoch(least(e.end_ts,w.end_ts)-greatest(e.start_ts,w.start_ts))/3600,1) AS
 FROM events e CROSS JOIN windows w WHERE w.window_id=coalesce('current','current') AND e.start_ts<w.end_ts AND e.end_ts>w.start_ts AND (NULL IS NULL OR e.site_id=NULL) ORDER BY e.severity,e.site_id;
 
 -- name: event_summary
+-- expect: rows = 1
+-- expect: event_count >= 0
+-- expect: recorded_hours >= 0
 -- description: 有事件記錄的案場與事件時數；互有重疊時不視為唯一停機時間
 -- metric: event, integer
 SELECT count(*) AS event_count,count(DISTINCT e.site_id) AS affected_sites,
@@ -235,6 +305,9 @@ coalesce(sum(epoch(least(e.end_ts,w.end_ts)-greatest(e.start_ts,w.start_ts))/360
 FROM events e CROSS JOIN windows w WHERE w.window_id=coalesce('current','current') AND e.start_ts<w.end_ts AND e.end_ts>w.start_ts AND (NULL IS NULL OR e.site_id=NULL);
 
 -- name: pue_sites
+-- expect: unique site_id
+-- expect: actual >= 1
+-- expect: target >= 1
 -- description: 逐站能源加權PUE與示範設計目標；不是客戶SLA
 -- metric: ratio, decimal
 SELECT m.site_id,sum(datacenter_kw)/sum(it_kw) AS actual,

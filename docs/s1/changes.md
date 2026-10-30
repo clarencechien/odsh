@@ -35,3 +35,11 @@
 - `generate <id> --pack o11y --input <file.parquet>` 可匯入符合欄位的實際 Parquet，保留原檔 bytes 與來源 checksum；本次未取得真實資料，只驗證合成場景。
 - 新增 pack 時 `src/` 修改行數為 0，檔案雜湊亦相同。build / verify / native all-params check 通過；六項瀏覽器／交付檢查通過（`w4-evidence.json`）。
 - 此環境 Chromium 的 `file://` 導航仍被管理政策阻擋；測試改用關網 setContent，實測服務篩選、手機與零外連。嚴格「直接開檔」驗收仍列缺口。
+
+## W5 — 原生 expect 取代 quality engine
+
+- 刪除自製 quality runner 與 validate-data 命令；23 條舊規則逐條轉成 `queries/quality_checks.sql`，對照在 `quality-map.json`，容差以 residual + between 表達。
+- 原生 check 會跳過未引用的 shared query，因此新增僅供驗證的 quality dashboard，以原生 `-- uses:` 觸及全部規則；它不在交付 dashboard 清單中。沒有依賴自寫 SQL 品質引擎。
+- 所有能源查詢補上符合粒度／設備可用性的 expect；來源標為 static。check 的錯誤、截斷與 trimming 會阻擋建置。
+- 移除未接 agent 的三輪 callback；S2 修復應使用原生 MCP 的 check/lint/render，而非另一層偽自動修復。保留原生尚未支援的 Prose placeholder／格式／敘事裸數字檢查（`lint-prose.mjs`）。
+- 驗證：18 tests 全通過；23 條 input 規則確實執行；反號購電功率使原生 q_energy_balance expectation 失敗。這不是只檢查 SQL 存在。

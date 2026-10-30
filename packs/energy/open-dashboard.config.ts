@@ -1,8 +1,9 @@
 import type { OpenDashboardConfig } from '@open-dashboard/core'
 // In each run workspace, input/ is a private immutable copy of this run's Parquet.
 export default {
-  datasources: { energy: { type: 'duckdb', init: [
+  datasources: { energy: { type: 'duckdb', freshness: 'static', init: [
     "SET threads = 1",
+    "CREATE VIEW run_metadata AS SELECT * FROM read_json_auto('generation.json')",
     "CREATE VIEW meters AS SELECT * FROM 'input/meters.parquet'",
     "CREATE VIEW telemetry AS SELECT * FROM 'input/telemetry.parquet'",
     "CREATE VIEW sites AS SELECT * FROM 'input/sites.parquet'",

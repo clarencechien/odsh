@@ -2,12 +2,12 @@ import test from 'node:test';import assert from 'node:assert/strict';
 import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import {spawnSync} from 'node:child_process';
 import {DuckDBInstance} from '@duckdb/node-api';
 import {ROOT,runPath,readJSON,sqlString,writeJSON,hash,stableJSON} from '../src/common.mjs';
-import {generate} from '../packs/energy/ingest/generate.mjs';import {validateData} from '../packs/energy/hooks/quality.mjs';import {prepareWorkspace,check} from '../src/run.mjs';
+import {generate} from '../packs/energy/ingest/generate.mjs';import {prepareWorkspace,check} from '../src/run.mjs';
 const id=`test-atlas-${process.pid}`;
 test('generated tenant snapshot: physical invariants, installed assets, incident truth and stable seeded data',async()=>{
  try{
   await generate(id,{tenant:'Atlas Semiconductor',days:21});
-  const dir=runPath(id),quality=await validateData(dir);assert.equal(quality.ok,true,JSON.stringify(quality));assert.equal(quality.checks.length,23);
+  const dir=runPath(id),quality=await check(await prepareWorkspace(id),path.join(dir,'validation'));assert.equal(quality.ok,true,JSON.stringify(quality));const q=readJSON(path.join(dir,'validation/check.json')).find(r=>r.id==='quality').queries.filter(q=>q.name.startsWith('q_'));assert.equal(q.length,23);assert.ok(q.every(q=>q.expectations.every(e=>e.ok)));
   const inst=await DuckDBInstance.create(':memory:'),db=await inst.connect();
   try{
    const rows=async sql=>(await db.runAndReadAll(sql)).getRowObjectsJS();
@@ -22,16 +22,22 @@ test('generated tenant snapshot: physical invariants, installed assets, incident
     // Parquet writer metadata is stable too: input bytes are deterministic for the pinned generator.
     for(const table of ['meters','telemetry','sites','assets','events'])assert.equal(hash(fs.readFileSync(path.join(dir,'input',table+'.parquet'))),hash(fs.readFileSync(path.join(runPath(second),'input',table+'.parquet'))));
   }finally{fs.rmSync(runPath(second),{recursive:true,force:true});}
+  const corruptInstance=await DuckDBInstance.create(':memory:'),corrupt=await corruptInstance.connect();
+  try{await corrupt.run(`COPY (SELECT * REPLACE(-grid_import_kw AS grid_import_kw) FROM read_parquet('${dir}/input/meters.parquet')) TO '${dir}/input/bad.parquet' (FORMAT PARQUET)`);}
+  finally{corrupt.closeSync();corruptInstance.closeSync();}
+  fs.renameSync(path.join(dir,'input/bad.parquet'),path.join(dir,'input/meters.parquet'));
+  const rejected=await check(await prepareWorkspace(id),path.join(dir,'invalid'));
+  assert.equal(rejected.ok,false);assert.ok(rejected.findings.some(f=>f.message.includes('q_energy_balance')&&f.message.includes('expects')),'native expect must reject reversed grid power');
  }finally{fs.rmSync(runPath(id),{recursive:true,force:true});}
 });
-test('renderer rejects a bad panel column; bounded lint check produces actionable findings',async()=>{
+test('renderer rejects a bad panel column; native check produces actionable findings',async()=>{
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'atled-check-'));
  try{
   fs.symlinkSync(path.join(ROOT,'node_modules'),path.join(tmp,'node_modules'),'dir');
   fs.mkdirSync(path.join(tmp,'dashboards/bad'),{recursive:true});
   fs.writeFileSync(path.join(tmp,'open-dashboard.config.ts'),"export default {datasources:{energy:{type:'duckdb'}},defaultSource:'energy'}");
   fs.writeFileSync(path.join(tmp,'snapreport.yaml'),'lint:\n  allowLiterals: []\n');
-  fs.writeFileSync(path.join(tmp,'dashboards/bad/queries.sql'),'-- name: q\nSELECT 42 AS actual;');
+  fs.writeFileSync(path.join(tmp,'dashboards/bad/queries.sql'),'-- name: q\n-- expect: actual = 42\nSELECT 42 AS actual;');
   fs.writeFileSync(path.join(tmp,'dashboards/bad/index.tsx'),"import {Dashboard,Stat} from '@open-dashboard/core'; export const meta={title:'Bad'}; export default function X(){return <Dashboard><Stat title='Broken' query='q' column='missing'/></Dashboard>}");
   const result=await check(tmp,tmp);assert.equal(result.ok,false);
   const report=readJSON(path.join(tmp,'check.json'));assert.ok(report[0].findings.some(f=>f.message.includes('missing')&&f.where.includes(':1')));
