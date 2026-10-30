@@ -1,5 +1,5 @@
 import fs from 'node:fs';import path from 'node:path';
-import {CUSTOMERS} from './customers.mjs';import {sqlString,writeJSON} from './common.mjs';
+import {CUSTOMERS} from './customers.mjs';import {sqlString,writeJSON} from '../../../src/common.mjs';
 import {reportSource} from './report-layout.mjs';
 const imports=`import { Filters, Select, Row, Stat, LineChart, BarChart, Table, Text, Section, Sankey, Gauge, Heatmap, BulletChart, ScatterChart, StateTimeline, Treemap } from '@open-dashboard/core'
 import Dashboard from '../../charts/personal-dashboard'
@@ -61,4 +61,9 @@ export function writeLayouts(workspace,generation){
  fs.writeFileSync(path.join(workspace,'dashboards/weekly/index.tsx'),reportSource(customer));
  fs.writeFileSync(path.join(workspace,'dashboards/weekly/queries.sql'),base.replaceAll(':site','NULL').replaceAll(':window',"'current'"));
  writeJSON(path.join(workspace,'catalog.json'),catalog);return catalog;
+}
+
+export function prepare(workspace,generation){
+ const catalog=writeLayouts(workspace,generation);
+ return {catalog,default_dashboard:generation.tenant?catalog.find(c=>!c.site).id:'energy'};
 }

@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { DuckDBInstance } from '@duckdb/node-api';
-import { runPath, writeJSON, sqlString } from './common.mjs';
-import { CUSTOMERS, DOMAIN_LABELS } from './customers.mjs';
+import { runPath, writeJSON, sqlString } from '../../../src/common.mjs';
+import { CUSTOMERS, DOMAIN_LABELS } from '../hooks/customers.mjs';
 const tenants = ['Atlas Semiconductor', 'Meridian Logistics', 'Helios Cloud'];
 const cities = ['新竹', '台中', '高雄', '桃園'];
 const rand = seed => { let x=seed>>>0; return () => { x=(Math.imul(x,1664525)+1013904223)>>>0; return x/4294967296; }; };

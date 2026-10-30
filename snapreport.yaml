@@ -1,8 +1,4 @@
-version: 1
-dashboards: [energy, weekly]
-reportDashboard: weekly
+version: 2
+pack: energy
 maxRuns: 100
-maxAttempts: 3
-lint:
-  allowLiterals: []
 timeZone: Asia/Taipei

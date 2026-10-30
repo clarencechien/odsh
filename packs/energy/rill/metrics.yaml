@@ -1,0 +1,43 @@
+version: 1
+type: metrics_view
+display_name: ATLED Engergy · Interval energy
+model: meters
+timeseries: ts
+dimensions:
+  - name: tenant
+    column: tenant
+  - name: site_id
+    column: site_id
+  - name: site_name
+    column: site_name
+  - name: quality
+    column: quality
+measures:
+  - name: load_kwh
+    expression: SUM(load_kw) * 0.25
+    description: Fifteen-minute load energy
+    format_preset: humanize
+  - name: solar_kwh
+    expression: SUM(solar_kw) * 0.25
+    description: PV generation; no battery energy double-counting
+    format_preset: humanize
+  - name: cost_twd
+    expression: SUM(energy_cost_twd)
+    description: Illustrative energy-only bill; includes export credits
+    format_preset: humanize
+  - name: modeled_savings_twd
+    expression: SUM(baseline_cost_twd) - SUM(energy_cost_twd)
+    description: Counterfactual model; not guaranteed savings
+    format_preset: humanize
+  - name: pue
+    expression: SUM(datacenter_kw) / NULLIF(SUM(it_kw), 0)
+    description: Energy-weighted PUE; never average site ratios
+    format_preset: humanize
+  - name: charger_availability
+    expression: SUM(available_ports)::DOUBLE / NULLIF(SUM(total_ports), 0)
+    description: Time-weighted available connector share
+    format_preset: percentage
+  - name: grid_co2_tonnes
+    expression: SUM(grid_co2_kg) / 1000
+    description: Location-based imported electricity only; illustrative factor
+    format_preset: humanize

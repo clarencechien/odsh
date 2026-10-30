@@ -1,10 +1,10 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import { lintSource,boundedValidation } from '../src/lint.mjs';
 import { canonical,hash,stableJSON,runPath } from '../src/common.mjs';
-import { inspectSnapshot,normalizeHtml } from '../src/build.mjs';
+import { inspectSnapshot,normalizeHtml } from '../src/run.mjs';
 import { queryMetadata } from '../src/export-rill.mjs';
-import { layoutSource } from '../src/layouts.mjs';
-import { CUSTOMERS } from '../src/customers.mjs';
+import { layoutSource } from '../packs/energy/hooks/layouts.mjs';
+import { CUSTOMERS } from '../packs/energy/hooks/customers.mjs';
 import { readClickHouse } from '../adapters/clickhouse.mjs';
 const prose=text=>`const C=()=> <Prose query="q" text=${JSON.stringify(text)}/>;`;
 test('valid SQL-backed prose and format',()=>assert.deepEqual(lintSource(prose('用電 {{energy:integer}}，可用率 {{availability:percent}}'),{q:['energy','availability']}),[]));

@@ -20,3 +20,11 @@
 - build / check / lint 改走安裝版 CLI；check 預設遍歷所有篩選組合，另保留原生 lint JSON。dev 啟動原生 `dev --mcp`。
 - 所有 production 非公開 import 集中 `src/upstream.mjs`，僅供 single HTML 匯出使用。測試精確列出三個符號，不掩蓋嚴格 ≤1 缺口。
 - 驗證：19 tests 通過；Atlas 原生 all-params check 與原生 lint 執行完成。MCP runtime 在 S1 統一煙霧測試驗收。
+
+## W3 — core / pack
+
+- `src/run.mjs` 只管理 run 契約；`pack.mjs` 載入必要輸入、模板、品牌、hooks、預設頁及發布範圍。核心沒有能源禁字或直接 import packs。
+- 能源生成器、客戶／案場版型、品牌、指標 YAML 與 iframe demo 搬進 `packs/energy`；通用 Prose 留在 charts。舊 quality 暫留 pack hook，W5 以原生 expect 完整替換。
+- CLI 支援 `--pack`；`live` 委派唯讀原生 serve，`dev` 啟用原生 MCP，靜態 run 索引仍用受限的 reader server。
+- 原本硬寫在 Rill exporter 的指標改為 pack 檔案；無價值的預彙總 drafts 在這次拆分時一起移除，W7 補跨層一致性驗證。
+- 驗證：四 run data_hash 與 W1 完全相同（`w3-evidence.json`）；T19 禁字／直接 import 測試通過。

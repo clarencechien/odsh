@@ -2,7 +2,7 @@ import test from 'node:test';import assert from 'node:assert/strict';
 import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import {spawnSync} from 'node:child_process';
 import {DuckDBInstance} from '@duckdb/node-api';
 import {ROOT,runPath,readJSON,sqlString,writeJSON,hash,stableJSON} from '../src/common.mjs';
-import {generate} from '../src/generate.mjs';import {validateData} from '../src/quality.mjs';import {prepareWorkspace,check} from '../src/build.mjs';
+import {generate} from '../packs/energy/ingest/generate.mjs';import {validateData} from '../packs/energy/hooks/quality.mjs';import {prepareWorkspace,check} from '../src/run.mjs';
 const id=`test-atlas-${process.pid}`;
 test('generated tenant snapshot: physical invariants, installed assets, incident truth and stable seeded data',async()=>{
  try{

@@ -1,6 +1,6 @@
 import path from 'node:path';
 import { DuckDBInstance } from '@duckdb/node-api';
-import { sqlString, readJSON, writeJSON } from './common.mjs';
+import { sqlString, readJSON, writeJSON } from '../../../src/common.mjs';
 export async function validateData(dir) {
   const instance=await DuckDBInstance.create(':memory:'), db=await instance.connect();
   const checks=[];

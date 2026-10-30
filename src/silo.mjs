@@ -1,4 +1,5 @@
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import {parseEnv} from 'node:util';import {Client} from 'minio';
+import {loadPack} from './pack.mjs';
 import {ROOT,readJSON,stableJSON,hash,writeJSON} from './common.mjs';import {stageRelease,STAGING} from './release.mjs';
 export function siloClient(){
  const localFile=path.join(ROOT,'.runtime/silo.env'),local=fs.existsSync(localFile)?parseEnv(fs.readFileSync(localFile,'utf8')):{};
@@ -13,7 +14,7 @@ const contentType=file=>({'.html':'text/html; charset=utf-8','.js':'text/javascr
 async function bytes(stream){const chunks=[];for await(const chunk of stream)chunks.push(chunk);return Buffer.concat(chunks);}
 async function maybeObject(client,bucket,key){try{return await bytes(await client.getObject(bucket,key));}catch(e){if(['NoSuchKey','NoSuchObject','NotFound','NoSuchBucket'].includes(e.code))return null;throw e;}}
 export async function publishSilo(id,options={}){
- const staged=stageRelease(id,options),release=readJSON(path.join(staged.destination,'release.json')),bucket=`atled-${staged.scope}`,client=siloClient();
+ const staged=stageRelease(id,options),release=readJSON(path.join(staged.destination,'release.json')),bucket=staged.bucket,client=siloClient();
  if(!await client.bucketExists(bucket))await client.makeBucket(bucket,'us-east-1');
  const releaseKey=`${id}/release.json`,existing=await maybeObject(client,bucket,releaseKey);
  if(existing&&stableJSON(JSON.parse(existing))!==stableJSON(release))throw Error('Silo release is immutable; use a new run_id');
@@ -29,9 +30,10 @@ export async function publishSilo(id,options={}){
  const evidence={run_id:id,bucket,objects_verified:verified,data_hash:release.data_hash,private_bucket:true,backend:'pgsty/silo',verified_at:new Date().toISOString()};
  writeJSON(path.join(ROOT,'test-results',`silo-${id}.json`),evidence);return evidence;
 }
-export async function serveSilo(scope,{port=4174}={}){
- if(!['atlas','meridian','helios','internal'].includes(scope))throw Error('Choose silo scope: atlas|meridian|helios|internal');
- const client=siloClient(),bucket=`atled-${scope}`;
+export async function serveSilo(scope,{port=4174,pack}={}){
+ const settings=loadPack(pack).release;
+ if(!settings||![...Object.values(settings.scopes||{}),settings.internal_scope].includes(scope))throw Error('Unknown scoped release');
+ const client=siloClient(),bucket=`${settings.bucket_prefix}-${scope}`;
  const server=http.createServer(async(req,res)=>{
   let key;try{key=decodeURIComponent(new URL(req.url,'http://localhost').pathname).replace(/^\//,'');}catch{res.writeHead(400).end();return;}
   if(key.split('/').includes('..')||key.includes('\\')||!['GET','HEAD'].includes(req.method)){res.writeHead(400).end();return;}
