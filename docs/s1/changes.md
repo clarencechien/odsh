@@ -14,3 +14,9 @@
 ## 已確認的介面限制
 
 0.12 的 `exportHtml(workspace, id, ...)` 需要 `Workspace` / `loadConfig`；「只保留 exportHtml 一個非公開符號」按原簽章做不到。暫將三個符號集中在 `src/upstream.mjs` 的單一匯出通道，其他功能改走 CLI。此差異須在嚴格 S1 exit 保留缺口；不以 namespace import、動態字串或仿造 Workspace 隱藏依賴。
+
+## W2 — 原生 CLI 邊界
+
+- build / check / lint 改走安裝版 CLI；check 預設遍歷所有篩選組合，另保留原生 lint JSON。dev 啟動原生 `dev --mcp`。
+- 所有 production 非公開 import 集中 `src/upstream.mjs`，僅供 single HTML 匯出使用。測試精確列出三個符號，不掩蓋嚴格 ≤1 缺口。
+- 驗證：19 tests 通過；Atlas 原生 all-params check 與原生 lint 執行完成。MCP runtime 在 S1 統一煙霧測試驗收。

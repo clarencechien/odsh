@@ -3,7 +3,7 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { parse as parseYaml } from 'yaml';
 import { DuckDBInstance } from '@duckdb/node-api';
-import { Workspace, exportHtml, loadConfig } from '@open-dashboard/core/node';
+import {upstream,upstreamJSON,singleHtml} from './upstream.mjs';
 import { ROOT, RUNS, runPath, readJSON, writeJSON, fileHash, hash, stableJSON, canonical, filesUnder, sqlString, escapeHTML } from './common.mjs';
 import { lintSource, boundedValidation } from './lint.mjs';
 import { presentHtml } from './presentation.mjs';
@@ -25,15 +25,16 @@ export function prepareWorkspace(id) {
 }
 export function check(workspace, outputDir, {repair}={}) {
   return boundedValidation(async()=>{
-    const proc=spawnSync(process.execPath,[path.join(ROOT,'node_modules/@open-dashboard/core/bin.js'),'check','--json','--root',workspace],{encoding:'utf8',maxBuffer:10*1024*1024,timeout:120000});
-    if(proc.error)throw proc.error;
-    let reports;try{reports=JSON.parse(proc.stdout);}catch{throw Error(`Renderer check failed: ${proc.stderr||proc.stdout}`);}
+    const proc=upstreamJSON(['check','--all-params','--max-runs','100'],{root:workspace});
+    const reports=proc.data;
+    const native=upstreamJSON(['lint'],{root:workspace});
+    writeJSON(path.join(outputDir,'native-lint.json'),native.data);
     writeJSON(path.join(outputDir,'check.json'),reports);
     const config=parseYaml(fs.readFileSync(path.join(workspace,'snapreport.yaml'),'utf8'));
     const findings=reports.flatMap(r=>lintSource(fs.readFileSync(path.join(workspace,'dashboards',r.id,'index.tsx'),'utf8'),Object.fromEntries(r.queries.map(q=>[q.name,q.columns||[]])),config.lint).map(f=>({...f,where:`dashboards/${r.id}/index.tsx:${f.line}`})));
     for(const r of reports)for(const q of r.queries)if(q.error)findings.push({severity:'error',message:q.error});
     if(!reports.length)findings.push({severity:'error',message:'No dashboards checked'});
-    const result={ok:proc.status===0&&findings.length===0,findings};writeJSON(path.join(outputDir,'lint.json'),result);return result;
+    const result={ok:proc.status===0&&native.status===0&&findings.length===0,findings};writeJSON(path.join(outputDir,'lint.json'),result);return result;
   },repair,3);
 }
 export function inspectSnapshot(data, {maxRuns=100,trimmed=[]}={}) {
@@ -71,22 +72,21 @@ export async function build(id) {
     fs.rmSync(stage,{recursive:true,force:true});fs.mkdirSync(stage,{recursive:true});
     const validation=await check(workspace,stage);
     if(!validation.ok){writeJSON(path.join(dir,'failure.json'),validation);throw Error('Check/lint failed; see failure.json and .build-staging');}
-    const proc=spawnSync(process.execPath,[path.join(ROOT,'node_modules/@open-dashboard/core/bin.js'),'build',...config.dashboards,'--root',workspace,'--out',path.join(stage,'site'),'--max-runs',String(config.maxRuns)],{encoding:'utf8',timeout:240000,maxBuffer:10*1024*1024});
+    const proc=upstream(['build',...config.dashboards,'--out',path.join(stage,'site'),'--max-runs',String(config.maxRuns)],{root:workspace});
     fs.writeFileSync(path.join(stage,'build.log'),proc.stdout+'\n'+proc.stderr);
     if(proc.status!==0)throw Error(`Renderer build failed: ${proc.stderr}`);
     const data={};for(const file of filesUnder(path.join(stage,'site/data'))){if(!file.endsWith('.json'))continue;const normalized=canonical(readJSON(file));writeJSON(file,normalized);const key=path.relative(path.join(stage,'site/data'),file);data[key]=key==='dashboards.json'?Object.fromEntries(Object.entries(normalized).filter(([k])=>k!=='builtAt')):normalized;}
     const trimmed=[...proc.stdout.matchAll(/defaults kept for ([^\n]+)/g)].flatMap(m=>m[1].split(', '));
     const inspection=inspectSnapshot(data,{maxRuns:config.maxRuns,trimmed});
     if(inspection.warnings.length)console.warn('WARNING:',JSON.stringify(inspection.warnings));
-    const ws=new Workspace(await loadConfig(workspace));
-    try{
+    {
       for(const [dash,filename] of [[config.reportDashboard,'report.html'],[readJSON(path.join(dir,'generation.json')).tenant ? readJSON(path.join(workspace,'catalog.json')).find(c=>!c.site).id : 'energy','dashboard.html']]){
-        const normalized=normalizeHtml(await exportHtml(ws,dash,'',{maxRuns:config.maxRuns}));
+        const normalized=normalizeHtml(await singleHtml(workspace,dash,{maxRuns:config.maxRuns}));
         for(const [key,value] of Object.entries(normalized.data))if(key.startsWith(`d/${dash}/`)&&stableJSON(value)!==stableJSON(data[key]))throw Error(`Site/single snapshot mismatch: ${key}`);
         fs.writeFileSync(path.join(stage,filename),presentHtml(normalized.html,{workspace,report:dash===config.reportDashboard}));
         if(dash===config.reportDashboard)fs.writeFileSync(path.join(stage,'report-native.html'),presentHtml(normalized.html,{workspace,report:true,editorial:false}));
       }
-    }finally{await ws.close();}
+    }
     for(const file of filesUnder(path.join(stage,'site')).filter(p=>p.endsWith('.html'))){
       const report=file===path.join(stage,'site/d',config.reportDashboard,'index.html');
       fs.writeFileSync(file,presentHtml(fs.readFileSync(file,'utf8'),{workspace,report,
