@@ -32,6 +32,7 @@ S1 energy 成品已推送 `gh-pages`，沿用上一版 v4 完全相同的合成�
 - [W4](s1/w4-evidence.json)：新增 o11y 當時 core 未改動；[W6](s1/w6-evidence.json)：imitator 品牌；[W7](s1/w7-evidence.json)：完整輸入 scalar 指標一致性。
 - [S1 final checkpoint](s1/final-evidence.json)：首次 Pages 發布前的完整驗收；當中的「未發布」是歷史狀態。
 - [首次 S1 Pages 發布](s1/pages-deployment.json)：來源 commit、v4 輸入比對、遠端 bytes 驗證。
+- [科普指南更新發布](s1/pages-docs-update.json)：來源／發布 commit 與遠端指南驗證，既有能源資料未重建。
 - [Core 尺寸](s1/core-size.json)：實體行數對照；不是功能完成率或全部程式碼縮減率。
 - [品牌來源](../packs/imitator-brand/brand/provenance.json)：原始 report.css commit、bytes 與 SHA；不得為了更新文件而改寫。
 

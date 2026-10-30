@@ -24,6 +24,8 @@ S1 energy 成品已推送至 `gh-pages`。首次 S1 發布 commit 為 `f01815f5d
 
 o11y／imitator 報告未加入這次公開站。MCP、Node/DuckDB runtime、Silo、Rill 與 ClickHouse 服務也不是 Pages 的一部分。公開 bundle 不包含原始 Parquet、SQL、憑證或 workspace。
 
+文件同步後，科普指南已更新至 `gh-pages@8184a32`（來源 `2903098`）。此更新沿用原四份 frozen runs；遠端指南及所有 manifest 與 staging 一致。見 [指南發布紀錄](s1/pages-docs-update.json)。
+
 ## 分支與上線狀態
 
 `codex/odsh-s1` 存程式與文件；`main` 尚未合併這次 S1；`gh-pages` 存產出的靜態網站。更新來源分支不會自動發布，推送 `gh-pages` 也不等於已完成 Pages 的建置／部署。

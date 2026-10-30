@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-30",
+  "source_commit": "2903098aca8592d04fcc2a3c6b1068d26348a3e3",
+  "published_commit": "8184a32f23ab5e7ab1d90b2e4d07a4b0b780d516",
+  "previous_published_commit": "f01815f5d503289acecea7117ee3a61f1bca32b6",
+  "change": "Documentation guide refresh; existing frozen energy runs retained; no data regeneration",
+  "validation": {
+    "pages_smoke_checks": 13,
+    "local_markdown_links_at_source_commit": 59,
+    "broken_local_links": 0
+  },
+  "remote_checks": [
+    {
+      "file": "guide.html",
+      "sha256": "e75a725b9bcc3d74705ed2efaabaa5e9ca12c0f6bcb955d272584c17c35edf49",
+      "matches_staging": true
+    },
+    {
+      "file": "deployment.json",
+      "sha256": "44c20f7be0ed755fccb463a37ceb107b5b342ba7443e31dede9535c78c59c3e0",
+      "matches_staging": true
+    },
+    {
+      "file": "atlas/manifest.json",
+      "sha256": "cf58ed22d01883d96b4f40f9ced897a005b3486d86f8728c37a8ce19f1fdfcbc",
+      "matches_staging": true
+    },
+    {
+      "file": "meridian/manifest.json",
+      "sha256": "ba73ee1d24b1ac6d06ca33c5155727395d7112f94457114810a05a882fc17305",
+      "matches_staging": true
+    },
+    {
+      "file": "helios/manifest.json",
+      "sha256": "2ae9cf0cab6d5de6f10bee55ce111610c4375391a93b6a682ed7b7a412644e99",
+      "matches_staging": true
+    },
+    {
+      "file": "portfolio/manifest.json",
+      "sha256": "1c346645f231f96f5cb68e7a94a557d15698a7c989a120b2cd202d791ae9f0e8",
+      "matches_staging": true
+    }
+  ],
+  "live_status": "unconfirmed: environment proxy blocks github.io; published branch bytes verified"
+}
