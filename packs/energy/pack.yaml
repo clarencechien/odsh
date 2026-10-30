@@ -19,7 +19,7 @@ release:
     Meridian Logistics: meridian
     Helios Cloud: helios
 demo:
-  suffix: -s1
+  suffix: -s1-final
   runs:
     - {prefix: demo, period: 2026-q3}
     - {prefix: atlas, period: 2026-q3, tenant: Atlas Semiconductor}

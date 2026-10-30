@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';import path from 'node:path';
 import {chromium} from 'playwright';import {createPreview} from '../src/server.mjs';import {ROOT,writeJSON} from '../src/common.mjs';
-const suffix=process.env.ATLED_RUN_SUFFIX||'-v4';
+const suffix=process.env.ATLED_RUN_SUFFIX||'-s1-final';
 const server=await createPreview({port:0}),browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
 const checks=[],errors=[];const pass=name=>{checks.push({name,pass:true});console.log('PASS',name)};
 const base=`http://127.0.0.1:${server.address().port}`;

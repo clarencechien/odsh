@@ -13,14 +13,14 @@ export function templateFingerprint(root){
  const out={};for(const entry of entries){const p=path.join(root,entry);if(fs.existsSync(p))for(const f of fs.statSync(p).isDirectory()?filesUnder(p):[p])out[path.relative(root,f)]=fileHash(f);}return out;
 }
 export async function check(workspace, outputDir) {
-    const proc=upstreamJSON(['check','--all-params','--max-runs','100'],{root:workspace});
+    const file=path.join(workspace,'pack.json');const config=fs.existsSync(file)?readJSON(file):{lint:{}};
+    const proc=upstreamJSON(['check','--all-params','--max-runs',String(config.limits?.maxRuns??100)],{root:workspace});
     const reports=proc.data;
     const native=upstreamJSON(['lint'],{root:workspace});
     writeJSON(path.join(outputDir,'native-lint.json'),native.data);
     writeJSON(path.join(outputDir,'check.json'),reports);
-    const file=path.join(workspace,'pack.json');const config=fs.existsSync(file)?readJSON(file):{lint:{}};
     const findings=reports.flatMap(r=>lintSource(fs.readFileSync(path.join(workspace,'dashboards',r.id,'index.tsx'),'utf8'),Object.fromEntries(r.queries.map(q=>[q.name,q.columns||[]])),config.lint).map(f=>({...f,where:`dashboards/${r.id}/index.tsx:${f.line}`})));
-    for(const r of reports)for(const finding of r.findings)if(finding.severity==='error'||(finding.severity==='warning'&&/truncated|trimmed/.test(finding.message)))findings.push(finding);
+    for(const r of reports)for(const finding of r.findings)if(finding.severity==='error'||(finding.severity==='warning'&&/truncated|trimmed|more filter combinations/.test(finding.message)))findings.push(finding);
     for(const r of native.data)for(const finding of r.findings)if(finding.rule==='missing-expectations')findings.push({...finding,severity:'error'});
     if(!reports.length)findings.push({severity:'error',message:'No dashboards checked'});
     const result={ok:proc.status===0&&native.status===0&&findings.length===0,findings};writeJSON(path.join(outputDir,'lint.json'),result);return result;
@@ -70,8 +70,8 @@ export async function build(id,options={}) {
       for(const [dash,filename] of [[config.report,'report.html'],[config.default_dashboard,'dashboard.html']]){
         const normalized=normalizeHtml(await singleHtml(workspace,dash,{maxRuns:config.limits.maxRuns}));
         for(const [key,value] of Object.entries(normalized.data))if(key.startsWith(`d/${dash}/`)&&stableJSON(value)!==stableJSON(data[key]))throw Error(`Site/single snapshot mismatch: ${key}`);
-        fs.writeFileSync(path.join(stage,filename),presentHtml(normalized.html,{workspace,report:dash===config.report}));
-        if(dash===config.report)fs.writeFileSync(path.join(stage,'report-native.html'),presentHtml(normalized.html,{workspace,report:true,editorial:false}));
+        fs.writeFileSync(path.join(stage,filename),presentHtml(normalized.html,{workspace,report:filename==='report.html'}));
+        if(filename==='report.html')fs.writeFileSync(path.join(stage,'report-native.html'),presentHtml(normalized.html,{workspace,report:true,editorial:false}));
       }
     }
     for(const file of filesUnder(path.join(stage,'site')).filter(p=>p.endsWith('.html'))){
@@ -82,10 +82,11 @@ export async function build(id,options={}) {
     }
     if(stableJSON(inputs)!==stableJSON(await inputManifest(dir)))throw Error('Inputs changed during build');
     const git=spawnSync('git',['rev-parse','HEAD'],{cwd:ROOT,encoding:'utf8'});
+    const dirty=spawnSync('git',['status','--porcelain','--untracked-files=normal'],{cwd:ROOT,encoding:'utf8'}).stdout.trim().length>0;
     const generation=readJSON(path.join(dir,'generation.json'));
     await runHook(pack,'delivery',stage);
     const artifacts={};for(const f of filesUnder(stage))artifacts[path.relative(stage,f)]={sha256:fileHash(f),bytes:fs.statSync(f).size};
-    writeJSON(path.join(stage,'manifest.json'),{schema_version:2,run_id:id,pack:pack.name,brand:config.brand,company:config.manifest.company,synthetic:generation.synthetic,release:config.release,default_dashboard:config.default_dashboard,scope:generation.scope,tenant:generation.tenant,template:{commit:git.stdout.trim()||null,sha256:hash(stableJSON(templateFiles)),files:templateFiles},open_dashboard:readJSON(path.join(ROOT,'package.json')).openDashboard.version,built_at:new Date().toISOString(),inputs,catalog:readJSON(path.join(workspace,'catalog.json')),queries:inspection.queries,warnings:inspection.warnings,data_hash:hash(stableJSON(data)),check:'ok',quality:{engine:'upstream-expect',passed:readJSON(path.join(stage,'check.json')).flatMap(r=>r.queries).flatMap(q=>q.expectations||[]).filter(e=>e.ok).length},artifacts});
+    writeJSON(path.join(stage,'manifest.json'),{schema_version:2,run_id:id,pack:pack.name,brand:config.brand,company:config.manifest.company,synthetic:generation.synthetic,release:config.release,default_dashboard:config.default_dashboard,scope:generation.scope,tenant:generation.tenant,template:{commit:git.stdout.trim()||null,dirty,sha256:hash(stableJSON(templateFiles)),files:templateFiles},open_dashboard:readJSON(path.join(ROOT,'package.json')).openDashboard.version,built_at:new Date().toISOString(),inputs,catalog:readJSON(path.join(workspace,'catalog.json')),queries:inspection.queries,warnings:inspection.warnings,data_hash:hash(stableJSON(data)),check:'ok',quality:{engine:'upstream-expect',passed:readJSON(path.join(stage,'check.json')).flatMap(r=>r.queries).flatMap(q=>q.expectations||[]).filter(e=>e.ok).length},artifacts});
     const final=path.join(dir,'build'), backup=path.join(dir,'.build-previous');
     fs.rmSync(backup,{recursive:true,force:true});if(fs.existsSync(final))fs.renameSync(final,backup);
     try{fs.renameSync(stage,final);}catch(e){if(fs.existsSync(backup))fs.renameSync(backup,final);throw e;}

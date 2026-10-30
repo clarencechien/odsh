@@ -13,6 +13,6 @@ release:
   internal_scope: o11y
   scopes: {}
 demo:
-  suffix: -s1
+  suffix: -s1-final
   runs:
     - {prefix: o11y, period: 2026-10, days: 14, seed: 73}

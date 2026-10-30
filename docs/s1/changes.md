@@ -62,3 +62,14 @@
 - `td/options.mjs --pack <name> --run <id>` 讀 metrics、原生 `charts --json` 與 Parquet distinct values。輸出固定字母選項、內容 hash `options_version`，刪除的字母保留不重用；新增排序較前的 measure 不影響舊字母。
 - >26 個值標 `needs_narrowing`，不截斷。原生 widget 也超過 26，因此提供 widget_group 與分組槽位；o11y path=40，必須縮小。
 - `node --test tests/options.test.mjs tests/t19.test.mjs`：3/3。pack options 已產生（energy 18 slots、o11y 16 slots）；`thresholds.lock.json` 維持空殼，未宣稱完成 S3 校準。
+
+## W9 — 收尾、相容性與實際驗收
+
+- README/handoff/architecture/validation/agent roadmap/科普 HTML 全面更新為 0.12 + packs；列出嚴格 S1 的三個缺口、原生 screenshot 環境限制與未部署狀態。移除「MCP 未裝」「仍有 callback」「仍產 Rill drafts」等舊描述。
+- 修正 report/default_dashboard 指向同頁時的輸出角色判定；check 與 build 共享 pack maxRuns；manifest 增加 commit dirty 標記。
+- 補上原生 `more filter combinations` 警告的阻擋，並實測 maxRuns=1 失敗；widget group 先去重計數，避免把重複分組誤判成 >26。
+- 保留舊 release.json 形狀，bucket 由 pack metadata 計算；更新 demo/test/package 路徑，原測試中的私有 dev/query 呼叫改由原生 CLI/MCP smoke。
+- 新增 native MCP/serve 與五 run 重建測試。實際結果：unit 22/22、typecheck；runtime 6/6；e2e 15/15；themes 48/48；personalization 12/12；Pages staging 13/13；o11y 6/6；data snapshots 4/4；T18 兩 pack、T15 五 run。完整數據見 validation 與 final-evidence.json。
+- 「殼變薄」是責任移轉：刪 custom quality runner、未接線的 repair callback、Rill drafts、domain imports；CLI/MCP/runtime 使用上游。src 實體行數 598→556，另新增 TD 51 行；合計未減少，不能把這當大幅縮碼的宣傳數字。T19 的零領域耦合與唯一 export adapter 才是主要邊界。
+- 雲端 start_skill 已更新為目前 pack 路徑與原生 runtime 驗證；安裝腳本保持原有 npm ci。保存草稿不等於發布環境。
+- 每個工作包以獨立 commit 留存；GitHub API 受限，未建立逐包 PR。未送上游 PR，未發布 S1 Pages 或外部服務。

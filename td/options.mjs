@@ -4,8 +4,9 @@ import {loadPack,packFile,runPack} from '../src/pack.mjs';import {readMetrics,op
 const key=value=>JSON.stringify(value);
 const ordered=values=>[...new Map(values.map(v=>[key(v),v])).values()].sort((a,b)=>key(a)<key(b)?-1:key(a)>key(b)?1:0);
 // Letters are never reassigned, including removed values. An exhausted slot must be narrowed.
-export function optionSlot(values,previous={},total=values.length){
+export function optionSlot(values,previous={},total){
  const entries=ordered(values),old=[...(previous.choices||[]),...(previous.retired||[])],assigned=new Map(old.map(x=>[key(x.value),x]));
+ total??=entries.length;
  const occupied=new Set(old.map(x=>x.letter)),next=[];
  if(total>26)return {count:total,needs_narrowing:true,choices:[],retired:old};
  for(const value of entries){

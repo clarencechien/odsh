@@ -91,9 +91,42 @@
       "retired": []
     },
     "widget_group": {
-      "count": 44,
-      "needs_narrowing": true,
-      "choices": [],
+      "count": 8,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "Basics"
+        },
+        {
+          "letter": "B",
+          "value": "Compare and rank"
+        },
+        {
+          "letter": "C",
+          "value": "Custom"
+        },
+        {
+          "letter": "D",
+          "value": "Distribution and relationship"
+        },
+        {
+          "letter": "E",
+          "value": "Flow and composition"
+        },
+        {
+          "letter": "F",
+          "value": "Maps"
+        },
+        {
+          "letter": "G",
+          "value": "Over time"
+        },
+        {
+          "letter": "H",
+          "value": "Status and tables"
+        }
+      ],
       "retired": []
     },
     "widget:Basics": {
@@ -425,5 +458,5 @@
       "retired": []
     }
   },
-  "options_version": "0d7d76a532975ffba3d980428cc4c7ab3ecbfc6b7a155b015cd6e591d136b77e"
+  "options_version": "1af530ec78156bf295ff6083d3c8c849a64ddbd8eb89c88b0785aeb3f65dcaa3"
 }

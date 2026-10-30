@@ -1,7 +1,7 @@
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {pathToFileURL} from 'node:url';
 import {chromium} from 'playwright';import {spawnSync} from 'node:child_process';
 import {ROOT,runPath,readJSON,writeJSON,fileHash,filesUnder} from '../src/common.mjs';
-const id=process.env.ODSH_O11Y_RUN||'o11y-2026-10-s1',dir=runPath(id),checks=[];
+const id=process.env.ODSH_O11Y_RUN||'o11y-2026-10-s1-final',dir=runPath(id),checks=[];
 const passed=name=>{checks.push({name,pass:true});console.log('PASS',name);};
 const manifest=readJSON(path.join(dir,'build/manifest.json'));
 assert.equal(manifest.pack,'o11y');assert.equal(manifest.synthetic,true);passed('report explicitly identifies synthetic provenance');

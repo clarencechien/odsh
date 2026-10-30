@@ -1,6 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import {spawnSync} from 'node:child_process';
 import {DuckDBInstance} from '@duckdb/node-api';
+import {upstream} from '../src/upstream.mjs';
 import {ROOT,runPath,readJSON,sqlString,writeJSON,hash,stableJSON} from '../src/common.mjs';
 import {generate} from '../packs/energy/ingest/generate.mjs';import {prepareWorkspace,check} from '../src/run.mjs';
 const id=`test-atlas-${process.pid}`;
@@ -43,15 +44,14 @@ test('renderer rejects a bad panel column; native check produces actionable find
   const report=readJSON(path.join(tmp,'check.json'));assert.ok(report[0].findings.some(f=>f.message.includes('missing')&&f.where.includes(':1')));
  }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });
-test('actual renderer warns when filter enumeration exceeds maxRuns',async()=>{
- const {Workspace,loadConfig,snapshotDashboard}=await import('@open-dashboard/core/node');
+test('native CLI warns and run gate rejects filter enumeration above maxRuns',async()=>{
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'atled-trim-'));
- let ws;
  try{
   fs.symlinkSync(path.join(ROOT,'node_modules'),path.join(tmp,'node_modules'),'dir');fs.mkdirSync(path.join(tmp,'dashboards/demo'),{recursive:true});
   fs.writeFileSync(path.join(tmp,'open-dashboard.config.ts'),"export default {datasources:{energy:{type:'duckdb'}},defaultSource:'energy'}");
   fs.writeFileSync(path.join(tmp,'dashboards/demo/index.tsx'),"import {Dashboard,Filters,Select,Stat} from '@open-dashboard/core';export const meta={title:'Trim test'};export default function X(){return <Dashboard><Filters><Select name='site' options={['a','b']}/></Filters><Stat title='X' query='q' column='n'/></Dashboard>}");
-  fs.writeFileSync(path.join(tmp,'dashboards/demo/queries.sql'),'-- name: q\nSELECT coalesce(:site,\'all\') AS site, 42 AS n;');
-  ws=new Workspace(await loadConfig(tmp));const snapshot=await snapshotDashboard(ws,'demo',{maxRuns:1});assert.deepEqual(snapshot.trimmed,['q']);assert.equal(snapshot.runs,1);
- }finally{await ws?.close();fs.rmSync(tmp,{recursive:true,force:true});}
+  fs.writeFileSync(path.join(tmp,'dashboards/demo/queries.sql'),'-- name: q\n-- expect: rows = 1\nSELECT coalesce(:site,\'all\') AS site, 42 AS n;');
+  const result=upstream(['build','demo','--out',path.join(tmp,'out'),'--max-runs','1'],{root:tmp});assert.equal(result.status,0,result.stderr);assert.match(result.stdout,/defaults kept for q/);const snapshot=readJSON(path.join(tmp,'out/data/d/demo/q.json'));assert.equal(Object.keys(snapshot.results).length,1);
+  writeJSON(path.join(tmp,'pack.json'),{limits:{maxRuns:1},lint:{}});const checked=await check(tmp,tmp);assert.equal(checked.ok,false);assert.ok(checked.findings.some(f=>f.message.includes('more filter combinations')));
+ }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });

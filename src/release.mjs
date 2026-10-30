@@ -15,7 +15,7 @@ export function stageRelease(id,{internal=false}={}){
  try{
    for(const entry of ['site','report.html','report-native.html','dashboard.html','demos','manifest.json'])if(fs.existsSync(path.join(source,entry)))fs.cpSync(path.join(source,entry),path.join(stage,'build',entry),{recursive:true});
    const artifacts=Object.fromEntries(filesUnder(stage).map(f=>[path.relative(stage,f),fileHash(f)]));
-   const release={run_id:id,scope,bucket:`${settings.bucket_prefix}-${scope}`,tenant:manifest.tenant,data_hash:manifest.data_hash,artifacts};
+   const release={run_id:id,scope,tenant:manifest.tenant,data_hash:manifest.data_hash,artifacts};
    if(fs.existsSync(destination)){
      const existing=readJSON(path.join(destination,'release.json'));
      if(stableJSON(existing)!==stableJSON(release))throw Error('Staged release is immutable; publish a new run_id');
@@ -23,6 +23,6 @@ export function stageRelease(id,{internal=false}={}){
    }else{writeJSON(path.join(stage,'release.json'),release);fs.renameSync(stage,destination);}
    const releases=fs.readdirSync(root,{withFileTypes:true}).filter(e=>e.isDirectory()&&!e.name.startsWith('.')&&fs.existsSync(path.join(root,e.name,'release.json'))).map(e=>readJSON(path.join(root,e.name,'release.json')));
    fs.writeFileSync(path.join(root,'index.html'),`<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHTML(manifest.company)} · ${escapeHTML(scope)} silo</title><style>body{font:16px system-ui;background:#edf3ef;color:#174a3c;max-width:960px;margin:60px auto;padding:24px}article{background:white;padding:24px;margin:16px 0;border-top:3px solid #007d78}a{color:#007d78;margin-right:20px}</style><h1>${escapeHTML(manifest.company)} / ${escapeHTML(scope)} silo</h1><p>Scoped static releases</p>${releases.sort((a,b)=>a.run_id.localeCompare(b.run_id)).map(r=>`<article><h2>${escapeHTML(r.run_id)}</h2><a href="${r.run_id}/build/dashboard.html">Dashboard</a><a href="${r.run_id}/build/report.html">週報</a><a href="${r.run_id}/build/site/">全部案場</a></article>`).join('')}</html>`);
-   return {destination,scope,bucket:release.bucket,data_hash:manifest.data_hash};
+   return {destination,scope,bucket:`${settings.bucket_prefix}-${scope}`,data_hash:manifest.data_hash};
  }finally{fs.rmSync(stage,{recursive:true,force:true});}
 }
