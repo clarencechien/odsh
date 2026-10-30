@@ -7,7 +7,7 @@
 - [接手必讀 handoff](handoff.md)：工作位置、S1 狀態與剩餘缺口。
 - [W1–W9 修正紀錄](docs/s1/changes.md)、[驗收證據](docs/validation.md)、[架構](docs/architecture.md)。
 - [科普 HTML](docs/open-dashboard-guide.html)、[Agent／Studio 串接方向](docs/agent-studio-roadmap.md)。
-- 既有展示網址：[https://clarencechien.github.io/odsh/](https://clarencechien.github.io/odsh/)。S1 分支尚未部署到 Pages；線上展示不代表此次升版產物。
+- 既有展示網址：[https://clarencechien.github.io/odsh/](https://clarencechien.github.io/odsh/)。2026-10-30 已將 S1 成品推至 gh-pages，沿用 v4 完全相同的輸入資料；環境無法存取 github.io，實際上線狀態仍待 GitHub Pages 確認。發布證據見 [pages-deployment.json](docs/s1/pages-deployment.json)。
 
 ## 開始使用
 

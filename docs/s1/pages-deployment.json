@@ -1,0 +1,71 @@
+{
+  "previous_pages_commit": "f26697c10cc7f8a98ac98c7aa544a26c0210c1d1",
+  "comparisons": [
+    {
+      "site": "atlas",
+      "previous_run": "atlas-2026-q3-v4",
+      "previous_version": "0.7.0",
+      "s1_run": "atlas-2026-q3-s1-final",
+      "same_inputs": true
+    },
+    {
+      "site": "meridian",
+      "previous_run": "meridian-2026-q3-v4",
+      "previous_version": "0.7.0",
+      "s1_run": "meridian-2026-q3-s1-final",
+      "same_inputs": true
+    },
+    {
+      "site": "helios",
+      "previous_run": "helios-2026-q3-v4",
+      "previous_version": "0.7.0",
+      "s1_run": "helios-2026-q3-s1-final",
+      "same_inputs": true
+    },
+    {
+      "site": "portfolio",
+      "previous_run": "demo-2026-q3-v4",
+      "previous_version": "0.7.0",
+      "s1_run": "demo-2026-q3-s1-final",
+      "same_inputs": true
+    }
+  ],
+  "date": "2026-10-30",
+  "source_commit": "98a0c1db60e52409ada352f59d566c6e9f4e0509",
+  "published_branch": "gh-pages",
+  "published_commit": "f01815f5d503289acecea7117ee3a61f1bca32b6",
+  "remote_checks": [
+    {
+      "file": "deployment.json",
+      "sha256": "44c20f7be0ed755fccb463a37ceb107b5b342ba7443e31dede9535c78c59c3e0",
+      "match": true
+    },
+    {
+      "file": "atlas/manifest.json",
+      "sha256": "cf58ed22d01883d96b4f40f9ced897a005b3486d86f8728c37a8ce19f1fdfcbc",
+      "match": true
+    },
+    {
+      "file": "meridian/manifest.json",
+      "sha256": "ba73ee1d24b1ac6d06ca33c5155727395d7112f94457114810a05a882fc17305",
+      "match": true
+    },
+    {
+      "file": "helios/manifest.json",
+      "sha256": "2ae9cf0cab6d5de6f10bee55ce111610c4375391a93b6a682ed7b7a412644e99",
+      "match": true
+    },
+    {
+      "file": "portfolio/manifest.json",
+      "sha256": "1c346645f231f96f5cb68e7a94a557d15698a7c989a120b2cd202d791ae9f0e8",
+      "match": true
+    },
+    {
+      "file": "guide.html",
+      "sha256": "c761ffc1219a378589a26e849d61607bdbd7e1d4656f4f056ccf55e2b0431994",
+      "match": true
+    }
+  ],
+  "pages_smoke_checks": 13,
+  "live_status": "unconfirmed: environment proxy blocks clarencechien.github.io (403); git branch payload verified"
+}

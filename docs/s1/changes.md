@@ -73,3 +73,9 @@
 - 「殼變薄」是責任移轉：刪 custom quality runner、未接線的 repair callback、Rill drafts、domain imports；CLI/MCP/runtime 使用上游。src 實體行數 598→556，另新增 TD 51 行；合計未減少，不能把這當大幅縮碼的宣傳數字。T19 的零領域耦合與唯一 export adapter 才是主要邊界。
 - 雲端 start_skill 已更新為目前 pack 路徑與原生 runtime 驗證；安裝腳本保持原有 npm ci。保存草稿不等於發布環境。
 - 每個工作包以獨立 commit 留存；GitHub API 受限，未建立逐包 PR。未送上游 PR，未發布 S1 Pages 或外部服務。
+
+## 後續授權 — S1 Pages 發布 / 2026-10-30
+
+- 使用者要求沿用上一版資料發布 S1。比對原 gh-pages `f26697c`：三客戶及 portfolio 的所有 inputs SHA/rows 與 S1 完全相同；保留合成標記。
+- 重新執行 Pages 13 項測試全部通過，使用現有 publisher 推送 `gh-pages` 至 `f01815f`（來源 `98a0c1d`），未合併 main 或加入其他場景。
+- 遠端 deployment.json、四份 manifest、guide.html 與 staging 逐 byte 相同。環境 proxy 阻擋 github.io，實際部署完成／線上渲染仍無法確認。證據見 pages-deployment.json。

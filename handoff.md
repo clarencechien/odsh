@@ -1,6 +1,6 @@
 # odsh 接手文件 — S1 / open-dashboard 0.12.0
 
-更新：2026-10-30。來源基準：`clarencechien/dataxpr/docs/odsh-handoff-s1.md`（2026-10-30）；本 repo 升版前基準 `cd16508`。工作分支 `codex/odsh-s1`。這份文件描述目前程式，不代表 GitHub Pages 已更新。
+更新：2026-10-30。來源基準：`clarencechien/dataxpr/docs/odsh-handoff-s1.md`（2026-10-30）；本 repo 升版前基準 `cd16508`。工作分支 `codex/odsh-s1`。2026-10-30 已依使用者後續要求把 S1 energy 成品推至 gh-pages（f01815f），沿用 v4 相同資料；實際 Pages 上線狀態受環境連線限制，尚未確認。
 
 ## 先看結論
 
@@ -125,6 +125,6 @@ check 的 maxRuns 與 build 同取 pack.limits（預設 100）；錯誤、trunca
 - 在一般桌面 browser 雙擊 report/dashboard，斷網操作並驗證零外連。雲端 fallback 是替代驗證，不是該 exit 通過。
 - S2 重用原生 MCP 做隔離 draft/revision/job orchestration、compiler 與 Studio；不重寫通用工具或 editor。真實模型閉環、customer auth 尚未實作。
 - Rill 現在只有可攜資料／reviewed metrics／一致性；ClickHouse 為 seam，沒有生產服務驗證。
-- Silo/Pages/個人排版不擴大功能範圍。這次只回歸既有相容性，沒有把 S1 發布到線上，也沒有重跑 Docker Silo 服務。
+- Silo/個人排版不擴大功能範圍；未重跑 Docker Silo 服務。使用者後續授權 S1 Pages 發布，已推送 gh-pages；輸入 hash 比對與遠端檔案驗證見 docs/s1/pages-deployment.json，無法由此環境確認 github.io 上線狀態。
 
 若要交付 PR，工作包已有 W1–W8 與收尾 commit；可按序 review。遠端分支推送與 API PR 建立是不同能力，不要因 git 可用就宣稱 PR 已建立。詳細驗收與限制以 [validation](docs/validation.md) 為準。
