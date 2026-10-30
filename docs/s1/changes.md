@@ -56,3 +56,9 @@
 - 新增通用 `metrics.mjs`／`consistency.mjs`：simple expression 與 parameterized derived macro；比對獨立 SQL 宣告的 `-- metric: view.measure` 快照，檢查輸入、SQL、快照 checksum 與完整覆蓋。
 - `npm run test:consistency`：energy 7/7 measures（77 scalar snapshots）、o11y 3/3（3 snapshots）；各自修改一個 expression 會失敗並指出 measure。`node --test tests/metrics.test.mjs`：derived aggregate、quoted column、NULL、循環依賴皆驗證。
 - **界線**：T18 覆蓋完整不可變輸入的 scalar references，不宣稱驗證每一張有篩選的圖表公式；後續需明確定義 filter scope，不能拿完整資料總值比子集合。
+
+## W8 — TD options（尚非 compiler／Studio）
+
+- `td/options.mjs --pack <name> --run <id>` 讀 metrics、原生 `charts --json` 與 Parquet distinct values。輸出固定字母選項、內容 hash `options_version`，刪除的字母保留不重用；新增排序較前的 measure 不影響舊字母。
+- >26 個值標 `needs_narrowing`，不截斷。原生 widget 也超過 26，因此提供 widget_group 與分組槽位；o11y path=40，必須縮小。
+- `node --test tests/options.test.mjs tests/t19.test.mjs`：3/3。pack options 已產生（energy 18 slots、o11y 16 slots）；`thresholds.lock.json` 維持空殼，未宣稱完成 S3 校準。

@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "pack": "energy",
+  "metrics_sha256": "aeee01102cba68172ceb5f817f86566ea40c2255cc1a3cf0169b306025293646",
+  "catalog_sha256": "1bde4be4b4fe983442fc1a9c839df0d72cdb8dcb4afb52c453e2a35433d67356",
+  "slots": {
+    "view": {
+      "count": 1,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "energy"
+        }
+      ],
+      "retired": []
+    },
+    "measure": {
+      "count": 7,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "charger_availability"
+        },
+        {
+          "letter": "B",
+          "value": "cost_twd"
+        },
+        {
+          "letter": "C",
+          "value": "grid_co2_tonnes"
+        },
+        {
+          "letter": "D",
+          "value": "load_kwh"
+        },
+        {
+          "letter": "E",
+          "value": "modeled_savings_twd"
+        },
+        {
+          "letter": "F",
+          "value": "pue"
+        },
+        {
+          "letter": "G",
+          "value": "solar_kwh"
+        }
+      ],
+      "retired": []
+    },
+    "dimension": {
+      "count": 4,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "quality"
+        },
+        {
+          "letter": "B",
+          "value": "site_id"
+        },
+        {
+          "letter": "C",
+          "value": "site_name"
+        },
+        {
+          "letter": "D",
+          "value": "tenant"
+        }
+      ],
+      "retired": []
+    },
+    "grain": {
+      "count": 1,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "hour"
+        }
+      ],
+      "retired": []
+    },
+    "widget": {
+      "count": 44,
+      "needs_narrowing": true,
+      "choices": [],
+      "retired": []
+    },
+    "widget_group": {
+      "count": 44,
+      "needs_narrowing": true,
+      "choices": [],
+      "retired": []
+    },
+    "widget:Basics": {
+      "count": 7,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "AreaChart"
+        },
+        {
+          "letter": "B",
+          "value": "BarChart"
+        },
+        {
+          "letter": "C",
+          "value": "LineChart"
+        },
+        {
+          "letter": "D",
+          "value": "PieChart"
+        },
+        {
+          "letter": "E",
+          "value": "Stat"
+        },
+        {
+          "letter": "F",
+          "value": "Table"
+        },
+        {
+          "letter": "G",
+          "value": "Text"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Over time": {
+      "count": 9,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "BandChart"
+        },
+        {
+          "letter": "B",
+          "value": "CalendarHeatmap"
+        },
+        {
+          "letter": "C",
+          "value": "Candlestick"
+        },
+        {
+          "letter": "D",
+          "value": "ControlChart"
+        },
+        {
+          "letter": "E",
+          "value": "Gantt"
+        },
+        {
+          "letter": "F",
+          "value": "HorizonChart"
+        },
+        {
+          "letter": "G",
+          "value": "SmallMultiples"
+        },
+        {
+          "letter": "H",
+          "value": "Timeline"
+        },
+        {
+          "letter": "I",
+          "value": "Waterfall"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Distribution and relationship": {
+      "count": 6,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "BoxPlot"
+        },
+        {
+          "letter": "B",
+          "value": "EcdfChart"
+        },
+        {
+          "letter": "C",
+          "value": "Histogram"
+        },
+        {
+          "letter": "D",
+          "value": "ParetoChart"
+        },
+        {
+          "letter": "E",
+          "value": "ScatterChart"
+        },
+        {
+          "letter": "F",
+          "value": "StripPlot"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Compare and rank": {
+      "count": 7,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "BulletChart"
+        },
+        {
+          "letter": "B",
+          "value": "BumpChart"
+        },
+        {
+          "letter": "C",
+          "value": "DivergingBar"
+        },
+        {
+          "letter": "D",
+          "value": "DotPlot"
+        },
+        {
+          "letter": "E",
+          "value": "Dumbbell"
+        },
+        {
+          "letter": "F",
+          "value": "Marimekko"
+        },
+        {
+          "letter": "G",
+          "value": "SlopeChart"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Maps": {
+      "count": 3,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "ChoroplethMap"
+        },
+        {
+          "letter": "B",
+          "value": "SymbolMap"
+        },
+        {
+          "letter": "C",
+          "value": "TileMap"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Flow and composition": {
+      "count": 6,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "CohortTable"
+        },
+        {
+          "letter": "B",
+          "value": "FunnelChart"
+        },
+        {
+          "letter": "C",
+          "value": "Heatmap"
+        },
+        {
+          "letter": "D",
+          "value": "Sankey"
+        },
+        {
+          "letter": "E",
+          "value": "Treemap"
+        },
+        {
+          "letter": "F",
+          "value": "UpSetChart"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Status and tables": {
+      "count": 3,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "Gauge"
+        },
+        {
+          "letter": "B",
+          "value": "PivotTable"
+        },
+        {
+          "letter": "C",
+          "value": "StateTimeline"
+        }
+      ],
+      "retired": []
+    },
+    "widget:Custom": {
+      "count": 3,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "IntegrationMap"
+        },
+        {
+          "letter": "B",
+          "value": "Prose"
+        },
+        {
+          "letter": "C",
+          "value": "personal-dashboard"
+        }
+      ],
+      "retired": []
+    },
+    "value:tenant": {
+      "count": 3,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "Atlas Semiconductor"
+        },
+        {
+          "letter": "B",
+          "value": "Helios Cloud"
+        },
+        {
+          "letter": "C",
+          "value": "Meridian Logistics"
+        }
+      ],
+      "retired": []
+    },
+    "value:site_id": {
+      "count": 6,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "ATL-1"
+        },
+        {
+          "letter": "B",
+          "value": "ATL-2"
+        },
+        {
+          "letter": "C",
+          "value": "HEL-1"
+        },
+        {
+          "letter": "D",
+          "value": "HEL-2"
+        },
+        {
+          "letter": "E",
+          "value": "MER-1"
+        },
+        {
+          "letter": "F",
+          "value": "MER-2"
+        }
+      ],
+      "retired": []
+    },
+    "value:site_name": {
+      "count": 6,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "台中・智慧研發樓"
+        },
+        {
+          "letter": "B",
+          "value": "台中・綠能邊緣機房"
+        },
+        {
+          "letter": "C",
+          "value": "新竹・AI 算力中心"
+        },
+        {
+          "letter": "D",
+          "value": "新竹・製程微電網"
+        },
+        {
+          "letter": "E",
+          "value": "桃園・電動車隊基地"
+        },
+        {
+          "letter": "F",
+          "value": "高雄・冷鏈補能站"
+        }
+      ],
+      "retired": []
+    },
+    "value:quality": {
+      "count": 2,
+      "needs_narrowing": false,
+      "choices": [
+        {
+          "letter": "A",
+          "value": "estimated"
+        },
+        {
+          "letter": "B",
+          "value": "measured"
+        }
+      ],
+      "retired": []
+    }
+  },
+  "options_version": "0d7d76a532975ffba3d980428cc4c7ab3ecbfc6b7a155b015cd6e591d136b77e"
+}
