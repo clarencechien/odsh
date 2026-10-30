@@ -2,6 +2,8 @@
 
 更新：2026-10-30。來源基準：`clarencechien/dataxpr/docs/odsh-handoff-s1.md`（2026-10-30）；本 repo 升版前基準 `cd16508`。工作分支 `codex/odsh-s1`。2026-10-30 已依使用者後續要求把 S1 energy 成品推至 gh-pages（f01815f），沿用 v4 相同資料；實際 Pages 上線狀態受環境連線限制，尚未確認。
 
+文件入口：[索引](docs/README.md) · [發布操作](docs/deployment.md) · [驗收](docs/validation.md)。目前閱讀來源應選 `codex/odsh-s1`；`main` 尚未合併 S1。
+
 ## 先看結論
 
 W1–W9 的程式與文件已落地，S1 **尚不能宣稱全部 exit 完成**：嚴格的「私有 import ≤1」仍是 3；o11y 尚無真實資料；受管理 Chromium 禁止 file://。合成資料、兩個 pack、原生 CLI／MCP／唯讀 runtime、品牌、品質、T18、TD 與既有成品回歸均有機器驗證。
@@ -47,7 +49,7 @@ npm run test:consistency
 npm run test:runtime
 ```
 
-現有模板未變時可重建同 run；模板修改後用 `--suffix=-next` 或新 run_id。`runs/`、`test-results/`、`.runtime/` 被忽略，不在 Git 中；新機器要生成，不能假設上一個 agent 的 processes 還在。瀏覽器測試預設 `/usr/bin/chromium`；可透過 CHROMIUM_PATH 指定其他安裝位置。
+現有模板未變時可重建同 run；模板修改後用 `--suffix=-next` 或新 run_id。**database.md 也在 template fingerprint 內**：本次更新 pack 資料契約文件後，舊 `*-s1-final` 保留作為已發布快照，不應拿目前 pack 重建。可繼續 verify／預覽／pages:publish，若需重建用新 suffix。odsh 的 check／lint／dev／live／mcp 也會先 prepareWorkspace；來源改變後請在新 run 操作，避免覆寫舊 run 的 workspace，影響 T18 對 frozen template 的核對。`runs/`、`test-results/`、`.runtime/` 被忽略，不在 Git 中；新機器要生成，不能假設上一個 agent 的 processes 還在。瀏覽器測試預設 `/usr/bin/chromium`；可透過 CHROMIUM_PATH 指定其他安裝位置。
 
 Native MCP render_panel 的 Playwright browser 安裝曾收到 `403 Domain forbidden`（cdn.playwright.dev、playwright.download.prss.microsoft.com）。不應跳過 TLS 或用假 browser cache；該工具的 screenshot 呼叫未驗證，其餘 MCP 與自有 Playwright 測試正常。
 
@@ -69,7 +71,7 @@ Native MCP render_panel 的 Playwright browser 安裝曾收到 `403 Domain forbi
 | 指標與一致性 | `packs/*/rill/metrics.yaml`、`src/metrics.mjs`、`src/consistency.mjs` |
 | TD | `td/options.mjs` → `packs/*/td/options.json`；保留既有檔案維持字母歷史 |
 | 交付 | `src/release.mjs`、`silo.mjs`、`server.mjs`；Silo 使用 PGSTY silo，minio npm 是 S3 client |
-| 展示網站 | `scripts/build-pages.mjs`、`docs/open-dashboard-guide.html`；S1 不自動發布 |
+| 展示網站 | `scripts/build-pages.mjs`、`docs/open-dashboard-guide.html`；更新文件後明確執行 pages:publish，同步公開指南 |
 
 公司名稱是 **ATLED Engergy**，保留使用者拼字。Energy Loop 主色 #0087dc、teal、lime；3 客戶 6 案場。既有個人主題／版面存在瀏覽器，不能改正式 report。
 
@@ -117,6 +119,12 @@ runs/<id>/
 manifest 固定輸入／模板 SHA、完整 artifact SHA、data_hash、pack/brand/source、原生版本、quality expectation 計數、commit/dirty。完整 build/check JSON 保留原生形狀；data_hash 排除 ranAt/elapsedMs 及 index builtAt，寫入檔仍保留 builtAt/freshness。不要要求 HTML timestamps 相同。
 
 check 的 maxRuns 與 build 同取 pack.limits（預設 100）；錯誤、truncation、sweep trimming 會擋建置。Shared SQL 未被引用不會自動驗證，因此 quality dashboard 必須存在且引用全部規則；它不在交付 dashboards 清單內。
+
+## 發布交接
+
+首次 S1 energy 發布為 `gh-pages@f01815f`，來自程式 `98a0c1d`。與 v4 比對，四份 run 的所有 input SHA／row count 相同；公開站不包含 o11y、原始 Parquet 或 authoring runtime。後續指南同步與完整操作見 [deployment](docs/deployment.md)。發布分支更新已確認，github.io 上線／渲染未確認，兩者不可混稱。
+
+`docs/s1/w*-evidence.json` 與 `final-evidence.json` 是歷史 checkpoint，不回寫成最新部署狀態。新驗收或部署建立新紀錄；`changes.md` 依時間追加。
 
 ## 下一步與不要誤稱完成的事
 

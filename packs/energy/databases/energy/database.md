@@ -1,5 +1,7 @@
 # ATLED Engergy — energy data contract v2
 
+S1 implementation: open-dashboard 0.12.0. This remains data contract v2; the documentation update does not change the data schema or metric formulas. This file is copied into generated workspaces and fingerprinted, so a change requires a new run ID when rebuilding.
+
 All companies, sites, observations and incidents in the demo are **synthetic**. Read this before writing SQL. Source of truth is the immutable Parquet in each run's `input/`; DuckDB views are the analytical adapter. `generation.json` records seed, scope, window and assumptions.
 
 ## Tables and grain
@@ -35,12 +37,18 @@ All companies, sites, observations and incidents in the demo are **synthetic**. 
 
 ## Customer and solution boundaries
 
-Atlas Semiconductor favors resilience/demand; Meridian Logistics favors charging/solar; Helios Cloud favors PUE/carbon. `src/customers.mjs` maps each of six sites to its installed domains. Pages are compiled into ordinary open-dashboard TSX/SQL; no renderer fork or alternate dashboard DSL.
+Atlas Semiconductor favors resilience/demand; Meridian Logistics favors charging/solar; Helios Cloud favors PUE/carbon. `packs/energy/hooks/customers.mjs` (repository-relative) maps each of six sites to its installed domains. Pages are compiled into ordinary open-dashboard TSX/SQL; no renderer fork or alternate dashboard DSL.
 
-A site filter is not authorization. For delivery, generate `--tenant` runs; input Parquet and every precomputed combination contain only that tenant. The internal portfolio artifact intentionally contains every tenant and must remain internal. Per-customer Silo buckets separate delivery packages but production authentication remains the host's responsibility.
+A site filter is not authorization. For delivery, generate `--tenant` runs; input Parquet and every precomputed combination contain only that tenant. A real multi-tenant portfolio must remain internal. The public Pages portfolio is an explicitly synthetic demonstration; the Pages publisher requires synthetic=true in both generation metadata and the build manifest. Per-customer Silo buckets separate delivery packages but production authentication remains the host's responsibility.
 
 ## Future ingestion
 
 ClickHouse must produce the same five tables with this grain, names, units and timezone semantics. Materialize a bounded window before report generation; record source lineage and watermark. Never put source credentials or live SQL in report HTML. The native ClickHouse example config is only a live-dashboard seam: DuckDB-specific SQL must be ported, not swapped blindly.
 
-Rill uses copied Parquet and reviewed interval-level metrics. Query-comment-derived aggregated drafts are deliberately excluded until a reviewer chooses valid aggregation semantics.
+Rill uses copied Parquet and reviewed interval-level measures from `packs/energy/rill/metrics.yaml`. The exporter no longer generates aggregated drafts. T18 recomputes all seven measures against the full immutable input and compares independent unfiltered scalar `-- metric: energy.<measure>` snapshots; this does not validate every filtered chart formula.
+
+## Native quality checks and published fixture
+
+The 23 input-quality rules are mapped in `packs/energy/quality-map.json` and implemented as shared SQL with native `-- expect:` in `packs/energy/queries/quality_checks.sql`. A validation-only dashboard references every rule so upstream check actually executes them; it is not delivered to readers. There is no separate custom quality runner.
+
+The S1 Pages energy inputs are byte-identical to the prior v4 demo: three customer runs with two sites each, plus the synthetic six-site portfolio. Current and previous weeks are still 2026-09-24–09-30 and 2026-09-17–09-23. This is not a new observation period or live customer data. Repository evidence: `docs/s1/pages-deployment.json`; publication instructions: `docs/deployment.md`.

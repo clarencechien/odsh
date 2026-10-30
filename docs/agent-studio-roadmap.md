@@ -2,6 +2,8 @@
 
 兩條路都做得到，但現在可用的是原生 authoring 工具與可驗證交付管線，尚未實作面向客戶的生成產品。S1 的原則是讓 odsh 的殼變薄：不要再包一套通用編輯器、query API 或 MCP 工具集。
 
+更新：2026-10-30。已推送 Pages 的是 energy 靜態成品，並未因此部署原生 MCP、Studio 或模型服務；o11y 仍為本機合成案例。發布事實見 [deployment](deployment.md)，文件入口見 [索引](README.md)。
+
 ## 已有能力與邊界
 
 | 元件 | 目前狀態 |
@@ -54,6 +56,6 @@ odsh 需要的下一層僅是 job/revision orchestration：配置模型、限定
 
 ## 部署
 
-靜態 Dashboard/Report 只需 HTTP hosting。Studio frontend 可用 Vercel／Cloudflare；Node/DuckDB/MCP/Playwright 長任務放在支援原生模組與持久工作目錄的獨立 worker。Production gateway 提供認證、租戶路由、TLS、限制與 job API；不依賴 `/__odd/api/*` 私有路由。
+靜態 Dashboard/Report 只需 HTTP hosting。Studio frontend 可用 Vercel／Cloudflare；Node/DuckDB/MCP/Playwright 長任務放在支援原生模組與持久工作目錄的獨立 worker。未來 Production gateway 需提供認證、租戶路由、TLS、限制與 job API；不依賴 `/__odd/api/*` 私有路由。
 
 先完成一個真實資料、單租戶、有審查與可追溯 artifact 的 developer agent 閉環，再開放 customer authoring。S1 嚴格缺口與測試邊界見 [handoff](../handoff.md) 和 [validation](validation.md)。

@@ -2,6 +2,8 @@
 
 環境：Node 24.19.0、npm 11.9、DuckDB node-api 1.5.6-r.1、open-dashboard core/cli/mcp **0.12.0**、系統 Chromium。以下是本次實際執行結果；不沿用先前版本的服務通過數。
 
+本頁區分 S1 程式驗收、後續 Pages 發布及未執行項目；操作步驟見 [deployment](deployment.md)，完整文件入口見 [索引](README.md)。
+
 機器證據：[final-evidence.json](s1/final-evidence.json)。W1、W3、W4、W6、W7 的歷史 checkpoint 證據分別在 `docs/s1/w*-evidence.json`；W4 的 sourceUnchanged=true 專指新增 o11y pack 那一個工作包，不要求後續 core 永遠不改。
 
 | 指令／驗收 | 結果 | 驗證內容 |
@@ -52,6 +54,6 @@
 3. **file://：受環境阻擋。** 導航收到 ERR_BLOCKED_BY_ADMINISTRATOR。offline setContent + 禁用網路可驗單檔自包含與篩選，但仍需一般桌面雙擊檔案驗收。
 4. **Native MCP render_panel：未執行。** 原生 Playwright headless shell 下載收到 403 Domain forbidden。系統 Chromium 的本 repo 瀏覽器測試通過；不是原生 screenshot tool 通過。
 5. **Silo、Rill runtime、ClickHouse、production auth：未執行本次外部服務驗證。** 本機 release staging、Rill 原始資料/SQL/一致性、ClickHouse adapter unit 不能替代服務驗收。
-6. **GitHub Pages：後續已推送 S1，但實際上線未確認。** 使用者授權沿用 v4 資料發布；四份 run 的 inputs SHA 完全相同。13 項 staging 測試重新通過，遠端 gh-pages commit `f01815f5d503289acecea7117ee3a61f1bca32b6` 的 deployment、四份 manifest 與 guide bytes 已核對。環境 proxy 阻擋 github.io（403），不能宣稱已完成線上驗證。見 [發布證據](s1/pages-deployment.json)；final-evidence.json 保留發布前的 S1 驗收 checkpoint。
+6. **GitHub Pages：後續已推送 S1，但實際上線未確認。** 使用者授權沿用 v4 資料發布；四份 run 的 inputs SHA 完全相同。13 項 staging 測試重新通過，遠端 gh-pages commit `f01815f5d503289acecea7117ee3a61f1bca32b6` 的 deployment、四份 manifest 與 guide bytes 已核對。這是首次 S1 artifact 發布 commit，後續只更新指南時會產生新的 gh-pages commit；資料來源比對仍以此 checkpoint 為準。環境 proxy 阻擋 github.io（403），不能宣稱已完成線上驗證。見 [發布證據](s1/pages-deployment.json)；final-evidence.json 保留發布前的 S1 驗收 checkpoint。
 
 以上限制使嚴格 S1 exit 仍未全部滿足。其他原生 check/findings、測試與可重現性均已完成，不把限制藏成 skipped 測試或粗估百分比。

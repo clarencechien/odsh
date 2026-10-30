@@ -2,6 +2,8 @@
 
 Reviewed against open-dashboard 0.12.0 (`4cd642da7b9f3bf2112d1f8b1092f43ca9dad187`). No upstream issue or PR has been sent. Obtain Clarence's approval before submitting one.
 
+Updated 2026-10-30. These are proposals, not shipped commands. The existing S1 Pages publication uses the current export adapter and does not resolve any private-API gap. See [current publication](deployment.md), [architecture](architecture.md) and [documentation index](README.md).
+
 ## 1. Public single-file export CLI (still needed)
 
 Propose `open-dashboard export-html <id> [--filter k=v] --out file.html [--max-runs n] [--json]`.
